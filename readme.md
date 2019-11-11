@@ -22,7 +22,7 @@ To know how to configure the other microservices please visit the next webpages:
 1. [VPL++ API microservice](https://github.com/alphonse92/vplplusplus_api)
 2. [Jail With JLib Runner microservice](https://github.com/alphonse92/vplplusplus_jail_jlib) 
 3. [VPL++ Client microservice](https://github.com/alphonse92/vplplusplus_client) 
-4. [Moodle microservice](https://github.com/alphonse92/vplplusplus_moodle) 
+4. [Moodle microservice](https://github.com/alphonse92/docker-moodle) 
 
 ##### Other repositories
 
