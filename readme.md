@@ -2,13 +2,13 @@
 
 This is the root project of all Vpl ++ microservices
 
-## Install 
+## Install 
 
 `git clone git@github.com:alphonse92/vplplusplus_composer.git`
 
 `./intall.sh`
 
-## Configure 
+## Configure 
 
 1. Open the  docker-compose.deployment.example.yaml 
 2. change the environment variables as you need
@@ -34,7 +34,7 @@ To know how to configure the other microservices please visit the next webpages:
 1. [Mongo](https://hub.docker.com/_/mongo)
 2. [Mysql](https://hub.docker.com/_/mysql)
   
-## Running
+## Running
 
 `docker-compose -f docker-compose.deployment.example.yaml up`
 
