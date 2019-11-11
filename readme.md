@@ -1,3 +1,23 @@
+# Vpl Composer
+
+This is the root project of all Vpl ++ microservices
+
+## Install 
+
+`git clone git@github.com:alphonse92/vplplusplus_composer.git`
+
+`./intall.sh`
+
+## Configure 
+
+1. Open the  docker-compose.deployment.example.yaml 
+2. change the environment variables as you need
+
+## Running
+
+`docker-compose -f docker-compose.deployment.example.yaml up`
+
+
 # Extending VPL to VPL++
 
 VPL is the easy way to manage programming assignments in Moodle.
