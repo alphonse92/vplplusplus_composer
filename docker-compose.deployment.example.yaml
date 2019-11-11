@@ -81,7 +81,5 @@ services:
       TOKEN_EXP_MINUTES: NEVER
       CACHE_FOLDER: /tmp/vplplusplus
       SHOW_CONFIG_AT_STARTUP: "false"
-    volumes:
-      - ./vplplusplus_api:/usr/src/app
     ports:
       - "1337:1337"
