@@ -87,19 +87,20 @@ services:
     cap_add:
       - ALL
   client:
-    container_name: client
+    container_name: vplclient
     networks:
       - vpl
-    build:
-      context: ./vplplusplus_client
-      args:
-        PUBLIC_URL: "/"
-        API_BASEURL: "http://api:1337/api/v1"
-        CLIENT_ID: "126760867544-k1es3tqiho46b0g831cmsvgokvl0npqu.apps.googleusercontent.com"
+    build: ./vplplusplus_client
+    environment:
+        NODE_ENV: production
+        REACT_APP_ENV: production
+        REACT_APP_PUBLIC_URL: /
+        REACT_APP_API_BASEURL: http://api:1337/api/v1
+        REACT_APP_CLIENT_ID: 126760867544-k1es3tqiho46b0g831cmsvgokvl0npqu.apps.googleusercontent.com
     ports:
       - "3000:80"
   api:
-    container_name: api
+    container_name: vplapi
     build: vplplusplus_api
     command: npm run startdev
     volumes:
@@ -115,7 +116,7 @@ services:
       NODE_PATH: .
       HOST: localhost
       PORT: 1337
-      NODE_ENV: development
+      NODE_ENV: production
       SYSTEM_CORES: 1
       MONGO: mongodb://vpladmin:secret@mongo:27017/vpl-dev?authSource=admin
       MYSQL: mysql://root:root@mysql:3306/moodle?connectionAttributes=program_name:vplplusplus_api
