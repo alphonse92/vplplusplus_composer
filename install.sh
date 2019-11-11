@@ -10,4 +10,8 @@ git submodule add git@github.com:alphonse92/vplplusplus_client.git
 git submodule add git@github.com:alphonse92/vplplusplus_jail.git
 git submodule add git@github.com:alphonse92/vplplusplus_jail_jlib.git
 git submodule add git@github.com:alphonse92/vplplusplus_jlib.git
+
+cd vplplusplus_api && npm install
+cd ../vplplusplus_client && npm install
+
 git submodule update --recursive
