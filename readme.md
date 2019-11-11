@@ -13,6 +13,27 @@ This is the root project of all Vpl ++ microservices
 1. Open the  docker-compose.deployment.example.yaml 
 2. change the environment variables as you need
 
+To know how to configure the other microservices please visit the next webpages:
+
+### Repositories
+
+##### Microservice repositories
+
+1. [VPL++ API microservice](https://github.com/alphonse92/vplplusplus_api)
+2. [Jail With JLib Runner microservice](https://github.com/alphonse92/vplplusplus_jail_jlib) 
+3. [VPL++ Client microservice](https://github.com/alphonse92/vplplusplus_client) 
+4. [Moodle microservice](https://github.com/alphonse92/vplplusplus_moodle) 
+
+##### Other repositories
+
+1. [Docker vpl Jail microservice](https://github.com/alphonse92/vplplusplus_jail_jlib)
+1. [Vpl ++ Java Runner](https://github.com/alphonse92/vplplusplus_jlib)
+
+##### External projects:
+
+1. [Mongo](https://hub.docker.com/_/mongo)
+2. [Mysql](https://hub.docker.com/_/mysql)
+  
 ## Running
 
 `docker-compose -f docker-compose.deployment.example.yaml up`
