@@ -26,7 +26,7 @@ To know how to configure the other microservices please visit the next webpages:
 
 ##### Other repositories
 
-1. [Docker vpl Jail microservice](https://github.com/alphonse92/vplplusplus_jail_jlib)
+1. [Docker vpl Jail microservice](https://github.com/alphonse92/vplplusplus_jail)
 1. [Vpl ++ Java Runner](https://github.com/alphonse92/vplplusplus_jlib)
 
 ##### External projects:
