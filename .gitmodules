@@ -1,0 +1,18 @@
+[submodule "docker-moodle"]
+	path = docker-moodle
+	url = git@github.com:alphonse92/docker-moodle.git
+[submodule "vplplusplus_api"]
+	path = vplplusplus_api
+	url = git@github.com:alphonse92/vplplusplus_api.git
+[submodule "vplplusplus_client"]
+	path = vplplusplus_client
+	url = git@github.com:alphonse92/vplplusplus_client.git
+[submodule "vplplusplus_jail"]
+	path = vplplusplus_jail
+	url = git@github.com:alphonse92/vplplusplus_jail.git
+[submodule "vplplusplus_jail_jlib"]
+	path = vplplusplus_jail_jlib
+	url = git@github.com:alphonse92/vplplusplus_jail_jlib.git
+[submodule "vplplusplus_jlib"]
+	path = vplplusplus_jlib
+	url = git@github.com:alphonse92/vplplusplus_jlib.git
