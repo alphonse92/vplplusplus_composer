@@ -1,7 +1,6 @@
 version: "3.3"
 services:
   mongo:
-    container_name: vplmongo
     image: "mongo:latest"
     networks:
       - vpl
@@ -14,7 +13,6 @@ services:
       MONGO_INITDB_ROOT_PASSWORD: secret
       MONGO_INITDB_DATABASE: vpl
   mysql:
-    container_name: vplmysql
     image: "mysql:5.7.21"
     networks:
       - vpl
@@ -28,7 +26,7 @@ services:
     volumes:
       - ./data/mysql:/var/lib/mysql
   moodle:
-    container_name: vplmoodle
+    image: alphonse92/moodle
     build:
       context: docker-moodle
       args:
@@ -52,7 +50,7 @@ services:
       - ./data/moodle_data:/var/moodle_data
       - ./data/moodle:/var/www/html
   jail:
-    container_name: vpljail
+    image: alphonse92/vpl-jail-execution-java
     build:
       context: vplplusplus_jail
       args:
@@ -68,7 +66,7 @@ services:
     cap_add:
       - ALL
   jailrunner:
-    container_name: vpljailrunner
+    image: alphonse92/vpl-jail-execution-vpl-jlib-runner
     build:
       context: vplplusplus_jail_jlib
       args: 
@@ -82,12 +80,12 @@ services:
     networks:
       - vpl
     ports:
-      - "8888:8888"
+      - "9999:8888"
     privileged: true
     cap_add:
       - ALL
   client:
-    container_name: vplclient
+    image: alphonse92/vpl_client
     networks:
       - vpl
     build: ./vplplusplus_client
@@ -100,7 +98,7 @@ services:
     ports:
       - "3000:80"
   api:
-    container_name: vplapi
+    image: alphonse92/vpl_api
     build: vplplusplus_api
     command: npm run startdev
     volumes:

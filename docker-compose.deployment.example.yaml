@@ -1,7 +1,6 @@
 version: "3.3"
 services:
   mongo:
-    container_name: vplmongo
     image: "mongo:latest"
     environment:
       MONGO_INITDB_ROOT_USERNAME: vpladmin
@@ -12,7 +11,6 @@ services:
     volumes:
       - ./data/mongo:/data
   mysql:
-    container_name: vplmysql
     image: "mysql:5.7.21"
     environment:
       MYSQL_DATABASE: moodle
@@ -25,7 +23,6 @@ services:
       - ./data/mysql:/var/lib/mysql
   moodle:
     image: alphonse92/moodle
-    container_name: vplmoodle
     environment:
       DB_CONNECTOR: mysqli
       DB_HOST: mysql
@@ -42,18 +39,20 @@ services:
       - ./data/moodle:/var/www/html
   jail:
     image: alphonse92/vpl-jail-execution-vpl-jlib-runner
-    container_name: vpljailrunner
     environment:
       ENV: production
       API_URL: http://api:1337/api/v1/project/test/case/summary/
       API_TOKEN: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZGM3M2Q4NmUxOTY2NGFkY2U2ZmI1ZTgiLCJpZCI6LTE1NzMzMzg1MDIzNTEsInVzZXJuYW1lIjoiYXBwIiwidHlwZSI6ImFwaV9jbGllbnQiLCJpYXQiOjE1NzMzMzg1MDJ9.Liim08kZkPPlT-v5yKW9-ywvWpCSmyBMns7i8vFbIIg
-      JAIL_PORT: 8888
+      JAIL_PORT: 9999
       JAIL_SECURE_PORT: 4433
     ports:
-      - "8888:8888"
+      - "9999:9999"
+      - "4433:4433"
+    privileged: true
+    cap_add:
+      - ALL
   client:
     image: alphonse92/vpl_client
-    container_name: vplclient
     environment:
         NODE_ENV: production
         REACT_APP_ENV: production
@@ -64,7 +63,6 @@ services:
       - "3000:80"
   api:
     image: alphonse92/vpl_api
-    container_name: vplapi
     environment:
       NODE_PATH: .
       HOST: localhost
