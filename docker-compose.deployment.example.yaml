@@ -63,7 +63,7 @@ services:
     ports:
       - "3000:80"
   api:
-    images: alphonse92/vpl_api
+    image: alphonse92/vpl_api
     container_name: vplapi
     environment:
       NODE_PATH: .
