@@ -30,7 +30,7 @@ services:
   moodle:
     container_name: vplmoodle
     build:
-      context: vplplusplus_moodle
+      context: docker-moodle
       args:
         MOODLE_CURRENT_BRANCH: MOODLE_34_STABLE
     depends_on:
