@@ -36,7 +36,7 @@ To know how to configure the other microservices please visit the next webpages:
 
 ### Networking
 
-For default, all microservices uses the vpl network. You could create it using docker. When you use it, you need to resolve the Jail hostname. 
+For default, all microservices uses the vpl network. You could create it using docker. When you use it, you need to resolve in your phisical machine the Jail hostname. 
 
 1. Open the file /etc/hosts/ 
 2. Add to the end of document the next line `127.0.0.1 jail`
@@ -57,7 +57,7 @@ VPL is the easy way to manage programming assignments in Moodle.
 
 Its features of editing, running and evaluation of programs makes learning process for students, and the evaluation task for teachers, easier than ever.
 
-[More info]([autor](https://vpl.dis.ulpgc.es/))
+[More info](https://vpl.dis.ulpgc.es/)
 
 ## Vpl original approach
 

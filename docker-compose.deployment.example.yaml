@@ -51,8 +51,6 @@ services:
       API_TOKEN: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZGNhZTg4ZjNiZDhlMTAwMjVjNzdmZmQiLCJpZCI6LTE1NzM1Nzg4OTUyMTgsInVzZXJuYW1lIjoiYXNkYXNkIiwidHlwZSI6ImFwaV9jbGllbnQiLCJpYXQiOjE1NzM1Nzg4OTV9.8OLpDntoX-ZDUGIrKjiQiU8g7TKEv86pss4kF0DePEU
       JAIL_PORT: 9999
       JAIL_SECURE_PORT: 4433
-      API_IP: 10.0.75.6
-      API_HOSTNAME: 'api'
     networks:
       - vpl
     ports:
