@@ -97,9 +97,6 @@ services:
       - vpl
     ports:
       - "1337:1337"
-    command: npm run startdev
-    volumes:
-      - ./vplplusplus_api:/usr/src/
 networks:
   vpl:
     driver: bridge
