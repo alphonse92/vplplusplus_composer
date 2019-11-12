@@ -41,6 +41,9 @@ For default, all microservices uses the vpl network. You could create it using d
 1. Open the file /etc/hosts/ 
 2. Add to the end of document the next line `127.0.0.1 jail`
 3. Flush the dns cache  `sudo dscacheutil -flushcache`
+
+To test all is ok, just open the browser and open `http://jail:9999/OK` (The port is the same that `docker-compose.deployment.example.yaml`). It should return an "OK"
+
   
   
 ## Running
