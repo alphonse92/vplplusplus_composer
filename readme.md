@@ -8,7 +8,7 @@ This is the root project of all Vpl ++ microservices
 
 `./intall.sh`
 
-## Configure 
+## Configuration 
 
 1. Open the  docker-compose.deployment.example.yaml 
 2. change the environment variables as you need
@@ -33,6 +33,15 @@ To know how to configure the other microservices please visit the next webpages:
 
 1. [Mongo](https://hub.docker.com/_/mongo)
 2. [Mysql](https://hub.docker.com/_/mysql)
+
+### Networking
+
+For default, all microservices uses the vpl network. You could create it using docker. When you use it, you need to resolve the Jail hostname. 
+
+1. Open the file /etc/hosts/ 
+2. Add to the end of document the next line `127.0.0.1 jail`
+3. Flush the dns cache  `sudo dscacheutil -flushcache`
+  
   
 ## Running
 
