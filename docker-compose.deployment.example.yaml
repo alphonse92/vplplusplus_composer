@@ -47,7 +47,7 @@ services:
     image: alphonse92/vpl-jail-execution-vpl-jlib-runner
     environment:
       ENV: production
-      API_URL: http://10.0.75.6:1337/api/v1/project/test/case/summary/
+      API_URL: http://10.0.75.5:1337/api/v1/project/test/case/summary/
       API_TOKEN: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZGNjOTAzNWVjYWE5ODAwNGYyZjY1ZDUiLCJpZCI6LTE1NzM2ODczNDkyNjQsInVzZXJuYW1lIjoiYWRzYXNkYXNkIiwidHlwZSI6ImFwaV9jbGllbnQiLCJpYXQiOjE1NzM2ODczNDl9.UI3yTcaExB8Q_x2hBPm_2tx9OZqMFhPI3CKJUaj6rlY
       JAIL_PORT: 9999
       JAIL_SECURE_PORT: 4433
@@ -91,6 +91,9 @@ services:
       TOKEN_EXP_MINUTES: NEVER
       CACHE_FOLDER: /tmp/vplplusplus
       SHOW_CONFIG_AT_STARTUP: "true"
+    command: npm run startdev
+    volumes:
+      - ./vplplusplus_api:/usr/src
     networks:
       - vpl
     ports:
