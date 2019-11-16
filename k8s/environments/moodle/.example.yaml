@@ -1,0 +1,9 @@
+ENVIRONMENT: production
+DB_CONNECTOR: mysqli
+DB_HOST: mysql
+DB_PORT: 3306
+DB_NAME: moodle
+DB_USERNAME: your-root-username
+DB_PASSWORD: your-root-password
+DB_PREFIX: mdl_
+MOODLE_URL: http://localhost:8080

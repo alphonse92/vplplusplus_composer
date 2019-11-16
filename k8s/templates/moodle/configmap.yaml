@@ -1,0 +1,15 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: moodle-config
+  namespace: {{NAMESPACE}}
+data:
+  ENVIRONMENT: {{ENVIRONMENT}}
+  DB_CONNECTOR: {{DB_CONNECTOR}}
+  DB_HOST: {{DB_HOST}}
+  DB_PORT: {{DB_PORT}}
+  DB_NAME: {{DB_NAME}}
+  DB_USERNAME: {{DB_USERNAME}}
+  DB_PASSWORD: {{DB_PASSWORD}}
+  DB_PREFIX: {{DB_PREFIX}}
+  MOODLE_URL: {{MOODLE_URL}}
