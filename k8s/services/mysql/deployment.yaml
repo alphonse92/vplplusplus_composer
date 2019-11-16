@@ -2,7 +2,7 @@ apiVersion: apps/v1 # for versions before 1.9.0 use apps/v1beta2
 kind: Deployment
 metadata:
   name: mysql-{{ENVIRONMENT}}
-  namespace: { { ENVIRONMENT } }
+  namespace: {{ENVIRONMENT}}
 spec:
   selector:
     matchLabels:
@@ -19,7 +19,7 @@ spec:
           name: mysql
           envFrom:
             - configMapRef:
-                name: mysql-config-{ENVIROMENT}}
+                name: mysql-config-{{ENVIRONMENT}}
           ports:
             - containerPort: 3306
               name: mysql

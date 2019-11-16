@@ -23,8 +23,11 @@ do
   for environment in $environments ; 
   do
    
-    ./compile.sh "$service"  "$environment.yaml"
+    ./compile.sh "$service"  "$environment"
   
   done
 
 done
+
+
+
