@@ -15,6 +15,10 @@ Run
 
 It will create the necesary files and deploy it to the cluster. Also, it will create the required namespaces.
 
+# Reset
+
+To reset the cluster, run `./reset.hs` it will try to erase everithing about vpl in kubernetes
+
 ## Compile files on demand
 
 If you need get the configMap, deployment, pvc, pv and service yaml kubernetes files for a service. You can use the script `./compile.sh` to create the deployment files on demand.
