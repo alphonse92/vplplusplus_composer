@@ -13,7 +13,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: moodle-pv-claim-{{ENVIRONMENT}}-moodle_data
+  name: moodle-pv-claim-{{ENVIRONMENT}}-moodle-data
 spec:
   storageClassName: manual
   accessModes:

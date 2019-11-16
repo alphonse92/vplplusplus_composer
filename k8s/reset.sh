@@ -7,11 +7,11 @@ files=$(ls $NAMESPACES_PATH)
 services=$(ls $SERVICES_PATH)
 environments=(development production)
 
-echo "1. Try to create namespaces"
+echo "1. Try to delete namespaces"
 
-kubectl create -f namespaces
+kubectl delete -f namespaces
 
-echo "2. Compile and deploy services" 
+echo "2. Compile services spec" 
 
 for service in $services ;
 do
@@ -20,11 +20,9 @@ do
   
   for env in ${environments[@]} ; 
   do
-   
     DEPLOYMENT_PATH="$BUILD_PATH/$service/$env"
     ./compile.sh "$service"  "$env"
-    kubectl create -f "$DEPLOYMENT_PATH"
-  
+    kubectl delete -f "$DEPLOYMENT_PATH"
   done
 
 done

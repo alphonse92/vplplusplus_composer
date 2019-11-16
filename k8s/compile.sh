@@ -2,13 +2,10 @@
 
 SERVICE=$1
 ENVIRONMENT=$2
-BUILD_PATH="./build"
-OUTPUT="$BUILD_PATH/$SERVICE/$ENVIRONMENT"
+OUTPUT="./build/$SERVICE/$ENVIRONMENT"
 SERVICE_FILES=(configMap deployment pv pvc service)
 PATH_SERVICE_TEMPLATES="services"
 PATH_ENVIRONMENT_VARIABLES="environments"
-
-rm -rf $BUILD_PATH
 
 if [ -z "$SERVICE" ];then
   echo "Please set the service name that you want to compile the deployment"
@@ -42,7 +39,10 @@ fi
 
 echo "Start to compile"
 
+rm -rf $OUTPUT/
+
 mkdir -p $OUTPUT
+
 
 for filename in ${SERVICE_FILES[@]}
 do

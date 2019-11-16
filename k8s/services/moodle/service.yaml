@@ -10,4 +10,4 @@ spec:
     targetPort: 80
   selector:
     app:  moodle-{{ENVIRONMENT}}
-  type: ClusterIP
+  type: LoadBalancer

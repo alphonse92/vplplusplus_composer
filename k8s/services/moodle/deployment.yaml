@@ -25,12 +25,12 @@ spec:
           volumeMounts:
             - name: moodle
               mountPath: /var/www/html
-            - name: moodle_data
+            - name: moodle-data
               mountPath: /var/moodle_data
       volumes:
         - name: moodle
           persistentVolumeClaim:
-            claimName: moodle-pv-claim-{{ENVIRONMENT}}-moodle
-        - name: moodle_data
+            claimName:  moodle-pv-claim-{{ENVIRONMENT}}-moodle
+        - name: moodle-data
           persistentVolumeClaim:
-            claimName: moodle-pv-claim-{{ENVIRONMENT}}-moodle_data
+            claimName: moodle-pv-claim-{{ENVIRONMENT}}-moodle-data

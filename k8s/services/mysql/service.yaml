@@ -10,4 +10,4 @@ spec:
     targetPort: 3306
   selector:
     app:  mysql-{{ENVIRONMENT}}
-  clusterIP: ClusterIP
+  type: LoadBalancer
