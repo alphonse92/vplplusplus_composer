@@ -1,7 +1,7 @@
 apiVersion: apps/v1 # for versions before 1.9.0 use apps/v1beta2
 kind: Deployment
 metadata:
-  name: moodle
+  name: moodle-{{ENVIROMENT}}
   namespace: {{ENVIROMENT}}
 spec:
   replicas: 1
@@ -14,11 +14,11 @@ spec:
         app: moodle
     spec:
       containers:
-        - name: moodle
-          image: alphonse92/moodle
-          imagePullPolicy: Always
-          ports:
-            - containerPort: 80        
-          envFrom:
-          - configMapRef:
-              name: moodle-config
+      - name: moodle
+        image: alphonse92/moodle
+        imagePullPolicy: Always
+        ports:
+          - containerPort: 80        
+        envFrom:
+        - configMapRef:
+            name: moodle-config
