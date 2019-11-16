@@ -27,12 +27,12 @@ else
   exit 3
 fi
 
-VALUES="$PATH_ENVIRONMENT_VARIABLES/$SERVICE/$ENVIRONMENT.yaml"
+VALUES="$PATH_ENVIRONMENT_VARIABLES/$SERVICE/$ENVIRONMENT"
 
 if [ -f "$VALUES" ]; then
   echo "Current environment: $ENVIRONMENT"
 else
-  echo "Environment file $ENVIRONMENT.yaml for service $SERVICE does not exists"
+  echo "Environment file $ENVIRONMENT for service $SERVICE does not exists"
   echo "Services availables:" $(ls namespaces)
   exit 4
 fi
@@ -46,7 +46,7 @@ mkdir -p $OUTPUT
 for filename in ${SERVICE_FILES[@]}
 do
   TEMPLATE="$PATH_SERVICE_TEMPLATES/$SERVICE/$filename.yaml"
-  COMPILED_FILE="$OUTPUT/$filename.yaml"
+  COMPILED_FILE="$OUTPUT/$filename"
   echo "   Find for  $TEMPLATE"
   if [ -f "$PATH_SERVICE_TEMPLATES/$SERVICE/$filename.yaml" ]; then
     j2 --format=yaml  "$TEMPLATE" "$VALUES" > "$COMPILED_FILE"
