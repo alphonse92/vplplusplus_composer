@@ -1,0 +1,36 @@
+apiVersion: apps/v1 # for versions before 1.9.0 use apps/v1beta2
+kind: Deployment
+metadata:
+  name: moodle-{{ENVIRONMENT}}
+  namespace: { { ENVIRONMENT } }
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: moodle
+  template:
+    metadata:
+      labels:
+        app: moodle
+    spec:
+      containers:
+        - name: moodle
+          image: alphonse92/moodle
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
+          envFrom:
+            - configMapRef:
+                name: moodle-config
+          volumeMounts:
+            - name: moodle
+              mountPath: /var/www/html
+            - name: moodle_data
+              mountPath: /var/moodle_data
+      volumes:
+        - name: moodle
+          persistentVolumeClaim:
+            claimName: moodle-pv-claim-{{ENVIRONMENT}}-moodle
+        - name: moodle_data
+          persistentVolumeClaim:
+            claimName: moodle-pv-claim-{{ENVIRONMENT}}-moodle_data

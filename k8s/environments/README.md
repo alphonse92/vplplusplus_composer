@@ -15,7 +15,7 @@ the path `api/production.yaml` is related to the environment production for the 
 If you want to add a new configuration for a microservice pay atention to the next considerations:
 
 1. Add a file called .example.yaml, that file should be an example of environment variables
-2. add the next .gitignore 
+2. add the next .gitignore in order to prevent unintended sensible environment varibles such passwords for example
 
 ```
 # Ignore everything
