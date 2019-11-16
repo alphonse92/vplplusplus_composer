@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: mysql-pv-claim-{{ENVIROMENT}}
+  name: mysql-pv-claim-{{ENVIRONMENT}}
 spec:
   storageClassName: manual
   accessModes:
