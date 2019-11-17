@@ -12,7 +12,7 @@ do
   
   for env in ${environments[@]} ; 
   do
-    ./delete_service $service $env
+    ./delete_service.sh $service $env
   done
 
 done

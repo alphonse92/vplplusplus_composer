@@ -13,7 +13,7 @@ for service in $services ;
 do  
   for env in ${environments[@]} ; 
   do
-   ./create_service $service $env
+   ./create_service.sh $service $env
   done
 done
 
