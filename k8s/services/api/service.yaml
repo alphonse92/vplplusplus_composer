@@ -5,10 +5,10 @@ metadata:
   namespace: "{{ENVIRONMENT}}"
 spec:
   ports:
-    - name: "27017"
-      port: 27017
+    - name: "1337"
+      port: 1337
       protocol: TCP
-      targetPort: 27017
+      targetPort: 1337
   selector:
     app: api
   type: LoadBalancer
