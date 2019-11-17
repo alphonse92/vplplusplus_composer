@@ -11,5 +11,5 @@ echo ""
 ./delete_object.sh "$SERVICE" "$ENVIRONMENT" "service"
 ./delete_object.sh "$SERVICE" "$ENVIRONMENT" "configMap"
 ./delete_object.sh "$SERVICE" "$ENVIRONMENT" "deployment"
-./delete_object.sh "$SERVICE" "$ENVIRONMENT" "pvc"
-./delete_object.sh "$SERVICE" "$ENVIRONMENT" "pv"
+
+echo "Volumes was not removed. To remove run 'detach $SERVICE $ENVIRONMENT'"
