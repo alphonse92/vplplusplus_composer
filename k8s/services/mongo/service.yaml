@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: mongo-{{ENVIRONMENT}}
+  name: mongo-service-{{ENVIRONMENT}}
   namespace: "{{ENVIRONMENT}}"
 spec:
   ports:
@@ -10,5 +10,5 @@ spec:
       protocol: TCP
       targetPort: 27017
   selector:
-    app: mongo-{{ENVIRONMENT}}
+    app: mongo
   type: LoadBalancer

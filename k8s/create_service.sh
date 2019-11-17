@@ -9,5 +9,5 @@ ENVIRONMENT=$2
 ./create_object.sh "$SERVICE" "$ENVIRONMENT" "pv"
 ./create_object.sh "$SERVICE" "$ENVIRONMENT" "pvc"
 ./create_object.sh "$SERVICE" "$ENVIRONMENT" "configMap"
-./create_object.sh "$SERVICE" "$ENVIRONMENT" "deployment"
 ./create_object.sh "$SERVICE" "$ENVIRONMENT" "service"
+./create_object.sh "$SERVICE" "$ENVIRONMENT" "deployment"

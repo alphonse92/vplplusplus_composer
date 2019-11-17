@@ -10,5 +10,5 @@ spec:
       protocol: TCP
       targetPort: 80
   selector:
-    app: moodle-{{ENVIRONMENT}}
+    app: moodle
   type: LoadBalancer

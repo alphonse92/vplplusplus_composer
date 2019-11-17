@@ -4,8 +4,9 @@ HOST: localhost
 PORT: 1337
 NODE_ENV: production
 SYSTEM_CORES: 1
-MONGO: mongodb://vpladmin:secret@mongo:27017/vpl-dev?authSource=admin
-MYSQL: mysql://root:root@mysql:3306/moodle?connectionAttributes=program_name:vplplusplus_api
+#If database is in the node, then use the service name to connect to the database
+MONGO: mongodb://vpladmin:secret@mongo-service-development:27017/vpl-dev?authSource=admin
+MYSQL: mysql://root:root@mysql-service-development:3306/moodle?connectionAttributes=program_name:vplplusplus_api
 MOODLE_HOST: localhost
 MOODLE_PORT: 8080
 MOODLE_DB_PREFIX: mdl_
