@@ -1,0 +1,25 @@
+apiVersion: apps/v1 # for versions before 1.9.0 use apps/v1beta2
+kind: Deployment
+metadata:
+  name: jail-deployment-{{ENVIRONMENT}}
+  namespace: "{{ENVIRONMENT}}"
+spec:
+  selector:
+    matchLabels:
+      app: jail
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: jail
+    spec:
+      containers:
+        - image: alphonse92/vpl-jail-execution-vpl-jlib-runner
+          name: jail
+          envFrom:
+            - configMapRef:
+                name: jail-config-{{ENVIRONMENT}}
+          ports:
+            - containerPort: 80
+              name: jail
