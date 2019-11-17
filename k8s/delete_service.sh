@@ -5,6 +5,8 @@ ENVIRONMENT=$2
 
 ./compile.sh "$SERVICE" "$ENVIRONMENT"
 
+echo ""
+
 # The start order is very important
 ./delete_object.sh "$SERVICE" "$ENVIRONMENT" "service"
 ./delete_object.sh "$SERVICE" "$ENVIRONMENT" "configMap"

@@ -5,10 +5,12 @@ OBJECT=$3
 
 BUILD_PATH="./build"
 FULL_PATH="$BUILD_PATH/$SERVICE/$ENVIRONMENT/$OBJECT.yaml"
+echo "checking $FULL_PATH ..."
 if [ -f $FULL_PATH ];
 then
-  echo "Deploying $OBJECT"
+  echo "Deleting object: $OBJECT"
   kubectl delete -f "$FULL_PATH"
 else
-  echo "File: $OBJECT does not exist. Skiping."
+  echo "Object: $OBJECT does not exist. Skiping."
 fi
+echo ""

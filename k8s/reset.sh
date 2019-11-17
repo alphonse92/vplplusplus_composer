@@ -1,18 +1,16 @@
 #!/bin/bash
-
+SERVICES_PATH="services"
 services=$(ls $SERVICES_PATH)
 environments=(development production)
 
 echo "1. Compile and delete objects" 
 
 for service in $services ;
-do
-  
-  SERVICE_ENV_PATH="$ENVIRONMENT_PATH/$service"
-  
+do 
   for env in ${environments[@]} ; 
   do
     ./delete_service.sh $service $env
+    echo ""
   done
 
 done
