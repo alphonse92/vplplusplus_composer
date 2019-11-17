@@ -1,0 +1,25 @@
+apiVersion: apps/v1 # for versions before 1.9.0 use apps/v1beta2
+kind: Deployment
+metadata:
+  name: client-deployment-{{ENVIRONMENT}}
+  namespace: "{{ENVIRONMENT}}"
+spec:
+  selector:
+    matchLabels:
+      app: client
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: client
+    spec:
+      containers:
+        - image: alphonse92/vpl_client:latest
+          name: client
+          envFrom:
+            - configMapRef:
+                name: client-config-{{ENVIRONMENT}}
+          ports:
+            - containerPort: 80
+              name: client

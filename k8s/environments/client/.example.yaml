@@ -1,0 +1,6 @@
+ENVIRONMENT: development
+NODE_ENV: development
+REACT_APP_ENV: development
+REACT_APP_PUBLIC_URL: /
+REACT_APP_API_BASEURL: http://api:1337/api/v1
+REACT_APP_CLIENT_ID: your-project-client-id.apps.googleusercontent.com

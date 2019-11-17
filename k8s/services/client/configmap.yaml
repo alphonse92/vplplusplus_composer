@@ -1,0 +1,11 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: client-config-{{ENVIRONMENT}}
+  namespace: "{{ENVIRONMENT}}"
+data:
+  NODE_ENV: {{NODE_ENV}}
+  REACT_APP_ENV: {{REACT_APP_ENV}}
+  REACT_APP_PUBLIC_URL: {{REACT_APP_PUBLIC_URL}}
+  REACT_APP_API_BASEURL: {{REACT_APP_API_BASEURL}}
+  REACT_APP_CLIENT_ID: {{REACT_APP_CLIENT_ID}}
