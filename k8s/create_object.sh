@@ -1,3 +1,4 @@
+#!/bin/bash
 
 SERVICE=$1
 ENVIRONMENT=$2
@@ -12,3 +13,4 @@ then
 else
   echo "File: $OBJECT does not exist. Skiping."
 fi
+echo ""
