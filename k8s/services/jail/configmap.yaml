@@ -6,6 +6,6 @@ metadata:
 data:
   ENV: {{ENV}}
   API_URL: {{API_URL}}
-  API_TOKEN: {API_TOKEN}
+  API_TOKEN: {{API_TOKEN}}
   JAIL_PORT: "{{JAIL_PORT}}"
   JAIL_SECURE_PORT: "{{JAIL_SECURE_PORT}}"
