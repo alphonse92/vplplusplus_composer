@@ -15,7 +15,7 @@ spec:
         app: api
     spec:
       containers:
-        - image: api:latest
+        - image: alphonse92/vpl_api:latest
           name: api
           envFrom:
             - configMapRef:
