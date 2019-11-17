@@ -2,7 +2,7 @@ kind: ConfigMap
 apiVersion: v1
 metadata:
   name: mysql-config-{{ENVIRONMENT}}
-  namespace: {{ENVIRONMENT}}
+  namespace: "{{ENVIRONMENT}}"
 data:
   MYSQL_DATABASE: {{MYSQL_DATABASE}}
   MYSQL_USER: {{MYSQL_USER}}

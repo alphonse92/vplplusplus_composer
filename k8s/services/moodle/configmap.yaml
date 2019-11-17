@@ -2,7 +2,7 @@ kind: ConfigMap
 apiVersion: v1
 metadata:
   name: moodle-config-{{ENVIRONMENT}}
-  namespace: {{ENVIRONMENT}}
+  namespace: "{{ENVIRONMENT}}"
 data:
   ENVIRONMENT: {{ENVIRONMENT}}
   DB_CONNECTOR: {{DB_CONNECTOR}}

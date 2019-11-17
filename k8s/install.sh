@@ -23,7 +23,12 @@ do
    
     DEPLOYMENT_PATH="$BUILD_PATH/$service/$env"
     ./compile.sh "$service"  "$env"
-    kubectl create -f "$DEPLOYMENT_PATH"
+    # The start order is very important
+    ./create.sh "$service" "$env" "pv"
+    ./create.sh "$service" "$env" "pvc"
+    ./create.sh "$service" "$env" "configMap"
+    ./create.sh "$service" "$env" "deployment"
+    ./create.sh "$service" "$env" "service"
   
   done
 

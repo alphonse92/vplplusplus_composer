@@ -4,7 +4,7 @@ metadata:
   name: moodle-pv-{{ENVIRONMENT}}
   labels:
     type: local
-  namespace: {{ENVIRONMENT}}
+  namespace: "{{ENVIRONMENT}}"
 spec:
   storageClassName: manual
   capacity:
