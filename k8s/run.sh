@@ -10,7 +10,7 @@ echo "1. Stoping ..."
 for service in $services ;
 do  
 
-  if [ -z "$ENV_PARAM"];
+  if [ -z "$ENV_PARAM" ];
   then
     for env in ${environments[@]} ; 
     do
