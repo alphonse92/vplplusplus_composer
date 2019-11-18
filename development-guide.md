@@ -6,7 +6,11 @@ This guide provides util information that could be helpfull while you develop fo
 
 ### Import development database
 
-You can import a development database using mysql. Find in: `docs/files/mysql-database`
+**Warning** This database contains the database structure for a single moodle with only vpl plugin.
+
+You can import a development database using mysql. Find in: `docs/files/mysql-database`.
+
+
 
 ## About Docker compose containers and volumes
 

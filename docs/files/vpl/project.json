@@ -1,0 +1,119 @@
+{
+  "name": "Calculadora",
+  "description": "En este ejercicio deberás crear una clase llamada calculadora, en ella debes implementar las 4 operaciones aritméticas básicas: ",
+  "activity": 29,
+  "tests": [
+    {
+      "name": "Calculadora",
+      "tags": [
+        "java",
+        "types"
+      ],
+      "description": "En este ejercicio deberás crear una clase llamada calculadora, en ella debes implementar las 4 operaciones aritméticas básicas: ",
+      "objective": "Saber si el estudiante sabe hacer operaciones basicas en java",
+      "code": " private Calculadora test;\n\n  @Before\n  public void setUp(){\n    test = new Calculadora();\n  }\n\t",
+      "test_cases": [
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5dcdd91cbf2717001ce0c942",
+              "owner": "5dcc9026ecaa98004f2f65d4",
+              "name": "t005",
+              "description": "Manejo de operadores aritméticos",
+              "updatedAt": "2019-11-14T22:45:48.813Z",
+              "createdAt": "2019-11-14T22:45:48.813Z",
+              "cursor": 10,
+              "__v": 0,
+              "id": "5dcdd91cbf2717001ce0c942"
+            }
+          ],
+          "name": "sumar",
+          "objective": "sumar dos numeros",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": " assertEquals(3, test.sumar(1, 2));",
+          "grade": 0,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5dcdd91cbf2717001ce0c942",
+              "owner": "5dcc9026ecaa98004f2f65d4",
+              "name": "t005",
+              "description": "Manejo de operadores aritméticos",
+              "updatedAt": "2019-11-14T22:45:48.813Z",
+              "createdAt": "2019-11-14T22:45:48.813Z",
+              "cursor": 10,
+              "__v": 0,
+              "id": "5dcdd91cbf2717001ce0c942"
+            }
+          ],
+          "name": "multiplicar",
+          "objective": "saber si el estudiante sabe multiplicar",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "assertEquals(2, test.multiplicar(1, 2));",
+          "grade": 0,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5dcdd91cbf2717001ce0c942",
+              "owner": "5dcc9026ecaa98004f2f65d4",
+              "name": "t005",
+              "description": "Manejo de operadores aritméticos",
+              "updatedAt": "2019-11-14T22:45:48.813Z",
+              "createdAt": "2019-11-14T22:45:48.813Z",
+              "cursor": 10,
+              "__v": 0,
+              "id": "5dcdd91cbf2717001ce0c942"
+            }
+          ],
+          "name": "dividir",
+          "objective": "saber si el estudiante sabe dividir",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "double x = test.dividir(2, 2);\nassertEquals(1,x ,0);",
+          "grade": 0,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5dcdd91cbf2717001ce0c942",
+              "owner": "5dcc9026ecaa98004f2f65d4",
+              "name": "t005",
+              "description": "Manejo de operadores aritméticos",
+              "updatedAt": "2019-11-14T22:45:48.813Z",
+              "createdAt": "2019-11-14T22:45:48.813Z",
+              "cursor": 10,
+              "__v": 0,
+              "id": "5dcdd91cbf2717001ce0c942"
+            }
+          ],
+          "name": "restar",
+          "objective": "evaluar si el estudiante sabe restar",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": " assertEquals(-1, test.restar(1, 2));",
+          "grade": 0,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        }
+      ]
+    }
+  ]
+}
