@@ -2,6 +2,12 @@
 
 This guide provides util information that could be helpfull while you develop for vpl ++
 
+## Setup development environment
+
+### Import development database
+
+You can import a development database using mysql. Find in: `docs/files/mysql-database`
+
 ## About Docker compose containers and volumes
 
 There exist different ways to persist information. For example: volumes. You can set a volume to persist
