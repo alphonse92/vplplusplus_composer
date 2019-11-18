@@ -10,8 +10,6 @@ This guide provides util information that could be helpfull while you develop fo
 
 You can import a development database using mysql. Find in: `docs/files/mysql-database`.
 
-
-
 ## About Docker compose containers and volumes
 
 There exist different ways to persist information. For example: volumes. You can set a volume to persist
