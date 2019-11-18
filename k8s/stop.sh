@@ -1,21 +1,26 @@
 #!/bin/bash
 SERVICES_PATH="services"
 services=$(ls $SERVICES_PATH)
+ENV_PARAM=$1
 environments=(development production)
 
-echo "1. Compile and delete objects" 
+echo "1. Stoping ..." 
+
 
 for service in $services ;
-do 
-  for env in ${environments[@]} ; 
-  do
+do  
+
+  if [ -z "$ENV_PARAM"];
+  then
+    for env in ${environments[@]} ; 
+    do
     ./delete_service.sh $service $env
     echo ""
-  done
+    done
+  else
+    ./delete_service.sh $service $ENV_PARAM
+  fi
 
+  
 done
 
-
-echo "2. Try to delete namespaces"
-
-kubectl delete -f namespaces

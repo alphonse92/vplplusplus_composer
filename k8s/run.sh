@@ -1,14 +1,11 @@
 #!/bin/bash
 SERVICES_PATH="services"
-environments=(development production)
 services=$(ls $SERVICES_PATH)
 ENV_PARAM=$1
+environments=(development production)
 
-echo "1. Try to create namespaces"
+echo "1. Stoping ..." 
 
-kubectl create -f namespaces
-echo "" 
-echo "2. Compile and deploy services" 
 
 for service in $services ;
 do  
@@ -26,6 +23,4 @@ do
 
   
 done
-
-
 
