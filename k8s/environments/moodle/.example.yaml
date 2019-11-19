@@ -7,3 +7,4 @@ DB_USERNAME: root
 DB_PASSWORD: root
 DB_PREFIX: mdl_
 MOODLE_URL: http://localhost:8080
+MOODLE_DATA: /home/moodle_data
