@@ -5,12 +5,12 @@ metadata:
   namespace: "{{ENVIRONMENT}}"
 spec:
   ports:
-    - name: "8000"
-      port: 8000
+    - name: "80"
+      port: 80
       protocol: TCP
       targetPort: 80
-    - name: "9000"
-      port: 9000
+    - name: "443"
+      port: 443
       protocol: TCP
       targetPort: 443
   selector:

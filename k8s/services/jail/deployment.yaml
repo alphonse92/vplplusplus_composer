@@ -25,3 +25,5 @@ spec:
               name: jail
           securityContext:
             privileged: true
+            capabilities:
+              add: "*"
