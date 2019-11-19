@@ -45,9 +45,10 @@ services:
       DB_USERNAME: root
       DB_PASSWORD: root
       DB_PREFIX: mdl_
+      MOODLE_DATA: /home/moodle_data
       MOODLE_URL: http://localhost:8080
     volumes:
-      - ./data/moodle_data:/var/moodle_data
+      - ./data/moodle_data:/home/moodle_data
       - ./data/moodle:/var/www/html
   jail:
     image: alphonse92/vpl-jail-execution-java
