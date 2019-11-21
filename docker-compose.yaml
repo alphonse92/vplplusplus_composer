@@ -108,9 +108,6 @@ services:
       - vpl
     ports:
       - "1337:1337"
-    depends_on:
-      - mongo
-      - mysql
     environment:
       NODE_PATH: .
       HOST: localhost
@@ -118,7 +115,7 @@ services:
       NODE_ENV: production
       SYSTEM_CORES: 1
       MONGO: mongodb://vpladmin:secret@mongo:27017/vpl-dev?authSource=admin
-      MYSQL: mysql://root:root@mysql:3306/moodle?connectionAttributes=program_name:vplplusplus_api
+      MYSQL: mysql://root:rootB@mysql:3306/moodle?connectionAttributes=program_name:vplplusplus_api
       MOODLE_HOST: localhost
       MOODLE_PORT: 8080
       MOODLE_DB_PREFIX: mdl_
@@ -128,6 +125,9 @@ services:
       TOKEN_SECRET: secret
       TOKEN_EXP_MINUTES: NEVER
       CACHE_FOLDER: /tmp/vplplusplus
+    command: npm run startdev
+    volumes:
+      - ./vplplusplus_api:/usr/src
 networks:
   vpl:
     driver: bridge
