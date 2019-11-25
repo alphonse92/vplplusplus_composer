@@ -16,3 +16,6 @@
 [submodule "vplplusplus_jlib"]
 	path = vplplusplus_jlib
 	url = git@github.com:alphonse92/vplplusplus_jlib.git
+[submodule "vplplusplus_gateway"]
+	path = vplplusplus_gateway
+	url = git@github.com:alphonse92/vplplusplus_gateway.git
