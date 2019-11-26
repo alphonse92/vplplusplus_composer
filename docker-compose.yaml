@@ -4,16 +4,23 @@ services:
     image: alphonse92/vpl_gateway
     build: vplplusplus_gateway
     environment:
+      
       SERVER_PORT: 8080
       SERVER_NAME: localhost
-      CLIENT_URL: http://client
-      MOODLE_URL: http://moodle
-      API_URL: http://api:1337
 
-      API_PATH: /apis
+      JAIL_URL: http://jailrunner
+      JAIL_PATH: /jail
+
+      CLIENT_URL: http://client
       CLIENT_PATH: /client
-      MOODLE_PATH: /
       CLIENT_STATIC_PATH: /vplclient_static
+
+      API_URL: http://api:1337
+      API_PATH: /apis
+
+      MOODLE_URL: http://moodle
+      MOODLE_PATH: /
+      
     ports:
       - "80:8080"
     networks:
@@ -75,6 +82,7 @@ services:
     environment:
       JAIL_PORT: 80
       JAIL_SECURE_PORT: 443
+      URLPATH: /jail
     networks:
       - vpl
     # ports:
