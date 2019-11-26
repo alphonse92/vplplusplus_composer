@@ -1,12 +1,12 @@
 ENVIRONMENT: development
 SERVER_PORT: 8080
 SERVER_NAME: localhost
-JAIL_URL: http://jailrunner
+JAIL_URL: http://jail-service-development
 JAIL_PATH: /jail
-CLIENT_URL: http://client
+CLIENT_URL: http://client-service-development
 CLIENT_PATH: /client
 CLIENT_STATIC_PATH: /vplclient_static
-API_URL: http://api:1337
+API_URL: http://api-service-development
 API_PATH: /apis
-MOODLE_URL: http://moodle
+MOODLE_URL: http://moodle-service-development
 MOODLE_PATH: /
