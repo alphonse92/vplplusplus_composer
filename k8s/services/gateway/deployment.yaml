@@ -19,7 +19,7 @@ spec:
           name: gateway
           volumeMounts:
           - name: secrets
-            mountPath: /etc/secrets/gateway/{{ENVIRONMENT}}
+            mountPath: /etc/secrets/gateway/{{ENVIRONMENT}}/
             readOnly: true
           envFrom:
             - configMapRef:
@@ -30,5 +30,5 @@ spec:
       volumes:
       - name: secrets
         secret:
-          secretName: certificates
+          secretName: gateway-{{ENVIRONMENT}}-certificates
 

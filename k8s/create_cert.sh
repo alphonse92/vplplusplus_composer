@@ -1,11 +1,21 @@
 #!/bin/bash
 
-rm -rf certs
-mkdir -p certs
+ENV=$1
 
-openssl genrsa -out ./certs/cert.key 2048
-openssl req -new -key ./certs/cert.key -out ./certs/cert.csr
-openssl x509 -req -days 365 -in ./certs/cert.csr -signkey ./certs/cert.key -out ./certs/cert.crt
+if [ -z "$ENV" ];then
+  echo "Please set the environment name"
+  exit 1
+fi
 
-kubectl delete secret certificates
-kubectl create secret generic certificates --from-file ./certs/cert.crt --from-file ./certs/cert.key
+PATH_TO_CERT_FOLDER="./certs/$ENV"
+rm -rf "$PATH_TO_CERT_FOLDER"
+mkdir -p "$PATH_TO_CERT_FOLDER"
+
+
+
+openssl genrsa -out "$PATH_TO_CERT_FOLDER/cert.key" 2048
+openssl req -new -key "$PATH_TO_CERT_FOLDER/cert.key" -out "$PATH_TO_CERT_FOLDER/cert.csr"
+openssl x509 -req -days 365 -in  "$PATH_TO_CERT_FOLDER/cert.csr" -signkey  "$PATH_TO_CERT_FOLDER/cert.key" -out  "$PATH_TO_CERT_FOLDER/cert.crt"
+
+kubectl delete secret "gateway-$ENV-certificates" --namespace="$ENV"
+kubectl create secret generic "gateway-$ENV-certificates"  --namespace="$ENV" --from-file "$PATH_TO_CERT_FOLDER/cert.crt" --from-file  "$PATH_TO_CERT_FOLDER/cert.key"
