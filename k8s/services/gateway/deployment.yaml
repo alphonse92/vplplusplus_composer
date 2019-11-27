@@ -17,9 +17,18 @@ spec:
       containers:
         - image: alphonse92/vpl_gateway:latest
           name: gateway
+          volumeMounts:
+          - name: secrets
+            mountPath: "/etc/secrets"
+            readOnly: true
           envFrom:
             - configMapRef:
                 name: gateway-config-{{ENVIRONMENT}}
           ports:
             - containerPort: 80
               name: gateway
+      volumes:
+      - name: secrets
+        secret:
+          secretName: certificates
+
