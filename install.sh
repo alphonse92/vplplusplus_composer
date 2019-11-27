@@ -2,6 +2,7 @@ mkdir -p ./data/mysql/
 mkdir -p ./data/moodle_data/
 mkdir -p ./data/moodle/
 mkdir -p ./data/mongo
+mdirk -p ./certs/
 
 git submodule init
 git submodule add git@github.com:alphonse92/docker-moodle.git
