@@ -8,3 +8,5 @@ DB_PASSWORD: root
 DB_PREFIX: mdl_
 MOODLE_URL: http://localhost:8080
 MOODLE_DATA: /home/moodle_data
+REVERSE_PROXY: true
+SSL_PROXY: true
