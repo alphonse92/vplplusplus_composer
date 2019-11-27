@@ -5,6 +5,8 @@ metadata:
   namespace: "{{ENVIRONMENT}}"
 data:
   SERVER_PORT: "{{SERVER_PORT}}"
+  CERT: "{{CERT}}"
+  CERT_KEY: "{{CERT_KEY}}"
   SERVER_NAME: {{SERVER_NAME}}
   JAIL_URL: {{JAIL_URL}}
   JAIL_PATH: {{JAIL_PATH}}

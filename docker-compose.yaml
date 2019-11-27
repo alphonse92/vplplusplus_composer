@@ -5,7 +5,9 @@ services:
     build: vplplusplus_gateway
     environment:
       
-      SERVER_PORT: 8080
+      SERVER_PORT: 80
+      CERT: alejandro
+      CERT_KEY: alejandro
       SERVER_NAME: localhost
 
       JAIL_URL: http://jailrunner

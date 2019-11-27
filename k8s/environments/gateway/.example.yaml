@@ -1,5 +1,7 @@
 ENVIRONMENT: development
-SERVER_PORT: 8080
+SERVER_PORT: 443
+CERT: /etc/secrets/gateway/development/cert.cert
+CERT_KEY: /etc/secrets/gateway/development/cert.key
 SERVER_NAME: localhost
 JAIL_URL: http://jail-service-development
 JAIL_PATH: /jail
