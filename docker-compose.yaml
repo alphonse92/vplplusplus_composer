@@ -118,11 +118,11 @@ services:
     environment:
       NODE_ENV: production
       REACT_APP_ENV: production
-      REACT_APP_PUBLIC_URL: /client/
-      REACT_APP_API_BASEURL: http://localhost/apis/v1
+      REACT_APP_PUBLIC_URL: /
+      REACT_APP_API_BASEURL: http://localhost:1337/api/v1
       REACT_APP_CLIENT_ID: 126760867544-k1es3tqiho46b0g831cmsvgokvl0npqu.apps.googleusercontent.com
-    # ports:
-    #   - "3000:80"
+    ports:
+      - "3000:80"
   api:
     image: alphonse92/vpl_api
     build: vplplusplus_api
@@ -131,8 +131,8 @@ services:
       - ./vplplusplus_api:/usr/src/app
     networks:
       - vpl
-    # ports:
-    #   - "1337:1337"
+    ports:
+      - "1337:1337"
     environment:
       NODE_PATH: .
       HOST: localhost
