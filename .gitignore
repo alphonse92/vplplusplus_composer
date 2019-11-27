@@ -1,4 +1,4 @@
 data/
 .DS_Store
 k8s/build
-certs
+k8s/certs
