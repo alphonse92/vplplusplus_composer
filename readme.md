@@ -68,43 +68,111 @@ Run `kubectl create -f namespaces` to create the namespaces in your cluster
 
 #### Set your configuration files of a service
 
-`environments` folder has the configuration of each service of each namespace. For example, the configuration files of mysql are in `environments/mysql` folder. Each file of each service folder should match with a namespace. For example, for the environment `staging` should have a configuration file called `environments/mysql/staging.yaml`
+The `environments` folder has the configuration of each service of each namespace. For example, the configuration files of mysql are in `environments/mysql` folder. Each file of each service folder should match with a namespace. For example, for the environment `staging` should have a configuration file called `environments/mysql/staging.yaml`
 
 You can create the configuration files using the `.example` file.
+
+**WARNING You DONT need to change the variables that resolves services each others.**
+
+For example, you dont need to change the variable `DB_HOST` because kubernetes resolve the mysql database internally to the service `mysql-service-development`. Of course, you **CAN** change those variables in several situations, for example if you have a service outside the cluster.
 
 1. Copy the file `.example` and change it name with the namespace related to this configuration (included the namespaces that you create by you own). For example, if you have a namespace called `staging`, you need copy the `.example` file and change it name to `staging`
 2. Open and change the values of each namespace configuration file for the service.
 
 #### Compile the configuration
 
+*You should compile the configuration files once, or every you change your environment variables*
+
 Run `./compile.sh $SERVICE_NAME $ENVIRONMENT` , which $SERVICE_NAME should be the name of a microservice name (mysql, mongo, client, api, jail, gateway). That command will take the service template in `services` folder and replace the variables using your environment files.
 
 After run this command should create a `build` folder in `k8s` folder.
 
-#### Upload a service
+
+#### Deploy a single kubernetes object
+
+Kubernetes object could be a namespace, deployment , persistent volume , persistent volume claim o service. The kubernetes service object is different that `service` that we are talking about. When i said `service` is regarding to a microservice, a `service object` is a kubernetes service object. [More info](https://kubernetes.io/docs/tutorials/services/)
+
+You can see the current objects for a service in `services` folder. For example, the objects from mysql are in `services/mysql`. And there are 5 objects: 
+
+1. configmap: configmap file
+2. eployment: deployment file
+3. pv: persistent volume file
+4. pvc: persistent volume file
+5. service: service file
+
+The name of each files is meaninfull, it means the file name does not matter for kubernetes, but for we.
+
+If you want deploy a single kubernetes object follow the next steps:
+
+1. Compile the configuration
+2. Run `./create_object.sh  $SERVICE $NAMESPACE $OBJECT` where $SERVICE is the service name (remember, the microservice name), $NAMESPACE the namespace, and $OBJECT is the name of the file of the kubernetes object that are you trying to deploy
+
+For example:
+
+If you want to deploy the `persistent volume` of `mysql` in the namespace `development` you need to run:
+
+`./create_object.sh  mysql development pv`
+
+to delete a object run:
+
+`./delete_object.sh  $SERVICE_NAME $NAMESPACE $OBJECT`
+
+#### Reload a service
+
+If you want to change environments variables of a service and deploy the service inmediately, run:
+
+`./reload.sh $SERVICE $NAMESPACE` it just delete the configmap and deployment objects, after it upload the new configmap and deployment objects.
+
+#### Deploy a service
 
 1. Compile the configuration of the service (see the title above).
-2. Run `./create_service.sh $YOUR_SERVIEC $YOUR_NAMESPACE`. For example `./create_service.sh mysql development`
+2. Run `./create_service.sh $YOUR_SERVICE $YOUR_NAMESPACE`. For example `./create_service.sh mysql development`
 
 Some services take several minutes to be ok, so you need to wait the ok status of your cluster to continue deploying services in your cluster
 
-### Upload the databases
+To delete a service run:
 
-At first we need to create the database because the other services depends of it.
+`./delete_service.sh $SERVICE $NAMESPACE`
 
-#### Upload mysql database
+### 1. Deploy the databases
 
-1. Compile the configuration file of mysql with the namespace that you want to deploy for
-2. Upload the service has the title above.
-3. run `./create_service.sh mysql $NAMESPACE`
-4. Check your cluster status
+At first we need to create the database because the other services depends of it. If you want, you could connect to the databases from database managers or commandline with mongo or mysql tools.
 
-#### Upload Mongo database
+#### Deploy mysql database
 
 1. Compile the configuration file of mysql with the namespace that you want to deploy for
-2. Upload the service has the title above.
-3. run `./create_service.sh mysql $NAMESPACE`
-4. Check your cluster status
+2. Upload the service as `Upload a service` title said, running for example `./create_service.sh mysql $NAMESPACE`
+3. Check your cluster status
+
+#### Deploy Mongo database
+
+1. Compile the configuration file of mongo with the namespace that you want to deploy for
+2. Upload the service as `Upload a service` title said, running for example `./create_service.sh mongo $NAMESPACE`
+3. Check your cluster status
+
+### 2. Deploy Moodle
+
+1. Compile the configuration file of mongo with the namespace that you want to deploy for
+2. Upload the service as `Upload a service` title said, running for example `./create_service.sh moodle $NAMESPACE`
+3. Check your cluster status
+4. Right now the service moodle is miss-configured, because we need to update the moodle variable called `MOODLE_URL`. If you want to know if moodle is running well, curl to the endpoint service.
+
+### 3. Deploy the jail
+
+As you noticed, the `ENV` value of jail configuration variable is setted to production. That changes the behaivor of the jail and it not afects the cluster.
+
+1. Compile the configuration file of mongo with the namespace that you want to deploy for
+2. Upload the service as `Upload a service` title said, running for example `./create_service.sh jail $NAMESPACE`
+3. Check your cluster status
+4. Right now the service jail is miss-configured, because we need to update several environment variables regarding to another services. If you want to know if jail is running well, curl to the endpoint service.
+
+### 4. Deploy the API
+
+Dont forget  set the database credentials in the API env config vars.
+
+1. Compile the configuration file of mongo with the namespace that you want to deploy for
+2. Upload the service as `Upload a service` title said, running for example `./create_service.sh moodle $NAMESPACE`
+3. Check your cluster status
 
 
 # Extending VPL to VPL++
