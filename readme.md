@@ -45,10 +45,61 @@ For default, all microservices uses the vpl network. You could create it using d
 To test all is ok, just open the browser and open `http://jail:9999/OK` (The port is the same that `docker-compose.deployment.example.yaml`). It should return an "OK"
 
   
-  
 ## Running
 
 `docker-compose -f docker-compose.deployment.example.yaml up`
+
+
+## Deploying in cluster
+
+At first, go to k8s folder. There is 6 services: mysql, mongo, client, api, jail and gateway. All of those are the microservices of this project. The subfolders of `environments` and `services` should be match each other.
+
+**You must not modify any file or folder in `services` folder**
+
+### Namespaces
+
+By default exists only two namespaces: `developent` and `production`. From now, i will explaint the process to deploy `development`, however is the same to production. 
+
+Of course, you can create another namespaces, just add a new regular namespace kubernetes configuration with your namespace to the folder `namespaces`
+
+Run `kubectl create -f namespaces` to create the namespaces in your cluster
+
+### Set your configuration files of a service
+
+`environments` folder has the configuration of each service of each namespace. For example, the configuration files of mysql are in `environments/mysql` folder. Each file of each service folder should match with a namespace. For example, for the environment `staging` should have a configuration file called `environments/mysql/staging.yaml`
+
+You can create the configuration files using the `.example` file.
+
+1. Copy the file `.example` and change it name with the namespace related to this configuration (included the namespaces that you create by you own). For example, if you have a namespace called `staging`, you need copy the `.example` file and change it name to `staging`
+2. Open and change the values of each namespace configuration file for the service.
+
+### Compile the configuration
+
+Run `./compile.sh $SERVICE_NAME $ENVIRONMENT` , which $SERVICE_NAME should be the name of a microservice name (mysql, mongo, client, api, jail, gateway). That command will take the service template in `services` folder and replace the variables using your environment files.
+
+After run this command should create a `build` folder in `k8s` folder.
+
+
+### Upload a service
+
+1. Compile the configuration of the service (see the title above).
+2. Run `./create_service.sh $YOUR_SERVIEC $YOUR_NAMESPACE`. For example `./create_service.sh mysql development`
+
+Some services take several minutes to be ok, so you need to wait the ok status of your cluster to continue deploying services in your cluster
+
+### Upload mysql database
+
+1. Compile the configuration file of mysql with the namespace that you want to deploy for
+2. Upload the service has the title above.
+3. run `./create_service.sh mysql $NAMESPACE`
+4. Check your cluster status
+
+### Upload Mongo database
+
+1. Compile the configuration file of mysql with the namespace that you want to deploy for
+2. Upload the service has the title above.
+3. run `./create_service.sh mysql $NAMESPACE`
+4. Check your cluster status
 
 
 # Extending VPL to VPL++
