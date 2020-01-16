@@ -171,7 +171,7 @@ As you noticed, the `ENV` value of jail configuration variable is setted to prod
 Dont forget  set the database credentials in the API env config vars.
 
 1. Compile the configuration file of mongo with the namespace that you want to deploy for
-2. Upload the service as `Upload a service` title said, running for example `./create_service.sh moodle $NAMESPACE`
+2. Upload the service as `Upload a service` title said, running for example `./create_service.sh api $NAMESPACE`
 3. Check your cluster status
 
 
