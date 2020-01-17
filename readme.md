@@ -53,11 +53,19 @@ Run `docker-compose up`
 
 Run `docker-compose up`
 
-By default, all microservices uses the vpl network. You could create it using docker. When you use it, you need to resolve in your phisical machine the Jail hostname. 
+There a issue regarding to how moodle and vpl works. When the student or the teacher tries to execute a VPL activity it happen in two phases:
 
-1. Open the file /etc/hosts/ 
-2. Add to the end of document the next line `127.0.0.1 jail`
-3. Flush the dns cache  `sudo dscacheutil -flushcache`
+1. Send the activity to moodle. Return a websocket with the url to the jail to track the process of the execution
+2. The browser tries to connect to the jail.
+
+However, the browser cant reach the jail URL because it returns a docker internal IP.
+
+![issue](docs/images/diagrams/components/localhost jail issue.png?raw=true)
+
+
+3. Open the file /etc/hosts/ 
+4. Add to the end of document the next line `127.0.0.1 jail`
+5. Flush the dns cache  `sudo dscacheutil -flushcache`
 
 To test all is ok, just open the browser and open `http://jail:$JAIL_PORT/OK`  
 
