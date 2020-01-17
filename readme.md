@@ -63,7 +63,7 @@ To test all is ok, just open the browser and open `http://jail:$JAIL_PORT/OK`
 
 ### Kubernetes (K8S)
 
-Please visit the guide of (kubernetes deployment)[k8s.md]
+Please visit the guide of [kubernetes deployment](k8s.md)
 
 # Extending VPL to VPL++
 
