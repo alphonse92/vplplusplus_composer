@@ -2,6 +2,14 @@
 
 This is the root project of all Vpl ++ microservices
 
+## Requeriments
+
+1. Docker
+2. Docker Compose
+3. Kubernetes (if you want to deploy to kubernetes)
+4. Python 3
+5. Jinja (j2cli using pip)
+
 ## Install 
 
 `git clone git@github.com:alphonse92/vplplusplus_composer.git`
@@ -13,7 +21,7 @@ This is the root project of all Vpl ++ microservices
 1. Open the  docker-compose.deployment.example.yaml 
 2. change the environment variables as you need
 
-To know how to configure the other microservices please visit the next webpages:
+To know how to configure the other microservices please visit each microservice repository:
 
 ### Repositories
 
@@ -35,20 +43,27 @@ To know how to configure the other microservices please visit the next webpages:
 1. [Mongo](https://hub.docker.com/_/mongo)
 2. [Mysql](https://hub.docker.com/_/mysql)
 
-### Networking
+## Deploying
 
-For default, all microservices uses the vpl network. You could create it using docker. When you use it, you need to resolve in your phisical machine the Jail hostname. 
+### Docker compose
+
+Run `docker-compose up`
+
+### Localhost
+
+Run `docker-compose up`
+
+By default, all microservices uses the vpl network. You could create it using docker. When you use it, you need to resolve in your phisical machine the Jail hostname. 
 
 1. Open the file /etc/hosts/ 
 2. Add to the end of document the next line `127.0.0.1 jail`
 3. Flush the dns cache  `sudo dscacheutil -flushcache`
 
-To test all is ok, just open the browser and open `http://jail:9999/OK` (The port is the same that `docker-compose.deployment.example.yaml`). It should return an "OK"
+To test all is ok, just open the browser and open `http://jail:$JAIL_PORT/OK`  
 
-  
-## Running
+### Kubernetes (K8S)
 
-`docker-compose -f docker-compose.deployment.example.yaml up`
+Please visit the guide of (kubernetes deployment)[k8s.md]
 
 # Extending VPL to VPL++
 

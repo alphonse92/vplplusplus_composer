@@ -1,10 +1,17 @@
 # Deploying in Kubernetes
 
-This is a little guide to delploy the cluster easily, if you are a expermiented developer, you can deploy it by your hand. This repo contains some scripts to create, delete, or reload services with a few parameters.
+## Advisory 
+
+1. This guide does not provide information about how to configure the microservices.
+2. This guide does not explain any command of [Kuberntes (k8s)](https://kubernetes.io/)
+
+## Description
+
+This is a guide to delploy the cluster easily, if you are a expermiented developer, you can deploy it by your hand. This repo contains some scripts to create, delete, or reload services with a few parameters.
 
 At first, go to k8s folder. There is 6 services: mysql, mongo, client, api, jail and gateway. All of those are the microservices of this project. The subfolders of `environments` and `services` should be match each other.
 
-Before start, you need to know how to configure each microservice. If currently you dont know, visit the microservices pages documentation.
+Before start, you need to know how to configure each microservice. If you dont know how do it, visit the microservices pages documentation.
 
 Available microservices 
 
@@ -18,19 +25,19 @@ Available microservices
 
 ## How to
 
-The next titles, are usefull to manage some tasks of the cluster.
+This chapter describe how to do some tasks in the cluster with the vpl k8s scripts
 
 ### Compile the configuration
 
 *You should compile the configuration files once, or every you change your environment variables*
 
-Run `./compile.sh $SERVICE_NAME $NAMESPACE` , which $SERVICE_NAME should be the name of a microservice name (mysql, mongo, client, api, jail, gateway). That command will take the service template in `services` folder and replace the variables using your configuration. files.
+Run `./compile.sh $SERVICE_NAME $NAMESPACE` , which $SERVICE_NAME should be the name of a microservice name (mysql, mongo, client, api, jail, gateway). That command will take the service template in `services` folder and replace the variables using your configuration. files at `./environment/` files.
 
-After run this command should create a `build` folder in `k8s` folder.
+After run, this command should create a `build` folder in `k8s` folder.
 
 ### Create certificates for the gateway
 
-Runing the command `./create_cert.sh` will create the ssl certificates for you and deploy it as a secret.
+Runing the command `./create_cert.sh` will create the ssl certificates for you and deploy it as a [kubernetes secret](https://kubernetes.io/docs/concepts/configuration/secret/).
 If you have your own certificates, you should create the secret by your own and mount following the next format.
 
 1. All the secrets should be mounted at: `/etc/secrets/gateway/$NAMESPACE/`
@@ -169,7 +176,7 @@ This steps changed a little. Because we need deploy the `service object` at firs
 
 ### 7. Update the services variables that uses urls
 
-For now, we deployed the cluster successfully. However is not at all, some services needs resolve external urls. For example: the client will need to resolve the API url. Also moodle need resolve it own url.
+For now, we deployed the cluster successfully. However is not at all, some services needs resolve external urls or microservices urls. For example: the client will need to resolve the API url. Also moodle need resolve it own url. Also, the Jail need to resolve the API internally
 
 To do it we need to modify the configuration files with the appropriate configuration.
 
@@ -212,5 +219,3 @@ The service url are formed by: `$PROTOCOL://$IP_OR_DOMAIN_NAME:$PORT/$SERVICE_PA
 1. Open your configuration file of the client (remember, the **namespace** matters)
 2. In this case you need to set the appropiate value of `API_URL` variable. Also, you need set the value of `API_TOKEN`. You can update one of this at different times.
 3. Reload the service. Run: `./reload.sh jail $NAMESPACE`
-   
-
