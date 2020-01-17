@@ -60,7 +60,7 @@ There a issue regarding to how moodle and vpl works. When the student or the tea
 
 However, the browser cant reach the jail URL because it returns a docker internal IP.
 
-![issue](/docs/images/diagrams/components/localhost jail issue.png?raw=true)
+![issue](/docs/images/diagrams/components/localhostjailissue.png?raw=true "issue")
 
 
 3. Open the file /etc/hosts/ 
