@@ -18,6 +18,8 @@ Available microservices
 
 ## How to
 
+The next titles, are usefull to manage some tasks of the cluster.
+
 ### Compile the configuration
 
 *You should compile the configuration files once, or every you change your environment variables*
@@ -146,6 +148,8 @@ As you noticed, the `ENV` value of jail configuration variable is setted to prod
 
 ### 6. Deploy the Vpl ++ Web Client
 
+**Please set your google application key in the client configuration file to able to login with google accounts**
+
 1. Compile the configuration file of client with the namespace that you want to deploy for
 2. Deploy the service as `Upload a service` title said, running for example `./create_service.sh client $NAMESPACE`
 3. Check your cluster status
@@ -199,5 +203,14 @@ The service url are formed by: `$PROTOCOL://$IP_OR_DOMAIN_NAME:$PORT/$SERVICE_PA
 1. Open your configuration file of the client (remember, the **namespace** matters)
 2. Set the value of `REACT_APP_API_BASEURL`  with the gateway url for the api
 3. Reload the service. Run: `./reload.sh client $NAMESPACE`
-4. Open the browser and try lookup for the service path. You should be able to acces to the moodle webpage.
+4. Open the browser and try to login. If you dont already have configured moodle, the login will fail but you can see the request to the api using the gateway in the browser inspector.
+
+#### Jail
+
+**You need to create an api token for the jail, in order to allow to request to the appropiate endpoints**
+
+1. Open your configuration file of the client (remember, the **namespace** matters)
+2. In this case you need to set the appropiate value of `API_URL` variable. Also, you need set the value of `API_TOKEN`. You can update one of this at different times.
+3. Reload the service. Run: `./reload.sh jail $NAMESPACE`
+   
 

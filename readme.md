@@ -179,6 +179,4 @@ The jail does not construct any script, just receive the scripts from the vpl pl
 3. While is the scripts are beign executed, it sends the output to the vpll plugin. 
 4. When the execution is finished, the socket is closed
 
-
 ## Extending the workflow
-
