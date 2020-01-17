@@ -62,10 +62,11 @@ However, the browser cant reach the jail URL because it returns a docker interna
 
 ![issue](/docs/images/diagrams/components/localhostjailissue.png?raw=true "issue")
 
+To resolve this issue, you need to ensure your PC can reach the jail.
 
-3. Open the file /etc/hosts/ 
-4. Add to the end of document the next line `127.0.0.1 jail`
-5. Flush the dns cache  `sudo dscacheutil -flushcache`
+1. Open the file /etc/hosts/ 
+2. Add to the end of document the next line `127.0.0.1 jail`
+3. Flush the dns cache  `sudo dscacheutil -flushcache`
 
 To test all is ok, just open the browser and open `http://jail:$JAIL_PORT/OK`  
 
