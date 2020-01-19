@@ -1,0 +1,23 @@
+Materia.java:48: error: cannot find symbol
+      this.grupos = contains(totalGrupos);
+                    ^
+  symbol:   method contains(int)
+  location: class Materia
+Materia.java:52: error: cannot find symbol
+        this.grupos= add(totalGrupos);
+                     ^
+  symbol:   method add(int)
+  location: class Materia
+Materia.java:59: error: cannot find symbol
+          this.grupos.agregarAlumno(this.inscripciones.get(k++).getAlumno());
+                     ^
+  symbol:   method agregarAlumno(Alumno)
+  location: variable grupos of type ArrayList<Grupo>
+Materia.java:64: error: array required, but ArrayList<Grupo> found
+        this.grupos[totalGrupos-1].agregarAlumno(this.inscripciones.get(i).getAlumno());
+                   ^
+Materia.java:66: error: incompatible types: boolean cannot be converted to int
+      return totalGrupos > 0;
+                         ^
+5 errors
+Not compiled

@@ -1,0 +1,77 @@
+Comment :=>> Alumno.testAlumno(): success. 2 marks
+
+Comment :=>> Inscripcion.testConstructorInscripcion(): success. 2 marks
+
+Comment :=>> Grupo.testConstructorGrupo(): success. 2 marks
+
+Comment :=>> Grupo.testAgregarAlumnoOK(): success. 2 marks
+
+Comment :=>> Grupo.testAgregarAlumnoErrorTamanio(): success. 2 marks
+
+Comment :=>> Grupo.testAgregarAlumnoErrorRepetido(): success. 3 marks
+
+Comment :=>> Materia.testConstructorMateria(): failure. 0 marks
+********************
+expected null, but was:<[]>
+
+Comment :=>> Materia.testInscribirAlumnoOK(): success. 3 marks
+
+Comment :=>> Materia.testInscribirAlumnoErrorCondicional(): success. 3 marks
+
+Comment :=>> Materia.testInscribirAlumnoErrorRepetido(): success. 3 marks
+
+Comment :=>> Materia.testGenerarGrupos(): failure. 0 marks
+********************
+expected:<12> but was:<0>
+
+Comment :=>> Universidad.testConstructorUniversidad(): success. 5 marks
+
+Comment :=>> Universidad.testAgregarAlumnoOK(): failure. 0 marks
+********************
+expected:<true> but was:<false>
+
+Comment :=>> Universidad.testAgregarAlumnoErrorCodigoRepetido(): failure. 0 marks
+********************
+expected:<true> but was:<false>
+
+Comment :=>> Universidad.testAgregarAlumnoErrorNombresYApellidosRepetidos(): failure. 0 marks
+********************
+expected:<true> but was:<false>
+
+Comment :=>> Universidad.testAgregarMateriaOK(): failure. 0 marks
+********************
+expected:<true> but was:<false>
+
+Comment :=>> Universidad.testAgregarMateriaError(): failure. 0 marks
+********************
+expected:<true> but was:<false>
+
+Comment :=>> Universidad.testGetAlumnoPorPosicionOK(): failure. 0 marks
+********************
+null
+
+Comment :=>> Universidad.testGetAlumnoPorPosicionError(): success. 5 marks
+
+Comment :=>> Universidad.testGetMateriaPorPosicionOK(): failure. 0 marks
+********************
+null
+
+Comment :=>> Universidad.testGetMateriaPorPosicionError(): success. 5 marks
+
+Comment :=>> Universidad.testContieneAlumno(): failure. 0 marks
+********************
+expected:<true> but was:<false>
+
+Comment :=>> Universidad.testContieneMaterua(): failure. 0 marks
+********************
+expected:<true> but was:<false>
+
+Comment :=>> Universidad.testEliminarAlumno(): failure. 0 marks
+********************
+null
+
+Comment :=>> Universidad.testEliminarMateria(): failure. 0 marks
+********************
+null
+
+Grade :=>> 37

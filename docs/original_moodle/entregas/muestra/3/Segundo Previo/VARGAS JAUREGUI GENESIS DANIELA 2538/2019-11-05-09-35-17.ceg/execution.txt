@@ -1,0 +1,21 @@
+Comment :=>> testIngredienteRegistrarVenta1(): success. 10 marks
+
+Comment :=>> testIngredienteRegistrarCompra1(): success. 10 marks
+
+Comment :=>> testIngredienteRegistrarVenta2(): success. 10 marks
+
+Comment :=>> testIngredienteRegistrarCompra2(): success. 10 marks
+
+Comment :=>> testIngredienteEquals(): success. 10 marks
+
+Comment :=>> testAlmuerzoConstructor(): success. 10 marks
+
+Comment :=>> testAlmuerzoPrecioVenta(): success. 10 marks
+
+Comment :=>> testAlmuerzoSePuedePrepararYRegistrarVenta(): success. 10 marks
+
+Comment :=>> testRestauranteGetNombres(): success. 10 marks
+
+Comment :=>> testRestauranteBuscar(): success. 10 marks
+
+Grade :=>> 100

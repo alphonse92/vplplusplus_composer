@@ -1,0 +1,764 @@
+Comment :=>> testStaticFinal(): success. 1 marks
+
+Comment :=>> testConstructor1(): success. 2 marks
+
+Comment :=>> testConstructor2(): success. 2 marks
+
+Comment :=>> testConstructor3(): success. 2 marks
+
+Comment :=>> testCalcularPrecioFabricacion1(): failure. 0 marks
+********************
+expected:<1100> but was:<1000>
+
+Comment :=>> testCalcularPrecioFabricacion2(): failure. 0 marks
+********************
+expected:<648> but was:<548>
+
+Comment :=>> testCalcularPrecioVenta1(): failure. 0 marks
+********************
+expected:<1485> but was:<1350>
+
+Comment :=>> testCalcularPrecioVenta2(): failure. 0 marks
+********************
+expected:<874> but was:<739>
+
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Comment :=>> testRegistrarVentaFull(): failure. 0 marks
+********************
+expected:<18495> but was:<18360>
+
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Comment :=>> testRegistrarVentaQueso(): success. 3 marks
+
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Comment :=>> testRegistrarVentaMortadela(): success. 3 marks
+
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Comment :=>> testRegistrarVentaJamon(): success. 3 marks
+
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Comment :=>> testRegistrarVentaPanBlanco(): success. 3 marks
+
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Comment :=>> testRegistrarVentaPanIntegral(): success. 3 marks
+
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Comment :=>> testRegistrarVentaIngresos1(): failure. 0 marks
+********************
+expected:<18495> but was:<18360>
+
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Comment :=>> testRegistrarVentaIngresos2(): failure. 0 marks
+********************
+expected:<9910> but was:<9775>
+
+Ingredientes insuficientes
+Comment :=>> testPorcentajes1(): failure. 0 marks
+********************
+expected:<67> but was:<81>
+
+Ingredientes insuficientes
+Comment :=>> testPorcentajes2(): failure. 0 marks
+********************
+expected:<36> but was:<44>
+
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Comment :=>> testIngredientesSuficientesSimpleBlanco(): success. 3 marks
+
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Comment :=>> testIngredientesSuficientesSimpleIntegral(): success. 3 marks
+
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Comment :=>> testIngredientesSuficientesExquisitoBlanco(): success. 3 marks
+
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Comment :=>> testIngredientesSuficientesExquisitoIntegral(): success. 3 marks
+
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Comment :=>> testIngredientesInsuficientesSimpleBlanco(): failure. 0 marks
+********************
+null
+
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Comment :=>> testIngredientesInsuficientesSimpleIntegral(): failure. 0 marks
+********************
+null
+
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Comment :=>> testIngredientesInsuficientesExquisitoBlanco(): failure. 0 marks
+********************
+null
+
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Comment :=>> testIngredientesInsuficientesExquisitoIntegral(): failure. 0 marks
+********************
+null
+
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Comment :=>> testEspecial1(): success. 10 marks
+
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Ingredientes insuficientes
+Comment :=>> testEspecial2(): failure. 0 marks
+********************
+expected:<285120> but was:<272160>
+
+Grade :=>> 44

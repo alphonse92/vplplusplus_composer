@@ -1,0 +1,206 @@
+Almuerzo.java:17: error: incompatible types: Restaurante cannot be converted to String
+        this.restaurante = restaurante;
+                           ^
+Almuerzo.java:19: error: cannot find symbol
+            this.fruta = (Fruta) this.restaurante.buscarIngrediente(nombreFruta);
+                                                 ^
+  symbol:   method buscarIngrediente(String)
+  location: variable restaurante of type String
+Almuerzo.java:19: error: incompatible types: Fruta cannot be converted to int
+            this.fruta = (Fruta) this.restaurante.buscarIngrediente(nombreFruta);
+                         ^
+Almuerzo.java:20: error: cannot find symbol
+            this.proteina = (Proteina) this.restaurante.buscarIngrediente(nombreProteina);
+                                                       ^
+  symbol:   method buscarIngrediente(String)
+  location: variable restaurante of type String
+Almuerzo.java:20: error: incompatible types: Proteina cannot be converted to int
+            this.proteina = (Proteina) this.restaurante.buscarIngrediente(nombreProteina);
+                            ^
+Almuerzo.java:21: error: cannot find symbol
+            this.grano = (Grano) this.restaurante.buscarIngrediente(nombreGrano);
+                                                 ^
+  symbol:   method buscarIngrediente(String)
+  location: variable restaurante of type String
+Almuerzo.java:21: error: incompatible types: Grano cannot be converted to int
+            this.grano = (Grano) this.restaurante.buscarIngrediente(nombreGrano);
+                         ^
+Almuerzo.java:22: error: cannot find symbol
+            this.almidon = (Almidon) this.restaurante.buscarIngrediente(nombreAlmidon);
+                                                     ^
+  symbol:   method buscarIngrediente(String)
+  location: variable restaurante of type String
+Almuerzo.java:22: error: incompatible types: Almidon cannot be converted to int
+            this.almidon = (Almidon) this.restaurante.buscarIngrediente(nombreAlmidon);
+                           ^
+TestLaunchMachine.java:1045: error: constructor Proteina in class Proteina cannot be applied to given types;
+            new Proteina("Carne de Res",5000,16),new Proteina("Cerdo",5000,7),
+            ^
+  required: no arguments
+  found: String,int,int
+  reason: actual and formal argument lists differ in length
+TestLaunchMachine.java:1045: error: constructor Proteina in class Proteina cannot be applied to given types;
+            new Proteina("Carne de Res",5000,16),new Proteina("Cerdo",5000,7),
+                                                 ^
+  required: no arguments
+  found: String,int,int
+  reason: actual and formal argument lists differ in length
+TestLaunchMachine.java:1046: error: constructor Proteina in class Proteina cannot be applied to given types;
+            new Proteina("Pollo",5000,8),new Proteina("Bagre",5000,18),
+            ^
+  required: no arguments
+  found: String,int,int
+  reason: actual and formal argument lists differ in length
+TestLaunchMachine.java:1046: error: constructor Proteina in class Proteina cannot be applied to given types;
+            new Proteina("Pollo",5000,8),new Proteina("Bagre",5000,18),
+                                         ^
+  required: no arguments
+  found: String,int,int
+  reason: actual and formal argument lists differ in length
+TestLaunchMachine.java:1047: error: constructor Proteina in class Proteina cannot be applied to given types;
+            new Proteina("Mojarra",5000,20),new Grano("Lenteja",5000,1),
+            ^
+  required: no arguments
+  found: String,int,int
+  reason: actual and formal argument lists differ in length
+TestLaunchMachine.java:1047: error: constructor Grano in class Grano cannot be applied to given types;
+            new Proteina("Mojarra",5000,20),new Grano("Lenteja",5000,1),
+                                            ^
+  required: no arguments
+  found: String,int,int
+  reason: actual and formal argument lists differ in length
+TestLaunchMachine.java:1048: error: constructor Grano in class Grano cannot be applied to given types;
+            new Grano("Garbanzo",5000,2),new Grano("Fijol",5000,1),
+            ^
+  required: no arguments
+  found: String,int,int
+  reason: actual and formal argument lists differ in length
+TestLaunchMachine.java:1048: error: constructor Grano in class Grano cannot be applied to given types;
+            new Grano("Garbanzo",5000,2),new Grano("Fijol",5000,1),
+                                         ^
+  required: no arguments
+  found: String,int,int
+  reason: actual and formal argument lists differ in length
+TestLaunchMachine.java:1049: error: constructor Grano in class Grano cannot be applied to given types;
+            new Grano("Alverja",5000,1),new Grano("Caraota",5000,1),
+            ^
+  required: no arguments
+  found: String,int,int
+  reason: actual and formal argument lists differ in length
+TestLaunchMachine.java:1049: error: constructor Grano in class Grano cannot be applied to given types;
+            new Grano("Alverja",5000,1),new Grano("Caraota",5000,1),
+                                        ^
+  required: no arguments
+  found: String,int,int
+  reason: actual and formal argument lists differ in length
+TestLaunchMachine.java:1050: error: constructor Almidon in class Almidon cannot be applied to given types;
+            new Almidon("Papa Negra",5000,1),new Almidon("Papa Amarilla",5000,2),
+            ^
+  required: no arguments
+  found: String,int,int
+  reason: actual and formal argument lists differ in length
+TestLaunchMachine.java:1050: error: constructor Almidon in class Almidon cannot be applied to given types;
+            new Almidon("Papa Negra",5000,1),new Almidon("Papa Amarilla",5000,2),
+                                             ^
+  required: no arguments
+  found: String,int,int
+  reason: actual and formal argument lists differ in length
+TestLaunchMachine.java:1051: error: constructor Almidon in class Almidon cannot be applied to given types;
+            new Almidon("Platano Verde",5000,1),new Almidon("Yuca",5000,1),
+            ^
+  required: no arguments
+  found: String,int,int
+  reason: actual and formal argument lists differ in length
+TestLaunchMachine.java:1051: error: constructor Almidon in class Almidon cannot be applied to given types;
+            new Almidon("Platano Verde",5000,1),new Almidon("Yuca",5000,1),
+                                                ^
+  required: no arguments
+  found: String,int,int
+  reason: actual and formal argument lists differ in length
+TestLaunchMachine.java:1052: error: constructor Almidon in class Almidon cannot be applied to given types;
+            new Almidon("Apio",5000,1)};
+            ^
+  required: no arguments
+  found: String,int,int
+  reason: actual and formal argument lists differ in length
+TestLaunchMachine.java:1071: error: constructor Proteina in class Proteina cannot be applied to given types;
+        Proteina proteina1 = new Proteina("Carne", a, 1);
+                             ^
+  required: no arguments
+  found: String,int,int
+  reason: actual and formal argument lists differ in length
+TestLaunchMachine.java:1072: error: constructor Grano in class Grano cannot be applied to given types;
+        Grano grano1 = new Grano("Frijol", a, 1);
+                       ^
+  required: no arguments
+  found: String,int,int
+  reason: actual and formal argument lists differ in length
+TestLaunchMachine.java:1073: error: constructor Almidon in class Almidon cannot be applied to given types;
+        Almidon almidon1 = new Almidon("Yuca", a, 1);
+                           ^
+  required: no arguments
+  found: String,int,int
+  reason: actual and formal argument lists differ in length
+TestLaunchMachine.java:1092: error: constructor Proteina in class Proteina cannot be applied to given types;
+        Proteina proteina1 = new Proteina("Carne", a, b);
+                             ^
+  required: no arguments
+  found: String,int,int
+  reason: actual and formal argument lists differ in length
+TestLaunchMachine.java:1093: error: constructor Grano in class Grano cannot be applied to given types;
+        Grano grano1 = new Grano("Frijol", a, b);
+                       ^
+  required: no arguments
+  found: String,int,int
+  reason: actual and formal argument lists differ in length
+TestLaunchMachine.java:1094: error: constructor Almidon in class Almidon cannot be applied to given types;
+        Almidon almidon1 = new Almidon("Yuca", a, b);
+                           ^
+  required: no arguments
+  found: String,int,int
+  reason: actual and formal argument lists differ in length
+TestLaunchMachine.java:1181: error: constructor Proteina in class Proteina cannot be applied to given types;
+        Proteina proteina1 = new Proteina("mora", 1, 1);
+                             ^
+  required: no arguments
+  found: String,int,int
+  reason: actual and formal argument lists differ in length
+TestLaunchMachine.java:1183: error: constructor Grano in class Grano cannot be applied to given types;
+        Grano grano1 = new Grano("mora", 1, 1);
+                       ^
+  required: no arguments
+  found: String,int,int
+  reason: actual and formal argument lists differ in length
+TestLaunchMachine.java:1185: error: constructor Almidon in class Almidon cannot be applied to given types;
+        Almidon almidon1 = new Almidon("mora", 1, 1);
+                           ^
+  required: no arguments
+  found: String,int,int
+  reason: actual and formal argument lists differ in length
+TestLaunchMachine.java:1195: error: cannot find symbol
+        r.setIngredientes(ing);
+         ^
+  symbol:   method setIngredientes(ArrayList<Ingrediente>)
+  location: variable r of type Restaurante
+TestLaunchMachine.java:1206: error: cannot find symbol
+        r.setIngredientes(ing);
+         ^
+  symbol:   method setIngredientes(ArrayList<Ingrediente>)
+  location: variable r of type Restaurante
+TestLaunchMachine.java:1231: error: cannot find symbol
+        r.setIngredientes(ing);
+         ^
+  symbol:   method setIngredientes(ArrayList<Ingrediente>)
+  location: variable r of type Restaurante
+TestLaunchMachine.java:1258: error: cannot find symbol
+        r.setIngredientes(ing);
+         ^
+  symbol:   method setIngredientes(ArrayList<Ingrediente>)
+  location: variable r of type Restaurante
+TestLaunchMachine.java:1296: error: cannot find symbol
+        r.setIngredientes(ing);
+         ^
+  symbol:   method setIngredientes(ArrayList<Ingrediente>)
+  location: variable r of type Restaurante
+38 errors
+Not compiled

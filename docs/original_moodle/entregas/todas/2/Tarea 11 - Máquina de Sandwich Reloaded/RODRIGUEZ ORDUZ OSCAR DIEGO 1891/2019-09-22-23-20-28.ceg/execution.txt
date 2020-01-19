@@ -1,0 +1,65 @@
+Comment :=>> testStaticFinal(): success. 1 marks
+
+Comment :=>> testConstructor1(): success. 2 marks
+
+Comment :=>> testConstructor2(): success. 2 marks
+
+Comment :=>> testConstructor3(): success. 2 marks
+
+Comment :=>> testCalcularPrecioFabricacion1(): success. 3 marks
+
+Comment :=>> testCalcularPrecioFabricacion2(): success. 3 marks
+
+Comment :=>> testCalcularPrecioVenta1(): success. 3 marks
+
+Comment :=>> testCalcularPrecioVenta2(): success. 3 marks
+
+Comment :=>> testRegistrarVentaFull(): success. 10 marks
+
+Comment :=>> testRegistrarVentaQueso(): success. 3 marks
+
+Comment :=>> testRegistrarVentaMortadela(): success. 3 marks
+
+Comment :=>> testRegistrarVentaJamon(): success. 3 marks
+
+Comment :=>> testRegistrarVentaPanBlanco(): success. 3 marks
+
+Comment :=>> testRegistrarVentaPanIntegral(): success. 3 marks
+
+Comment :=>> testRegistrarVentaIngresos1(): success. 3 marks
+
+Comment :=>> testRegistrarVentaIngresos2(): success. 3 marks
+
+Comment :=>> testPorcentajes1(): success. 3 marks
+
+Comment :=>> testPorcentajes2(): success. 3 marks
+
+Comment :=>> testIngredientesSuficientesSimpleBlanco(): success. 3 marks
+
+Comment :=>> testIngredientesSuficientesSimpleIntegral(): success. 3 marks
+
+Comment :=>> testIngredientesSuficientesExquisitoBlanco(): success. 3 marks
+
+Comment :=>> testIngredientesSuficientesExquisitoIntegral(): success. 3 marks
+
+Comment :=>> testIngredientesInsuficientesSimpleBlanco(): failure. 0 marks
+********************
+null
+
+Comment :=>> testIngredientesInsuficientesSimpleIntegral(): failure. 0 marks
+********************
+null
+
+Comment :=>> testIngredientesInsuficientesExquisitoBlanco(): failure. 0 marks
+********************
+null
+
+Comment :=>> testIngredientesInsuficientesExquisitoIntegral(): failure. 0 marks
+********************
+null
+
+Comment :=>> testEspecial1(): success. 10 marks
+
+Comment :=>> testEspecial2(): success. 10 marks
+
+Grade :=>> 88

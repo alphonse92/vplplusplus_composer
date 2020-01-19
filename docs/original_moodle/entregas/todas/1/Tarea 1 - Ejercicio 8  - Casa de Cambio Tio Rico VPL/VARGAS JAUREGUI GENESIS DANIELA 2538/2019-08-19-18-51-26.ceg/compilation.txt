@@ -1,0 +1,7 @@
+CasaDeCambioTest.java:183: warning: [deprecation] assertEquals(double,double) in Assert has been deprecated
+        assertEquals(2, instance.getBolivaresComprados());
+        ^
+CasaDeCambioTest.java:245: warning: [deprecation] assertEquals(double,double) in Assert has been deprecated
+        assertEquals(2, instance.getBolivaresVendidos());
+        ^
+2 warnings

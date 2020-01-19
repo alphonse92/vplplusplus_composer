@@ -1,0 +1,39 @@
+ParkingMachine.java:996: error: cannot find symbol
+                rta = parqueadero.ingresarVehiculo(new Bicicleta(txtPlaca.getText(), txtCedula.getText(),
+                                                       ^
+  symbol:   class Bicicleta
+  location: class ParkingMachine
+ParkingMachine.java:1230: error: cannot find symbol
+            if (vehiculos[i] instanceof Bicicleta) {
+                                        ^
+  symbol:   class Bicicleta
+  location: class ParkingMachine
+ParkingMachine.java:1310: error: cannot find symbol
+        if (v instanceof Bicicleta) {
+                         ^
+  symbol:   class Bicicleta
+  location: class ParkingMachine
+Test2.java:46: error: cannot find symbol
+            new Bicicleta("URC789", "60458723", 8, 15, 20)};
+                ^
+  symbol:   class Bicicleta
+  location: class Test2
+Test2.java:69: error: cannot find symbol
+            v[i][3] = new Bicicleta("URC789", "60458723", Integer.parseInt(d[0]), Integer.parseInt(d[1]), Integer.parseInt(d[2]));
+                          ^
+  symbol:   class Bicicleta
+  location: class Test2
+Test3.java:47: error: cannot find symbol
+            new Bicicleta("URC789", "60458723", 8, 15, 20)};
+                ^
+  symbol:   class Bicicleta
+  location: class Test3
+Test3.java:59: error: cannot find symbol
+            v[i][3] = new Bicicleta("URC784"+i, "60458723", Integer.parseInt(d[0]), Integer.parseInt(d[1]), Integer.parseInt(d[2]));
+                          ^
+  symbol:   class Bicicleta
+  location: class Test3
+Note: Parqueadero.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+7 errors
+Not compiled

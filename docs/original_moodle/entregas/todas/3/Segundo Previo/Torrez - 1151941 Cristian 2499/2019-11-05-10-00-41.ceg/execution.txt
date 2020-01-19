@@ -1,0 +1,37 @@
+Comment :=>> testIngredienteRegistrarVenta1(): success. 10 marks
+
+Comment :=>> testIngredienteRegistrarCompra1(): failure. 0 marks
+********************
+expected:<80> but was:<-40>
+
+Comment :=>> testIngredienteRegistrarVenta2(): success. 10 marks
+
+Comment :=>> testIngredienteRegistrarCompra2(): failure. 0 marks
+********************
+expected:<6998> but was:<3002>
+
+Comment :=>> testIngredienteEquals(): failure. 0 marks
+********************
+expected:<false> but was:<true>
+
+Comment :=>> testAlmuerzoConstructor(): failure. 0 marks
+********************
+Eror en clase Almuerzo: No hay suficientes ingredientes...
+
+Comment :=>> testAlmuerzoPrecioVenta(): failure. 0 marks
+********************
+Eror en clase Almuerzo: No hay suficientes ingredientes...
+
+Comment :=>> testAlmuerzoSePuedePrepararYRegistrarVenta(): failure. 0 marks
+********************
+Eror en clase Almuerzo: No hay suficientes ingredientes...
+
+Comment :=>> testRestauranteGetNombres(): failure. 0 marks
+********************
+expected:<[Carne de Res]> but was:<[Papaya]>
+
+Comment :=>> testRestauranteBuscar(): failure. 0 marks
+********************
+null
+
+Grade :=>> 20

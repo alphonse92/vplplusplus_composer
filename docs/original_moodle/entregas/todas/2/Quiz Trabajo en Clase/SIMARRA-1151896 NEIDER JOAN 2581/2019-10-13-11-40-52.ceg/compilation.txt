@@ -1,0 +1,7 @@
+Universidad.java:36: error: cannot find symbol
+        this.materias[ContadorMaterias++]=materia;
+                      ^
+  symbol:   variable ContadorMaterias
+  location: class Universidad
+1 error
+Not compiled

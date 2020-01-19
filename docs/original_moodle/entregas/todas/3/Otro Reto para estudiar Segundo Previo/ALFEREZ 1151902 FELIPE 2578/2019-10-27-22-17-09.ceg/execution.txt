@@ -1,0 +1,7 @@
+Comment :=>> testCampeonatoConstructor: success. 10 marks
+
+Exception in thread "main" java.lang.OutOfMemoryError: Requested array size exceeds VM limit
+	at Equipo.<init>(Equipo.java:17)
+	at Campeonato.inscribirEquipo(Campeonato.java:16)
+	at CampeonatoTest.testCampeonatoInscribirEquipo(CampeonatoTest.java:371)
+	at IntegralTest.main(IntegralTest.java:29)

@@ -1,0 +1,15 @@
+Universidad.java:36: error: cannot find symbol
+        this.materias[i]=new materia[contadorMateria++];
+                             ^
+  symbol:   class materia
+  location: class Universidad
+Universidad.java:36: error: cannot find symbol
+        this.materias[i]=new materia[contadorMateria++];
+                                     ^
+  symbol:   variable contadorMateria
+  location: class Universidad
+Universidad.java:36: error: incompatible types: materia[] cannot be converted to Materia
+        this.materias[i]=new materia[contadorMateria++];
+                         ^
+3 errors
+Not compiled

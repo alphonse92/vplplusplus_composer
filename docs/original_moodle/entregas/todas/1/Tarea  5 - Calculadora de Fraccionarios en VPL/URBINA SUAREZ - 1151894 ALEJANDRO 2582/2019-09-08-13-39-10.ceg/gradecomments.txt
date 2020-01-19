@@ -1,0 +1,5 @@
+ testSumar: success. 20 marks
+ testRestar: success. 20 marks
+ testMultiplicar: success. 20 marks
+ testDividir: success. 20 marks
+ testSimplificar: success. 20 marks

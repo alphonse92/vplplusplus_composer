@@ -1,0 +1,29 @@
+Comment :=>> testCampeonatoConstructor: success. 10 marks
+
+Comment :=>> testCampeonatoInscribirEquipo: success. 10 marks
+
+Comment :=>> testCampeonatoBuscarEquipo: success. 10 marks
+
+Comment :=>> testCampeonatoRegistrarPartido: failure. 0 marks
+********************
+2-->Equipo 1 vs Equipo 2 expected:<true> but was:<false>
+
+Comment :=>> testCampeonatoConstructor: failure. 0 marks
+********************
+null
+
+Comment :=>> testCampeonatoConstructor: failure. 0 marks
+********************
+null
+
+Comment :=>> testEquipoRegistrarPartido: success. 10 marks
+
+Comment :=>> testCampeonatoConstructor: failure. 0 marks
+********************
+null
+
+Comment :=>> testPartidoConstructor: success. 10 marks
+
+Comment :=>> testPartidoRegistrarPartido: success. 10 marks
+
+Grade :=>> 60

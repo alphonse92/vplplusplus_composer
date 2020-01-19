@@ -1,0 +1,224 @@
+Hora.java:138: error: '(' expected
+        else if {
+               ^
+Hora.java:138: error: illegal start of expression
+        else if {
+                ^
+Hora.java:138: error: ')' expected
+        else if {
+                 ^
+Hora.java:140: error: not a statement
+        return valida;
+               ^
+Hora.java:149: error: class, interface, or enum expected
+    public Hora getHoraHH24(){
+           ^
+Hora.java:152: error: class, interface, or enum expected
+        }
+        ^
+Hora.java:155: error: class, interface, or enum expected
+      return h;//COMPLETE
+      ^
+Hora.java:156: error: class, interface, or enum expected
+    }
+    ^
+Hora.java:162: error: class, interface, or enum expected
+    public Hora getHoraHH12(){
+           ^
+Hora.java:165: error: class, interface, or enum expected
+        }
+        ^
+Hora.java:168: error: class, interface, or enum expected
+      return h;//COMPLETE
+      ^
+Hora.java:169: error: class, interface, or enum expected
+    }
+    ^
+Hora.java:178: error: class, interface, or enum expected
+    public int restar(Hora other){
+           ^
+Hora.java:180: error: class, interface, or enum expected
+        if (this.formato!=HH24){
+        ^
+Hora.java:182: error: class, interface, or enum expected
+        }
+        ^
+Hora.java:185: error: class, interface, or enum expected
+        }
+        ^
+Hora.java:188: error: class, interface, or enum expected
+        }
+        ^
+Hora.java:191: error: class, interface, or enum expected
+        }
+        ^
+Hora.java:194: error: class, interface, or enum expected
+        }
+        ^
+Hora.java:196: error: class, interface, or enum expected
+    }
+    ^
+Hora.java:202: error: class, interface, or enum expected
+    public boolean esIgual(Hora other){
+           ^
+Hora.java:206: error: class, interface, or enum expected
+        if (this.formato != other.formato){
+        ^
+Hora.java:209: error: class, interface, or enum expected
+        }
+        ^
+Hora.java:212: error: class, interface, or enum expected
+        }
+        ^
+Hora.java:214: error: class, interface, or enum expected
+    }
+    ^
+Hora.java:220: error: class, interface, or enum expected
+    public boolean esMenor(Hora other){
+           ^
+Hora.java:223: error: class, interface, or enum expected
+        if (this.formato!=HH24 ){
+        ^
+Hora.java:226: error: class, interface, or enum expected
+        }
+        ^
+Hora.java:229: error: class, interface, or enum expected
+        }
+        ^
+Hora.java:232: error: class, interface, or enum expected
+        }
+        ^
+Hora.java:235: error: class, interface, or enum expected
+        }
+        ^
+Hora.java:238: error: class, interface, or enum expected
+        }
+        ^
+Hora.java:241: error: class, interface, or enum expected
+    }  
+    ^
+Hora.java:247: error: class, interface, or enum expected
+    public boolean esMayor(Hora other){
+           ^
+Hora.java:249: error: class, interface, or enum expected
+        if (this.formato!=HH24 ){
+        ^
+Hora.java:252: error: class, interface, or enum expected
+        }
+        ^
+Hora.java:255: error: class, interface, or enum expected
+        }
+        ^
+Hora.java:258: error: class, interface, or enum expected
+        }
+        ^
+Hora.java:261: error: class, interface, or enum expected
+        }
+        ^
+Hora.java:264: error: class, interface, or enum expected
+        }
+        ^
+Hora.java:266: error: class, interface, or enum expected
+    }
+    ^
+Hora.java:271: error: class, interface, or enum expected
+    public String toString(){
+           ^
+Hora.java:273: error: class, interface, or enum expected
+    }
+    ^
+Hora.java:285: error: class, interface, or enum expected
+    public void setFormato(String formato){
+           ^
+Hora.java:288: error: class, interface, or enum expected
+         if (horas==00){
+         ^
+Hora.java:290: error: class, interface, or enum expected
+             this.ampm=AM;
+             ^
+Hora.java:291: error: class, interface, or enum expected
+            }
+            ^
+Hora.java:294: error: class, interface, or enum expected
+            }
+            ^
+Hora.java:297: error: class, interface, or enum expected
+                this.horas=horas-12;
+                ^
+Hora.java:298: error: class, interface, or enum expected
+            }
+            ^
+Hora.java:302: error: class, interface, or enum expected
+            if (horas==12 && ampm==AM){
+            ^
+Hora.java:304: error: class, interface, or enum expected
+               ampm=null;
+               ^
+Hora.java:305: error: class, interface, or enum expected
+            }
+            ^
+Hora.java:308: error: class, interface, or enum expected
+            }
+            ^
+Hora.java:311: error: class, interface, or enum expected
+                horas+=12;
+                ^
+Hora.java:312: error: class, interface, or enum expected
+            }
+            ^
+Hora.java:318: error: class, interface, or enum expected
+    public String getAmpm(){
+           ^
+Hora.java:320: error: class, interface, or enum expected
+    }//end method getAmpm
+    ^
+Hora.java:323: error: class, interface, or enum expected
+    public void setAmpm(String ampm){
+           ^
+Hora.java:325: error: class, interface, or enum expected
+    }//end method setAmpm
+    ^
+Hora.java:328: error: class, interface, or enum expected
+    public int getSegundos(){
+           ^
+Hora.java:330: error: class, interface, or enum expected
+    }//end method getSegundos
+    ^
+Hora.java:333: error: class, interface, or enum expected
+    public void setSegundos(int segundos){
+           ^
+Hora.java:335: error: class, interface, or enum expected
+    }//end method setSegundos
+    ^
+Hora.java:338: error: class, interface, or enum expected
+    public int getMinutos(){
+           ^
+Hora.java:340: error: class, interface, or enum expected
+    }//end method getMinutos
+    ^
+Hora.java:343: error: class, interface, or enum expected
+    public void setMinutos(int minutos){
+           ^
+Hora.java:345: error: class, interface, or enum expected
+    }//end method setMinutos
+    ^
+Hora.java:348: error: class, interface, or enum expected
+    public int getHoras(){
+           ^
+Hora.java:350: error: class, interface, or enum expected
+    }//end method getHoras
+    ^
+Hora.java:353: error: class, interface, or enum expected
+    public void setHoras(int horas){
+           ^
+Hora.java:355: error: class, interface, or enum expected
+    }//end method setHoras
+    ^
+Hora.java:358: error: class, interface, or enum expected
+    public String getFormato(){
+           ^
+Hora.java:360: error: class, interface, or enum expected
+    }//end method getFormato
+    ^
+74 errors
+Not compiled

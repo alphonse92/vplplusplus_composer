@@ -1,0 +1,25 @@
+MaquinaSandwich.java:184: error: bad operand types for binary operator '||'
+       if(cantidadQueso=0||cantidadJamon=0||cantidadMortadela=0||cantidadPanIntegral=0||cantidadPanBlanco=0);
+                         ^
+  first type:  int
+  second type: int
+MaquinaSandwich.java:184: error: bad operand types for binary operator '||'
+       if(cantidadQueso=0||cantidadJamon=0||cantidadMortadela=0||cantidadPanIntegral=0||cantidadPanBlanco=0);
+                                          ^
+  first type:  int
+  second type: int
+MaquinaSandwich.java:184: error: bad operand types for binary operator '||'
+       if(cantidadQueso=0||cantidadJamon=0||cantidadMortadela=0||cantidadPanIntegral=0||cantidadPanBlanco=0);
+                                                               ^
+  first type:  int
+  second type: int
+MaquinaSandwich.java:184: error: bad operand types for binary operator '||'
+       if(cantidadQueso=0||cantidadJamon=0||cantidadMortadela=0||cantidadPanIntegral=0||cantidadPanBlanco=0);
+                                                                                      ^
+  first type:  int
+  second type: int
+MaquinaSandwich.java:184: error: incompatible types: int cannot be converted to boolean
+       if(cantidadQueso=0||cantidadJamon=0||cantidadMortadela=0||cantidadPanIntegral=0||cantidadPanBlanco=0);
+                       ^
+5 errors
+Not compiled

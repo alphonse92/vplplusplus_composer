@@ -1,0 +1,21 @@
+Comment :=>> testHoraConstructor1: success. 10 marks
+
+Comment :=>> testHoraConstructor2: success. 10 marks
+
+Comment :=>> testHoraConstructor3: success. 10 marks
+
+Comment :=>> testHoraConstructor4: success. 10 marks
+
+Comment :=>> testHoraConstructor5: success. 10 marks
+
+Comment :=>> testHoraSonIguales: success. 10 marks
+
+Comment :=>> testHoraEsMenor: success. 10 marks
+
+Comment :=>> testHoraEsMayor: success. 10 marks
+
+Comment :=>> testGetHoraFormato: success. 10 marks
+
+Comment :=>> testHoraRestar: success. 10 marks
+
+Grade :=>> 100

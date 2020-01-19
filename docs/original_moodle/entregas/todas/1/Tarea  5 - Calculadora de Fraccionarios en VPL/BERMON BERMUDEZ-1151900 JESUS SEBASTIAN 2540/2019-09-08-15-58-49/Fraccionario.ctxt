@@ -1,0 +1,37 @@
+#BlueJ class context
+comment0.target=Fraccionario
+comment0.text=\r\n\ Una\ clase\ sencilla\ para\ realizar\ calculos\ con\ fracciones.\r\n\ @author\ (Milton\ Jes\u00FAs\ Vera\ Contreras\ -\ miltonjesusvc@ufps.edu.co)\r\n\ @version\ 0.000000000000001\ \:)\ -->\ Math.sin(Math.PI-Double.MIN_VALUE)\r\n
+comment1.params=
+comment1.target=Fraccionario()
+comment1.text=\r\n\ Constructor\ default\r\n
+comment10.params=
+comment10.target=int\ getDenominador()
+comment10.text=Getter\ method\ denominador
+comment11.params=denominador
+comment11.target=void\ setDenominador(int)
+comment11.text=Setter\ method\ denominador
+comment2.params=numerador\ denominador
+comment2.target=Fraccionario(int,\ int)
+comment2.text=\r\n\ Constructor\ \r\n\ @param\ numerador\ valor\ inicial\ de\ numerador\r\n\ @param\ denominador\ valor\ inicial\ de\ denominador\r\n
+comment3.params=otro
+comment3.target=Fraccionario\ sumar(Fraccionario)
+comment3.text=\r\n\ Realiza\ la\ operacion\ suma\ \=\ this\ +\ otro\ y\ retorna\ suma\r\n\r\n\ @param\ otro\ Un\ Fraccionario\ como\ sumando\r\n\ @return\ this\ +\ otro\r\n
+comment4.params=otro
+comment4.target=Fraccionario\ restar(Fraccionario)
+comment4.text=\r\n\ Realiza\ la\ operacion\ resta\ \=\ this\ -\ otro\ y\ retorna\ suma\r\n\r\n\ @param\ otro\ Un\ Fraccionario\ como\ sustraendo\r\n\ @return\ this\ -\ otro\r\n
+comment5.params=otro
+comment5.target=Fraccionario\ multiplicar(Fraccionario)
+comment5.text=\r\n\ Realiza\ la\ operacion\ producto\ \=\ this\ *\ otro\ y\ retorna\ producto\r\n\r\n\ @param\ otro\ Un\ Fraccionario\ como\ factor\r\n\ @return\ this\ *\ otro\r\n
+comment6.params=otro
+comment6.target=Fraccionario\ dividir(Fraccionario)
+comment6.text=\r\n\ Realiza\ la\ operacion\ cociente\ \=\ this\ /\ otro\ y\ retorna\ cociente\r\n\r\n\ @param\ otro\ Un\ Fraccionario\ como\ divisor\r\n\ @return\ this\ /\ otro\r\n
+comment7.params=
+comment7.target=void\ simplificar()
+comment7.text=\r\n\ Simplifica\ el\ fraccionario\r\n
+comment8.params=
+comment8.target=int\ getNumerador()
+comment8.text=Getter\ method\ numerador
+comment9.params=numerador
+comment9.target=void\ setNumerador(int)
+comment9.text=Setter\ method\ numerador
+numComments=12

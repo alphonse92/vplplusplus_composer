@@ -1,0 +1,64 @@
+Restaurante.java:122: error: cannot find symbol
+       Almuerzo almuerzo = new Almuerzo(this,fruta, proteina, grano, almidon);
+       ^
+  symbol:   class Almuerzo
+  location: class Restaurante
+Restaurante.java:122: error: cannot find symbol
+       Almuerzo almuerzo = new Almuerzo(this,fruta, proteina, grano, almidon);
+                               ^
+  symbol:   class Almuerzo
+  location: class Restaurante
+Restaurante.java:129: error: cannot find symbol
+      Almuerzo almuerzo = new Almuerzo(this, fruta, proteina, grano, almidon);
+      ^
+  symbol:   class Almuerzo
+  location: class Restaurante
+Restaurante.java:129: error: cannot find symbol
+      Almuerzo almuerzo = new Almuerzo(this, fruta, proteina, grano, almidon);
+                              ^
+  symbol:   class Almuerzo
+  location: class Restaurante
+Restaurante.java:138: error: cannot find symbol
+       Almuerzo almuerzo = new Almuerzo(this, fruta, proteina, grano, almidon);
+       ^
+  symbol:   class Almuerzo
+  location: class Restaurante
+Restaurante.java:138: error: cannot find symbol
+       Almuerzo almuerzo = new Almuerzo(this, fruta, proteina, grano, almidon);
+                               ^
+  symbol:   class Almuerzo
+  location: class Restaurante
+TestLaunchMachine.java:1196: error: cannot find symbol
+        Almuerzo a = new Almuerzo(r, "Papaya", "Carne de Res", "Lenteja", "Papa Negra");
+        ^
+  symbol:   class Almuerzo
+  location: class TestLaunchMachine
+TestLaunchMachine.java:1196: error: cannot find symbol
+        Almuerzo a = new Almuerzo(r, "Papaya", "Carne de Res", "Lenteja", "Papa Negra");
+                         ^
+  symbol:   class Almuerzo
+  location: class TestLaunchMachine
+TestLaunchMachine.java:1208: error: cannot find symbol
+        Almuerzo a = null;
+        ^
+  symbol:   class Almuerzo
+  location: class TestLaunchMachine
+TestLaunchMachine.java:1214: error: cannot find symbol
+                        a = new Almuerzo(r, ingredientes[i].getNombre(), 
+                                ^
+  symbol:   class Almuerzo
+  location: class TestLaunchMachine
+TestLaunchMachine.java:1233: error: cannot find symbol
+        Almuerzo a = null;
+        ^
+  symbol:   class Almuerzo
+  location: class TestLaunchMachine
+TestLaunchMachine.java:1239: error: cannot find symbol
+                        a = new Almuerzo(r, ingredientes[i].getNombre(), 
+                                ^
+  symbol:   class Almuerzo
+  location: class TestLaunchMachine
+Note: Restaurante.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+12 errors
+Not compiled

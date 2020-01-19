@@ -1,0 +1,69 @@
+Comment :=>> testGetGananciaEnUnBolivar: success. 4 marks
+
+Comment :=>> testCambiarPrecioDelBolivar1: failure. 0 marks
+********************
+expected:<false> but was:<true>
+
+Comment :=>> testCambiarPrecioDelBolivar2: failure. 0 marks
+********************
+expected:<false> but was:<true>
+
+Comment :=>> testCambiarPrecioDelBolivar3: success. 4 marks
+
+Comment :=>> testCambiarPrecioDelBolivar4: success. 4 marks
+
+Comment :=>> testCambiarPrecioDelBolivar5: failure. 0 marks
+********************
+expected:<false> but was:<true>
+
+Comment :=>> testCambiarPrecioDelBolivar6: success. 4 marks
+
+Comment :=>> testCambiarPrecioDelBolivar7: success. 4 marks
+
+Comment :=>> testCambiarPrecioDelBolivar8: success. 4 marks
+
+Comment :=>> testComprarBolivares1: success. 4 marks
+
+Comment :=>> testComprarBolivares2: success. 4 marks
+
+Comment :=>> testComprarBolivares3: success. 4 marks
+
+Comment :=>> testComprarBolivares4: success. 4 marks
+
+Comment :=>> testComprarBolivares5: success. 4 marks
+
+Comment :=>> testVenderBolivares1: failure. 0 marks
+********************
+expected:<true> but was:<false>
+
+Comment :=>> testVenderBolivares2: failure. 0 marks
+********************
+expected:<3.0> but was:<1.0>
+
+Comment :=>> testVenderBolivares3: failure. 0 marks
+********************
+expected:<1.0> but was:<2.0>
+
+Comment :=>> testVenderBolivares4: failure. 0 marks
+********************
+expected:<2> but was:<0>
+
+Comment :=>> testVenderBolivares5: success. 4 marks
+
+Comment :=>> testGetImpuestos: failure. 0 marks
+********************
+expected:<3.2> but was:<0.0>
+
+Comment :=>> testGetGanancias: failure. 0 marks
+********************
+expected:<16.8> but was:<0.0>
+
+Comment :=>> testInyectarPesos1: success. 4 marks
+
+Comment :=>> testInyectarPesos2: success. 4 marks
+
+Comment :=>> testInyectarBolivares1: success. 4 marks
+
+Comment :=>> testInyectarBolivares2: success. 4 marks
+
+Grade :=>> 64

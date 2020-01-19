@@ -1,0 +1,79 @@
+Comment :=>> testStaticFinal(): success. 1 marks
+
+Comment :=>> testConstructor1(): success. 2 marks
+
+Comment :=>> testConstructor2(): success. 2 marks
+
+Comment :=>> testConstructor3(): success. 2 marks
+
+Comment :=>> testCalcularPrecioFabricacion1(): success. 3 marks
+
+Comment :=>> testCalcularPrecioFabricacion2(): failure. 0 marks
+********************
+expected:<548> but was:<1000>
+
+Comment :=>> testCalcularPrecioVenta1(): success. 3 marks
+
+Comment :=>> testCalcularPrecioVenta2(): failure. 0 marks
+********************
+expected:<739> but was:<1350>
+
+Comment :=>> testRegistrarVentaFull(): success. 10 marks
+
+Comment :=>> testRegistrarVentaQueso(): success. 3 marks
+
+Comment :=>> testRegistrarVentaMortadela(): success. 3 marks
+
+Comment :=>> testRegistrarVentaJamon(): success. 3 marks
+
+Comment :=>> testRegistrarVentaPanBlanco(): success. 3 marks
+
+Comment :=>> testRegistrarVentaPanIntegral(): success. 3 marks
+
+Comment :=>> testRegistrarVentaIngresos1(): success. 3 marks
+
+Comment :=>> testRegistrarVentaIngresos2(): failure. 0 marks
+********************
+expected:<739> but was:<1350>
+
+Comment :=>> testPorcentajes1(): success. 3 marks
+
+Comment :=>> testPorcentajes2(): success. 3 marks
+
+Comment :=>> testIngredientesSuficientesSimpleBlanco(): failure. 0 marks
+********************
+expected:<1500> but was:<1530>
+
+Comment :=>> testIngredientesSuficientesSimpleIntegral(): failure. 0 marks
+********************
+expected:<1500> but was:<1530>
+
+Comment :=>> testIngredientesSuficientesExquisitoBlanco(): failure. 0 marks
+********************
+expected:<1500> but was:<1530>
+
+Comment :=>> testIngredientesSuficientesExquisitoIntegral(): failure. 0 marks
+********************
+expected:<1500> but was:<1530>
+
+Comment :=>> testIngredientesInsuficientesSimpleBlanco(): failure. 0 marks
+********************
+null
+
+Comment :=>> testIngredientesInsuficientesSimpleIntegral(): failure. 0 marks
+********************
+null
+
+Comment :=>> testIngredientesInsuficientesExquisitoBlanco(): failure. 0 marks
+********************
+null
+
+Comment :=>> testIngredientesInsuficientesExquisitoIntegral(): failure. 0 marks
+********************
+null
+
+Comment :=>> testEspecial1(): success. 10 marks
+
+Comment :=>> testEspecial2(): success. 10 marks
+
+Grade :=>> 67

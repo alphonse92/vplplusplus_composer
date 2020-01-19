@@ -1,0 +1,59 @@
+Comment :=>> testCalcularPrecio0: success. 5 marks
+
+Comment :=>> testCalcularPrecio11: failure. 0 marks
+********************
+expected:<442> but was:<57>
+
+Comment :=>> testCalcularPrecio12: failure. 0 marks
+********************
+expected:<464> but was:<60>
+
+Comment :=>> testCalcularPrecio13: failure. 0 marks
+********************
+expected:<486> but was:<63>
+
+Comment :=>> testCalcularPrecio21: failure. 0 marks
+********************
+expected:<885> but was:<115>
+
+Comment :=>> testCalcularPrecio22: failure. 0 marks
+********************
+expected:<929> but was:<121>
+
+Comment :=>> testCalcularPrecio23: failure. 0 marks
+********************
+expected:<974> but was:<127>
+
+Comment :=>> testCalcularPrecio31: failure. 0 marks
+********************
+expected:<1328> but was:<173>
+
+Comment :=>> testCalcularPrecio32: failure. 0 marks
+********************
+expected:<1393> but was:<181>
+
+Comment :=>> testCalcularPrecio33: failure. 0 marks
+********************
+expected:<1460> but was:<190>
+
+Comment :=>> testPrepararCafe0: success. 5 marks
+
+Comment :=>> testPrepararCafe01: success. 5 marks
+
+Comment :=>> testPrepararCafe11: success. 5 marks
+
+Comment :=>> testPrepararCafe22: success. 5 marks
+
+Comment :=>> testPrepararCafe33: success. 5 marks
+
+Comment :=>> testRecargarCafe1: success. 5 marks
+
+Comment :=>> testRecargarCafe2: success. 5 marks
+
+Comment :=>> testRecargarCafe3: success. 5 marks
+
+Comment :=>> testRecargarCafe4: success. 5 marks
+
+Comment :=>> testRegistrarFactura: success. 5 marks
+
+Grade :=>> 55

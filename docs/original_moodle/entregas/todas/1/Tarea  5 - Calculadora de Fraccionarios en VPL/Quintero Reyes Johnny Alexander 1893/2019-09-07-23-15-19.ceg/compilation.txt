@@ -1,0 +1,285 @@
+Control.java:5: error: package javafx.fxml does not exist
+import javafx.fxml.FXML;
+                  ^
+Control.java:6: error: package javafx.stage does not exist
+import javafx.stage.StageStyle;
+                   ^
+Control.java:7: error: package javafx.scene.control does not exist
+import javafx.scene.control.Alert; 
+                           ^
+Control.java:8: error: package javafx.scene.control does not exist
+import javafx.scene.control.Button;
+                           ^
+Control.java:9: error: package javafx.scene.control does not exist
+import javafx.scene.control.TextField;
+                           ^
+Control.java:10: error: package javafx.scene.control does not exist
+import javafx.scene.control.CheckBox;
+                           ^
+Control.java:11: error: package javafx.scene.control.Alert does not exist
+import javafx.scene.control.Alert.AlertType;
+                                 ^
+Control.java:15: error: cannot find symbol
+    private Button cmdLimpiar; // Value injected by FXMLLoader
+            ^
+  symbol:   class Button
+  location: class Control
+Control.java:18: error: cannot find symbol
+    private Button cmdSumar; // Value injected by FXMLLoader
+            ^
+  symbol:   class Button
+  location: class Control
+Control.java:21: error: cannot find symbol
+    private Button cmdRestar; // Value injected by FXMLLoader
+            ^
+  symbol:   class Button
+  location: class Control
+Control.java:24: error: cannot find symbol
+    private Button cmdMulti; // Value injected by FXMLLoader
+            ^
+  symbol:   class Button
+  location: class Control
+Control.java:27: error: cannot find symbol
+    private Button cmdDividir; // Value injected by FXMLLoader
+            ^
+  symbol:   class Button
+  location: class Control
+Control.java:30: error: cannot find symbol
+    private TextField txtNumerador1; // Value injected by FXMLLoader
+            ^
+  symbol:   class TextField
+  location: class Control
+Control.java:33: error: cannot find symbol
+    private TextField txtDenominador1; // Value injected by FXMLLoader
+            ^
+  symbol:   class TextField
+  location: class Control
+Control.java:36: error: cannot find symbol
+    private CheckBox chexSimplificar1; // Value injected by FXMLLoader
+            ^
+  symbol:   class CheckBox
+  location: class Control
+Control.java:39: error: cannot find symbol
+    private TextField txtNumerador3; // Value injected by FXMLLoader
+            ^
+  symbol:   class TextField
+  location: class Control
+Control.java:42: error: cannot find symbol
+    private TextField txtDenominador3; // Value injected by FXMLLoader
+            ^
+  symbol:   class TextField
+  location: class Control
+Control.java:45: error: cannot find symbol
+    private CheckBox chexSimplificar3; // Value injected by FXMLLoader
+            ^
+  symbol:   class CheckBox
+  location: class Control
+Control.java:48: error: cannot find symbol
+    private TextField txtNumerador2; // Value injected by FXMLLoader
+            ^
+  symbol:   class TextField
+  location: class Control
+Control.java:51: error: cannot find symbol
+    private TextField txtDenominador2; // Value injected by FXMLLoader
+            ^
+  symbol:   class TextField
+  location: class Control
+Control.java:54: error: cannot find symbol
+    private CheckBox chexSimplificar2; // Value injected by FXMLLoader
+            ^
+  symbol:   class CheckBox
+  location: class Control
+FraccionJava.java:4: error: package javafx.application does not exist
+import javafx.application.Application;
+                         ^
+FraccionJava.java:5: error: package javafx.stage does not exist
+import javafx.stage.Stage;
+                   ^
+FraccionJava.java:6: error: package javafx.scene does not exist
+import javafx.scene.Scene;
+                   ^
+FraccionJava.java:7: error: package javafx.fxml does not exist
+import javafx.fxml.FXMLLoader;
+                  ^
+FraccionJava.java:8: error: package javafx.scene.layout does not exist
+import javafx.scene.layout.Pane;
+                          ^
+FraccionJava.java:9: error: package javafx.fxml does not exist
+import javafx.fxml.FXML;
+                  ^
+FraccionJava.java:11: error: cannot find symbol
+public class FraccionJava extends Application{
+                                  ^
+  symbol: class Application
+FraccionJava.java:14: error: cannot find symbol
+    public void start(Stage stage) throws IOException{
+                      ^
+  symbol:   class Stage
+  location: class FraccionJava
+Control.java:14: error: cannot find symbol
+    @FXML // fx:id="cmdLimpiar"
+     ^
+  symbol:   class FXML
+  location: class Control
+Control.java:17: error: cannot find symbol
+    @FXML // fx:id="cmdSumar"
+     ^
+  symbol:   class FXML
+  location: class Control
+Control.java:20: error: cannot find symbol
+    @FXML // fx:id="cmdRestar"
+     ^
+  symbol:   class FXML
+  location: class Control
+Control.java:23: error: cannot find symbol
+    @FXML // fx:id="cmdMulti"
+     ^
+  symbol:   class FXML
+  location: class Control
+Control.java:26: error: cannot find symbol
+    @FXML // fx:id="cmdDividir"
+     ^
+  symbol:   class FXML
+  location: class Control
+Control.java:29: error: cannot find symbol
+    @FXML // fx:id="txtNumerador1"
+     ^
+  symbol:   class FXML
+  location: class Control
+Control.java:32: error: cannot find symbol
+    @FXML // fx:id="txtDenominador1"
+     ^
+  symbol:   class FXML
+  location: class Control
+Control.java:35: error: cannot find symbol
+    @FXML // fx:id="chexSimplificar1"
+     ^
+  symbol:   class FXML
+  location: class Control
+Control.java:38: error: cannot find symbol
+    @FXML // fx:id="txtNumerador3"
+     ^
+  symbol:   class FXML
+  location: class Control
+Control.java:41: error: cannot find symbol
+    @FXML // fx:id="txtDenominador3"
+     ^
+  symbol:   class FXML
+  location: class Control
+Control.java:44: error: cannot find symbol
+    @FXML // fx:id="chexSimplificar3"
+     ^
+  symbol:   class FXML
+  location: class Control
+Control.java:47: error: cannot find symbol
+    @FXML // fx:id="txtNumerador2"
+     ^
+  symbol:   class FXML
+  location: class Control
+Control.java:50: error: cannot find symbol
+    @FXML // fx:id="txtDenominador2"
+     ^
+  symbol:   class FXML
+  location: class Control
+Control.java:53: error: cannot find symbol
+    @FXML // fx:id="chexSimplificar2"
+     ^
+  symbol:   class FXML
+  location: class Control
+Control.java:64: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class Control
+Control.java:74: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class Control
+Control.java:97: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class Control
+Control.java:103: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class Control
+Control.java:113: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class Control
+Control.java:121: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class Control
+Control.java:133: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class Control
+Control.java:143: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class Control
+Control.java:155: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class Control
+Control.java:163: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class Control
+Control.java:90: error: cannot find symbol
+        Alert alert = new Alert(AlertType.CONFIRMATION);
+        ^
+  symbol:   class Alert
+  location: class Control
+Control.java:90: error: cannot find symbol
+        Alert alert = new Alert(AlertType.CONFIRMATION);
+                          ^
+  symbol:   class Alert
+  location: class Control
+Control.java:90: error: cannot find symbol
+        Alert alert = new Alert(AlertType.CONFIRMATION);
+                                ^
+  symbol:   variable AlertType
+  location: class Control
+FraccionJava.java:16: error: cannot find symbol
+        FXMLLoader loader = new FXMLLoader();
+        ^
+  symbol:   class FXMLLoader
+  location: class FraccionJava
+FraccionJava.java:16: error: cannot find symbol
+        FXMLLoader loader = new FXMLLoader();
+                                ^
+  symbol:   class FXMLLoader
+  location: class FraccionJava
+FraccionJava.java:22: error: cannot find symbol
+        Pane root = (Pane) loader.load(fxmlStream);
+        ^
+  symbol:   class Pane
+  location: class FraccionJava
+FraccionJava.java:22: error: cannot find symbol
+        Pane root = (Pane) loader.load(fxmlStream);
+                     ^
+  symbol:   class Pane
+  location: class FraccionJava
+FraccionJava.java:25: error: cannot find symbol
+        Scene scene = new Scene(root);
+        ^
+  symbol:   class Scene
+  location: class FraccionJava
+FraccionJava.java:25: error: cannot find symbol
+        Scene scene = new Scene(root);
+                          ^
+  symbol:   class Scene
+  location: class FraccionJava
+62 errors
+Not compiled

@@ -1,0 +1,21 @@
+Comment :=>> testSumar: failure. 0 marks
+********************
+expected:<6142> but was:<0>
+
+Comment :=>> testRestar: failure. 0 marks
+********************
+expected:<-202> but was:<0>
+
+Comment :=>> testMultiplicar: failure. 0 marks
+********************
+null
+
+Comment :=>> testDividir: failure. 0 marks
+********************
+null
+
+Comment :=>> testSimplificar: failure. 0 marks
+********************
+expected:<5> but was:<275>
+
+Grade :=>> 0

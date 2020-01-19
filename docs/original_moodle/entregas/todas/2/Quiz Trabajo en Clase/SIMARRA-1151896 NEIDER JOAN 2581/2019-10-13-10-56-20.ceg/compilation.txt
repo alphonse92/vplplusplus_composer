@@ -1,0 +1,7 @@
+Grupo.java:32: error: cannot find symbol
+    return puedeAgregar;
+           ^
+  symbol:   variable puedeAgregar
+  location: class Grupo
+1 error
+Not compiled

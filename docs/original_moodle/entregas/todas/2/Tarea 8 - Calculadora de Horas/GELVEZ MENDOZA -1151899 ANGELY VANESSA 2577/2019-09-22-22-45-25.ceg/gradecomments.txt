@@ -1,0 +1,10 @@
+ testHoraConstructor1: success. 10 marks
+ testHoraConstructor2: success. 10 marks
+ testHoraConstructor3: success. 10 marks
+ testHoraConstructor4: success. 10 marks
+ testHoraConstructor5: success. 10 marks
+ testHoraSonIguales: success. 10 marks
+ testHoraEsMenor: success. 10 marks
+ testHoraEsMayor: success. 10 marks
+ testGetHoraFormato: failure. 0 marks
+ testHoraRestar: success. 10 marks

@@ -1,0 +1,107 @@
+MaquinaSandwich.java:29: error: illegal start of type
+    /Recuerde que no necesita declarar propiedades adicionales/
+    ^
+MaquinaSandwich.java:29: error: ';' expected
+    /Recuerde que no necesita declarar propiedades adicionales/
+     ^
+MaquinaSandwich.java:29: error: ';' expected
+    /Recuerde que no necesita declarar propiedades adicionales/
+                    ^
+MaquinaSandwich.java:29: error: ';' expected
+    /Recuerde que no necesita declarar propiedades adicionales/
+                                      ^
+MaquinaSandwich.java:29: error: ';' expected
+    /Recuerde que no necesita declarar propiedades adicionales/
+                                                              ^
+MaquinaSandwich.java:47: error: illegal start of expression
+       /COMPLETE/
+       ^
+MaquinaSandwich.java:59: error: illegal start of expression
+       /COMPLETE/
+       ^
+MaquinaSandwich.java:60: error: '.class' expected
+       int precio=0;
+           ^
+MaquinaSandwich.java:59: error: not a statement
+       /COMPLETE/
+                ^
+MaquinaSandwich.java:60: error: illegal start of expression
+       int precio=0;
+                 ^
+MaquinaSandwich.java:60: error: ';' expected
+       int precio=0;
+                  ^
+MaquinaSandwich.java:111: error: illegal start of expression
+       /COMPLETE/
+       ^
+MaquinaSandwich.java:112: error: illegal start of expression
+       return (int)(calcularCostoFabricacion(tipoSandwich,tipoPan)*1.35);
+       ^
+MaquinaSandwich.java:111: error: not a statement
+       /COMPLETE/
+                ^
+MaquinaSandwich.java:112: error: not a statement
+       return (int)(calcularCostoFabricacion(tipoSandwich,tipoPan)*1.35);
+              ^
+MaquinaSandwich.java:210: error: illegal start of expression
+       /COMPLETE/
+       ^
+MaquinaSandwich.java:211: error: illegal start of expression
+       return (this.ingresosPorVentas*5) /100;
+       ^
+MaquinaSandwich.java:210: error: not a statement
+       /COMPLETE/
+                ^
+MaquinaSandwich.java:211: error: not a statement
+       return (this.ingresosPorVentas*5) /100;
+                                         ^
+MaquinaSandwich.java:219: error: illegal start of expression
+       /COMPLETE/
+       ^
+MaquinaSandwich.java:220: error: illegal start of expression
+       return (this.ingresosPorVentas*1)/100;
+       ^
+MaquinaSandwich.java:219: error: not a statement
+       /COMPLETE/
+                ^
+MaquinaSandwich.java:220: error: not a statement
+       return (this.ingresosPorVentas*1)/100;
+                                        ^
+MaquinaSandwich.java:227: error: illegal start of expression
+      /COMPLETE/
+      ^
+MaquinaSandwich.java:228: error: illegal start of expression
+      return (this.ingresosPorVentas*10)/100;
+      ^
+MaquinaSandwich.java:227: error: not a statement
+      /COMPLETE/
+               ^
+MaquinaSandwich.java:228: error: not a statement
+      return (this.ingresosPorVentas*10)/100;
+                                        ^
+MaquinaSandwich.java:231: error: illegal start of type
+    /COMPLETE LOS METODOS GET/SET DE LAS PROPIEDADES/
+    ^
+MaquinaSandwich.java:231: error: ';' expected
+    /COMPLETE LOS METODOS GET/SET DE LAS PROPIEDADES/
+     ^
+MaquinaSandwich.java:231: error: ';' expected
+    /COMPLETE LOS METODOS GET/SET DE LAS PROPIEDADES/
+                         ^
+MaquinaSandwich.java:231: error: <identifier> expected
+    /COMPLETE LOS METODOS GET/SET DE LAS PROPIEDADES/
+                             ^
+MaquinaSandwich.java:231: error: ';' expected
+    /COMPLETE LOS METODOS GET/SET DE LAS PROPIEDADES/
+                                    ^
+MaquinaSandwich.java:231: error: ';' expected
+    /COMPLETE LOS METODOS GET/SET DE LAS PROPIEDADES/
+                                                    ^
+MaquinaSandwich.java:235: error: unclosed comment
+    /*Getter method cantidadQueso/
+    ^
+MaquinaSandwich.java:347: error: reached end of file while parsing
+}
+ ^
+35 errors
+Not compiled

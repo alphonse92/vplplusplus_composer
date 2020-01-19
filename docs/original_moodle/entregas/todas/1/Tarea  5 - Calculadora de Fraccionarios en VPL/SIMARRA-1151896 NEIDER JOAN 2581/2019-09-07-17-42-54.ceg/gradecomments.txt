@@ -1,0 +1,5 @@
+ testSumar: failure. 0 marks
+ testRestar: failure. 0 marks
+ testMultiplicar: failure. 0 marks
+ testDividir: failure. 0 marks
+ testSimplificar: failure. 0 marks

@@ -1,0 +1,26 @@
+Hora.java:1: error: class, interface, or enum expected
+**
+^
+Hora.java:1: error: class, interface, or enum expected
+**
+ ^
+Hora.java:2: error: class, interface, or enum expected
+ * Clase Hora
+ ^
+Hora.java:2: error: class, interface, or enum expected
+ * Clase Hora
+   ^
+Hora.java:4: error: ')' expected
+ * @author (Milton Jesús Vera Contreras miltonjesusvc@ufps.edu.co) 
+                  ^
+Hora.java:4: error: class, interface, or enum expected
+ * @author (Milton Jesús Vera Contreras miltonjesusvc@ufps.edu.co) 
+                   ^
+Hora.java:4: error: class, interface, or enum expected
+ * @author (Milton Jesús Vera Contreras miltonjesusvc@ufps.edu.co) 
+                                                                 ^
+Hora.java:5: error: class, interface, or enum expected
+ * @version 0.000000000000001 :) --> Math.sin(Math.PI-Double.MIN_VALUE)
+            ^
+8 errors
+Not compiled

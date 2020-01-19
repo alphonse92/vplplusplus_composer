@@ -1,0 +1,85 @@
+Comment :=>> t1.testHoraConstructor(): success. 8 marks
+
+Comment :=>> t1.testHoraEsMenorMayor(): success. 8 marks
+
+Comment :=>> t1.testHoraRestarEnSegundos(): success. 8 marks
+
+Comment :=>> t2.testConstructor1(): failure. 0 marks
+********************
+null
+
+Comment :=>> t2.testConstructor2(): failure. 0 marks
+********************
+expected:<10000> but was:<0>
+
+Comment :=>> t2.testRegistrarSalida1(): failure. 0 marks
+********************
+expected:<16.03027777777778> but was:<0.0>
+
+Comment :=>> t2.testRegistrarSalida2(): failure. 0 marks
+********************
+expected:<16.03027777777778> but was:<0.0>
+
+Comment :=>> t2.testRegistrarSalida3(): failure. 0 marks
+********************
+expected:<16.03027777777778> but was:<0.0>
+
+Comment :=>> t2.testRegistrarSalida4(): failure. 0 marks
+********************
+expected:<16.03027777777778> but was:<0.0>
+
+Comment :=>> t3.testConstructor1(): failure. 0 marks
+********************
+null
+
+Comment :=>> t3.testConstructor2(): failure. 0 marks
+********************
+null
+
+Comment :=>> t3.testTegistrarIngreso1(): failure. 0 marks
+********************
+null
+
+Comment :=>> t3.testTegistrarIngreso2(): failure. 0 marks
+********************
+expected:<false> but was:<true>
+
+Comment :=>> t3.testTegistrarIngreso3(): success. 4 marks
+
+Comment :=>> t3.testRegistrarIngreso4(): failure. 0 marks
+********************
+expected:<false> but was:<true>
+
+Comment :=>> t3.testBuscar(): failure. 0 marks
+********************
+expected:<0> but was:<-1>
+
+Comment :=>> t3.testRegistrarSalida1(): failure. 0 marks
+********************
+null
+
+Comment :=>> t3.testRegistrarSalida2(): failure. 0 marks
+********************
+null
+
+Comment :=>> t3.testRegistrarSalida3(): failure. 0 marks
+********************
+null
+
+Comment :=>> t3.testResumen1(): failure. 0 marks
+********************
+expected:<2397919.44> but was:<0.0>
+
+Comment :=>> t3.testResumen2(): failure. 0 marks
+********************
+expected:<1198959.72> but was:<0.0>
+
+Comment :=>> t3.testResumen3(): failure. 0 marks
+********************
+expected:<479583.89> but was:<0.0>
+
+Comment :=>> t3.testResumen4(): failure. 0 marks
+********************
+expected:<239791.94> but was:<0.0>
+
+Grade :=>> 42

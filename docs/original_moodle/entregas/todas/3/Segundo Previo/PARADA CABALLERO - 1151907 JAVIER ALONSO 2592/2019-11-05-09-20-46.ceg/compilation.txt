@@ -1,0 +1,11 @@
+Almuerzo.java:34: error: illegal start of expression
+       return 0;
+       ^
+Almuerzo.java:33: error: not a statement
+       Fruta.getPrecio() + 
+                         ^
+Almuerzo.java:34: error: not a statement
+       return 0;
+              ^
+3 errors
+Not compiled

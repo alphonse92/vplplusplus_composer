@@ -1,0 +1,95 @@
+Comment :=>> testStaticFinal(): failure. 0 marks
+********************
+expected:<10> but was:<15>
+
+Comment :=>> testConstructor1(): success. 2 marks
+
+Comment :=>> testConstructor2(): success. 2 marks
+
+Comment :=>> testConstructor3(): success. 2 marks
+
+Comment :=>> testCalcularPrecioFabricacion1(): success. 3 marks
+
+Comment :=>> testCalcularPrecioFabricacion2(): failure. 0 marks
+********************
+expected:<548> but was:<1000>
+
+Comment :=>> testCalcularPrecioVenta1(): success. 3 marks
+
+Comment :=>> testCalcularPrecioVenta2(): failure. 0 marks
+********************
+expected:<739> but was:<1350>
+
+Comment :=>> testRegistrarVentaFull(): failure. 0 marks
+********************
+expected:<1350> but was:<0>
+
+Comment :=>> testRegistrarVentaQueso(): success. 3 marks
+
+Comment :=>> testRegistrarVentaMortadela(): success. 3 marks
+
+Comment :=>> testRegistrarVentaJamon(): success. 3 marks
+
+Comment :=>> testRegistrarVentaPanBlanco(): failure. 0 marks
+********************
+expected:<88> but was:<86>
+
+Comment :=>> testRegistrarVentaPanIntegral(): failure. 0 marks
+********************
+expected:<94> but was:<96>
+
+Comment :=>> testRegistrarVentaIngresos1(): failure. 0 marks
+********************
+expected:<1350> but was:<0>
+
+Comment :=>> testRegistrarVentaIngresos2(): failure. 0 marks
+********************
+expected:<739> but was:<0>
+
+Comment :=>> testPorcentajes1(): failure. 0 marks
+********************
+expected:<0> but was:<684>
+
+Comment :=>> testPorcentajes2(): failure. 0 marks
+********************
+expected:<0> but was:<684>
+
+Comment :=>> testIngredientesSuficientesSimpleBlanco(): failure. 0 marks
+********************
+Mensaje de Error
+
+Comment :=>> testIngredientesSuficientesSimpleIntegral(): success. 3 marks
+
+Comment :=>> testIngredientesSuficientesExquisitoBlanco(): failure. 0 marks
+********************
+Mensaje de Error
+
+Comment :=>> testIngredientesSuficientesExquisitoIntegral(): failure. 0 marks
+********************
+expected:<100> but was:<0>
+
+Comment :=>> testIngredientesInsuficientesSimpleBlanco(): failure. 0 marks
+********************
+Mensaje de Error
+
+Comment :=>> testIngredientesInsuficientesSimpleIntegral(): failure. 0 marks
+********************
+null
+
+Comment :=>> testIngredientesInsuficientesExquisitoBlanco(): failure. 0 marks
+********************
+Mensaje de Error
+
+Comment :=>> testIngredientesInsuficientesExquisitoIntegral(): failure. 0 marks
+********************
+null
+
+Comment :=>> testEspecial1(): failure. 0 marks
+********************
+Mensaje de Error
+
+Comment :=>> testEspecial2(): failure. 0 marks
+********************
+Mensaje de Error
+
+Grade :=>> 24

@@ -1,0 +1,11 @@
+./Alumno.java:11: error: duplicate class: mundo.Alumno
+public class Alumno
+       ^
+AlumnoTest.java:46: error: cannot access Alumno
+        Alumno alumno1 = new Alumno("1", "Primero", "de la lista", 16, 4.2f);
+        ^
+  bad source file: ./Alumno.java
+    file does not contain class Alumno
+    Please remove or make sure it appears in the correct subdirectory of the sourcepath.
+2 errors
+Not compiled

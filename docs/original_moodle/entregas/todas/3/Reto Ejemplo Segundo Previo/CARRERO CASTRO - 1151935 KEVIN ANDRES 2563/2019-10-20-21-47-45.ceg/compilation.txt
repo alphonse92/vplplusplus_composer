@@ -1,0 +1,75 @@
+Parqueadero.java:34: error: Vehiculo is abstract; cannot be instantiated
+        Vehiculo retirarVehiculo = new Vehiculo(placa, 0, hora, minuto, segundo);
+                                   ^
+Parqueadero.java:35: error: cannot find symbol
+        if(temp != null){
+           ^
+  symbol:   variable temp
+  location: class Parqueadero
+Parqueadero.java:36: error: cannot find symbol
+           for(int i = numero - 1 ; i<contadorMaterias-1 ; i++)
+                       ^
+  symbol:   variable numero
+  location: class Parqueadero
+Parqueadero.java:36: error: cannot find symbol
+           for(int i = numero - 1 ; i<contadorMaterias-1 ; i++)
+                                      ^
+  symbol:   variable contadorMaterias
+  location: class Parqueadero
+Parqueadero.java:37: error: cannot find symbol
+               materias[i] = materias[i+1];      
+               ^
+  symbol:   variable materias
+  location: class Parqueadero
+Parqueadero.java:37: error: cannot find symbol
+               materias[i] = materias[i+1];      
+                             ^
+  symbol:   variable materias
+  location: class Parqueadero
+Parqueadero.java:39: error: cannot find symbol
+        materias[contadorMaterias-1] = null;
+        ^
+  symbol:   variable materias
+  location: class Parqueadero
+Parqueadero.java:39: error: cannot find symbol
+        materias[contadorMaterias-1] = null;
+                 ^
+  symbol:   variable contadorMaterias
+  location: class Parqueadero
+Parqueadero.java:40: error: cannot find symbol
+        contadorMaterias--;   
+        ^
+  symbol:   variable contadorMaterias
+  location: class Parqueadero
+Parqueadero.java:42: error: cannot find symbol
+        return temp;
+               ^
+  symbol:   variable temp
+  location: class Parqueadero
+Parqueadero.java:46: error: cannot find symbol
+       if(this.placa > 0 && numero <= this.alumnos.length)
+              ^
+  symbol: variable placa
+Parqueadero.java:46: error: cannot find symbol
+       if(this.placa > 0 && numero <= this.alumnos.length)
+                            ^
+  symbol:   variable numero
+  location: class Parqueadero
+Parqueadero.java:46: error: cannot find symbol
+       if(this.placa > 0 && numero <= this.alumnos.length)
+                                          ^
+  symbol: variable alumnos
+Parqueadero.java:47: error: cannot find symbol
+         return this.alumnos[numero-1];
+                    ^
+  symbol: variable alumnos
+Parqueadero.java:47: error: cannot find symbol
+         return this.alumnos[numero-1];
+                             ^
+  symbol:   variable numero
+  location: class Parqueadero
+Parqueadero.java:49: error: incompatible types: <null> cannot be converted to int
+         return null;
+                ^
+16 errors
+Not compiled

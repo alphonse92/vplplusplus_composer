@@ -1,0 +1,502 @@
+Universidad.java:15: error: cannot find symbol
+    protected Materia [] materias;
+              ^
+  symbol:   class Materia
+  location: class Universidad
+Universidad.java:16: error: cannot find symbol
+    protected Alumno [] alumnos;
+              ^
+  symbol:   class Alumno
+  location: class Universidad
+Universidad.java:41: error: cannot find symbol
+    public boolean contieneMateria(Materia materia){
+                                   ^
+  symbol:   class Materia
+  location: class Universidad
+Universidad.java:64: error: cannot find symbol
+    public boolean contieneAlumno(Alumno alumno){
+                                  ^
+  symbol:   class Alumno
+  location: class Universidad
+Universidad.java:77: error: cannot find symbol
+    public Alumno getAlumno(int numero)
+           ^
+  symbol:   class Alumno
+  location: class Universidad
+Universidad.java:87: error: cannot find symbol
+    public Materia getMateria(int numero)
+           ^
+  symbol:   class Materia
+  location: class Universidad
+Universidad.java:101: error: cannot find symbol
+    public Alumno eliminarAlumno(int numero){
+           ^
+  symbol:   class Alumno
+  location: class Universidad
+Universidad.java:119: error: cannot find symbol
+    public Materia eliminarMateria(int numero){
+           ^
+  symbol:   class Materia
+  location: class Universidad
+AlumnoTest.java:46: error: cannot find symbol
+        Alumno alumno1 = new Alumno("1", "Primero", "de la lista", 16, 4.2f);
+        ^
+  symbol:   class Alumno
+  location: class AlumnoTest
+AlumnoTest.java:46: error: cannot find symbol
+        Alumno alumno1 = new Alumno("1", "Primero", "de la lista", 16, 4.2f);
+                             ^
+  symbol:   class Alumno
+  location: class AlumnoTest
+AlumnoTest.java:53: error: cannot find symbol
+        alumno1 = new Alumno("1", "Primero", "de la lista", 16, 3.0f);
+                      ^
+  symbol:   class Alumno
+  location: class AlumnoTest
+GrupoTest.java:49: error: cannot find symbol
+        Materia materia1 = new Materia("POO II", r);
+        ^
+  symbol:   class Materia
+  location: class GrupoTest
+GrupoTest.java:49: error: cannot find symbol
+        Materia materia1 = new Materia("POO II", r);
+                               ^
+  symbol:   class Materia
+  location: class GrupoTest
+GrupoTest.java:50: error: cannot find symbol
+        Grupo grupo1 = new Grupo(materia1);
+        ^
+  symbol:   class Grupo
+  location: class GrupoTest
+GrupoTest.java:50: error: cannot find symbol
+        Grupo grupo1 = new Grupo(materia1);
+                           ^
+  symbol:   class Grupo
+  location: class GrupoTest
+GrupoTest.java:60: error: cannot find symbol
+        Materia materia1 = new Materia("POO II", 4);
+        ^
+  symbol:   class Materia
+  location: class GrupoTest
+GrupoTest.java:60: error: cannot find symbol
+        Materia materia1 = new Materia("POO II", 4);
+                               ^
+  symbol:   class Materia
+  location: class GrupoTest
+GrupoTest.java:61: error: cannot find symbol
+        Alumno alumno1 = new Alumno("1", "Primero", "de la lista", 16, 4.2f);
+        ^
+  symbol:   class Alumno
+  location: class GrupoTest
+GrupoTest.java:61: error: cannot find symbol
+        Alumno alumno1 = new Alumno("1", "Primero", "de la lista", 16, 4.2f);
+                             ^
+  symbol:   class Alumno
+  location: class GrupoTest
+GrupoTest.java:62: error: cannot find symbol
+        Alumno alumno2 = new Alumno("2", "Segundo", "de la lista", 16, 3.6f);
+        ^
+  symbol:   class Alumno
+  location: class GrupoTest
+GrupoTest.java:62: error: cannot find symbol
+        Alumno alumno2 = new Alumno("2", "Segundo", "de la lista", 16, 3.6f);
+                             ^
+  symbol:   class Alumno
+  location: class GrupoTest
+GrupoTest.java:63: error: cannot find symbol
+        Alumno alumno3 = new Alumno("3", "Tercero", "de la lista", 16, 3.5f);
+        ^
+  symbol:   class Alumno
+  location: class GrupoTest
+GrupoTest.java:63: error: cannot find symbol
+        Alumno alumno3 = new Alumno("3", "Tercero", "de la lista", 16, 3.5f);
+                             ^
+  symbol:   class Alumno
+  location: class GrupoTest
+GrupoTest.java:64: error: cannot find symbol
+        Alumno alumno4 = new Alumno("4", "Cuarto", "de la lista", 16, 3.5f);        
+        ^
+  symbol:   class Alumno
+  location: class GrupoTest
+GrupoTest.java:64: error: cannot find symbol
+        Alumno alumno4 = new Alumno("4", "Cuarto", "de la lista", 16, 3.5f);        
+                             ^
+  symbol:   class Alumno
+  location: class GrupoTest
+GrupoTest.java:65: error: cannot find symbol
+        Grupo grupo1 = new Grupo(materia1);
+        ^
+  symbol:   class Grupo
+  location: class GrupoTest
+GrupoTest.java:65: error: cannot find symbol
+        Grupo grupo1 = new Grupo(materia1);
+                           ^
+  symbol:   class Grupo
+  location: class GrupoTest
+GrupoTest.java:75: error: cannot find symbol
+        Materia materia1 = new Materia("POO II", 3);
+        ^
+  symbol:   class Materia
+  location: class GrupoTest
+GrupoTest.java:75: error: cannot find symbol
+        Materia materia1 = new Materia("POO II", 3);
+                               ^
+  symbol:   class Materia
+  location: class GrupoTest
+GrupoTest.java:76: error: cannot find symbol
+        Alumno alumno1 = new Alumno("1", "Primero", "de la lista", 16, 4.2f);
+        ^
+  symbol:   class Alumno
+  location: class GrupoTest
+GrupoTest.java:76: error: cannot find symbol
+        Alumno alumno1 = new Alumno("1", "Primero", "de la lista", 16, 4.2f);
+                             ^
+  symbol:   class Alumno
+  location: class GrupoTest
+GrupoTest.java:77: error: cannot find symbol
+        Alumno alumno2 = new Alumno("2", "Segundo", "de la lista", 16, 3.6f);
+        ^
+  symbol:   class Alumno
+  location: class GrupoTest
+GrupoTest.java:77: error: cannot find symbol
+        Alumno alumno2 = new Alumno("2", "Segundo", "de la lista", 16, 3.6f);
+                             ^
+  symbol:   class Alumno
+  location: class GrupoTest
+GrupoTest.java:78: error: cannot find symbol
+        Alumno alumno3 = new Alumno("3", "Tercero", "de la lista", 16, 3.5f);
+        ^
+  symbol:   class Alumno
+  location: class GrupoTest
+GrupoTest.java:78: error: cannot find symbol
+        Alumno alumno3 = new Alumno("3", "Tercero", "de la lista", 16, 3.5f);
+                             ^
+  symbol:   class Alumno
+  location: class GrupoTest
+GrupoTest.java:79: error: cannot find symbol
+        Alumno alumno4 = new Alumno("4", "Cuarto", "de la lista", 16, 3.5f);        
+        ^
+  symbol:   class Alumno
+  location: class GrupoTest
+GrupoTest.java:79: error: cannot find symbol
+        Alumno alumno4 = new Alumno("4", "Cuarto", "de la lista", 16, 3.5f);        
+                             ^
+  symbol:   class Alumno
+  location: class GrupoTest
+GrupoTest.java:80: error: cannot find symbol
+        Grupo grupo1 = new Grupo(materia1);
+        ^
+  symbol:   class Grupo
+  location: class GrupoTest
+GrupoTest.java:80: error: cannot find symbol
+        Grupo grupo1 = new Grupo(materia1);
+                           ^
+  symbol:   class Grupo
+  location: class GrupoTest
+GrupoTest.java:90: error: cannot find symbol
+        Materia materia1 = new Materia("POO II", 4);
+        ^
+  symbol:   class Materia
+  location: class GrupoTest
+GrupoTest.java:90: error: cannot find symbol
+        Materia materia1 = new Materia("POO II", 4);
+                               ^
+  symbol:   class Materia
+  location: class GrupoTest
+GrupoTest.java:91: error: cannot find symbol
+        Alumno alumno1 = new Alumno("1", "Primero", "de la lista", 16, 4.2f);
+        ^
+  symbol:   class Alumno
+  location: class GrupoTest
+GrupoTest.java:91: error: cannot find symbol
+        Alumno alumno1 = new Alumno("1", "Primero", "de la lista", 16, 4.2f);
+                             ^
+  symbol:   class Alumno
+  location: class GrupoTest
+GrupoTest.java:92: error: cannot find symbol
+        Alumno alumno2 = new Alumno("1", "Segundo", "de la lista", 16, 3.6f);
+        ^
+  symbol:   class Alumno
+  location: class GrupoTest
+GrupoTest.java:92: error: cannot find symbol
+        Alumno alumno2 = new Alumno("1", "Segundo", "de la lista", 16, 3.6f);
+                             ^
+  symbol:   class Alumno
+  location: class GrupoTest
+GrupoTest.java:93: error: cannot find symbol
+        Alumno alumno3 = new Alumno("3", "Primero", "de la lista", 16, 3.5f);
+        ^
+  symbol:   class Alumno
+  location: class GrupoTest
+GrupoTest.java:93: error: cannot find symbol
+        Alumno alumno3 = new Alumno("3", "Primero", "de la lista", 16, 3.5f);
+                             ^
+  symbol:   class Alumno
+  location: class GrupoTest
+GrupoTest.java:94: error: cannot find symbol
+        Alumno alumno4 = new Alumno("4", "Cuarto", "de la lista", 16, 3.5f);        
+        ^
+  symbol:   class Alumno
+  location: class GrupoTest
+GrupoTest.java:94: error: cannot find symbol
+        Alumno alumno4 = new Alumno("4", "Cuarto", "de la lista", 16, 3.5f);        
+                             ^
+  symbol:   class Alumno
+  location: class GrupoTest
+GrupoTest.java:95: error: cannot find symbol
+        Grupo grupo1 = new Grupo(materia1);
+        ^
+  symbol:   class Grupo
+  location: class GrupoTest
+GrupoTest.java:95: error: cannot find symbol
+        Grupo grupo1 = new Grupo(materia1);
+                           ^
+  symbol:   class Grupo
+  location: class GrupoTest
+InscripcionTest.java:48: error: cannot find symbol
+        Alumno alumno1 = new Alumno("1", "Primero", "de la lista", 16, 4.2f);
+        ^
+  symbol:   class Alumno
+  location: class InscripcionTest
+InscripcionTest.java:48: error: cannot find symbol
+        Alumno alumno1 = new Alumno("1", "Primero", "de la lista", 16, 4.2f);
+                             ^
+  symbol:   class Alumno
+  location: class InscripcionTest
+InscripcionTest.java:49: error: cannot find symbol
+        Materia materia1 = new Materia("POO II", 40);
+        ^
+  symbol:   class Materia
+  location: class InscripcionTest
+InscripcionTest.java:49: error: cannot find symbol
+        Materia materia1 = new Materia("POO II", 40);
+                               ^
+  symbol:   class Materia
+  location: class InscripcionTest
+InscripcionTest.java:50: error: cannot find symbol
+        Inscripcion inscripc1 = new Inscripcion(alumno1, materia1);
+        ^
+  symbol:   class Inscripcion
+  location: class InscripcionTest
+InscripcionTest.java:50: error: cannot find symbol
+        Inscripcion inscripc1 = new Inscripcion(alumno1, materia1);
+                                    ^
+  symbol:   class Inscripcion
+  location: class InscripcionTest
+MateriaTest.java:48: error: cannot find symbol
+        Materia materia1 = new Materia("POO II", r);
+        ^
+  symbol:   class Materia
+  location: class MateriaTest
+MateriaTest.java:48: error: cannot find symbol
+        Materia materia1 = new Materia("POO II", r);
+                               ^
+  symbol:   class Materia
+  location: class MateriaTest
+MateriaTest.java:59: error: cannot find symbol
+        Materia materia1 = new Materia("POO II", 40);
+        ^
+  symbol:   class Materia
+  location: class MateriaTest
+MateriaTest.java:59: error: cannot find symbol
+        Materia materia1 = new Materia("POO II", 40);
+                               ^
+  symbol:   class Materia
+  location: class MateriaTest
+MateriaTest.java:60: error: cannot find symbol
+        Alumno alumno1 = new Alumno("1", "Primero", "de la lista", 16, 4.2f);
+        ^
+  symbol:   class Alumno
+  location: class MateriaTest
+MateriaTest.java:60: error: cannot find symbol
+        Alumno alumno1 = new Alumno("1", "Primero", "de la lista", 16, 4.2f);
+                             ^
+  symbol:   class Alumno
+  location: class MateriaTest
+MateriaTest.java:61: error: cannot find symbol
+        Alumno alumno2 = new Alumno("2", "Segundo", "de la lista", 16, 4.2f);
+        ^
+  symbol:   class Alumno
+  location: class MateriaTest
+MateriaTest.java:61: error: cannot find symbol
+        Alumno alumno2 = new Alumno("2", "Segundo", "de la lista", 16, 4.2f);
+                             ^
+  symbol:   class Alumno
+  location: class MateriaTest
+MateriaTest.java:71: error: cannot find symbol
+        Materia materia1 = new Materia("POO II", 40);
+        ^
+  symbol:   class Materia
+  location: class MateriaTest
+MateriaTest.java:71: error: cannot find symbol
+        Materia materia1 = new Materia("POO II", 40);
+                               ^
+  symbol:   class Materia
+  location: class MateriaTest
+MateriaTest.java:72: error: cannot find symbol
+        Alumno alumno1 = new Alumno("1", "Primero", "de la lista", 16, 4.2f);
+        ^
+  symbol:   class Alumno
+  location: class MateriaTest
+MateriaTest.java:72: error: cannot find symbol
+        Alumno alumno1 = new Alumno("1", "Primero", "de la lista", 16, 4.2f);
+                             ^
+  symbol:   class Alumno
+  location: class MateriaTest
+MateriaTest.java:73: error: cannot find symbol
+        Alumno alumno2 = new Alumno("2", "Segundo", "de la lista", 16, 3.0f);
+        ^
+  symbol:   class Alumno
+  location: class MateriaTest
+MateriaTest.java:73: error: cannot find symbol
+        Alumno alumno2 = new Alumno("2", "Segundo", "de la lista", 16, 3.0f);
+                             ^
+  symbol:   class Alumno
+  location: class MateriaTest
+MateriaTest.java:74: error: cannot find symbol
+        Alumno alumno3 = new Alumno("3", "Tercero", "de la lista", 16, 3.5f);
+        ^
+  symbol:   class Alumno
+  location: class MateriaTest
+MateriaTest.java:74: error: cannot find symbol
+        Alumno alumno3 = new Alumno("3", "Tercero", "de la lista", 16, 3.5f);
+                             ^
+  symbol:   class Alumno
+  location: class MateriaTest
+MateriaTest.java:85: error: cannot find symbol
+        Materia materia1 = new Materia("POO II", 40);
+        ^
+  symbol:   class Materia
+  location: class MateriaTest
+MateriaTest.java:85: error: cannot find symbol
+        Materia materia1 = new Materia("POO II", 40);
+                               ^
+  symbol:   class Materia
+  location: class MateriaTest
+MateriaTest.java:86: error: cannot find symbol
+        Alumno alumno1 = new Alumno("1", "Primero", "de la lista", 16, 4.2f);
+        ^
+  symbol:   class Alumno
+  location: class MateriaTest
+MateriaTest.java:86: error: cannot find symbol
+        Alumno alumno1 = new Alumno("1", "Primero", "de la lista", 16, 4.2f);
+                             ^
+  symbol:   class Alumno
+  location: class MateriaTest
+MateriaTest.java:87: error: cannot find symbol
+        Alumno alumno2 = new Alumno("2", "Segundo", "de la lista", 16, 3.6f);
+        ^
+  symbol:   class Alumno
+  location: class MateriaTest
+MateriaTest.java:87: error: cannot find symbol
+        Alumno alumno2 = new Alumno("2", "Segundo", "de la lista", 16, 3.6f);
+                             ^
+  symbol:   class Alumno
+  location: class MateriaTest
+MateriaTest.java:88: error: cannot find symbol
+        Alumno alumno3 = new Alumno("3", "Tercero", "de la lista", 16, 3.5f);
+        ^
+  symbol:   class Alumno
+  location: class MateriaTest
+MateriaTest.java:88: error: cannot find symbol
+        Alumno alumno3 = new Alumno("3", "Tercero", "de la lista", 16, 3.5f);
+                             ^
+  symbol:   class Alumno
+  location: class MateriaTest
+MateriaTest.java:103: error: cannot find symbol
+        Materia materia1 = new Materia("POO II", 8);
+        ^
+  symbol:   class Materia
+  location: class MateriaTest
+MateriaTest.java:103: error: cannot find symbol
+        Materia materia1 = new Materia("POO II", 8);
+                               ^
+  symbol:   class Materia
+  location: class MateriaTest
+MateriaTest.java:104: error: cannot find symbol
+        Alumno alumno = null;
+        ^
+  symbol:   class Alumno
+  location: class MateriaTest
+MateriaTest.java:105: error: cannot find symbol
+        Alumno [ ] alumnos = new Alumno[100];
+        ^
+  symbol:   class Alumno
+  location: class MateriaTest
+MateriaTest.java:105: error: cannot find symbol
+        Alumno [ ] alumnos = new Alumno[100];
+                                 ^
+  symbol:   class Alumno
+  location: class MateriaTest
+MateriaTest.java:107: error: cannot find symbol
+         alumno = new Alumno(""+i, "Alumno " + i, "de la lista", 16, 4.2f);
+                      ^
+  symbol:   class Alumno
+  location: class MateriaTest
+MateriaTest.java:112: error: cannot find symbol
+        ArrayList<Grupo> grupos = materia1.grupos;
+                  ^
+  symbol:   class Grupo
+  location: class MateriaTest
+Universidad.java:23: error: cannot find symbol
+      this.materias = new Materia[MAX_MATERIAS];
+                          ^
+  symbol:   class Materia
+  location: class Universidad
+Universidad.java:24: error: cannot find symbol
+      this.alumnos = new Alumno[MAX_ALUMNOS];
+                         ^
+  symbol:   class Alumno
+  location: class Universidad
+Universidad.java:33: error: cannot find symbol
+        Materia nueva = new Materia(nombre,maximoDeAlumnosPorGrupo);
+        ^
+  symbol:   class Materia
+  location: class Universidad
+Universidad.java:33: error: cannot find symbol
+        Materia nueva = new Materia(nombre,maximoDeAlumnosPorGrupo);
+                            ^
+  symbol:   class Materia
+  location: class Universidad
+Universidad.java:55: error: cannot find symbol
+        Alumno nuevo = new Alumno(codigo,nombres,apellidos,edad,promedio);
+        ^
+  symbol:   class Alumno
+  location: class Universidad
+Universidad.java:55: error: cannot find symbol
+        Alumno nuevo = new Alumno(codigo,nombres,apellidos,edad,promedio);
+                           ^
+  symbol:   class Alumno
+  location: class Universidad
+Universidad.java:103: error: cannot find symbol
+      Alumno a = getAlumno(numero);
+      ^
+  symbol:   class Alumno
+  location: class Universidad
+Universidad.java:121: error: cannot find symbol
+       Materia a = getMateria(numero);
+       ^
+  symbol:   class Materia
+  location: class Universidad
+UniversidadTest.java:166: error: cannot find symbol
+        Alumno a = null;
+        ^
+  symbol:   class Alumno
+  location: class UniversidadTest
+UniversidadTest.java:172: error: cannot find symbol
+            assertEquals(true, u.contieneAlumno(new Alumno("151100"+i,"a"+i,"a"+i,(17+i)%23,(3f+i/100f))));
+                                                    ^
+  symbol:   class Alumno
+  location: class UniversidadTest
+UniversidadTest.java:179: error: cannot find symbol
+        Materia m = null;
+        ^
+  symbol:   class Materia
+  location: class UniversidadTest
+UniversidadTest.java:185: error: cannot find symbol
+            assertEquals(true, u.contieneMateria(new Materia("151100"+i,i)));
+                                                     ^
+  symbol:   class Materia
+  location: class UniversidadTest
+100 errors
+Not compiled

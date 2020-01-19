@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="468.0" prefWidth="687.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Control">
+   <children>
+      <Button fx:id="cmdLimpiarDatos" layoutY="432.0" mnemonicParsing="false" onAction="#LimpiarDatos" prefHeight="34.0" prefWidth="142.0" text="Limpiar Datos" />
+      <Button fx:id="cmdSumar" layoutX="143.0" layoutY="432.0" mnemonicParsing="false" onAction="#Sumar" prefHeight="34.0" prefWidth="142.0" text="Sumar" />
+      <Button fx:id="cmdRestar" layoutX="285.0" layoutY="432.0" mnemonicParsing="false" onAction="#Restar" prefHeight="34.0" prefWidth="152.0" text="Restar" />
+      <Button fx:id="cmdMulti" layoutX="437.0" layoutY="432.0" mnemonicParsing="false" onAction="#Mult" prefHeight="34.0" prefWidth="126.0" text="Multiplicar" />
+      <Button fx:id="cmdDividir" layoutX="563.0" layoutY="432.0" mnemonicParsing="false" onAction="#Div" prefHeight="34.0" prefWidth="126.0" text="Dividir" />
+      <Label layoutX="111.0" layoutY="14.0" prefHeight="53.0" prefWidth="477.0" text="Calculadora De Fraccionarios">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="62.0" prefHeight="2.0" prefWidth="97.0" text="Fraccionario 1 " />
+      <Label layoutX="38.0" layoutY="99.0" prefHeight="18.0" prefWidth="104.0" text="Numerador:" />
+      <Label layoutX="41.0" layoutY="126.0" prefHeight="18.0" prefWidth="91.0" text="Denominador: " />
+      <Label layoutX="41.0" layoutY="161.0" prefHeight="18.0" prefWidth="91.0" text="Simplificar:" />
+      <TextField fx:id="txtNumerador1" layoutX="138.0" layoutY="95.0" promptText="Numerador1" />
+      <TextField fx:id="txtDenominador1" layoutX="138.0" layoutY="122.0" promptText="Denominador1" />
+      <CheckBox fx:id="chexSimplificar1" layoutX="189.0" layoutY="161.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="21.0" text="Simplificar1" />
+      <Label layoutX="14.0" layoutY="192.0" prefHeight="2.0" prefWidth="97.0" text="Fraccionario 2" />
+      <Label layoutX="14.0" layoutY="322.0" prefHeight="18.0" prefWidth="152.0" text="Fraccionario Resultante " />
+      <Label layoutX="35.0" layoutY="351.0" prefHeight="18.0" prefWidth="104.0" text="Numerador:" />
+      <Label layoutX="35.0" layoutY="223.0" prefHeight="18.0" prefWidth="104.0" text="Numerador:" />
+      <Label layoutX="35.0" layoutY="376.0" prefHeight="18.0" prefWidth="91.0" text="Denominador: " />
+      <Label layoutX="35.0" layoutY="257.0" prefHeight="18.0" prefWidth="91.0" text="Denominador: " />
+      <Label layoutX="35.0" layoutY="290.0" prefHeight="18.0" prefWidth="91.0" text="Simplificar:" />
+      <Label layoutX="35.0" layoutY="402.0" prefHeight="18.0" prefWidth="91.0" text="Simplificar:" />
+      <TextField fx:id="txtNumerador3" layoutX="138.0" layoutY="347.0" promptText="NumeradorR" />
+      <TextField fx:id="txtNumerador2" layoutX="138.0" layoutY="219.0" promptText="Numerador2" />
+      <TextField fx:id="txtDenominador3" layoutX="138.0" layoutY="372.0" promptText="DenominadorR" />
+      <TextField fx:id="txtDenominador2" layoutX="138.0" layoutY="253.0" promptText="Denominador2" />
+      <CheckBox fx:id="chexSimplificar2" layoutX="189.0" layoutY="290.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="21.0" text="Simplificar2" />
+      <CheckBox fx:id="chexSimplificar3" layoutX="189.0" layoutY="402.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="21.0" text="SimplificarR" />
+      <Separator layoutY="64.0" prefHeight="0.0" prefWidth="687.0" />
+      <Separator layoutY="191.0" prefHeight="3.0" prefWidth="338.0" />
+      <Separator layoutY="321.0" prefHeight="3.0" prefWidth="338.0" />
+      <Separator layoutX="335.0" layoutY="64.0" orientation="VERTICAL" prefHeight="368.0" prefWidth="6.0" />
+      <Separator layoutX="-3.0" layoutY="65.0" orientation="VERTICAL" prefHeight="368.0" prefWidth="6.0" />
+      <Separator layoutY="431.0" prefHeight="3.0" prefWidth="338.0" />
+      <ImageView fitHeight="265.0" fitWidth="338.0" layoutX="344.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@matematicas-una-ciencia.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

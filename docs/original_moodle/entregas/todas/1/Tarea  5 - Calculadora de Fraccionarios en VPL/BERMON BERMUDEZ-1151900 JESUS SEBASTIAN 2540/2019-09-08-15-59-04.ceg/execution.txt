@@ -1,0 +1,14 @@
+Comment :=>> testSumar: success. 20 marks
+
+Comment :=>> testRestar: success. 20 marks
+
+Comment :=>> testMultiplicar: success. 20 marks
+
+Comment :=>> testDividir: success. 20 marks
+
+Simplificando...
+Comment :=>> testSimplificar: failure. 0 marks
+********************
+expected:<5> but was:<0>
+
+Grade :=>> 80

@@ -1,0 +1,14 @@
+Restaurante.java:31: error: ';' expected
+       return Fruta fruta [] = new Fruta[];
+                   ^
+Restaurante.java:31: error: not a statement
+       return Fruta fruta [] = new Fruta[];
+                          ^
+Restaurante.java:31: error: ';' expected
+       return Fruta fruta [] = new Fruta[];
+                            ^
+Restaurante.java:31: error: not a statement
+       return Fruta fruta [] = new Fruta[];
+                                        ^
+4 errors
+Not compiled

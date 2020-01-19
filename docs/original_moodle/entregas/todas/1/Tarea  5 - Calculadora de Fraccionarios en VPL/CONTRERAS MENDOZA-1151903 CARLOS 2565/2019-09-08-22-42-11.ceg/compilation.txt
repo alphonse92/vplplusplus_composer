@@ -1,0 +1,234 @@
+ControladorFracciones.java:1: error: package javafx.fxml does not exist
+import javafx.fxml.FXML;
+                  ^
+ControladorFracciones.java:2: error: package javafx.scene.control does not exist
+import javafx.scene.control.Button;
+                           ^
+ControladorFracciones.java:3: error: package javafx.scene.control does not exist
+import javafx.scene.control.CheckBox;
+                           ^
+ControladorFracciones.java:4: error: package javafx.scene.control does not exist
+import javafx.scene.control.TextField;
+                           ^
+ControladorFracciones.java:5: error: package javafx.scene.image does not exist
+import javafx.scene.image.ImageView;
+                         ^
+ControladorFracciones.java:10: error: cannot find symbol
+    private Button cmdLimpiaDatos;
+            ^
+  symbol:   class Button
+  location: class ControladorFracciones
+ControladorFracciones.java:13: error: cannot find symbol
+    private Button cmdSuma;
+            ^
+  symbol:   class Button
+  location: class ControladorFracciones
+ControladorFracciones.java:16: error: cannot find symbol
+    private Button cmdResta;
+            ^
+  symbol:   class Button
+  location: class ControladorFracciones
+ControladorFracciones.java:19: error: cannot find symbol
+    private Button cmdMultiplica;
+            ^
+  symbol:   class Button
+  location: class ControladorFracciones
+ControladorFracciones.java:22: error: cannot find symbol
+    private Button cmdDivide;
+            ^
+  symbol:   class Button
+  location: class ControladorFracciones
+ControladorFracciones.java:25: error: cannot find symbol
+    private CheckBox simplicar1;
+            ^
+  symbol:   class CheckBox
+  location: class ControladorFracciones
+ControladorFracciones.java:28: error: cannot find symbol
+    private TextField txtNumerador1;
+            ^
+  symbol:   class TextField
+  location: class ControladorFracciones
+ControladorFracciones.java:31: error: cannot find symbol
+    private TextField txtDenominador1;
+            ^
+  symbol:   class TextField
+  location: class ControladorFracciones
+ControladorFracciones.java:34: error: cannot find symbol
+    private CheckBox simplificar2;
+            ^
+  symbol:   class CheckBox
+  location: class ControladorFracciones
+ControladorFracciones.java:37: error: cannot find symbol
+    private TextField txtNumerador2;
+            ^
+  symbol:   class TextField
+  location: class ControladorFracciones
+ControladorFracciones.java:40: error: cannot find symbol
+    private TextField txtDenominador2;
+            ^
+  symbol:   class TextField
+  location: class ControladorFracciones
+ControladorFracciones.java:43: error: cannot find symbol
+    private CheckBox simplificarFinal;
+            ^
+  symbol:   class CheckBox
+  location: class ControladorFracciones
+ControladorFracciones.java:46: error: cannot find symbol
+    private TextField txtNumeradorF;
+            ^
+  symbol:   class TextField
+  location: class ControladorFracciones
+ControladorFracciones.java:49: error: cannot find symbol
+    private TextField txtDenominadorF;
+            ^
+  symbol:   class TextField
+  location: class ControladorFracciones
+ControladorFracciones.java:52: error: cannot find symbol
+    private ImageView imgDinosaurio;
+            ^
+  symbol:   class ImageView
+  location: class ControladorFracciones
+FraccionesFX.java:4: error: package javafx.application does not exist
+import javafx.application.Application;
+                         ^
+FraccionesFX.java:5: error: package javafx.stage does not exist
+import javafx.stage.Stage;
+                   ^
+FraccionesFX.java:6: error: package javafx.scene does not exist
+import javafx.scene.Scene;
+                   ^
+FraccionesFX.java:7: error: package javafx.fxml does not exist
+import javafx.fxml.FXMLLoader;
+                  ^
+FraccionesFX.java:8: error: package javafx.scene.layout does not exist
+import javafx.scene.layout.Pane;
+                          ^
+FraccionesFX.java:9: error: package javafx.fxml does not exist
+import javafx.fxml.FXML;
+                  ^
+FraccionesFX.java:11: error: cannot find symbol
+public class FraccionesFX extends Application{
+                                  ^
+  symbol: class Application
+FraccionesFX.java:14: error: cannot find symbol
+    public void start(Stage stage) throws IOException{
+                      ^
+  symbol:   class Stage
+  location: class FraccionesFX
+ControladorFracciones.java:9: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class ControladorFracciones
+ControladorFracciones.java:12: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class ControladorFracciones
+ControladorFracciones.java:15: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class ControladorFracciones
+ControladorFracciones.java:18: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class ControladorFracciones
+ControladorFracciones.java:21: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class ControladorFracciones
+ControladorFracciones.java:24: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class ControladorFracciones
+ControladorFracciones.java:27: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class ControladorFracciones
+ControladorFracciones.java:30: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class ControladorFracciones
+ControladorFracciones.java:33: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class ControladorFracciones
+ControladorFracciones.java:36: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class ControladorFracciones
+ControladorFracciones.java:39: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class ControladorFracciones
+ControladorFracciones.java:42: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class ControladorFracciones
+ControladorFracciones.java:45: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class ControladorFracciones
+ControladorFracciones.java:48: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class ControladorFracciones
+ControladorFracciones.java:51: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class ControladorFracciones
+ControladorFracciones.java:60: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class ControladorFracciones
+ControladorFracciones.java:67: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class ControladorFracciones
+FraccionesFX.java:16: error: cannot find symbol
+        FXMLLoader loader = new FXMLLoader();
+        ^
+  symbol:   class FXMLLoader
+  location: class FraccionesFX
+FraccionesFX.java:16: error: cannot find symbol
+        FXMLLoader loader = new FXMLLoader();
+                                ^
+  symbol:   class FXMLLoader
+  location: class FraccionesFX
+FraccionesFX.java:22: error: cannot find symbol
+        Pane root = (Pane) loader.load(fxmlStream);
+        ^
+  symbol:   class Pane
+  location: class FraccionesFX
+FraccionesFX.java:22: error: cannot find symbol
+        Pane root = (Pane) loader.load(fxmlStream);
+                     ^
+  symbol:   class Pane
+  location: class FraccionesFX
+FraccionesFX.java:25: error: cannot find symbol
+        Scene scene = new Scene(root);
+        ^
+  symbol:   class Scene
+  location: class FraccionesFX
+FraccionesFX.java:25: error: cannot find symbol
+        Scene scene = new Scene(root);
+                          ^
+  symbol:   class Scene
+  location: class FraccionesFX
+51 errors
+Not compiled

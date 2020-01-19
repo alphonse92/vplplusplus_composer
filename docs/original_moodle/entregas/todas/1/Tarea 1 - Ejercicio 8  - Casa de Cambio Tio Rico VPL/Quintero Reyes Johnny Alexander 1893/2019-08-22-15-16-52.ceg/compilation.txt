@@ -1,0 +1,5 @@
+CasaDeCambioTest.java:51: error: incompatible types: possible lossy conversion from double to float
+        float result = instance.getGananciaEnUnBolivar();
+                                                      ^
+1 error
+Not compiled

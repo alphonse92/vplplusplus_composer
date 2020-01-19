@@ -1,0 +1,50 @@
+Materia.java:50: error: illegal start of type
+      return totalGrupos;
+      ^
+Materia.java:50: error: ';' expected
+      return totalGrupos;
+            ^
+Materia.java:55: error: class, interface, or enum expected
+    public String getNombre(){
+           ^
+Materia.java:57: error: class, interface, or enum expected
+    }//end method getNombre
+    ^
+Materia.java:60: error: class, interface, or enum expected
+    public void setNombre(String nombre){
+           ^
+Materia.java:62: error: class, interface, or enum expected
+    }//end method setNombre
+    ^
+Materia.java:65: error: class, interface, or enum expected
+    public int getMaximoDeAlumnosPorGrupo(){
+           ^
+Materia.java:67: error: class, interface, or enum expected
+    }//end method getMaximoDeAlumnosPorGrupo
+    ^
+Materia.java:70: error: class, interface, or enum expected
+    public void setMaximoDeAlumnosPorGrupo(int maximoDeAlumnosPorGrupo){
+           ^
+Materia.java:72: error: class, interface, or enum expected
+    }//end method setMaximoDeAlumnosPorGrupo
+    ^
+Materia.java:75: error: class, interface, or enum expected
+    public Grupo getGrupo(int numero)
+           ^
+Materia.java:78: error: class, interface, or enum expected
+    }//fin getGrupo
+    ^
+Materia.java:81: error: class, interface, or enum expected
+    public boolean equals(Object other)
+           ^
+Materia.java:85: error: class, interface, or enum expected
+      if(other instanceof Materia) return this.nombre.equals(((Materia)other).getNombre());
+      ^
+Materia.java:86: error: class, interface, or enum expected
+      return false;
+      ^
+Materia.java:87: error: class, interface, or enum expected
+    }//fin equals
+    ^
+16 errors
+Not compiled

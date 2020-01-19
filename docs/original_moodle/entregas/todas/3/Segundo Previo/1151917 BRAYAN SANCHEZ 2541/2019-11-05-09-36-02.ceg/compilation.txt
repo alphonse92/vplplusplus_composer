@@ -1,0 +1,485 @@
+Almidon.java:1: error: cannot find symbol
+public class Almidon extends Ingrediente {
+                             ^
+  symbol: class Ingrediente
+Fruta.java:1: error: cannot find symbol
+public class Fruta extends Ingrediente {
+                           ^
+  symbol: class Ingrediente
+Proteina.java:1: error: cannot find symbol
+public class Proteina extends Ingrediente {
+                              ^
+  symbol: class Ingrediente
+Grano.java:1: error: cannot find symbol
+public class Grano extends Ingrediente {
+                           ^
+  symbol: class Ingrediente
+Restaurante.java:5: error: cannot find symbol
+    private ArrayList<Ingrediente> ingredientes;
+                      ^
+  symbol:   class Ingrediente
+  location: class Restaurante
+Restaurante.java:14: error: cannot find symbol
+    public Ingrediente buscarIngrediente(String nombre) {
+           ^
+  symbol:   class Ingrediente
+  location: class Restaurante
+Restaurante.java:141: error: cannot find symbol
+    public ArrayList<Ingrediente> getIngredientes() {
+                     ^
+  symbol:   class Ingrediente
+  location: class Restaurante
+Restaurante.java:148: error: cannot find symbol
+    public void setIngredientes(ArrayList<Ingrediente> ingredientes) {
+                                          ^
+  symbol:   class Ingrediente
+  location: class Restaurante
+DiscoDuro.java:12: error: cannot find symbol
+\u0020\u0020\u0020\u0020\u0070\u0075\u0062\u006c\u0069\u0063\u0020\u0041\u0072\u0072\u0061\u0079\u004c\u0069\u0073\u0074\u003c\u0049\u006e\u0067\u0072\u0065\u0064\u0069\u0065\u006e\u0074\u0065\u003e\u0020\u0063\u0061\u0072\u0067\u0061\u0072\u0044\u0061\u0074\u006f\u0073\u0028\u0046\u0069\u006c\u0065\u0020\u0066\u0069\u0063\u0068\u0065\u0072\u006f\u0029\u0020\u0074\u0068\u0072\u006f\u0077\u0073\u0020\u0045\u0078\u0063\u0065\u0070\u0074\u0069\u006f\u006e\u007b
+                                                                                                                                   ^
+  symbol:   class Ingrediente
+  location: class DiscoDuro
+DiscoDuro.java:45: error: cannot find symbol
+\u0020\u0020\u0020\u0020\u0070\u0075\u0062\u006c\u0069\u0063\u0020\u0076\u006f\u0069\u0064\u0020\u0067\u0075\u0061\u0072\u0064\u0061\u0072\u0044\u0061\u0074\u006f\u0073\u0028\u0046\u0069\u006c\u0065\u0020\u0066\u0069\u0063\u0068\u0065\u0072\u006f\u002c\u0020\u0041\u0072\u0072\u0061\u0079\u004c\u0069\u0073\u0074\u003c\u0049\u006e\u0067\u0072\u0065\u0064\u0069\u0065\u006e\u0074\u0065\u003e\u0020\u0069\u006e\u0067\u0072\u0065\u0064\u0069\u0065\u006e\u0074\u0065\u0073\u0029\u0020\u0074\u0068\u0072\u006f\u0077\u0073\u0020\u0045\u0078\u0063\u0065\u0070\u0074\u0069\u006f\u006e\u007b
+                                                                                                                                                                                                                                                                                                                                   ^
+  symbol:   class Ingrediente
+  location: class DiscoDuro
+TestLaunchMachine.java:18: error: cannot find symbol
+    Ingrediente [] ingredientes = null; 
+    ^
+  symbol:   class Ingrediente
+  location: class TestLaunchMachine
+TestLaunchMachine.java:20: error: cannot find symbol
+    Ingrediente [] ingredientes2 = null;     
+    ^
+  symbol:   class Ingrediente
+  location: class TestLaunchMachine
+Almuerzo.java:26: error: cannot find symbol
+       precio += ((this.fruta.getPrecioCompra()*PORCION_FRUTA) + (this.proteina.getPrecioCompra()*PORCION_PROTEINA) 
+                             ^
+  symbol:   method getPrecioCompra()
+  location: variable fruta of type Fruta
+Almuerzo.java:26: error: cannot find symbol
+       precio += ((this.fruta.getPrecioCompra()*PORCION_FRUTA) + (this.proteina.getPrecioCompra()*PORCION_PROTEINA) 
+                                                                               ^
+  symbol:   method getPrecioCompra()
+  location: variable proteina of type Proteina
+Almuerzo.java:27: error: cannot find symbol
+       + (this.grano.getPrecioCompra()*PORCION_GRANO) + (this.almidon.getPrecioCompra()*PORCION_ALMIDON))*1.35;
+                    ^
+  symbol:   method getPrecioCompra()
+  location: variable grano of type Grano
+Almuerzo.java:27: error: cannot find symbol
+       + (this.grano.getPrecioCompra()*PORCION_GRANO) + (this.almidon.getPrecioCompra()*PORCION_ALMIDON))*1.35;
+                                                                     ^
+  symbol:   method getPrecioCompra()
+  location: variable almidon of type Almidon
+Almuerzo.java:33: error: cannot find symbol
+        sePuede = this.fruta.getCantidadDisponible()>=PORCION_FRUTA && this.proteina.getCantidadDisponible()>=PORCION_PROTEINA 
+                            ^
+  symbol:   method getCantidadDisponible()
+  location: variable fruta of type Fruta
+Almuerzo.java:33: error: cannot find symbol
+        sePuede = this.fruta.getCantidadDisponible()>=PORCION_FRUTA && this.proteina.getCantidadDisponible()>=PORCION_PROTEINA 
+                                                                                    ^
+  symbol:   method getCantidadDisponible()
+  location: variable proteina of type Proteina
+Almuerzo.java:34: error: cannot find symbol
+        && this.grano.getCantidadDisponible()>=PORCION_GRANO && this.almidon.getCantidadDisponible()>=PORCION_ALMIDON;
+                     ^
+  symbol:   method getCantidadDisponible()
+  location: variable grano of type Grano
+Almuerzo.java:34: error: cannot find symbol
+        && this.grano.getCantidadDisponible()>=PORCION_GRANO && this.almidon.getCantidadDisponible()>=PORCION_ALMIDON;
+                                                                            ^
+  symbol:   method getCantidadDisponible()
+  location: variable almidon of type Almidon
+Almuerzo.java:39: error: cannot find symbol
+        this.fruta.registrarVenta(PORCION_FRUTA);
+                  ^
+  symbol:   method registrarVenta(int)
+  location: variable fruta of type Fruta
+Almuerzo.java:40: error: cannot find symbol
+        this.proteina.registrarVenta(PORCION_PROTEINA);
+                     ^
+  symbol:   method registrarVenta(int)
+  location: variable proteina of type Proteina
+Almuerzo.java:41: error: cannot find symbol
+        this.grano.registrarVenta(PORCION_GRANO);
+                  ^
+  symbol:   method registrarVenta(int)
+  location: variable grano of type Grano
+Almuerzo.java:42: error: cannot find symbol
+        this.almidon.registrarVenta(PORCION_ALMIDON);
+                    ^
+  symbol:   method registrarVenta(int)
+  location: variable almidon of type Almidon
+Almuerzo.java:50: error: cannot find symbol
+          equal = this.fruta.equals(almuerzo.fruta) && this.proteina.equals(almuerzo.proteina) && this.grano.equals(almuerzo.grano) 
+                            ^
+  symbol:   method equals(Fruta)
+  location: variable fruta of type Fruta
+Almuerzo.java:50: error: cannot find symbol
+          equal = this.fruta.equals(almuerzo.fruta) && this.proteina.equals(almuerzo.proteina) && this.grano.equals(almuerzo.grano) 
+                                                                    ^
+  symbol:   method equals(Proteina)
+  location: variable proteina of type Proteina
+Almuerzo.java:50: error: cannot find symbol
+          equal = this.fruta.equals(almuerzo.fruta) && this.proteina.equals(almuerzo.proteina) && this.grano.equals(almuerzo.grano) 
+                                                                                                            ^
+  symbol:   method equals(Grano)
+  location: variable grano of type Grano
+Almuerzo.java:51: error: cannot find symbol
+          && this.almidon.equals(almuerzo.almidon);
+                         ^
+  symbol:   method equals(Almidon)
+  location: variable almidon of type Almidon
+Restaurante.java:15: error: cannot find symbol
+        Ingrediente ingrediente = null;
+        ^
+  symbol:   class Ingrediente
+  location: class Restaurante
+Restaurante.java:16: error: cannot find symbol
+        for(Ingrediente i : getIngredientes()){
+            ^
+  symbol:   class Ingrediente
+  location: class Restaurante
+Restaurante.java:25: error: cannot find symbol
+        for(Ingrediente i : getIngredientes()){
+            ^
+  symbol:   class Ingrediente
+  location: class Restaurante
+Restaurante.java:26: error: cannot find symbol
+            if(i instanceof Fruta) nombresFrutas.add(((Fruta)i).getNombre());
+                                                               ^
+  symbol:   method getNombre()
+  location: class Fruta
+Restaurante.java:36: error: cannot find symbol
+        for(Ingrediente i : getIngredientes()){
+            ^
+  symbol:   class Ingrediente
+  location: class Restaurante
+Restaurante.java:37: error: cannot find symbol
+            if(i instanceof Proteina) nombresProteinas.add(((Proteina)i).getNombre());
+                                                                        ^
+  symbol:   method getNombre()
+  location: class Proteina
+Restaurante.java:47: error: cannot find symbol
+        for(Ingrediente i : getIngredientes()){
+            ^
+  symbol:   class Ingrediente
+  location: class Restaurante
+Restaurante.java:48: error: cannot find symbol
+            if(i instanceof Grano) nombresGranos.add(((Grano)i).getNombre());
+                                                               ^
+  symbol:   method getNombre()
+  location: class Grano
+Restaurante.java:58: error: cannot find symbol
+        for(Ingrediente i : getIngredientes()){
+            ^
+  symbol:   class Ingrediente
+  location: class Restaurante
+Restaurante.java:59: error: cannot find symbol
+            if(i instanceof Almidon) nombresAlmidones.add(((Almidon)i).getNombre());
+                                                                      ^
+  symbol:   method getNombre()
+  location: class Almidon
+DiscoDuro.java:13: error: cannot find symbol
+\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0041\u0072\u0072\u0061\u0079\u004c\u0069\u0073\u0074\u003c\u0049\u006e\u0067\u0072\u0065\u0064\u0069\u0065\u006e\u0074\u0065\u003e\u0020\u0069\u006e\u0067\u0072\u0065\u0064\u0069\u0065\u006e\u0074\u0065\u0073\u0020\u003d\u0020\u006e\u0065\u0077\u0020\u0041\u0072\u0072\u0061\u0079\u004c\u0069\u0073\u0074\u003c\u0049\u006e\u0067\u0072\u0065\u0064\u0069\u0065\u006e\u0074\u0065\u003e\u0028\u0029\u003b
+                                                                                                                 ^
+  symbol:   class Ingrediente
+  location: class DiscoDuro
+DiscoDuro.java:13: error: cannot find symbol
+\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0041\u0072\u0072\u0061\u0079\u004c\u0069\u0073\u0074\u003c\u0049\u006e\u0067\u0072\u0065\u0064\u0069\u0065\u006e\u0074\u0065\u003e\u0020\u0069\u006e\u0067\u0072\u0065\u0064\u0069\u0065\u006e\u0074\u0065\u0073\u0020\u003d\u0020\u006e\u0065\u0077\u0020\u0041\u0072\u0072\u0061\u0079\u004c\u0069\u0073\u0074\u003c\u0049\u006e\u0067\u0072\u0065\u0064\u0069\u0065\u006e\u0074\u0065\u003e\u0028\u0029\u003b
+                                                                                                                                                                                                                                                                                                                                                                             ^
+  symbol:   class Ingrediente
+  location: class DiscoDuro
+DiscoDuro.java:51: error: cannot find symbol
+\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0049\u006e\u0067\u0072\u0065\u0064\u0069\u0065\u006e\u0074\u0065\u0020\u0069\u006e\u0067\u0072\u0065\u0064\u0069\u0065\u006e\u0074\u0065\u0020\u003d\u0020\u0069\u006e\u0067\u0072\u0065\u0064\u0069\u0065\u006e\u0074\u0065\u0073\u002e\u0067\u0065\u0074\u0028\u0069\u0029\u003b
+                                                                             ^
+  symbol:   class Ingrediente
+  location: class DiscoDuro
+LunchMachineView.java:324: error: cannot find symbol
+        ArrayList<Ingrediente> ingredientes = null;
+                  ^
+  symbol:   class Ingrediente
+  location: class LunchMachineView
+LunchMachineView.java:372: error: cannot find symbol
+        ArrayList<Ingrediente> ingredientes = restaurante.getIngredientes();
+                  ^
+  symbol:   class Ingrediente
+  location: class LunchMachineView
+TestLaunchMachine.java:1042: error: cannot find symbol
+        ingredientes = new Ingrediente [] {new Fruta("Papaya",5000,2),
+                           ^
+  symbol:   class Ingrediente
+  location: class TestLaunchMachine
+TestLaunchMachine.java:1075: error: cannot find symbol
+        fruta1.registrarVenta(b);
+              ^
+  symbol:   method registrarVenta(int)
+  location: variable fruta1 of type Fruta
+TestLaunchMachine.java:1076: error: cannot find symbol
+        proteina1.registrarVenta(b);
+                 ^
+  symbol:   method registrarVenta(int)
+  location: variable proteina1 of type Proteina
+TestLaunchMachine.java:1077: error: cannot find symbol
+        grano1.registrarVenta(b);
+              ^
+  symbol:   method registrarVenta(int)
+  location: variable grano1 of type Grano
+TestLaunchMachine.java:1078: error: cannot find symbol
+        almidon1.registrarVenta(b);
+                ^
+  symbol:   method registrarVenta(int)
+  location: variable almidon1 of type Almidon
+TestLaunchMachine.java:1080: error: cannot find symbol
+        assertEquals(a-b, fruta1.getCantidadDisponible());
+                                ^
+  symbol:   method getCantidadDisponible()
+  location: variable fruta1 of type Fruta
+TestLaunchMachine.java:1081: error: cannot find symbol
+        assertEquals(a-b, proteina1.getCantidadDisponible());
+                                   ^
+  symbol:   method getCantidadDisponible()
+  location: variable proteina1 of type Proteina
+TestLaunchMachine.java:1082: error: cannot find symbol
+        assertEquals(a-b, grano1.getCantidadDisponible());
+                                ^
+  symbol:   method getCantidadDisponible()
+  location: variable grano1 of type Grano
+TestLaunchMachine.java:1083: error: cannot find symbol
+        assertEquals(a-b, almidon1.getCantidadDisponible());
+                                  ^
+  symbol:   method getCantidadDisponible()
+  location: variable almidon1 of type Almidon
+TestLaunchMachine.java:1096: error: cannot find symbol
+        fruta1.registrarCompra(a, b + a/b);
+              ^
+  symbol:   method registrarCompra(int,int)
+  location: variable fruta1 of type Fruta
+TestLaunchMachine.java:1097: error: cannot find symbol
+        proteina1.registrarCompra(a, b + a/b);
+                 ^
+  symbol:   method registrarCompra(int,int)
+  location: variable proteina1 of type Proteina
+TestLaunchMachine.java:1098: error: cannot find symbol
+        grano1.registrarCompra(a, b + a/b);
+              ^
+  symbol:   method registrarCompra(int,int)
+  location: variable grano1 of type Grano
+TestLaunchMachine.java:1099: error: cannot find symbol
+        almidon1.registrarCompra(a, b + a/b);
+                ^
+  symbol:   method registrarCompra(int,int)
+  location: variable almidon1 of type Almidon
+TestLaunchMachine.java:1101: error: cannot find symbol
+        assertEquals(b + a/b, fruta1.getPrecioCompra());
+                                    ^
+  symbol:   method getPrecioCompra()
+  location: variable fruta1 of type Fruta
+TestLaunchMachine.java:1102: error: cannot find symbol
+        assertEquals(b + a/b, proteina1.getPrecioCompra());
+                                       ^
+  symbol:   method getPrecioCompra()
+  location: variable proteina1 of type Proteina
+TestLaunchMachine.java:1103: error: cannot find symbol
+        assertEquals(b + a/b, grano1.getPrecioCompra());
+                                    ^
+  symbol:   method getPrecioCompra()
+  location: variable grano1 of type Grano
+TestLaunchMachine.java:1104: error: cannot find symbol
+        assertEquals(b + a/b, almidon1.getPrecioCompra());
+                                      ^
+  symbol:   method getPrecioCompra()
+  location: variable almidon1 of type Almidon
+TestLaunchMachine.java:1106: error: cannot find symbol
+        fruta1.registrarCompra(a, b + a/b);
+              ^
+  symbol:   method registrarCompra(int,int)
+  location: variable fruta1 of type Fruta
+TestLaunchMachine.java:1107: error: cannot find symbol
+        proteina1.registrarCompra(a, b + a/b);
+                 ^
+  symbol:   method registrarCompra(int,int)
+  location: variable proteina1 of type Proteina
+TestLaunchMachine.java:1108: error: cannot find symbol
+        grano1.registrarCompra(a, b + a/b);
+              ^
+  symbol:   method registrarCompra(int,int)
+  location: variable grano1 of type Grano
+TestLaunchMachine.java:1109: error: cannot find symbol
+        almidon1.registrarCompra(a, b + a/b);        
+                ^
+  symbol:   method registrarCompra(int,int)
+  location: variable almidon1 of type Almidon
+TestLaunchMachine.java:1111: error: cannot find symbol
+        assertEquals(b + a/b, fruta1.getPrecioCompra());
+                                    ^
+  symbol:   method getPrecioCompra()
+  location: variable fruta1 of type Fruta
+TestLaunchMachine.java:1112: error: cannot find symbol
+        assertEquals(b + a/b, proteina1.getPrecioCompra());
+                                       ^
+  symbol:   method getPrecioCompra()
+  location: variable proteina1 of type Proteina
+TestLaunchMachine.java:1113: error: cannot find symbol
+        assertEquals(b + a/b, grano1.getPrecioCompra());
+                                    ^
+  symbol:   method getPrecioCompra()
+  location: variable grano1 of type Grano
+TestLaunchMachine.java:1114: error: cannot find symbol
+        assertEquals(b + a/b, almidon1.getPrecioCompra());        
+                                      ^
+  symbol:   method getPrecioCompra()
+  location: variable almidon1 of type Almidon
+TestLaunchMachine.java:1116: error: cannot find symbol
+        fruta1.registrarCompra(a, b - a/b);
+              ^
+  symbol:   method registrarCompra(int,int)
+  location: variable fruta1 of type Fruta
+TestLaunchMachine.java:1117: error: cannot find symbol
+        proteina1.registrarCompra(a, b - a/b);
+                 ^
+  symbol:   method registrarCompra(int,int)
+  location: variable proteina1 of type Proteina
+TestLaunchMachine.java:1118: error: cannot find symbol
+        grano1.registrarCompra(a, b - a/b);
+              ^
+  symbol:   method registrarCompra(int,int)
+  location: variable grano1 of type Grano
+TestLaunchMachine.java:1119: error: cannot find symbol
+        almidon1.registrarCompra(a, b - a/b);
+                ^
+  symbol:   method registrarCompra(int,int)
+  location: variable almidon1 of type Almidon
+TestLaunchMachine.java:1121: error: cannot find symbol
+        assertEquals(b + a/b, fruta1.getPrecioCompra());
+                                    ^
+  symbol:   method getPrecioCompra()
+  location: variable fruta1 of type Fruta
+TestLaunchMachine.java:1122: error: cannot find symbol
+        assertEquals(b + a/b, proteina1.getPrecioCompra());
+                                       ^
+  symbol:   method getPrecioCompra()
+  location: variable proteina1 of type Proteina
+TestLaunchMachine.java:1123: error: cannot find symbol
+        assertEquals(b + a/b, grano1.getPrecioCompra());
+                                    ^
+  symbol:   method getPrecioCompra()
+  location: variable grano1 of type Grano
+TestLaunchMachine.java:1124: error: cannot find symbol
+        assertEquals(b + a/b, almidon1.getPrecioCompra());
+                                      ^
+  symbol:   method getPrecioCompra()
+  location: variable almidon1 of type Almidon
+TestLaunchMachine.java:1126: error: cannot find symbol
+        assertEquals(4*a, fruta1.getCantidadDisponible());
+                                ^
+  symbol:   method getCantidadDisponible()
+  location: variable fruta1 of type Fruta
+TestLaunchMachine.java:1127: error: cannot find symbol
+        assertEquals(4*a, proteina1.getCantidadDisponible());
+                                   ^
+  symbol:   method getCantidadDisponible()
+  location: variable proteina1 of type Proteina
+TestLaunchMachine.java:1128: error: cannot find symbol
+        assertEquals(4*a, grano1.getCantidadDisponible());
+                                ^
+  symbol:   method getCantidadDisponible()
+  location: variable grano1 of type Grano
+TestLaunchMachine.java:1129: error: cannot find symbol
+        assertEquals(4*a, almidon1.getCantidadDisponible());        
+                                  ^
+  symbol:   method getCantidadDisponible()
+  location: variable almidon1 of type Almidon
+TestLaunchMachine.java:1137: error: cannot find symbol
+        Ingrediente ingrediente = null;
+        ^
+  symbol:   class Ingrediente
+  location: class TestLaunchMachine
+TestLaunchMachine.java:1154: error: cannot find symbol
+        Ingrediente ingrediente = null;
+        ^
+  symbol:   class Ingrediente
+  location: class TestLaunchMachine
+TestLaunchMachine.java:1180: error: cannot find symbol
+        assertEquals(true, fruta1.equals(fruta2));
+                                 ^
+  symbol:   method equals(Fruta)
+  location: variable fruta1 of type Fruta
+TestLaunchMachine.java:1182: error: cannot find symbol
+        assertEquals(false, fruta1.equals(proteina1));
+                                  ^
+  symbol:   method equals(Proteina)
+  location: variable fruta1 of type Fruta
+TestLaunchMachine.java:1184: error: cannot find symbol
+        assertEquals(false, fruta1.equals(grano1));
+                                  ^
+  symbol:   method equals(Grano)
+  location: variable fruta1 of type Fruta
+TestLaunchMachine.java:1186: error: cannot find symbol
+        assertEquals(false, fruta1.equals(almidon1));
+                                  ^
+  symbol:   method equals(Almidon)
+  location: variable fruta1 of type Fruta
+TestLaunchMachine.java:1193: error: cannot find symbol
+        ArrayList <Ingrediente> ing = new ArrayList<Ingrediente>();
+                   ^
+  symbol:   class Ingrediente
+  location: class TestLaunchMachine
+TestLaunchMachine.java:1193: error: cannot find symbol
+        ArrayList <Ingrediente> ing = new ArrayList<Ingrediente>();
+                                                    ^
+  symbol:   class Ingrediente
+  location: class TestLaunchMachine
+TestLaunchMachine.java:1204: error: cannot find symbol
+        ArrayList <Ingrediente> ing = new ArrayList<Ingrediente>();
+                   ^
+  symbol:   class Ingrediente
+  location: class TestLaunchMachine
+TestLaunchMachine.java:1204: error: cannot find symbol
+        ArrayList <Ingrediente> ing = new ArrayList<Ingrediente>();
+                                                    ^
+  symbol:   class Ingrediente
+  location: class TestLaunchMachine
+TestLaunchMachine.java:1229: error: cannot find symbol
+        ArrayList <Ingrediente> ing = new ArrayList<Ingrediente>();
+                   ^
+  symbol:   class Ingrediente
+  location: class TestLaunchMachine
+TestLaunchMachine.java:1229: error: cannot find symbol
+        ArrayList <Ingrediente> ing = new ArrayList<Ingrediente>();
+                                                    ^
+  symbol:   class Ingrediente
+  location: class TestLaunchMachine
+TestLaunchMachine.java:1256: error: cannot find symbol
+        ArrayList <Ingrediente> ing = new ArrayList<Ingrediente>();
+                   ^
+  symbol:   class Ingrediente
+  location: class TestLaunchMachine
+TestLaunchMachine.java:1256: error: cannot find symbol
+        ArrayList <Ingrediente> ing = new ArrayList<Ingrediente>();
+                                                    ^
+  symbol:   class Ingrediente
+  location: class TestLaunchMachine
+TestLaunchMachine.java:1294: error: cannot find symbol
+        ArrayList <Ingrediente> ing = new ArrayList<Ingrediente>();
+                   ^
+  symbol:   class Ingrediente
+  location: class TestLaunchMachine
+TestLaunchMachine.java:1294: error: cannot find symbol
+        ArrayList <Ingrediente> ing = new ArrayList<Ingrediente>();
+                                                    ^
+  symbol:   class Ingrediente
+  location: class TestLaunchMachine
+TestLaunchMachine.java:1298: error: cannot find symbol
+        Ingrediente ingrediente = null;
+        ^
+  symbol:   class Ingrediente
+  location: class TestLaunchMachine
+Note: Restaurante.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+97 errors
+Not compiled

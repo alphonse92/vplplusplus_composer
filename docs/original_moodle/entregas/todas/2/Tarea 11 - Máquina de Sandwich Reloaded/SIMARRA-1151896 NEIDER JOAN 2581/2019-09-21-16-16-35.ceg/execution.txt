@@ -1,0 +1,107 @@
+Comment :=>> testStaticFinal(): failure. 0 marks
+********************
+expected:<10> but was:<15>
+
+Comment :=>> testConstructor1(): failure. 0 marks
+********************
+expected:<3000> but was:<100>
+
+Comment :=>> testConstructor2(): success. 2 marks
+
+Comment :=>> testConstructor3(): failure. 0 marks
+********************
+expected:<3000> but was:<100>
+
+Comment :=>> testCalcularPrecioFabricacion1(): success. 3 marks
+
+Comment :=>> testCalcularPrecioFabricacion2(): failure. 0 marks
+********************
+expected:<548> but was:<1000>
+
+Comment :=>> testCalcularPrecioVenta1(): success. 3 marks
+
+Comment :=>> testCalcularPrecioVenta2(): failure. 0 marks
+********************
+expected:<739> but was:<1350>
+
+Comment :=>> testRegistrarVentaFull(): failure. 0 marks
+********************
+expected:<85> but was:<100>
+
+Comment :=>> testRegistrarVentaQueso(): failure. 0 marks
+********************
+expected:<85> but was:<100>
+
+Comment :=>> testRegistrarVentaMortadela(): failure. 0 marks
+********************
+expected:<40> but was:<50>
+
+Comment :=>> testRegistrarVentaJamon(): failure. 0 marks
+********************
+expected:<40> but was:<50>
+
+Comment :=>> testRegistrarVentaPanBlanco(): failure. 0 marks
+********************
+expected:<49> but was:<50>
+
+Comment :=>> testRegistrarVentaPanIntegral(): failure. 0 marks
+********************
+expected:<49> but was:<50>
+
+Comment :=>> testRegistrarVentaIngresos1(): failure. 0 marks
+********************
+expected:<1350> but was:<0>
+
+Comment :=>> testRegistrarVentaIngresos2(): failure. 0 marks
+********************
+expected:<739> but was:<0>
+
+Comment :=>> testPorcentajes1(): failure. 0 marks
+********************
+expected:<0> but was:<684>
+
+Comment :=>> testPorcentajes2(): failure. 0 marks
+********************
+expected:<0> but was:<684>
+
+Comment :=>> testIngredientesSuficientesSimpleBlanco(): failure. 0 marks
+********************
+expected:<1500> but was:<100>
+
+Comment :=>> testIngredientesSuficientesSimpleIntegral(): failure. 0 marks
+********************
+expected:<1500> but was:<100>
+
+Comment :=>> testIngredientesSuficientesExquisitoBlanco(): failure. 0 marks
+********************
+expected:<1500> but was:<100>
+
+Comment :=>> testIngredientesSuficientesExquisitoIntegral(): failure. 0 marks
+********************
+expected:<1500> but was:<100>
+
+Comment :=>> testIngredientesInsuficientesSimpleBlanco(): failure. 0 marks
+********************
+null
+
+Comment :=>> testIngredientesInsuficientesSimpleIntegral(): failure. 0 marks
+********************
+null
+
+Comment :=>> testIngredientesInsuficientesExquisitoBlanco(): failure. 0 marks
+********************
+null
+
+Comment :=>> testIngredientesInsuficientesExquisitoIntegral(): failure. 0 marks
+********************
+null
+
+Comment :=>> testEspecial1(): failure. 0 marks
+********************
+expected:<120> but was:<100>
+
+Comment :=>> testEspecial2(): failure. 0 marks
+********************
+expected:<285120> but was:<0>
+
+Grade :=>> 8

@@ -1,0 +1,7 @@
+Universidad.java:57: error: cannot find symbol
+    for(int i=0;i<contadorDeAlumnos;i++){
+                  ^
+  symbol:   variable contadorDeAlumnos
+  location: class Universidad
+1 error
+Not compiled

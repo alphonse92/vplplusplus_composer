@@ -1,0 +1,31 @@
+Comment :=>> testHoraConstructor1: success. 10 marks
+
+Comment :=>> testHoraConstructor2: success. 10 marks
+
+Comment :=>> testHoraConstructor3: success. 10 marks
+
+Comment :=>> testHoraConstructor4: success. 10 marks
+
+Comment :=>> testHoraConstructor5: success. 10 marks
+
+Comment :=>> testHoraSonIguales: failure. 0 marks
+********************
+expected:<true> but was:<false>
+
+Comment :=>> testHoraEsMenor: failure. 0 marks
+********************
+expected:<true> but was:<false>
+
+Comment :=>> testHoraEsMayor: failure. 0 marks
+********************
+expected:<true> but was:<false>
+
+Comment :=>> testGetHoraFormato: failure. 0 marks
+********************
+expected:<[p].m.> but was:<[a].m.>
+
+Comment :=>> testHoraRestar: failure. 0 marks
+********************
+expected:<86399> but was:<0>
+
+Grade :=>> 50

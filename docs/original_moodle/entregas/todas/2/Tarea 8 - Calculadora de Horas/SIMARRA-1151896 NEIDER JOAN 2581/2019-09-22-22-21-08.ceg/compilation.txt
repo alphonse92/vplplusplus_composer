@@ -1,0 +1,5 @@
+Hora.java:138: error: incompatible types: String cannot be converted to Hora
+      return this.formato=HH24;;//COMPLETE
+                         ^
+1 error
+Not compiled

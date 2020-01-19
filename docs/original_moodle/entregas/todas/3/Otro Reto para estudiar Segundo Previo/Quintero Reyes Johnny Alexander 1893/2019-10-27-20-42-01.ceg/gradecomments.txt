@@ -1,0 +1,10 @@
+ testCampeonatoConstructor: success. 10 marks
+ testCampeonatoInscribirEquipo: success. 10 marks
+ testCampeonatoBuscarEquipo: success. 10 marks
+ testCampeonatoRegistrarPartido: failure. 0 marks
+ testEquipoAgregarFutbolista: success. 10 marks
+ testEquipoBuscarFutbolista: success. 10 marks
+ testEquipoRegistrarPartido: success. 10 marks
+ testEquipoAgregarPortero: failure. 0 marks
+ testPartidoConstructor: success. 10 marks
+ testPartidoRegistrarPartido: success. 10 marks

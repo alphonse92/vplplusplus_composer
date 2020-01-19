@@ -1,0 +1,15 @@
+MaquinaSandwich.java:112: error: cannot find symbol
+         if(CantidadQueso<15) throw new RuntimeException("Mensaje de Error");
+            ^
+  symbol:   variable CantidadQueso
+  location: class MaquinaSandwich
+MaquinaSandwich.java:151: error: incompatible types: int cannot be converted to boolean
+         if(cantidadMortadela)  throw new RuntimeException("Mensaje de Error");
+            ^
+MaquinaSandwich.java:160: error: cannot find symbol
+         if(cantidadanBlanco<3) throw new RuntimeException("Mensaje de Error");
+            ^
+  symbol:   variable cantidadanBlanco
+  location: class MaquinaSandwich
+3 errors
+Not compiled

@@ -1,0 +1,10 @@
+ t1.testHoraConstructor(): success. 8 marks
+ t1.testHoraEsMenorMayor(): success. 8 marks
+ t1.testHoraRestarEnSegundos(): success. 8 marks
+ t2.testConstructor1(): failure. 0 marks
+ t2.testConstructor2(): failure. 0 marks
+ t2.testRegistrarSalida1(): failure. 0 marks
+ t2.testRegistrarSalida2(): failure. 0 marks
+ t2.testRegistrarSalida3(): failure. 0 marks
+ t2.testRegistrarSalida4(): failure. 0 marks
+ t3.testConstructor1(): failure. 0 marks

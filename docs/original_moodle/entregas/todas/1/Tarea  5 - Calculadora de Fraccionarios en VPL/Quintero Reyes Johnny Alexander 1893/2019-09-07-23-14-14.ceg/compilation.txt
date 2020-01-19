@@ -1,0 +1,59 @@
+FraccionJava.java:4: error: package javafx.application does not exist
+import javafx.application.Application;
+                         ^
+FraccionJava.java:5: error: package javafx.stage does not exist
+import javafx.stage.Stage;
+                   ^
+FraccionJava.java:6: error: package javafx.scene does not exist
+import javafx.scene.Scene;
+                   ^
+FraccionJava.java:7: error: package javafx.fxml does not exist
+import javafx.fxml.FXMLLoader;
+                  ^
+FraccionJava.java:8: error: package javafx.scene.layout does not exist
+import javafx.scene.layout.Pane;
+                          ^
+FraccionJava.java:9: error: package javafx.fxml does not exist
+import javafx.fxml.FXML;
+                  ^
+FraccionJava.java:11: error: cannot find symbol
+public class FraccionJava extends Application{
+                                  ^
+  symbol: class Application
+FraccionJava.java:14: error: cannot find symbol
+    public void start(Stage stage) throws IOException{
+                      ^
+  symbol:   class Stage
+  location: class FraccionJava
+FraccionJava.java:16: error: cannot find symbol
+        FXMLLoader loader = new FXMLLoader();
+        ^
+  symbol:   class FXMLLoader
+  location: class FraccionJava
+FraccionJava.java:16: error: cannot find symbol
+        FXMLLoader loader = new FXMLLoader();
+                                ^
+  symbol:   class FXMLLoader
+  location: class FraccionJava
+FraccionJava.java:22: error: cannot find symbol
+        Pane root = (Pane) loader.load(fxmlStream);
+        ^
+  symbol:   class Pane
+  location: class FraccionJava
+FraccionJava.java:22: error: cannot find symbol
+        Pane root = (Pane) loader.load(fxmlStream);
+                     ^
+  symbol:   class Pane
+  location: class FraccionJava
+FraccionJava.java:25: error: cannot find symbol
+        Scene scene = new Scene(root);
+        ^
+  symbol:   class Scene
+  location: class FraccionJava
+FraccionJava.java:25: error: cannot find symbol
+        Scene scene = new Scene(root);
+                          ^
+  symbol:   class Scene
+  location: class FraccionJava
+14 errors
+Not compiled

@@ -1,0 +1,208 @@
+Bicicleta.java:7: error: cannot find symbol
+public class Bicicleta extends Vehiculo{
+                               ^
+  symbol: class Vehiculo
+CarroGrande.java:7: error: cannot find symbol
+public class CarroGrande  extends Vehiculo{
+                                  ^
+  symbol: class Vehiculo
+CarroPequeno.java:7: error: cannot find symbol
+public class CarroPequeno  extends Vehiculo{
+                                   ^
+  symbol: class Vehiculo
+Moto.java:7: error: cannot find symbol
+public class Moto  extends Vehiculo{
+                           ^
+  symbol: class Vehiculo
+Parqueadero.java:6: error: cannot find symbol
+    private Vehiculo[] vehiculosParqueados;
+            ^
+  symbol:   class Vehiculo
+  location: class Parqueadero
+Parqueadero.java:7: error: cannot find symbol
+    private ArrayList<Vehiculo> historialVehiculos;
+                      ^
+  symbol:   class Vehiculo
+  location: class Parqueadero
+Parqueadero.java:19: error: cannot find symbol
+    public boolean ingresarVehiculo(Vehiculo vehiculo) {
+                                    ^
+  symbol:   class Vehiculo
+  location: class Parqueadero
+Parqueadero.java:33: error: cannot find symbol
+    public Vehiculo retirarVehiculo(String placa, int hora, int minuto, int segundo) {
+           ^
+  symbol:   class Vehiculo
+  location: class Parqueadero
+Parqueadero.java:76: error: cannot find symbol
+    public Vehiculo[] getVehiculos() {
+           ^
+  symbol:   class Vehiculo
+  location: class Parqueadero
+Parqueadero.java:83: error: cannot find symbol
+    public ArrayList<Vehiculo> getHistorialVehiculos() {
+                     ^
+  symbol:   class Vehiculo
+  location: class Parqueadero
+Test2.java:41: error: cannot find symbol
+    Vehiculo [][] v = new Vehiculo[horas.length][4];
+    ^
+  symbol:   class Vehiculo
+  location: class Test2
+Test2.java:43: error: cannot find symbol
+    Vehiculo [ ] v1 = {new CarroGrande("URC789", "60458723", 8, 15, 20),
+    ^
+  symbol:   class Vehiculo
+  location: class Test2
+Test3.java:42: error: cannot find symbol
+    Vehiculo [][] v = new Vehiculo[horas.length][4];
+    ^
+  symbol:   class Vehiculo
+  location: class Test3
+Test3.java:44: error: cannot find symbol
+    Vehiculo [ ] v1 = {new CarroGrande("URC789", "60458723", 8, 15, 20),
+    ^
+  symbol:   class Vehiculo
+  location: class Test3
+Bicicleta.java:11: error: cannot find symbol
+       setTarifa(TARIFA_BICICLETA);
+                 ^
+  symbol:   variable TARIFA_BICICLETA
+  location: class Bicicleta
+CarroGrande.java:11: error: cannot find symbol
+        setTarifa(TARIFA_CARRO_GRANDE);
+                  ^
+  symbol:   variable TARIFA_CARRO_GRANDE
+  location: class CarroGrande
+CarroPequeno.java:11: error: cannot find symbol
+        setTarifa(TARIFA_CARRO_PEQUENO);
+                  ^
+  symbol:   variable TARIFA_CARRO_PEQUENO
+  location: class CarroPequeno
+Moto.java:11: error: cannot find symbol
+        setTarifa(TARIFA_MOTO);
+                  ^
+  symbol:   variable TARIFA_MOTO
+  location: class Moto
+Parqueadero.java:10: error: cannot find symbol
+        vehiculosParqueados = new Vehiculo[30];
+                                  ^
+  symbol:   class Vehiculo
+  location: class Parqueadero
+Parqueadero.java:11: error: cannot find symbol
+        historialVehiculos = new ArrayList<Vehiculo>();
+                                           ^
+  symbol:   class Vehiculo
+  location: class Parqueadero
+Parqueadero.java:15: error: cannot find symbol
+        vehiculosParqueados = new Vehiculo[capacidad];
+                                  ^
+  symbol:   class Vehiculo
+  location: class Parqueadero
+Parqueadero.java:16: error: cannot find symbol
+        historialVehiculos = new ArrayList<Vehiculo>();
+                                           ^
+  symbol:   class Vehiculo
+  location: class Parqueadero
+Parqueadero.java:35: error: cannot find symbol
+        Vehiculo tmp=null;
+        ^
+  symbol:   class Vehiculo
+  location: class Parqueadero
+Parqueadero.java:64: error: cannot find symbol
+                Vehiculo tmp = historialVehiculos.get(i);
+                ^
+  symbol:   class Vehiculo
+  location: class Parqueadero
+Test2.java:41: error: cannot find symbol
+    Vehiculo [][] v = new Vehiculo[horas.length][4];
+                          ^
+  symbol:   class Vehiculo
+  location: class Test2
+Test3.java:42: error: cannot find symbol
+    Vehiculo [][] v = new Vehiculo[horas.length][4];
+                          ^
+  symbol:   class Vehiculo
+  location: class Test3
+Test3.java:108: error: cannot find symbol
+        Vehiculo[] ap = p.getVehiculos();
+        ^
+  symbol:   class Vehiculo
+  location: class Test3
+Test3.java:130: error: cannot find symbol
+        ArrayList<Vehiculo> ah = p.getHistorialVehiculos();
+                  ^
+  symbol:   class Vehiculo
+  location: class Test3
+Test3.java:139: error: cannot find symbol
+        Vehiculo[] ap = p.getVehiculos();
+        ^
+  symbol:   class Vehiculo
+  location: class Test3
+Test3.java:140: error: cannot find symbol
+        Vehiculo[] ap2 = new Vehiculo[v.length*2]; 
+        ^
+  symbol:   class Vehiculo
+  location: class Test3
+Test3.java:140: error: cannot find symbol
+        Vehiculo[] ap2 = new Vehiculo[v.length*2]; 
+                             ^
+  symbol:   class Vehiculo
+  location: class Test3
+Test3.java:189: error: cannot find symbol
+        Vehiculo[] ap = p.getVehiculos();
+        ^
+  symbol:   class Vehiculo
+  location: class Test3
+Test3.java:190: error: cannot find symbol
+        Vehiculo[] ap2 = new Vehiculo[v.length*2]; 
+        ^
+  symbol:   class Vehiculo
+  location: class Test3
+Test3.java:190: error: cannot find symbol
+        Vehiculo[] ap2 = new Vehiculo[v.length*2]; 
+                             ^
+  symbol:   class Vehiculo
+  location: class Test3
+Test3.java:225: error: cannot find symbol
+        Vehiculo[] ap = p.getVehiculos();
+        ^
+  symbol:   class Vehiculo
+  location: class Test3
+Test3.java:274: error: cannot find symbol
+        ArrayList<Vehiculo> ah = p.getHistorialVehiculos();
+                  ^
+  symbol:   class Vehiculo
+  location: class Test3
+Test3.java:277: error: cannot find symbol
+        Vehiculo vehiculo = null;
+        ^
+  symbol:   class Vehiculo
+  location: class Test3
+Test3.java:306: error: cannot find symbol
+        ArrayList<Vehiculo> ah = p.getHistorialVehiculos();
+                  ^
+  symbol:   class Vehiculo
+  location: class Test3
+Test3.java:307: error: cannot find symbol
+        Vehiculo vehiculo = null;
+        ^
+  symbol:   class Vehiculo
+  location: class Test3
+Test3.java:340: error: cannot find symbol
+        ArrayList<Vehiculo> ah = p.getHistorialVehiculos();
+                  ^
+  symbol:   class Vehiculo
+  location: class Test3
+Test3.java:342: error: cannot find symbol
+        Vehiculo vehiculo = null;
+        ^
+  symbol:   class Vehiculo
+  location: class Test3
+Test3.java:366: error: cannot find symbol
+        Vehiculo vehiculo = null;
+        ^
+  symbol:   class Vehiculo
+  location: class Test3
+42 errors
+Not compiled

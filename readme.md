@@ -1,6 +1,6 @@
-# Vpl Composer
+# Vpl ++ Microservices
 
-This is the root project of all Vpl ++ microservices
+This repository contains all the stuff to install the microservices
 
 ## Requeriments
 
@@ -9,6 +9,11 @@ This is the root project of all Vpl ++ microservices
 3. Kubernetes (if you want to deploy to kubernetes)
 4. Python 3
 5. Jinja (j2cli using pip)
+
+### Not required but usefull tools:
+
+1. Mongo client: if you want to change or read the api data from scratch **(It may be dangerous). 
+2. Mysql client: if you want to change pr read the moodle data from scratch **(It may be dangerous). 
 
 ## Install 
 

@@ -1,0 +1,7 @@
+Hora.java:166: error: cannot find symbol
+    if(Hora==other) igual=true;
+       ^
+  symbol:   variable Hora
+  location: class Hora
+1 error
+Not compiled

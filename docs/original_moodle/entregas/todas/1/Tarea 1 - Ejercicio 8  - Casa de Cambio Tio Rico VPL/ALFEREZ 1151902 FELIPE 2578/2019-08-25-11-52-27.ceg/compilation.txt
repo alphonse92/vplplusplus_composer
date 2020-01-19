@@ -1,0 +1,5 @@
+CasaDeCambio.java:169: error: duplicate class: CasaDeCambio
+public class CasaDeCambio {
+       ^
+1 error
+Not compiled

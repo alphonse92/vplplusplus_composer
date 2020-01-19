@@ -1,0 +1,5 @@
+Grupo.java:28: error: ';' expected
+    boolean puedeAgregar==true;
+                        ^
+1 error
+Not compiled

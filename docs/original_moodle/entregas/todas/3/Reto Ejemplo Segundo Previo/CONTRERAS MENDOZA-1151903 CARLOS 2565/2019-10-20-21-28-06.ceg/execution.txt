@@ -1,0 +1,59 @@
+Comment :=>> t1.testHoraConstructor(): success. 8 marks
+
+Comment :=>> t1.testHoraEsMenorMayor(): success. 8 marks
+
+Comment :=>> t1.testHoraRestarEnSegundos(): success. 8 marks
+
+Comment :=>> t2.testConstructor1(): success. 2 marks
+
+Comment :=>> t2.testConstructor2(): failure. 0 marks
+********************
+expected:<10000> but was:<5000>
+
+Comment :=>> t2.testRegistrarSalida1(): failure. 0 marks
+********************
+expected:<190760.3055555556> but was:<95380.1527777778>
+
+Comment :=>> t2.testRegistrarSalida2(): failure. 0 marks
+********************
+expected:<95380.1527777778> but was:<190760.3055555556>
+
+Comment :=>> t2.testRegistrarSalida3(): success. 2 marks
+
+Comment :=>> t2.testRegistrarSalida4(): success. 2 marks
+
+Comment :=>> t3.testConstructor1(): success. 3 marks
+
+Comment :=>> t3.testConstructor2(): success. 3 marks
+
+Comment :=>> t3.testTegistrarIngreso1(): success. 4 marks
+
+Comment :=>> t3.testTegistrarIngreso2(): success. 4 marks
+
+Comment :=>> t3.testTegistrarIngreso3(): success. 4 marks
+
+Comment :=>> t3.testRegistrarIngreso4(): success. 4 marks
+
+Comment :=>> t3.testBuscar(): success. 3 marks
+
+Comment :=>> t3.testRegistrarSalida1(): success. 3 marks
+
+Comment :=>> t3.testRegistrarSalida2(): failure. 0 marks
+********************
+null
+
+Comment :=>> t3.testRegistrarSalida3(): success. 3 marks
+
+Comment :=>> t3.testResumen1(): failure. 0 marks
+********************
+expected:<2397919.44> but was:<1198959.722222222>
+
+Comment :=>> t3.testResumen2(): failure. 0 marks
+********************
+expected:<1198959.72> but was:<2397919.444444444>
+
+Comment :=>> t3.testResumen3(): success. 4 marks
+
+Comment :=>> t3.testResumen4(): success. 4 marks
+
+Grade :=>> 83

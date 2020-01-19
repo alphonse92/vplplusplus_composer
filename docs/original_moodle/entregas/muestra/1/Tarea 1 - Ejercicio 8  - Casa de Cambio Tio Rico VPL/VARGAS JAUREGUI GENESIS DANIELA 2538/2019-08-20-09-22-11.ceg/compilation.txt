@@ -1,0 +1,5 @@
+CasaDeCambio.java:79: error: ')' expected
+        puedeComprar = (cantidad * this.precioDeCompra <= this.pesosEnCaja;
+                                                                          ^
+1 error
+Not compiled

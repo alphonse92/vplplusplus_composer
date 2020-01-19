@@ -1,0 +1,93 @@
+Comment :=>> Alumno.testAlumno(): success. 2 marks
+
+Comment :=>> Inscripcion.testConstructorInscripcion(): failure. 0 marks
+********************
+null
+
+Comment :=>> Grupo.testConstructorGrupo(): failure. 0 marks
+********************
+expected:<36> but was:<0>
+
+Comment :=>> Grupo.testAgregarAlumnoOK(): failure. 0 marks
+********************
+expected:<true> but was:<false>
+
+Comment :=>> Grupo.testAgregarAlumnoErrorTamanio(): success. 2 marks
+
+Comment :=>> Grupo.testAgregarAlumnoErrorRepetido(): failure. 0 marks
+********************
+expected:<true> but was:<false>
+
+Comment :=>> Materia.testConstructorMateria(): failure. 0 marks
+********************
+expected:<45> but was:<0>
+
+Comment :=>> Materia.testInscribirAlumnoOK(): failure. 0 marks
+********************
+null
+
+Comment :=>> Materia.testInscribirAlumnoErrorCondicional(): failure. 0 marks
+********************
+null
+
+Comment :=>> Materia.testInscribirAlumnoErrorRepetido(): failure. 0 marks
+********************
+null
+
+Comment :=>> Materia.testGenerarGrupos(): failure. 0 marks
+********************
+null
+
+Comment :=>> Universidad.testConstructorUniversidad(): failure. 0 marks
+********************
+expected:<100> but was:<0>
+
+Comment :=>> Universidad.testAgregarAlumnoOK(): failure. 0 marks
+********************
+expected:<true> but was:<false>
+
+Comment :=>> Universidad.testAgregarAlumnoErrorCodigoRepetido(): failure. 0 marks
+********************
+expected:<true> but was:<false>
+
+Comment :=>> Universidad.testAgregarAlumnoErrorNombresYApellidosRepetidos(): failure. 0 marks
+********************
+expected:<true> but was:<false>
+
+Comment :=>> Universidad.testAgregarMateriaOK(): failure. 0 marks
+********************
+expected:<true> but was:<false>
+
+Comment :=>> Universidad.testAgregarMateriaError(): failure. 0 marks
+********************
+expected:<true> but was:<false>
+
+Comment :=>> Universidad.testGetAlumnoPorPosicionOK(): failure. 0 marks
+********************
+null
+
+Comment :=>> Universidad.testGetAlumnoPorPosicionError(): success. 5 marks
+
+Comment :=>> Universidad.testGetMateriaPorPosicionOK(): failure. 0 marks
+********************
+null
+
+Comment :=>> Universidad.testGetMateriaPorPosicionError(): success. 5 marks
+
+Comment :=>> Universidad.testContieneAlumno(): failure. 0 marks
+********************
+expected:<true> but was:<false>
+
+Comment :=>> Universidad.testContieneMaterua(): failure. 0 marks
+********************
+expected:<true> but was:<false>
+
+Comment :=>> Universidad.testEliminarAlumno(): failure. 0 marks
+********************
+null
+
+Comment :=>> Universidad.testEliminarMateria(): failure. 0 marks
+********************
+null
+
+Grade :=>> 14

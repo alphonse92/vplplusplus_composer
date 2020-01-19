@@ -1,0 +1,62 @@
+Almuerzo.java:18: error: cannot find symbol
+    private Restaurante restaurante;
+            ^
+  symbol:   class Restaurante
+  location: class Almuerzo
+Almuerzo.java:20: error: cannot find symbol
+    public Almuerzo(Restaurante restaurante, String nombreFruta, String nombreProteina, String nombreGrano, String nombreAlmidon) {
+                    ^
+  symbol:   class Restaurante
+  location: class Almuerzo
+TestLaunchMachine.java:1192: error: cannot find symbol
+        Restaurante r = new Restaurante();
+        ^
+  symbol:   class Restaurante
+  location: class TestLaunchMachine
+TestLaunchMachine.java:1192: error: cannot find symbol
+        Restaurante r = new Restaurante();
+                            ^
+  symbol:   class Restaurante
+  location: class TestLaunchMachine
+TestLaunchMachine.java:1203: error: cannot find symbol
+        Restaurante r = new Restaurante();
+        ^
+  symbol:   class Restaurante
+  location: class TestLaunchMachine
+TestLaunchMachine.java:1203: error: cannot find symbol
+        Restaurante r = new Restaurante();
+                            ^
+  symbol:   class Restaurante
+  location: class TestLaunchMachine
+TestLaunchMachine.java:1228: error: cannot find symbol
+        Restaurante r = new Restaurante();
+        ^
+  symbol:   class Restaurante
+  location: class TestLaunchMachine
+TestLaunchMachine.java:1228: error: cannot find symbol
+        Restaurante r = new Restaurante();
+                            ^
+  symbol:   class Restaurante
+  location: class TestLaunchMachine
+TestLaunchMachine.java:1254: error: cannot find symbol
+        Restaurante r = new Restaurante();
+        ^
+  symbol:   class Restaurante
+  location: class TestLaunchMachine
+TestLaunchMachine.java:1254: error: cannot find symbol
+        Restaurante r = new Restaurante();
+                            ^
+  symbol:   class Restaurante
+  location: class TestLaunchMachine
+TestLaunchMachine.java:1292: error: cannot find symbol
+        Restaurante r = new Restaurante();
+        ^
+  symbol:   class Restaurante
+  location: class TestLaunchMachine
+TestLaunchMachine.java:1292: error: cannot find symbol
+        Restaurante r = new Restaurante();
+                            ^
+  symbol:   class Restaurante
+  location: class TestLaunchMachine
+12 errors
+Not compiled

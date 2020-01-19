@@ -1,0 +1,160 @@
+Comment :=>> Alumno.testAlumno(): success. 2 marks
+
+Comment :=>> Inscripcion.testConstructorInscripcion(): success. 2 marks
+
+Comment :=>> Grupo.testConstructorGrupo(): success. 2 marks
+
+Comment :=>> Grupo.testAgregarAlumnoOK(): success. 2 marks
+
+Comment :=>> Grupo.testAgregarAlumnoErrorTamanio(): success. 2 marks
+
+Comment :=>> Grupo.testAgregarAlumnoErrorRepetido(): success. 3 marks
+
+Comment :=>> Materia.testConstructorMateria(): success. 3 marks
+
+1
+2
+Comment :=>> Materia.testInscribirAlumnoOK(): success. 3 marks
+
+1
+2
+Comment :=>> Materia.testInscribirAlumnoErrorCondicional(): success. 3 marks
+
+1
+2
+3
+Comment :=>> Materia.testInscribirAlumnoErrorRepetido(): success. 3 marks
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+Comment :=>> Materia.testGenerarGrupos(): failure. 0 marks
+********************
+expected:<Alumno@6d6f6e28> but was:<Alumno@135fbaa4>
+
+Comment :=>> Universidad.testConstructorUniversidad(): success. 5 marks
+
+Comment :=>> Universidad.testAgregarAlumnoOK(): success. 5 marks
+
+Comment :=>> Universidad.testAgregarAlumnoErrorCodigoRepetido(): success. 5 marks
+
+Comment :=>> Universidad.testAgregarAlumnoErrorNombresYApellidosRepetidos(): success. 5 marks
+
+Comment :=>> Universidad.testAgregarMateriaOK(): success. 5 marks
+
+Comment :=>> Universidad.testAgregarMateriaError(): success. 5 marks
+
+Comment :=>> Universidad.testGetAlumnoPorPosicionOK(): success. 5 marks
+
+Comment :=>> Universidad.testGetAlumnoPorPosicionError(): success. 5 marks
+
+Comment :=>> Universidad.testGetMateriaPorPosicionOK(): success. 5 marks
+
+Comment :=>> Universidad.testGetMateriaPorPosicionError(): success. 5 marks
+
+Comment :=>> Universidad.testContieneAlumno(): success. 5 marks
+
+Comment :=>> Universidad.testContieneMaterua(): success. 5 marks
+
+Comment :=>> Universidad.testEliminarAlumno(): success. 5 marks
+
+Comment :=>> Universidad.testEliminarMateria(): success. 5 marks
+
+Grade :=>> 95

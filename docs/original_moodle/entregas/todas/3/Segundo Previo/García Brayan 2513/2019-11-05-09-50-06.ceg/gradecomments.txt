@@ -1,0 +1,10 @@
+ testIngredienteRegistrarVenta1(): success. 10 marks
+ testIngredienteRegistrarCompra1(): success. 10 marks
+ testIngredienteRegistrarVenta2(): success. 10 marks
+ testIngredienteRegistrarCompra2(): success. 10 marks
+ testIngredienteEquals(): failure. 0 marks
+ testAlmuerzoConstructor(): success. 10 marks
+ testAlmuerzoPrecioVenta(): success. 10 marks
+ testAlmuerzoSePuedePrepararYRegistrarVenta(): failure. 0 marks
+ testRestauranteGetNombres(): success. 10 marks
+ testRestauranteBuscar(): success. 10 marks

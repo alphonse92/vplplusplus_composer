@@ -1,0 +1,212 @@
+CoffeeMachineView.java:29: error: cannot find symbol
+    protected maquinaCafetera maquina;
+              ^
+  symbol:   class maquinaCafetera
+  location: class CoffeeMachineView
+CoffeeMachineView.java:36: error: cannot find symbol
+        maquina = new maquinaCafetera();
+                      ^
+  symbol:   class maquinaCafetera
+  location: class CoffeeMachineView
+MaquinaCafeteraTest.java:19: error: cannot find symbol
+        MaquinaCafetera maquina = new MaquinaCafetera();
+        ^
+  symbol:   class MaquinaCafetera
+  location: class MaquinaCafeteraTest
+MaquinaCafeteraTest.java:19: error: cannot find symbol
+        MaquinaCafetera maquina = new MaquinaCafetera();
+                                      ^
+  symbol:   class MaquinaCafetera
+  location: class MaquinaCafeteraTest
+MaquinaCafeteraTest.java:31: error: cannot find symbol
+        MaquinaCafetera maquina = new MaquinaCafetera();
+        ^
+  symbol:   class MaquinaCafetera
+  location: class MaquinaCafeteraTest
+MaquinaCafeteraTest.java:31: error: cannot find symbol
+        MaquinaCafetera maquina = new MaquinaCafetera();
+                                      ^
+  symbol:   class MaquinaCafetera
+  location: class MaquinaCafeteraTest
+MaquinaCafeteraTest.java:38: error: cannot find symbol
+        MaquinaCafetera maquina = new MaquinaCafetera();
+        ^
+  symbol:   class MaquinaCafetera
+  location: class MaquinaCafeteraTest
+MaquinaCafeteraTest.java:38: error: cannot find symbol
+        MaquinaCafetera maquina = new MaquinaCafetera();
+                                      ^
+  symbol:   class MaquinaCafetera
+  location: class MaquinaCafeteraTest
+MaquinaCafeteraTest.java:45: error: cannot find symbol
+        MaquinaCafetera maquina = new MaquinaCafetera();
+        ^
+  symbol:   class MaquinaCafetera
+  location: class MaquinaCafeteraTest
+MaquinaCafeteraTest.java:45: error: cannot find symbol
+        MaquinaCafetera maquina = new MaquinaCafetera();
+                                      ^
+  symbol:   class MaquinaCafetera
+  location: class MaquinaCafeteraTest
+MaquinaCafeteraTest.java:52: error: cannot find symbol
+        MaquinaCafetera maquina = new MaquinaCafetera();
+        ^
+  symbol:   class MaquinaCafetera
+  location: class MaquinaCafeteraTest
+MaquinaCafeteraTest.java:52: error: cannot find symbol
+        MaquinaCafetera maquina = new MaquinaCafetera();
+                                      ^
+  symbol:   class MaquinaCafetera
+  location: class MaquinaCafeteraTest
+MaquinaCafeteraTest.java:59: error: cannot find symbol
+        MaquinaCafetera maquina = new MaquinaCafetera();
+        ^
+  symbol:   class MaquinaCafetera
+  location: class MaquinaCafeteraTest
+MaquinaCafeteraTest.java:59: error: cannot find symbol
+        MaquinaCafetera maquina = new MaquinaCafetera();
+                                      ^
+  symbol:   class MaquinaCafetera
+  location: class MaquinaCafeteraTest
+MaquinaCafeteraTest.java:66: error: cannot find symbol
+        MaquinaCafetera maquina = new MaquinaCafetera();
+        ^
+  symbol:   class MaquinaCafetera
+  location: class MaquinaCafeteraTest
+MaquinaCafeteraTest.java:66: error: cannot find symbol
+        MaquinaCafetera maquina = new MaquinaCafetera();
+                                      ^
+  symbol:   class MaquinaCafetera
+  location: class MaquinaCafeteraTest
+MaquinaCafeteraTest.java:73: error: cannot find symbol
+        MaquinaCafetera maquina = new MaquinaCafetera();
+        ^
+  symbol:   class MaquinaCafetera
+  location: class MaquinaCafeteraTest
+MaquinaCafeteraTest.java:73: error: cannot find symbol
+        MaquinaCafetera maquina = new MaquinaCafetera();
+                                      ^
+  symbol:   class MaquinaCafetera
+  location: class MaquinaCafeteraTest
+MaquinaCafeteraTest.java:80: error: cannot find symbol
+        MaquinaCafetera maquina = new MaquinaCafetera();
+        ^
+  symbol:   class MaquinaCafetera
+  location: class MaquinaCafeteraTest
+MaquinaCafeteraTest.java:80: error: cannot find symbol
+        MaquinaCafetera maquina = new MaquinaCafetera();
+                                      ^
+  symbol:   class MaquinaCafetera
+  location: class MaquinaCafeteraTest
+MaquinaCafeteraTest.java:87: error: cannot find symbol
+        MaquinaCafetera maquina = new MaquinaCafetera();
+        ^
+  symbol:   class MaquinaCafetera
+  location: class MaquinaCafeteraTest
+MaquinaCafeteraTest.java:87: error: cannot find symbol
+        MaquinaCafetera maquina = new MaquinaCafetera();
+                                      ^
+  symbol:   class MaquinaCafetera
+  location: class MaquinaCafeteraTest
+MaquinaCafeteraTest.java:94: error: cannot find symbol
+        MaquinaCafetera maquina = new MaquinaCafetera(1000, 1000, 100);
+        ^
+  symbol:   class MaquinaCafetera
+  location: class MaquinaCafeteraTest
+MaquinaCafeteraTest.java:94: error: cannot find symbol
+        MaquinaCafetera maquina = new MaquinaCafetera(1000, 1000, 100);
+                                      ^
+  symbol:   class MaquinaCafetera
+  location: class MaquinaCafeteraTest
+MaquinaCafeteraTest.java:106: error: cannot find symbol
+        MaquinaCafetera maquina = new MaquinaCafetera(56, 6, 1);
+        ^
+  symbol:   class MaquinaCafetera
+  location: class MaquinaCafeteraTest
+MaquinaCafeteraTest.java:106: error: cannot find symbol
+        MaquinaCafetera maquina = new MaquinaCafetera(56, 6, 1);
+                                      ^
+  symbol:   class MaquinaCafetera
+  location: class MaquinaCafeteraTest
+MaquinaCafeteraTest.java:113: error: cannot find symbol
+        MaquinaCafetera maquina = new MaquinaCafetera(1000, 1000, 100);
+        ^
+  symbol:   class MaquinaCafetera
+  location: class MaquinaCafeteraTest
+MaquinaCafeteraTest.java:113: error: cannot find symbol
+        MaquinaCafetera maquina = new MaquinaCafetera(1000, 1000, 100);
+                                      ^
+  symbol:   class MaquinaCafetera
+  location: class MaquinaCafeteraTest
+MaquinaCafeteraTest.java:122: error: cannot find symbol
+        MaquinaCafetera maquina = new MaquinaCafetera(1000, 1000, 100);
+        ^
+  symbol:   class MaquinaCafetera
+  location: class MaquinaCafeteraTest
+MaquinaCafeteraTest.java:122: error: cannot find symbol
+        MaquinaCafetera maquina = new MaquinaCafetera(1000, 1000, 100);
+                                      ^
+  symbol:   class MaquinaCafetera
+  location: class MaquinaCafeteraTest
+MaquinaCafeteraTest.java:131: error: cannot find symbol
+        MaquinaCafetera maquina = new MaquinaCafetera(1000, 1000, 100);
+        ^
+  symbol:   class MaquinaCafetera
+  location: class MaquinaCafeteraTest
+MaquinaCafeteraTest.java:131: error: cannot find symbol
+        MaquinaCafetera maquina = new MaquinaCafetera(1000, 1000, 100);
+                                      ^
+  symbol:   class MaquinaCafetera
+  location: class MaquinaCafeteraTest
+MaquinaCafeteraTest.java:140: error: cannot find symbol
+        MaquinaCafetera maquina = new MaquinaCafetera(0, 0, 0);
+        ^
+  symbol:   class MaquinaCafetera
+  location: class MaquinaCafeteraTest
+MaquinaCafeteraTest.java:140: error: cannot find symbol
+        MaquinaCafetera maquina = new MaquinaCafetera(0, 0, 0);
+                                      ^
+  symbol:   class MaquinaCafetera
+  location: class MaquinaCafeteraTest
+MaquinaCafeteraTest.java:148: error: cannot find symbol
+        MaquinaCafetera maquina = new MaquinaCafetera(0, 0, 0);
+        ^
+  symbol:   class MaquinaCafetera
+  location: class MaquinaCafeteraTest
+MaquinaCafeteraTest.java:148: error: cannot find symbol
+        MaquinaCafetera maquina = new MaquinaCafetera(0, 0, 0);
+                                      ^
+  symbol:   class MaquinaCafetera
+  location: class MaquinaCafeteraTest
+MaquinaCafeteraTest.java:155: error: cannot find symbol
+        MaquinaCafetera maquina = new MaquinaCafetera(0, 0, 0);
+        ^
+  symbol:   class MaquinaCafetera
+  location: class MaquinaCafeteraTest
+MaquinaCafeteraTest.java:155: error: cannot find symbol
+        MaquinaCafetera maquina = new MaquinaCafetera(0, 0, 0);
+                                      ^
+  symbol:   class MaquinaCafetera
+  location: class MaquinaCafeteraTest
+MaquinaCafeteraTest.java:167: error: cannot find symbol
+        MaquinaCafetera maquina = new MaquinaCafetera(0, 0, 0);
+        ^
+  symbol:   class MaquinaCafetera
+  location: class MaquinaCafeteraTest
+MaquinaCafeteraTest.java:167: error: cannot find symbol
+        MaquinaCafetera maquina = new MaquinaCafetera(0, 0, 0);
+                                      ^
+  symbol:   class MaquinaCafetera
+  location: class MaquinaCafeteraTest
+MaquinaCafeteraTest.java:177: error: cannot find symbol
+        MaquinaCafetera maquina = new MaquinaCafetera();
+        ^
+  symbol:   class MaquinaCafetera
+  location: class MaquinaCafeteraTest
+MaquinaCafeteraTest.java:177: error: cannot find symbol
+        MaquinaCafetera maquina = new MaquinaCafetera();
+                                      ^
+  symbol:   class MaquinaCafetera
+  location: class MaquinaCafeteraTest
+42 errors
+Not compiled

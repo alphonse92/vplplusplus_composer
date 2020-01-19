@@ -1,0 +1,77 @@
+Comment :=>> testCalcularPrecio0: success. 5 marks
+
+Comment :=>> testCalcularPrecio11: failure. 0 marks
+********************
+expected:<442> but was:<385>
+
+Comment :=>> testCalcularPrecio12: failure. 0 marks
+********************
+expected:<464> but was:<385>
+
+Comment :=>> testCalcularPrecio13: failure. 0 marks
+********************
+expected:<486> but was:<385>
+
+Comment :=>> testCalcularPrecio21: failure. 0 marks
+********************
+expected:<885> but was:<770>
+
+Comment :=>> testCalcularPrecio22: failure. 0 marks
+********************
+expected:<929> but was:<770>
+
+Comment :=>> testCalcularPrecio23: failure. 0 marks
+********************
+expected:<974> but was:<770>
+
+Comment :=>> testCalcularPrecio31: failure. 0 marks
+********************
+expected:<1328> but was:<0>
+
+Comment :=>> testCalcularPrecio32: failure. 0 marks
+********************
+expected:<1393> but was:<0>
+
+Comment :=>> testCalcularPrecio33: failure. 0 marks
+********************
+expected:<1460> but was:<0>
+
+Comment :=>> testPrepararCafe0: success. 5 marks
+
+Comment :=>> testPrepararCafe01: failure. 0 marks
+********************
+expected:<false> but was:<true>
+
+Comment :=>> testPrepararCafe11: failure. 0 marks
+********************
+expected:<945> but was:<1000>
+
+Comment :=>> testPrepararCafe22: failure. 0 marks
+********************
+expected:<890> but was:<1000>
+
+Comment :=>> testPrepararCafe33: failure. 0 marks
+********************
+expected:<835> but was:<1000>
+
+Comment :=>> testRecargarCafe1: failure. 0 marks
+********************
+expected:<10> but was:<1000>
+
+Comment :=>> testRecargarCafe2: failure. 0 marks
+********************
+expected:<false> but was:<true>
+
+Comment :=>> testRecargarCafe3: failure. 0 marks
+********************
+expected:<100> but was:<0>
+
+Comment :=>> testRecargarCafe4: failure. 0 marks
+********************
+expected:<false> but was:<true>
+
+Comment :=>> testRegistrarFactura: failure. 0 marks
+********************
+expected:<2000> but was:<0>
+
+Grade :=>> 10

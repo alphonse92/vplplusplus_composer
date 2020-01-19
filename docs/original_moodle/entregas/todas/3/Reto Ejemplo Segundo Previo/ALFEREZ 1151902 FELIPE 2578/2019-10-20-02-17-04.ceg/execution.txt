@@ -1,0 +1,38 @@
+Comment :=>> t1.testHoraConstructor(): success. 8 marks
+
+Comment :=>> t1.testHoraEsMenorMayor(): success. 8 marks
+
+Comment :=>> t1.testHoraRestarEnSegundos(): success. 8 marks
+
+Comment :=>> t2.testConstructor1(): failure. 0 marks
+********************
+null
+
+Comment :=>> t2.testConstructor2(): failure. 0 marks
+********************
+expected:<10000> but was:<0>
+
+Comment :=>> t2.testRegistrarSalida1(): failure. 0 marks
+********************
+expected:<16.03027777777778> but was:<0.0>
+
+Comment :=>> t2.testRegistrarSalida2(): failure. 0 marks
+********************
+expected:<16.03027777777778> but was:<0.0>
+
+Comment :=>> t2.testRegistrarSalida3(): failure. 0 marks
+********************
+expected:<16.03027777777778> but was:<0.0>
+
+Comment :=>> t2.testRegistrarSalida4(): failure. 0 marks
+********************
+expected:<16.03027777777778> but was:<0.0>
+
+Comment :=>> t3.testConstructor1(): failure. 0 marks
+********************
+null
+
+Exception in thread "main" java.lang.OutOfMemoryError: Requested array size exceeds VM limit
+	at Parqueadero.<init>(Parqueadero.java:15)
+	at Test3.testConstructor2(Test3.java:97)
+	at IntegralTest.main(IntegralTest.java:132)

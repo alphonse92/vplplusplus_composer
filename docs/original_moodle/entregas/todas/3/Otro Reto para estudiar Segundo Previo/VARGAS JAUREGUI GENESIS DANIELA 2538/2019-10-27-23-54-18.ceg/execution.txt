@@ -1,0 +1,23 @@
+Comment :=>> testCampeonatoConstructor: success. 10 marks
+
+Comment :=>> testCampeonatoInscribirEquipo: success. 10 marks
+
+Comment :=>> testCampeonatoBuscarEquipo: success. 10 marks
+
+Comment :=>> testCampeonatoRegistrarPartido: success. 10 marks
+
+Comment :=>> testEquipoAgregarFutbolista: success. 10 marks
+
+Comment :=>> testEquipoBuscarFutbolista: success. 10 marks
+
+Comment :=>> testEquipoRegistrarPartido: success. 10 marks
+
+Comment :=>> testEquipoAgregarPortero: failure. 0 marks
+********************
+expected:<true> but was:<false>
+
+Comment :=>> testPartidoConstructor: success. 10 marks
+
+Comment :=>> testPartidoRegistrarPartido: success. 10 marks
+
+Grade :=>> 90

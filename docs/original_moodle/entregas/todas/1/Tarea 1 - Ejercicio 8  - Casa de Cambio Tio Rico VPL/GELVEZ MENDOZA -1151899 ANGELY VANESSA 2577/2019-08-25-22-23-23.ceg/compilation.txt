@@ -1,0 +1,65 @@
+Casadecambio.java:8: error: class CasaDeCambio is public, should be declared in a file named CasaDeCambio.java
+public class CasaDeCambio {
+       ^
+CasaDeCambioTest.java:132: error: cannot find symbol
+        assertEquals(1.0, instance.getPrecioDeCompra(), 0.01);
+                                  ^
+  symbol:   method getPrecioDeCompra()
+  location: variable instance of type CasaDeCambio
+CasaDeCambioTest.java:133: error: cannot find symbol
+        assertEquals(2.0, instance.getPrecioDeVenta(), 0.01);
+                                  ^
+  symbol:   method getPrecioDeVenta()
+  location: variable instance of type CasaDeCambio
+CasaDeCambioTest.java:157: error: cannot find symbol
+        assertEquals(1.0, instance.getPesosEnCaja(), 0.01);
+                                  ^
+  symbol:   method getPesosEnCaja()
+  location: variable instance of type CasaDeCambio
+CasaDeCambioTest.java:170: error: cannot find symbol
+        assertEquals(2.0, instance.getBolivaresEnCaja(), 0.01);
+                                  ^
+  symbol:   method getBolivaresEnCaja()
+  location: variable instance of type CasaDeCambio
+CasaDeCambioTest.java:183: error: cannot find symbol
+        assertEquals(2, instance.getBolivaresComprados());
+                                ^
+  symbol:   method getBolivaresComprados()
+  location: variable instance of type CasaDeCambio
+CasaDeCambioTest.java:220: error: cannot find symbol
+        assertEquals(3.0, instance.getPesosEnCaja(), 0.01);
+                                  ^
+  symbol:   method getPesosEnCaja()
+  location: variable instance of type CasaDeCambio
+CasaDeCambioTest.java:232: error: cannot find symbol
+        assertEquals(1.0, instance.getBolivaresEnCaja(), 0.01);
+                                  ^
+  symbol:   method getBolivaresEnCaja()
+  location: variable instance of type CasaDeCambio
+CasaDeCambioTest.java:245: error: cannot find symbol
+        assertEquals(2, instance.getBolivaresVendidos());
+                                ^
+  symbol:   method getBolivaresVendidos()
+  location: variable instance of type CasaDeCambio
+CasaDeCambioTest.java:292: error: cannot find symbol
+        assertEquals(2.0, instance.getPesosEnCaja(),0.01);
+                                  ^
+  symbol:   method getPesosEnCaja()
+  location: variable instance of type CasaDeCambio
+CasaDeCambioTest.java:303: error: cannot find symbol
+        assertEquals(1.0, instance.getPesosEnCaja(),0.01);
+                                  ^
+  symbol:   method getPesosEnCaja()
+  location: variable instance of type CasaDeCambio
+CasaDeCambioTest.java:314: error: cannot find symbol
+        assertEquals(2.0, instance.getBolivaresEnCaja(),0.01);
+                                  ^
+  symbol:   method getBolivaresEnCaja()
+  location: variable instance of type CasaDeCambio
+CasaDeCambioTest.java:325: error: cannot find symbol
+        assertEquals(1.0, instance.getBolivaresEnCaja(), 0.01);
+                                  ^
+  symbol:   method getBolivaresEnCaja()
+  location: variable instance of type CasaDeCambio
+13 errors
+Not compiled

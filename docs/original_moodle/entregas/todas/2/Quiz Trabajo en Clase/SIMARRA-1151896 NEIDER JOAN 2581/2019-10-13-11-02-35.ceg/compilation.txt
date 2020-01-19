@@ -1,0 +1,11 @@
+Grupo.java:30: error: illegal start of expression
+    this.alumnos=[contadorDeAlumnos++]=alumno;
+                 ^
+Grupo.java:30: error: ';' expected
+    this.alumnos=[contadorDeAlumnos++]=alumno;
+                                     ^
+Grupo.java:30: error: not a statement
+    this.alumnos=[contadorDeAlumnos++]=alumno;
+                                       ^
+3 errors
+Not compiled

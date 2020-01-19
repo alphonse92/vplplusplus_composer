@@ -1,0 +1,55 @@
+Comment :=>> testGetGananciaEnUnBolivar: success. 4 marks
+
+Comment :=>> testCambiarPrecioDelBolivar1: success. 4 marks
+
+Comment :=>> testCambiarPrecioDelBolivar2: success. 4 marks
+
+Comment :=>> testCambiarPrecioDelBolivar3: success. 4 marks
+
+Comment :=>> testCambiarPrecioDelBolivar4: success. 4 marks
+
+Comment :=>> testCambiarPrecioDelBolivar5: success. 4 marks
+
+Comment :=>> testCambiarPrecioDelBolivar6: success. 4 marks
+
+Comment :=>> testCambiarPrecioDelBolivar7: success. 4 marks
+
+Comment :=>> testCambiarPrecioDelBolivar8: success. 4 marks
+
+Comment :=>> testComprarBolivares1: success. 4 marks
+
+Comment :=>> testComprarBolivares2: success. 4 marks
+
+Comment :=>> testComprarBolivares3: success. 4 marks
+
+Comment :=>> testComprarBolivares4: failure. 0 marks
+********************
+Use assertEquals(expected, actual, delta) to compare floating-point numbers
+
+Comment :=>> testComprarBolivares5: success. 4 marks
+
+Comment :=>> testVenderBolivares1: success. 4 marks
+
+Comment :=>> testVenderBolivares2: success. 4 marks
+
+Comment :=>> testVenderBolivares3: success. 4 marks
+
+Comment :=>> testVenderBolivares4: failure. 0 marks
+********************
+Use assertEquals(expected, actual, delta) to compare floating-point numbers
+
+Comment :=>> testVenderBolivares5: success. 4 marks
+
+Comment :=>> testGetImpuestos: success. 4 marks
+
+Comment :=>> testGetGanancias: success. 4 marks
+
+Comment :=>> testInyectarPesos1: success. 4 marks
+
+Comment :=>> testInyectarPesos2: success. 4 marks
+
+Comment :=>> testInyectarBolivares1: success. 4 marks
+
+Comment :=>> testInyectarBolivares2: success. 4 marks
+
+Grade :=>> 92

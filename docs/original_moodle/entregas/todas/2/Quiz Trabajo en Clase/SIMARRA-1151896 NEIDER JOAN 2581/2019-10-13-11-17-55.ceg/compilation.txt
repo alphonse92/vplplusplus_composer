@@ -1,0 +1,17 @@
+Materia.java:48: error: incompatible types: Grupo[] cannot be converted to ArrayList<Grupo>
+      this.grupos = new Grupo[totalGrupos];
+                    ^
+Materia.java:52: error: array required, but ArrayList<Grupo> found
+        this.grupos[i] = new Grupo(this);
+                   ^
+Materia.java:59: error: array required, but ArrayList<Grupo> found
+          this.grupos[j].agregarAlumno(this.inscripciones.get(k++).getAlumno());
+                     ^
+Materia.java:64: error: array required, but ArrayList<Grupo> found
+        this.grupos[totalGrupos-1].agregarAlumno(this.inscripciones.get(i).getAlumno());
+                   ^
+Materia.java:66: error: incompatible types: boolean cannot be converted to int
+      return totalGrupos > 0;
+                         ^
+5 errors
+Not compiled

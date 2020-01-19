@@ -1,0 +1,5 @@
+Universidad.java:36: error: array required, but Materia found
+        this.materias[i]=materia[contadorMaterias++];
+                                ^
+1 error
+Not compiled

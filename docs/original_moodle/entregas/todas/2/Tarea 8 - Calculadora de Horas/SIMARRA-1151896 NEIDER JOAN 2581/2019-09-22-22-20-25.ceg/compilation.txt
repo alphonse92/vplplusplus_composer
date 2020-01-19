@@ -1,0 +1,6 @@
+Hora.java:138: error: cannot find symbol
+      this.other=HH24;
+          ^
+  symbol: variable other
+1 error
+Not compiled

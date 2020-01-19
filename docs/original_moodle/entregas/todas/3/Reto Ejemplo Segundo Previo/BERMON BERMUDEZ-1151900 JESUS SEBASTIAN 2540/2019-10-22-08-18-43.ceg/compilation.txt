@@ -1,0 +1,152 @@
+ParkingMachine.java:29: error: cannot find symbol
+    private Parqueadero parqueadero;
+            ^
+  symbol:   class Parqueadero
+  location: class ParkingMachine
+ParkingMachine.java:39: error: cannot find symbol
+        parqueadero = new Parqueadero();
+                          ^
+  symbol:   class Parqueadero
+  location: class ParkingMachine
+Test3.java:86: error: cannot find symbol
+        Parqueadero p = new Parqueadero();
+        ^
+  symbol:   class Parqueadero
+  location: class Test3
+Test3.java:86: error: cannot find symbol
+        Parqueadero p = new Parqueadero();
+                            ^
+  symbol:   class Parqueadero
+  location: class Test3
+Test3.java:97: error: cannot find symbol
+        Parqueadero p = new Parqueadero(n);
+        ^
+  symbol:   class Parqueadero
+  location: class Test3
+Test3.java:97: error: cannot find symbol
+        Parqueadero p = new Parqueadero(n);
+                            ^
+  symbol:   class Parqueadero
+  location: class Test3
+Test3.java:107: error: cannot find symbol
+        Parqueadero p = new Parqueadero(v.length*4);
+        ^
+  symbol:   class Parqueadero
+  location: class Test3
+Test3.java:107: error: cannot find symbol
+        Parqueadero p = new Parqueadero(v.length*4);
+                            ^
+  symbol:   class Parqueadero
+  location: class Test3
+Test3.java:138: error: cannot find symbol
+        Parqueadero p = new Parqueadero(v.length*4);
+        ^
+  symbol:   class Parqueadero
+  location: class Test3
+Test3.java:138: error: cannot find symbol
+        Parqueadero p = new Parqueadero(v.length*4);
+                            ^
+  symbol:   class Parqueadero
+  location: class Test3
+Test3.java:188: error: cannot find symbol
+        Parqueadero p = new Parqueadero(v.length*4);
+        ^
+  symbol:   class Parqueadero
+  location: class Test3
+Test3.java:188: error: cannot find symbol
+        Parqueadero p = new Parqueadero(v.length*4);
+                            ^
+  symbol:   class Parqueadero
+  location: class Test3
+Test3.java:224: error: cannot find symbol
+        Parqueadero p = new Parqueadero(v.length*4);
+        ^
+  symbol:   class Parqueadero
+  location: class Test3
+Test3.java:224: error: cannot find symbol
+        Parqueadero p = new Parqueadero(v.length*4);
+                            ^
+  symbol:   class Parqueadero
+  location: class Test3
+Test3.java:250: error: cannot find symbol
+        Parqueadero p = new Parqueadero(v.length*4);
+        ^
+  symbol:   class Parqueadero
+  location: class Test3
+Test3.java:250: error: cannot find symbol
+        Parqueadero p = new Parqueadero(v.length*4);
+                            ^
+  symbol:   class Parqueadero
+  location: class Test3
+Test3.java:273: error: cannot find symbol
+        Parqueadero p = new Parqueadero(v.length*4);
+        ^
+  symbol:   class Parqueadero
+  location: class Test3
+Test3.java:273: error: cannot find symbol
+        Parqueadero p = new Parqueadero(v.length*4);
+                            ^
+  symbol:   class Parqueadero
+  location: class Test3
+Test3.java:304: error: cannot find symbol
+        Parqueadero p = new Parqueadero(v.length);
+        ^
+  symbol:   class Parqueadero
+  location: class Test3
+Test3.java:304: error: cannot find symbol
+        Parqueadero p = new Parqueadero(v.length);
+                            ^
+  symbol:   class Parqueadero
+  location: class Test3
+Test3.java:339: error: cannot find symbol
+        Parqueadero p = new Parqueadero(v.length*4);
+        ^
+  symbol:   class Parqueadero
+  location: class Test3
+Test3.java:339: error: cannot find symbol
+        Parqueadero p = new Parqueadero(v.length*4);
+                            ^
+  symbol:   class Parqueadero
+  location: class Test3
+Test3.java:364: error: cannot find symbol
+        Parqueadero p = new Parqueadero(v.length);
+        ^
+  symbol:   class Parqueadero
+  location: class Test3
+Test3.java:364: error: cannot find symbol
+        Parqueadero p = new Parqueadero(v.length);
+                            ^
+  symbol:   class Parqueadero
+  location: class Test3
+Test3.java:386: error: cannot find symbol
+        Parqueadero p = new Parqueadero(v.length);
+        ^
+  symbol:   class Parqueadero
+  location: class Test3
+Test3.java:386: error: cannot find symbol
+        Parqueadero p = new Parqueadero(v.length);
+                            ^
+  symbol:   class Parqueadero
+  location: class Test3
+Test3.java:407: error: cannot find symbol
+        Parqueadero p = new Parqueadero(v.length);
+        ^
+  symbol:   class Parqueadero
+  location: class Test3
+Test3.java:407: error: cannot find symbol
+        Parqueadero p = new Parqueadero(v.length);
+                            ^
+  symbol:   class Parqueadero
+  location: class Test3
+Test3.java:428: error: cannot find symbol
+        Parqueadero p = new Parqueadero(v.length);
+        ^
+  symbol:   class Parqueadero
+  location: class Test3
+Test3.java:428: error: cannot find symbol
+        Parqueadero p = new Parqueadero(v.length);
+                            ^
+  symbol:   class Parqueadero
+  location: class Test3
+30 errors
+Not compiled
