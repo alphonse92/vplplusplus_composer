@@ -15,4 +15,4 @@ Ejecutar: Sí. Evaluar: Sí. Evaluar al entregar: Sí
 Calificación automática: Sí.
 
 
-![Ponderacion](/grades.png "adasd")
+![Ponderacion](/grades.png?raw=true "adasd")
