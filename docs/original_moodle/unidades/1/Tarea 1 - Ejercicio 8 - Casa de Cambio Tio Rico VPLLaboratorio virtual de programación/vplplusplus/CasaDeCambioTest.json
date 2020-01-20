@@ -1,0 +1,643 @@
+{
+  "name": "CasaDeCambioTest",
+  "description": "CasaDeCambioTest",
+  "tests": [
+    {
+      "name": "CasaDeCambioTest",
+      "tags": [
+        "java",
+        "types"
+      ],
+      "description": "Describe tu test",
+      "objective": "Coloca el objetivo de tu test",
+      "code": "\n/**\n * Default constructor for test class CasaDeCambioTest\n */\npublic CasaDeCambioTest()\n{\n}\n\n/**\n * Sets up the test fixture.\n *\n * Called before every test case method.\n */\n@Before\nconst setUp()\n{\n}\n\n/**\n * Tears down the test fixture.\n *\n * Called after every test case method.\n */\n@After\nconst tearDown()\n{\n",
+      "test_cases": [
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testGetGananciaEnUnBolivar",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\n        CasaDeCambio instance = new CasaDeCambio();\n        instance.cambiarPrecioDelBolivar(1.0f, 2.0f);\n        float result = instance.getGananciaEnUnBolivar();\n        assertEquals(1.0, result, 0.01);\n",
+          "grade": 4,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testCambiarPrecioDelBolivar1",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\n        CasaDeCambio instance = new CasaDeCambio();\n        boolean result = instance.cambiarPrecioDelBolivar(0, 1);\n        assertEquals(false, result);\n",
+          "grade": 4,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testCambiarPrecioDelBolivar2",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\n        CasaDeCambio instance = new CasaDeCambio();\n        boolean result = instance.cambiarPrecioDelBolivar(-1, 1);\n        assertEquals(false, result);\n",
+          "grade": 4,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testCambiarPrecioDelBolivar3",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\n        CasaDeCambio instance = new CasaDeCambio();\n        boolean result = instance.cambiarPrecioDelBolivar(-1, 0);\n        assertEquals(false, result);\n",
+          "grade": 4,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testCambiarPrecioDelBolivar4",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\n        CasaDeCambio instance = new CasaDeCambio();\n        boolean result = instance.cambiarPrecioDelBolivar(-2, -1);\n        assertEquals(false, result);\n",
+          "grade": 4,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testCambiarPrecioDelBolivar5",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\n        CasaDeCambio instance = new CasaDeCambio();\n        boolean result = instance.cambiarPrecioDelBolivar(1, 1);\n        assertEquals(false, result);\n",
+          "grade": 4,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testCambiarPrecioDelBolivar6",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\n        CasaDeCambio instance = new CasaDeCambio();\n        boolean result = instance.cambiarPrecioDelBolivar(2, 1);\n        assertEquals(false, result);\n",
+          "grade": 4,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testCambiarPrecioDelBolivar7",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\n        CasaDeCambio instance = new CasaDeCambio();\n        boolean result = instance.cambiarPrecioDelBolivar(1, 2);\n        assertEquals(true, result);\n",
+          "grade": 4,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testCambiarPrecioDelBolivar8",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\n        CasaDeCambio instance = new CasaDeCambio();\n        instance.cambiarPrecioDelBolivar(1, 2);\n        assertEquals(1.0, instance.getPrecioDeCompra(), 0.01);\n        assertEquals(2.0, instance.getPrecioDeVenta(), 0.01);\n",
+          "grade": 4,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testComprarBolivares1",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\n        CasaDeCambio instance = new CasaDeCambio();\n        instance.cambiarPrecioDelBolivar(1, 2);\n        instance.inyectarPesos(2);\n        boolean result = instance.comprarBolivares(1);\n        assertEquals(true, result);\n",
+          "grade": 4,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testComprarBolivares2",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\n        CasaDeCambio instance = new CasaDeCambio();\n        instance.cambiarPrecioDelBolivar(1, 2);\n        instance.inyectarPesos(2);\n        instance.comprarBolivares(1);\n        assertEquals(1.0, instance.getPesosEnCaja(), 0.01);\n",
+          "grade": 4,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testComprarBolivares3",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\n        CasaDeCambio instance = new CasaDeCambio();\n        instance.cambiarPrecioDelBolivar(1, 2);\n        instance.inyectarPesos(2);\n        instance.inyectarBolivares(1);\n        instance.comprarBolivares(1);\n        assertEquals(2.0, instance.getBolivaresEnCaja(), 0.01);\n",
+          "grade": 4,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testComprarBolivares4",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\n        CasaDeCambio instance = new CasaDeCambio();\n        instance.cambiarPrecioDelBolivar(1, 2);\n        instance.inyectarPesos(3);\n        instance.comprarBolivares(1);\n        instance.comprarBolivares(1);\n        assertEquals(2, instance.getBolivaresComprados());\n",
+          "grade": 4,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testComprarBolivares5",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\n        CasaDeCambio instance = new CasaDeCambio();\n        instance.cambiarPrecioDelBolivar(1, 2);\n        instance.inyectarPesos(5);\n        boolean result = instance.comprarBolivares(6);\n        assertEquals(false, result);\n",
+          "grade": 4,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testVenderBolivares1",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\n        CasaDeCambio instance = new CasaDeCambio();\n        instance.cambiarPrecioDelBolivar(1, 2);\n        instance.inyectarBolivares(2);\n        boolean result = instance.venderBolivares(1);\n        assertEquals(true, result);\n",
+          "grade": 4,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testVenderBolivares2",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\n        CasaDeCambio instance = new CasaDeCambio();\n        instance.cambiarPrecioDelBolivar(1, 2);\n        instance.inyectarPesos(1);\n        instance.inyectarBolivares(2);\n        instance.venderBolivares(1);\n        assertEquals(3.0, instance.getPesosEnCaja(), 0.01);\n",
+          "grade": 4,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testVenderBolivares3",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\n        CasaDeCambio instance = new CasaDeCambio();\n        instance.cambiarPrecioDelBolivar(1, 2);\n        instance.inyectarBolivares(2);\n        instance.venderBolivares(1);\n        assertEquals(1.0, instance.getBolivaresEnCaja(), 0.01);\n",
+          "grade": 4,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testVenderBolivares4",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\n        CasaDeCambio instance = new CasaDeCambio();\n        instance.cambiarPrecioDelBolivar(1, 2);\n        instance.inyectarBolivares(3);\n        instance.venderBolivares(1);\n        instance.venderBolivares(1);\n        assertEquals(2, instance.getBolivaresVendidos());\n",
+          "grade": 4,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testVenderBolivares5",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\n        CasaDeCambio instance = new CasaDeCambio();\n        instance.cambiarPrecioDelBolivar(1, 2);\n        instance.inyectarBolivares(5);\n        boolean result = instance.venderBolivares(6);\n        assertEquals(false, result);\n",
+          "grade": 4,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testGetImpuestos",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\n        CasaDeCambio instance = new CasaDeCambio();\n        instance.cambiarPrecioDelBolivar(1, 2);\n        instance.inyectarBolivares(50);\n        instance.venderBolivares(10);\n        assertEquals(3.2, instance.getImpuestos(), 0.01);\n",
+          "grade": 4,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testGetGanancias",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\n        CasaDeCambio instance = new CasaDeCambio();\n        instance.cambiarPrecioDelBolivar(1, 2);\n        instance.inyectarBolivares(50);\n        instance.venderBolivares(10);\n        assertEquals(16.8, instance.getGanancias(), 0.01);\n",
+          "grade": 4,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testInyectarPesos1",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\n        CasaDeCambio instance = new CasaDeCambio();\n        instance.inyectarPesos(1);\n        instance.inyectarPesos(1);\n        assertEquals(2.0, instance.getPesosEnCaja(),0.01);\n",
+          "grade": 4,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testInyectarPesos2",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\n        CasaDeCambio instance = new CasaDeCambio();\n        instance.inyectarPesos(1);\n        instance.inyectarPesos(-1);\n        assertEquals(1.0, instance.getPesosEnCaja(),0.01);\n",
+          "grade": 4,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testInyectarBolivares1",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\n        CasaDeCambio instance = new CasaDeCambio();\n        instance.inyectarBolivares(1);\n        instance.inyectarBolivares(1);\n        assertEquals(2.0, instance.getBolivaresEnCaja(),0.01);\n",
+          "grade": 4,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testInyectarBolivares2",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\n        CasaDeCambio instance = new CasaDeCambio();\n        instance.inyectarBolivares(1);\n        instance.inyectarBolivares(-1);\n        assertEquals(1.0, instance.getBolivaresEnCaja(), 0.01);\n",
+          "grade": 4,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        }
+      ]
+    }
+  ]
+}
