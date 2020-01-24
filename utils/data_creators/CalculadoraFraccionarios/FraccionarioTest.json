@@ -1,0 +1,143 @@
+{
+  "name": "FraccionarioTest",
+  "description": "FraccionarioTest",
+  "tests": [
+    {
+      "name": "FraccionarioTest",
+      "tags": [
+        "java",
+        "types"
+      ],
+      "description": "Describe tu test",
+      "objective": "Coloca el objetivo de tu test",
+      "code": "\n    public FraccionarioTest(){}\n\n    @Before\n    public void setUp(){}\n    \n    @After\n    public void tearDown(){}\n",
+      "test_cases": [
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testSimplificar",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\nint m1 = (int)(Math.random()*100);\nFraccionario f = new Fraccionario(5*m1, 17*m1);\nf.simplificar();\nassertEquals(5, f.getNumerador());\nassertEquals(17, f.getDenominador());\n",
+          "grade": 20,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testSumar",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\nint n1 = (int)(Math.random()*100);\nint d1 = (int)(Math.random()*100);\nint n2 = (int)(Math.random()*100);\nint d2 = (int)(Math.random()*100);        \nFraccionario f1 = new Fraccionario(n1, d1);\nFraccionario f2 = new Fraccionario(n2, d2);\nFraccionario f3 = f1.sumar(f2);\nassertEquals(n1*d2 + d1*n2, f3.getNumerador());\nassertEquals(d1*d2, f3.getDenominador());\n",
+          "grade": 20,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testRestar",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\nint n1 = (int)(Math.random()*100);\nint d1 = (int)(Math.random()*100);\nint n2 = (int)(Math.random()*100);\nint d2 = (int)(Math.random()*100);        \nFraccionario f1 = new Fraccionario(n1, d1);\nFraccionario f2 = new Fraccionario(n2, d2);\nFraccionario f3 = f1.restar(f2);\nassertEquals(n1*d2 - d1*n2, f3.getNumerador());\nassertEquals(d1*d2, f3.getDenominador());\n",
+          "grade": 20,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testMultiplicar",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\nint n1 = (int)(Math.random()*100);\nint d1 = (int)(Math.random()*100);\nint n2 = (int)(Math.random()*100);\nint d2 = (int)(Math.random()*100);        \nFraccionario f1 = new Fraccionario(n1, d1);\nFraccionario f2 = new Fraccionario(n2, d2);\nFraccionario f3 = f1.multiplicar(f2);\nassertEquals(n1*n2, f3.getNumerador());\nassertEquals(d1*d2, f3.getDenominador());\n",
+          "grade": 20,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testDividir",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\nint n1 = (int)(Math.random()*100);\nint d1 = (int)(Math.random()*100);\nint n2 = (int)(Math.random()*100);\nint d2 = (int)(Math.random()*100);        \nFraccionario f1 = new Fraccionario(n1, d1);\nFraccionario f2 = new Fraccionario(n2, d2);\nFraccionario f3 = f1.dividir(f2);\nassertEquals(n1*d2, f3.getNumerador());\nassertEquals(d1*n2, f3.getDenominador());\n",
+          "grade": 20,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        }
+      ]
+    }
+  ]
+}
