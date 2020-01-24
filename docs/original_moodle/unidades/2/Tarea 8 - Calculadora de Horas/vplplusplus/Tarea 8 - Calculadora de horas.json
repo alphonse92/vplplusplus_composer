@@ -1,0 +1,268 @@
+{
+  "name": "Tarea 8 - Calculadora de horas",
+  "description": "Tarea 8 - Calculadora de horas",
+  "tests": [
+    {
+      "name": "HoraTest",
+      "tags": [
+        "java",
+        "types"
+      ],
+      "description": "Describe tu test",
+      "objective": "Coloca el objetivo de tu test",
+      "code": "\n\nprivate Hora [ ] horasHH24A;\nprivate Hora [ ] horasHH12A;\nprivate Hora [ ] horasHH24B;\nprivate Hora [ ] horasHH12B;\n\npublic HoraTest(){}\n\n@Before\npublic void setUp(){}\n\n@After\npublic void tearDown(){}\n\nprivate void testConstructor4ampm(String ampm){\n  Hora hora = null;\n  Exception e = null;\n  int s = 0, m = 0;\n  for(int h = 1; h<=12; h++){\n      s = ((int)(Math.random()*1000))%60;\n      m = ((int)(Math.random()*1000))%60;\n      hora = new Hora(h, m, s, ampm);\n      assertEquals(h, hora.getHoras());\n      assertEquals(m, hora.getMinutos());\n      assertEquals(s, hora.getSegundos());\n      assertEquals(Hora.HH12, hora.getFormato());\n      assertEquals(ampm, hora.getAmpm());\n      assertEquals(true, hora.esHoraValida());\n  }\n  \n  hora = new Hora(1, 1, 1, \"ERR\");\n  assertEquals(false, hora.esHoraValida());\n\n  hora = new Hora(1, 1, 1, null);\n  assertEquals(false, hora.esHoraValida());\n}\n\nprivate void testConstructor4Errampm(String ampm){\n  Exception e = null;\n  Hora hora = null;\n  \n  hora = new Hora(0, 0, 0, ampm);\n  assertEquals(false, hora.esHoraValida());\n\n  hora = new Hora(13, 0, 0, ampm);\n  assertEquals(false, hora.esHoraValida());\n\n  hora = new Hora(31, 0, 0, ampm);\n  assertEquals(false, hora.esHoraValida());\n\n  hora = new Hora(-1, 0, 0, ampm);\n  assertEquals(false, hora.esHoraValida());\n\n  hora = new Hora(0, 60, 0, ampm);\n  assertEquals(false, hora.esHoraValida());\n\n  hora = new Hora(0, 71, 0, ampm);\n  assertEquals(false, hora.esHoraValida());\n\n  hora = new Hora(0, -1, 0, ampm);\n  assertEquals(false, hora.esHoraValida());\n\n  hora = new Hora(0, 0, 60, ampm);\n  assertEquals(false, hora.esHoraValida());\n\n  hora = new Hora(0, 0, 71, ampm);\n  assertEquals(false, hora.esHoraValida());\n\n  hora = new Hora(0, 0, -1, ampm);\n  assertEquals(false, hora.esHoraValida());\n}\n\npublic void testHoraConstructor5HH24(String ampm)\n    {\n        Exception e = null;\n        Hora hora = null;\n        int s = 0, m = 0;\n        for(int h = 0; h<=23; h++){\n            s = ((int)(Math.random()*1000))%60;\n            m = ((int)(Math.random()*1000))%60;\n            hora = new Hora(h, m, s, Hora.HH24, ampm);\n            assertEquals(h, hora.getHoras());\n            assertEquals(m, hora.getMinutos());\n            assertEquals(s, hora.getSegundos());\n            assertEquals(Hora.HH24, hora.getFormato());\n            assertNull(hora.getAmpm());\n            assertEquals(true, hora.esHoraValida());\n        }\n\n        hora = new Hora(24, 0, 0, Hora.HH24, ampm);\n        assertEquals(false, hora.esHoraValida());\n\n        hora = new Hora(31, 0, 0, Hora.HH24, ampm);\n        assertEquals(false, hora.esHoraValida());\n\n        hora = new Hora(-1, 0, 0, Hora.HH24, ampm);\n        assertEquals(false, hora.esHoraValida());\n\n        hora = new Hora(0, 60, 0, Hora.HH24, ampm);\n        assertEquals(false, hora.esHoraValida());\n\n        hora = new Hora(0, 71, 0, Hora.HH24, ampm);\n        assertEquals(false, hora.esHoraValida());\n\n        hora = new Hora(0, -1, 0, Hora.HH24, ampm);\n        assertEquals(false, hora.esHoraValida());\n\n        hora = new Hora(0, 0, 60, Hora.HH24, ampm);\n        assertEquals(false, hora.esHoraValida());\n\n        hora = new Hora(0, 0, 71, Hora.HH24, ampm);\n        assertEquals(false, hora.esHoraValida());\n\n        hora = new Hora(0, 0, -1, Hora.HH24, ampm);\n        assertEquals(false, hora.esHoraValida());\n\n    }\n\n    private void testConstructor5ampm(String ampm){\n        Hora hora = null;\n        int s = 0, m = 0;\n        for(int h = 1; h<=12; h++){\n            s = ((int)(Math.random()*1000))%60;\n            m = ((int)(Math.random()*1000))%60;\n            hora = new Hora(h, m, s, Hora.HH12, ampm);\n            assertEquals(h, hora.getHoras());\n            assertEquals(m, hora.getMinutos());\n            assertEquals(s, hora.getSegundos());\n            assertEquals(Hora.HH12, hora.getFormato());\n            assertEquals(ampm, hora.getAmpm());\n            assertEquals(true, hora.esHoraValida());\n        }\n\n    }\n\n    private void testConstructor5Errampm(String ampm){\n        Exception e = null;\n        Hora hora = null;\n\n        hora = new Hora(0, 0, 0, Hora.HH12, ampm);\n        assertEquals(false, hora.esHoraValida());\n\n        hora = new Hora(13, 0, 0, Hora.HH12, ampm);\n        assertEquals(false, hora.esHoraValida());\n\n        hora = new Hora(31, 0, 0, Hora.HH12, ampm);\n        assertEquals(false, hora.esHoraValida());\n\n        hora = new Hora(-1, 0, 0, Hora.HH12, ampm);\n        assertEquals(false, hora.esHoraValida());\n\n        hora = new Hora(0, 60, 0, Hora.HH12, ampm);\n        assertEquals(false, hora.esHoraValida());\n\n        hora = new Hora(0, 71, 0, Hora.HH12, ampm);\n        assertEquals(false, hora.esHoraValida());\n\n        hora = new Hora(0, -1, 0, Hora.HH12, ampm);\n        assertEquals(false, hora.esHoraValida());\n\n        hora = new Hora(0, 0, 60, Hora.HH12, ampm);\n        assertEquals(false, hora.esHoraValida());\n\n        hora = new Hora(0, 0, 71, Hora.HH12, ampm);\n        assertEquals(false, hora.esHoraValida());\n\n        hora = new Hora(0, 0, -1, Hora.HH12, ampm);\n        assertEquals(false, hora.esHoraValida());\n    }\n\n    private void crearHorasTestSonIguales(){\n        horasHH24A = new Hora[24];\n        horasHH12A = new Hora[24];\n\n        horasHH24B = new Hora[24];\n        horasHH12B = new Hora[24];\n\n        int s = ((int)(Math.random()*1000))%60;\n        int m = ((int)(Math.random()*1000))%60;\n\n        for(int h = 0; h<24; h++){\n            horasHH24A[h] = new Hora(h,m,s);\n            horasHH24B[h] = new Hora(h,m,s);\n        }\n\n        horasHH12A[0] = new Hora(12,m,s, Hora.AM);\n        horasHH12B[0] = new Hora(12,m,s, Hora.AM);\n        horasHH12A[12] = new Hora(12,m,s, Hora.PM);\n        horasHH12B[12] = new Hora(12,m,s, Hora.PM);\n        for(int h = 1; h<=11; h++){\n            horasHH12A[h] = new Hora(h,m,s, Hora.AM);\n            horasHH12B[h] = new Hora(h,m,s, Hora.AM);\n            horasHH12A[h+12] = new Hora(h,m,s, Hora.PM);\n            horasHH12B[h+12] = new Hora(h,m,s, Hora.PM);\n        }\n    }\n\n    public void testHoraToString()\n    {\n        Hora hora1 = null;\n        for(int i=1; i<=9;i++){\n            hora1 = new Hora(i, i, i);\n            assertEquals(\"0\" + i + \":0\" + i + \":0\" + i, hora1.toString());\n        }\n        for(int i=10; i<=12;i++){\n            hora1 = new Hora(i, i, i);\n            assertEquals(i + \":\" + i + \":\" + i, hora1.toString());\n        }\n        \n        for(int i=1; i<=9;i++){\n            hora1 = new Hora(i, i, i, Hora.AM);\n            assertEquals(\"0\" + i + \":0\" + i + \":0\" + i + \" a.m.\", hora1.toString());\n        }\n        for(int i=10; i<=12;i++){\n            hora1 = new Hora(i, i, i, Hora.AM);\n            assertEquals(i + \":\" + i + \":\" + i + \" a.m.\", hora1.toString());\n        }\n        \n        for(int i=1; i<=9;i++){\n            hora1 = new Hora(i, i, i, Hora.PM);\n            assertEquals(\"0\" + i + \":0\" + i + \":0\" + i + \" p.m.\", hora1.toString());\n        }\n        for(int i=10; i<=12;i++){\n            hora1 = new Hora(i, i, i, Hora.PM);\n            assertEquals(i + \":\" + i + \":\" + i + \" p.m.\", hora1.toString());\n        }\n    }\n\n",
+      "test_cases": [
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testHoraConstructor1",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\nHora hora = new Hora();\nassertEquals(\"getHoras\", 12, hora.getHoras());\nassertEquals(\"getMinutos\", 0, hora.getMinutos());\nassertEquals(\"getSegundos\", 0, hora.getSegundos());\nassertEquals(\"getAmpm\", Hora.AM, hora.getAmpm());\nassertEquals(\"esHoraValida\", true, hora.esHoraValida());\n",
+          "grade": 2,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testHoraConstructor2",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\nHora hora = new Hora(Hora.HH12);\nassertEquals(12, hora.getHoras());\nassertEquals(0, hora.getMinutos());\nassertEquals(0, hora.getSegundos());\nassertEquals(Hora.AM, hora.getAmpm());\nassertEquals(Hora.HH12, hora.getFormato());\nassertEquals(true, hora.esHoraValida());\n\nhora = new Hora(Hora.HH24);\nassertEquals(0, hora.getHoras());\nassertEquals(0, hora.getMinutos());\nassertEquals(0, hora.getSegundos());\nassertEquals(Hora.HH24, hora.getFormato());\nassertNull(hora.getAmpm());\nassertEquals(true, hora.esHoraValida());\n\nhora = new Hora(\"ERR\");\nassertEquals(false, hora.esHoraValida());\n\nhora = new Hora(null);\nassertEquals(false, hora.esHoraValida());\n",
+          "grade": 2,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testHoraConstructor3",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\nException e = null;\nHora hora = null;\nint s = 0, m = 0;\nfor(int h = 0; h<=23; h++){\n    s = ((int)(Math.random()*1000))%60;\n    m = ((int)(Math.random()*1000))%60;\n    hora = new Hora(h, m, s);\n    assertEquals(h, hora.getHoras());\n    assertEquals(m, hora.getMinutos());\n    assertEquals(s, hora.getSegundos());\n    assertEquals(Hora.HH24, hora.getFormato());\n    assertNull(hora.getAmpm());\n    assertEquals(true, hora.esHoraValida());\n}\n\nhora = new Hora(24, 0, 0);\nassertEquals(false, hora.esHoraValida());\n\nhora = new Hora(31, 0, 0);\nassertEquals(false, hora.esHoraValida());\n\nhora = new Hora(-1, 0, 0);\nassertEquals(false, hora.esHoraValida());\n\nhora = new Hora(0, 60, 0);\nassertEquals(false, hora.esHoraValida());\n\nhora = new Hora(0, 71, 0);\nassertEquals(false, hora.esHoraValida());\n\nhora = new Hora(0, -1, 0);\nassertEquals(false, hora.esHoraValida());\n\nhora = new Hora(0, 0, 60);\nassertEquals(false, hora.esHoraValida());\n\nhora = new Hora(0, 0, 71);\nassertEquals(false, hora.esHoraValida());\n\nhora = new Hora(0, 0, -1);\nassertEquals(false, hora.esHoraValida());\n\n",
+          "grade": 2,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testHoraConstructor4",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\ntestConstructor4ampm(Hora.AM);\ntestConstructor4ampm(Hora.PM);\ntestConstructor4Errampm(Hora.AM);\ntestConstructor4Errampm(Hora.PM);\n",
+          "grade": 2,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testHoraConstructor5",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\nException e = null;\nHora hora = null;\ntestHoraConstructor5HH24(Hora.AM);\ntestHoraConstructor5HH24(Hora.PM);\ntestHoraConstructor5HH24(null);\n\ntestConstructor5ampm(Hora.AM);\ntestConstructor5ampm(Hora.PM);\ntestConstructor5Errampm(Hora.AM);\ntestConstructor5Errampm(Hora.PM);      \n\nhora = new Hora(1, 1, 1, \"ERR\", null);\nassertEquals(false, hora.esHoraValida());\n\nhora = new Hora(1, 1, 1, null, null);\nassertEquals(false, hora.esHoraValida());\n\nhora = new Hora(1, 1, 1, Hora.HH12, \"ERR\");\nassertEquals(false, hora.esHoraValida());\n\nhora = new Hora(1, 1, 1, Hora.HH12, null);\nassertEquals(false, hora.esHoraValida());\n",
+          "grade": 2,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testHoraSonIguales",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\nHora tmpHH24 = null, tmpHH12 = null;\ncrearHorasTestSonIguales();\n\nfor(int i=0; i<24;i++){ \n    assertEquals(true, horasHH24A[i].esIgual(horasHH24B[i]));\n    assertEquals(true, horasHH24B[i].esIgual(horasHH24A[i]));\n\n    assertEquals(true, horasHH12A[i].esIgual(horasHH12B[i]));\n    assertEquals(true, horasHH12B[i].esIgual(horasHH12A[i]));\n\n    assertEquals(true, horasHH12A[i].esIgual(horasHH24A[i]));\n    assertEquals(true, horasHH24A[i].esIgual(horasHH12A[i]));\n\n    assertEquals(false, horasHH24A[23-i].esIgual(horasHH24A[i]));\n\n    assertEquals(false, horasHH12A[23-i].esIgual(horasHH12A[i]));\n\n    assertEquals(false, horasHH12A[23-i].esIgual(horasHH24A[i]));\n\n    assertEquals(false, horasHH24A[23-i].esIgual(horasHH12A[i]));\n\n    tmpHH24 = new Hora(horasHH24A[i].horas, (horasHH24A[i].minutos + 1)%60, (horasHH24A[i].segundos + 1)%60);\n    tmpHH12 = new Hora(horasHH12A[i].horas, (horasHH12A[i].minutos + 1)%60, (horasHH12A[i].segundos + 1)%60);\n\n    assertEquals(false,horasHH24A[i].esIgual(tmpHH24));\n    assertEquals(false,horasHH12A[i].esIgual(tmpHH12));\n    assertEquals(false,horasHH12A[i].esIgual(tmpHH24));\n    assertEquals(false,horasHH24A[i].esIgual(tmpHH12));\n}\n",
+          "grade": 2,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testHoraEsMenor",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\nHora hora1 = null, hora2 = null;\nint h1=0, h2=0, m1=0, m2=0, s1=0, s2=0;\n\n//Casos HH24 HH24        \ns1 = ((int)(Math.random()*1000))%60;\nm1 = ((int)(Math.random()*1000))%60;\nh1 = ((int)(Math.random()*1000))%24;\ndo{s2 = ((int)(s1 + Math.random()*1000))%60;}while(s2==s1);\ndo{m2 = ((int)(m1 + Math.random()*1000))%60;}while(m2==m1);\ndo{h2 = ((int)(h1 + Math.random()*1000))%24;}while(h2==h1);\n\nhora1 = new Hora(h1,m1,s1);\nhora2 = new Hora(h1,m1,s2);\nassertEquals(s1<s2, hora1.esMenor(hora2));\nassertEquals(!(s1<s2), hora2.esMenor(hora1));\n\nhora1 = new Hora(h1,m1,s1);\nhora2 = new Hora(h1,m2,s1);\nassertEquals(m1<m2, hora1.esMenor(hora2));\nassertEquals(!(m1<m2), hora2.esMenor(hora1));\n\nhora1 = new Hora(h1,m1,s1);\nhora2 = new Hora(h1,m2,s2);\nassertEquals(m1<m2, hora1.esMenor(hora2));\nassertEquals(!(m1<m2), hora2.esMenor(hora1));\n\nhora1 = new Hora(h1,m1,s1);\nhora2 = new Hora(h2,m2,s2);\nassertEquals(h1<h2, hora1.esMenor(hora2));\nassertEquals(!(h1<h2), hora2.esMenor(hora1));\n\n//Casos HH12 HH12 AM y PM\ns1 = ((int)(Math.random()*1000))%60;\nm1 = ((int)(Math.random()*1000))%60;\nh1 = ((int)(Math.random()*1000))%13; h1=h1==0?12:h1;\ndo{s2 = ((int)(s1 + Math.random()*1000))%60;}while(s2==s1);\ndo{m2 = ((int)(m1 + Math.random()*1000))%60;}while(m2==m1);\ndo{h2 = ((int)(h1 + Math.random()*1000))%13; h2=h2==0?12:h2;}while(h2==h1);\n\nhora1 = new Hora(h1,m1,s1, Hora.AM);\nhora2 = new Hora(h1,m1,s2, Hora.AM);\nassertEquals(s1<s2, hora1.esMenor(hora2));\nassertEquals(!(s1<s2), hora2.esMenor(hora1));\n\nhora1 = new Hora(h1,m1,s1, Hora.PM);\nhora2 = new Hora(h1,m1,s2, Hora.PM);\nassertEquals(s1<s2, hora1.esMenor(hora2));\nassertEquals(!(s1<s2), hora2.esMenor(hora1));\n\nhora1 = new Hora(h1,m1,s1, Hora.AM);\nhora2 = new Hora(h1,m2,s1, Hora.AM);\nassertEquals(m1<m2, hora1.esMenor(hora2));\nassertEquals(!(m1<m2), hora2.esMenor(hora1));\n\nhora1 = new Hora(h1,m1,s1, Hora.PM);\nhora2 = new Hora(h1,m2,s1, Hora.PM);\nassertEquals(m1<m2, hora1.esMenor(hora2));\nassertEquals(!(m1<m2), hora2.esMenor(hora1));\n\nhora1 = new Hora(h1,m1,s1, Hora.AM);\nhora2 = new Hora(h1,m2,s2, Hora.AM);\nassertEquals(m1<m2, hora1.esMenor(hora2));\nassertEquals(!(m1<m2), hora2.esMenor(hora1));\n\nhora1 = new Hora(h1,m1,s1, Hora.PM);\nhora2 = new Hora(h1,m2,s2, Hora.PM);\nassertEquals(m1<m2, hora1.esMenor(hora2));\nassertEquals(!(m1<m2), hora2.esMenor(hora1));\n\nhora1 = new Hora(h1,m1,s1, Hora.AM);\nhora2 = new Hora(h2,m2,s2, Hora.AM);\nassertEquals(h1==12 || h2!=12 && h1<h2, hora1.esMenor(hora2));\nassertEquals(!(h1==12 || h2!=12 && h1<h2), hora2.esMenor(hora1));\n\nhora1 = new Hora(h1,m1,s1, Hora.PM);\nhora2 = new Hora(h2,m2,s2, Hora.PM);\nassertEquals(h1==12 || h2!=12 && h1<h2, hora1.esMenor(hora2));\nassertEquals(!(h1==12 || h2!=12 && h1<h2), hora2.esMenor(hora1));\n\nhora1 = new Hora(h1,m1,s1, Hora.AM);\nhora2 = new Hora(h1,m1,s1, Hora.PM);\nassertEquals(true, hora1.esMenor(hora2));\nassertEquals(false, hora2.esMenor(hora1));\n\nhora1 = new Hora(h1,m1,s1, Hora.AM);\nhora2 = new Hora(h2,m2,s2, Hora.PM);\nassertEquals(true, hora1.esMenor(hora2));\nassertEquals(false, hora2.esMenor(hora1));\n\nhora1 = new Hora(12,0,0, Hora.AM);\nhora2 = new Hora(12,0,0, Hora.PM);\nassertEquals(true, hora1.esMenor(hora2));\nassertEquals(false, hora2.esMenor(hora1));\n\n//Casos HH24 y HH12\ns1 = ((int)(Math.random()*1000))%60;\nm1 = ((int)(Math.random()*1000))%60;\nh1 = ((int)(Math.random()*1000))%24;\ndo{s2 = ((int)(s1 + Math.random()*1000))%60;}while(s2==s1);\ndo{m2 = ((int)(m1 + Math.random()*1000))%60;}while(m2==m1);\ndo{h2 = ((int)(h1 + Math.random()*1000))%24;}while(h2==h1);\n\nhora1 = new Hora(h1,m1,s1);\nhora2 = new Hora(h1==0?12:h1>12?h1-12:h1,m1,s2, h1<12 ? Hora.AM : Hora.PM);\nassertEquals(s1<s2, hora1.esMenor(hora2));\nassertEquals(!(s1<s2), hora2.esMenor(hora1));\n\nhora1 = new Hora(h1,m1,s1);\nhora2 = new Hora(h1==0?12:h1>12?h1-12:h1,m2,s1, h1<12 ? Hora.AM : Hora.PM);\nassertEquals(m1<m2, hora1.esMenor(hora2));\nassertEquals(!(m1<m2), hora2.esMenor(hora1));\n\nhora1 = new Hora(h1,m1,s1);\nhora2 = new Hora(h1==0?12:h1>12?h1-12:h1,m2,s2, h1<12 ? Hora.AM : Hora.PM);\nassertEquals(m1<m2, hora1.esMenor(hora2));\nassertEquals(!(m1<m2), hora2.esMenor(hora1));\n\nhora1 = new Hora(h1,m1,s1);\nhora2 = new Hora(h2==0?12:h2>12?h2-12:h2,m2,s2, h2<12 ? Hora.AM : Hora.PM);\nassertEquals(h1<h2, hora1.esMenor(hora2));\nassertEquals(!(h1<h2), hora2.esMenor(hora1));\n\nhora1 = new Hora(0,0,0);\nhora2 = new Hora(5,5,5,Hora.AM);\nassertEquals(true, hora1.esMenor(hora2));\nassertEquals(false, hora2.esMenor(hora1));\n\nhora1 = new Hora(0,0,0);\nhora2 = new Hora(5,5,5,Hora.PM);\nassertEquals(true, hora1.esMenor(hora2));\nassertEquals(false, hora2.esMenor(hora1));\n\nhora1 = new Hora(5,5,5);\nhora2 = new Hora(5,5,5,Hora.PM);\nassertEquals(true, hora1.esMenor(hora2));\nassertEquals(false, hora2.esMenor(hora1));\n\nhora1 = new Hora(12,0,0);\nhora2 = new Hora(5,5,5,Hora.AM);\nassertEquals(false, hora1.esMenor(hora2));\nassertEquals(true, hora2.esMenor(hora1));\n\nhora1 = new Hora(12,0,0);\nhora2 = new Hora(0,0,0);\nassertEquals(false, hora1.esMenor(hora2));\nassertEquals(true, hora2.esMenor(hora1));\n\nhora1 = new Hora(0,0,0);\nhora2 = new Hora(12,0,0, Hora.PM);\nassertEquals(true, hora1.esMenor(hora2));\nassertEquals(false, hora2.esMenor(hora1));\n\nhora1 = new Hora(12,0,0, Hora.AM);\nhora2 = new Hora(5,0,0, Hora.AM);\nassertEquals(true, hora1.esMenor(hora2));\nassertEquals(false, hora2.esMenor(hora1));\n",
+          "grade": 2,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testHoraEsMayor",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\nHora hora1 = null, hora2 = null;\nint h1=0, h2=0, m1=0, m2=0, s1=0, s2=0;\n\n//Casos HH24 HH24        \ns1 = ((int)(Math.random()*1000))%60;\nm1 = ((int)(Math.random()*1000))%60;\nh1 = ((int)(Math.random()*1000))%24;\ndo{s2 = ((int)(s1 + Math.random()*1000))%60;}while(s2==s1);\ndo{m2 = ((int)(m1 + Math.random()*1000))%60;}while(m2==m1);\ndo{h2 = ((int)(h1 + Math.random()*1000))%24;}while(h2==h1);\n\nhora1 = new Hora(h1,m1,s1);\nhora2 = new Hora(h1,m1,s2);\nassertEquals(s1>s2, hora1.esMayor(hora2));\nassertEquals(!(s1>s2), hora2.esMayor(hora1));\n\nhora1 = new Hora(h1,m1,s1);\nhora2 = new Hora(h1,m2,s1);\nassertEquals(m1>m2, hora1.esMayor(hora2));\nassertEquals(!(m1>m2), hora2.esMayor(hora1));\n\nhora1 = new Hora(h1,m1,s1);\nhora2 = new Hora(h1,m2,s2);\nassertEquals(m1>m2, hora1.esMayor(hora2));\nassertEquals(!(m1>m2), hora2.esMayor(hora1));\n\nhora1 = new Hora(h1,m1,s1);\nhora2 = new Hora(h2,m2,s2);\nassertEquals(h1>h2, hora1.esMayor(hora2));\nassertEquals(!(h1>h2), hora2.esMayor(hora1));\n\n//Casos HH12 HH12 AM y PM\ns1 = ((int)(Math.random()*1000))%60;\nm1 = ((int)(Math.random()*1000))%60;\nh1 = ((int)(Math.random()*1000))%13; h1=h1==0?12:h1;\ndo{s2 = ((int)(s1 + Math.random()*1000))%60;}while(s2==s1);\ndo{m2 = ((int)(m1 + Math.random()*1000))%60;}while(m2==m1);\ndo{h2 = ((int)(h1 + Math.random()*1000))%13; h2=h2==0?12:h2;}while(h2==h1);\n\nhora1 = new Hora(h1,m1,s1, Hora.AM);\nhora2 = new Hora(h1,m1,s2, Hora.AM);\nassertEquals(s1>s2, hora1.esMayor(hora2));\nassertEquals(!(s1>s2), hora2.esMayor(hora1));\n\nhora1 = new Hora(h1,m1,s1, Hora.PM);\nhora2 = new Hora(h1,m1,s2, Hora.PM);\nassertEquals(s1>s2, hora1.esMayor(hora2));\nassertEquals(!(s1>s2), hora2.esMayor(hora1));\n\nhora1 = new Hora(h1,m1,s1, Hora.AM);\nhora2 = new Hora(h1,m2,s1, Hora.AM);\nassertEquals(m1>m2, hora1.esMayor(hora2));\nassertEquals(!(m1>m2), hora2.esMayor(hora1));\n\nhora1 = new Hora(h1,m1,s1, Hora.PM);\nhora2 = new Hora(h1,m2,s1, Hora.PM);\nassertEquals(m1>m2, hora1.esMayor(hora2));\nassertEquals(!(m1>m2), hora2.esMayor(hora1));\n\nhora1 = new Hora(h1,m1,s1, Hora.AM);\nhora2 = new Hora(h1,m2,s2, Hora.AM);\nassertEquals(m1>m2, hora1.esMayor(hora2));\nassertEquals(!(m1>m2), hora2.esMayor(hora1));\n\nhora1 = new Hora(h1,m1,s1, Hora.PM);\nhora2 = new Hora(h1,m2,s2, Hora.PM);\nassertEquals(m1>m2, hora1.esMayor(hora2));\nassertEquals(!(m1>m2), hora2.esMayor(hora1));\n\nhora1 = new Hora(h1,m1,s1, Hora.AM);\nhora2 = new Hora(h2,m2,s2, Hora.AM);\nassertEquals(!(h1==12 || h2!=12 && h1<h2), hora1.esMayor(hora2));\nassertEquals(h1==12 || h2!=12 && h1<h2, hora2.esMayor(hora1));\n\nhora1 = new Hora(h1,m1,s1, Hora.PM);\nhora2 = new Hora(h2,m2,s2, Hora.PM);\nassertEquals(!(h1==12 || h2!=12 && h1<h2), hora1.esMayor(hora2));\nassertEquals(h1==12 || h2!=12 && h1<h2, hora2.esMayor(hora1));\n\nhora1 = new Hora(h1,m1,s1, Hora.AM);\nhora2 = new Hora(h1,m1,s1, Hora.PM);\nassertEquals(false, hora1.esMayor(hora2));\nassertEquals(true, hora2.esMayor(hora1));\n\nhora1 = new Hora(h1,m1,s1, Hora.AM);\nhora2 = new Hora(h2,m2,s2, Hora.PM);\nassertEquals(false, hora1.esMayor(hora2));\nassertEquals(true, hora2.esMayor(hora1));\n\nhora1 = new Hora(12,0,0, Hora.AM);\nhora2 = new Hora(12,0,0, Hora.PM);\nassertEquals(false, hora1.esMayor(hora2));\nassertEquals(true, hora2.esMayor(hora1));\n\n//Casos HH24 y HH12\ns1 = ((int)(Math.random()*1000))%60;\nm1 = ((int)(Math.random()*1000))%60;\nh1 = ((int)(Math.random()*1000))%24;\ndo{s2 = ((int)(s1 + Math.random()*1000))%60;}while(s2==s1);\ndo{m2 = ((int)(m1 + Math.random()*1000))%60;}while(m2==m1);\ndo{h2 = ((int)(h1 + Math.random()*1000))%24;}while(h2==h1);\n\nhora1 = new Hora(h1,m1,s1);\nhora2 = new Hora(h1==0?12:h1>12?h1-12:h1,m1,s2, h1<12 ? Hora.AM : Hora.PM);\nassertEquals(s1>s2, hora1.esMayor(hora2));\nassertEquals(!(s1>s2), hora2.esMayor(hora1));\n\nhora1 = new Hora(h1,m1,s1);\nhora2 = new Hora(h1==0?12:h1>12?h1-12:h1,m2,s1, h1<12 ? Hora.AM : Hora.PM);\nassertEquals(m1>m2, hora1.esMayor(hora2));\nassertEquals(!(m1>m2), hora2.esMayor(hora1));\n\nhora1 = new Hora(h1,m1,s1);\nhora2 = new Hora(h1==0?12:h1>12?h1-12:h1,m2,s2, h1<12 ? Hora.AM : Hora.PM);\nassertEquals(m1>m2, hora1.esMayor(hora2));\nassertEquals(!(m1>m2), hora2.esMayor(hora1));\n\nhora1 = new Hora(h1,m1,s1);\nhora2 = new Hora(h2==0?12:h2>12?h2-12:h2,m2,s2, h2<12 ? Hora.AM : Hora.PM);\nassertEquals(h1>h2, hora1.esMayor(hora2));\nassertEquals(!(h1>h2), hora2.esMayor(hora1));\n\nhora1 = new Hora(0,0,0);\nhora2 = new Hora(5,5,5,Hora.AM);\nassertEquals(false, hora1.esMayor(hora2));\nassertEquals(true, hora2.esMayor(hora1));\n\nhora1 = new Hora(0,0,0);\nhora2 = new Hora(5,5,5,Hora.PM);\nassertEquals(false, hora1.esMayor(hora2));\nassertEquals(true, hora2.esMayor(hora1));\n\nhora1 = new Hora(5,5,5);\nhora2 = new Hora(5,5,5,Hora.PM);\nassertEquals(false, hora1.esMayor(hora2));\nassertEquals(true, hora2.esMayor(hora1));\n\nhora1 = new Hora(12,0,0);\nhora2 = new Hora(5,5,5,Hora.AM);\nassertEquals(true, hora1.esMayor(hora2));\nassertEquals(false, hora2.esMayor(hora1));\n\nhora1 = new Hora(12,0,0);\nhora2 = new Hora(0,0,0);\nassertEquals(true, hora1.esMayor(hora2));\nassertEquals(false, hora2.esMayor(hora1));\n\nhora1 = new Hora(12,0,0);\nhora2 = new Hora(12,0,0, Hora.AM);\nassertEquals(true, hora1.esMayor(hora2));\nassertEquals(false, hora2.esMayor(hora1));\n\nhora1 = new Hora(12,0,0, Hora.PM);\nhora2 = new Hora(5,0,0, Hora.AM);\nassertEquals(true, hora1.esMayor(hora2));\nassertEquals(false, hora2.esMayor(hora1));\n",
+          "grade": 2,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testGetHoraFormato",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\nHora hh241=null,hh121=null, tmp=null;\n\nfor(int h = 0; h<24; h++){\nfor(int m = 0; m<60; m++){\n  for(int s = 0; s<60; s++){\n    hh241 = new Hora(h,m,s);\n    hh121 = new Hora(h==0?12:h>12?h-12:h, m,s, h<12?Hora.AM:Hora.PM);\n    \n    tmp = hh241.getHoraHH24();\n    assertEquals(Hora.HH24, tmp.getFormato());\n    assertEquals(h, tmp.getHoras());\n    assertEquals(m, tmp.getMinutos());\n    assertEquals(s, tmp.getSegundos());\n    \n    tmp = hh121.getHoraHH12();\n    assertEquals(Hora.HH12, tmp.getFormato());\n    assertEquals(h==0?12:h>12?h-12:h, tmp.getHoras());\n    assertEquals(m, tmp.getMinutos());\n    assertEquals(s, tmp.getSegundos());\n    assertEquals(h<12?Hora.AM:Hora.PM, tmp.getAmpm());\n    \n    tmp = hh241.getHoraHH12();\n    assertEquals(Hora.HH12, tmp.getFormato());\n    assertEquals(h==0?12:h>12?h-12:h, tmp.getHoras());\n    assertEquals(m, tmp.getMinutos());\n    assertEquals(s, tmp.getSegundos());\n    assertEquals(h<12?Hora.AM:Hora.PM, tmp.getAmpm());\n    \n    tmp = hh121.getHoraHH24();\n    assertEquals(Hora.HH24, tmp.getFormato());\n    assertEquals(h, tmp.getHoras());\n    assertEquals(m, tmp.getMinutos());\n    assertEquals(s, tmp.getSegundos());\n  }\n}\n}\n",
+          "grade": 2,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testHoraRestar",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\nHora hora1=null, hora2=null, hora3=null;\nint resta = 86399, resta2 = -25627, resta3=-68827;\n\nHora hora4 = new Hora(7,7,7);\nHora hora5 = new Hora(19,7,7);\nHora hora6 = new Hora(7,7,7, Hora.AM);\nHora hora7 = new Hora(7,7,7, Hora.PM);\n\nhorasHH24A = new Hora[86400];\nhorasHH12A = new Hora[86400];\n\nfor(int h = 0; h<24; h++){\nfor(int m = 0; m<60; m++){\n  for(int s = 0; s<60; s++){\n    horasHH24A[h*60*60+m*60+s] = new Hora(h,m,s);\n    horasHH12A[h*60*60+m*60+s] = new Hora(h==0?12:h>12?h-12:h, m,s, h<12?Hora.AM:Hora.PM);\n  }\n}\n}\n\nfor(int i=0; i<86400;i++){\n//Caso HH24 - HH24\nhora1 = horasHH24A[86399-i];\nhora2 = horasHH24A[0];\nassertEquals(resta, hora1.restar(hora2));\nassertEquals(resta*(-1), hora2.restar(hora1));\nassertEquals(0, hora1.restar(hora1));\nassertEquals(resta2, horasHH24A[i].restar(hora4));\nassertEquals(resta3, horasHH24A[i].restar(hora5));\n\n//Caso HH12 - HH12\nhora1 = horasHH12A[86399-i];\nhora2 = horasHH12A[0];\nassertEquals(resta, hora1.restar(hora2));\nassertEquals(resta*(-1), hora2.restar(hora1));\nassertEquals(0, hora1.restar(hora1));\nassertEquals(resta2, horasHH12A[i].restar(hora6));\nassertEquals(resta3, horasHH12A[i].restar(hora7));\n\n//Caso HH24 - HH12\nhora1 = horasHH24A[86399-i];\nhora2 = horasHH12A[0];\nhora3 = horasHH12A[86399-i];\nassertEquals(resta, hora1.restar(hora2));\nassertEquals(resta*(-1), hora2.restar(hora1));\nassertEquals(0, hora1.restar(hora3));\nassertEquals(resta2, horasHH24A[i].restar(hora6));\nassertEquals(resta3, horasHH24A[i].restar(hora7));\n\n//Caso HH12 - HH24\nhora1 = horasHH12A[86399-i];\nhora2 = horasHH24A[0];\nhora3 = horasHH24A[86399-i];\nassertEquals(resta, hora1.restar(hora2));\nassertEquals(resta*(-1), hora2.restar(hora1));\nassertEquals(0, hora1.restar(hora3));\nassertEquals(resta2, horasHH12A[i].restar(hora4));\nassertEquals(resta3, horasHH12A[i].restar(hora5));\n\nresta--;\nresta2++;\nresta3++;\n}\n",
+          "grade": 2,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        }
+      ]
+    }
+  ]
+}

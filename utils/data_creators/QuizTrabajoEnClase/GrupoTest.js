@@ -3,7 +3,7 @@ const getDataFromFunction = require('../../common/get-data-from-fn')
 const TEST_NAME = "GrupoTest"
 
 const Test = createTest(TEST_NAME, `
-public FraccionarioTest(){}
+public ${TEST_NAME}(){}
 
 @Before
 public void setUp(){}

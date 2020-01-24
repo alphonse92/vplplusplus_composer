@@ -1,0 +1,718 @@
+{
+  "name": "Tarea 11 - Máquina de Sandwich Reloaded",
+  "description": "Tarea 11 - Máquina de Sandwich Reloaded",
+  "tests": [
+    {
+      "name": "MaquinaSandwichTest",
+      "tags": [
+        "java",
+        "types"
+      ],
+      "description": "Describe tu test",
+      "objective": "Coloca el objetivo de tu test",
+      "code": "\n\n/**\n * Pruebas de costos asumiendo new MaquinaSandwich(40, 25, 35, 150, 250);\n */\npublic static final int [][] testPrecios1 ={\n        {1,1,1000,1350},\n        {2,1,1100,1485},\n        {3,1,2000,2700},\n        {4,1,2200,2970},\n        {5,1,3000,4050},\n        {6,1,3300,4455},\n        {1,2,1100,1485},\n        {2,2,1200,1620},\n        {3,2,2200,2970},\n        {4,2,2400,3240},\n        {5,2,3300,4455},\n        {6,2,3600,4860}\n    };\n\n/**\n * Pruebas de costos asumiendo new MaquinaSandwich(17, 19, 21, 103, 203);\n */\npublic static final int [][] testPrecios2 ={\n        {1,1,548,739},\n        {2,1,568,766},\n        {3,1,1096,1479},\n        {4,1,1136,1533},\n        {5,1,1644,2219},\n        {6,1,1704,2300},\n        {1,2,648,874},\n        {2,2,668,901},\n        {3,2,1296,1749},\n        {4,2,1336,1803},\n        {5,2,1944,2624},\n        {6,2,2004,2705}\n    };\n\n/**\n * Pruebas de la cantidad que se reduce cada ingrediente\n */\npublic static final int [][] testCantidades = {\n        {1,1,15,10,0,1,0},\n        {2,1,15,0,10,1,0},\n        {3,1,30,20,0,2,0},\n        {4,1,30,0,20,2,0},\n        {5,1,45,30,0,3,0},\n        {6,1,45,0,30,3,0},\n        {1,2,15,10,0,0,1},\n        {2,2,15,0,10,0,1},\n        {3,2,30,20,0,0,2},\n        {4,2,30,0,20,0,2},\n        {5,2,45,30,0,0,3},\n        {6,2,45,0,30,0,3}\n    };\n\n\npublic MaquinaSandwichTest(){}\n\n@Before\npublic void setUp(){}\n\n@After\npublic void tearDown(){}\n\n",
+      "test_cases": [
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testStaticFinal",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "  \nassertEquals(15, MaquinaSandwich.CANTIDAD_BASE_QUESO);\nassertEquals(10, MaquinaSandwich.CANTIDAD_BASE_MORTADELA_JAMON);\nassertEquals(1, MaquinaSandwich.CANTIDAD_BASE_PAN);\n",
+          "grade": 1,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testConstructor1",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\nMaquinaSandwich maquina1 = new MaquinaSandwich();\n\nassertEquals(3000, maquina1.getCantidadQueso());\nassertEquals(1000, maquina1.getCantidadMortadela());\nassertEquals(1000, maquina1.getCantidadJamon());\nassertEquals(100, maquina1.getCantidadPanBlanco());\nassertEquals(100, maquina1.getCantidadPanIntegral());\n\nassertEquals(0, maquina1.getPrecioCompraQueso());\nassertEquals(0, maquina1.getPrecioCompraMortadela());\nassertEquals(0, maquina1.getPrecioCompraJamon());\nassertEquals(0, maquina1.getPrecioCompraPanBlanco());\nassertEquals(0, maquina1.getPrecioCompraPanIntegral());\n\nassertEquals(0, maquina1.getIngresosPorVentas());\n",
+          "grade": 3,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testConstructor2",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\nMaquinaSandwich maquina1 = new MaquinaSandwich(40, 25, 35, 150, 250);\n\nassertEquals(40, maquina1.getPrecioCompraQueso());\nassertEquals(25, maquina1.getPrecioCompraMortadela());\nassertEquals(35, maquina1.getPrecioCompraJamon());\nassertEquals(150, maquina1.getPrecioCompraPanBlanco());\nassertEquals(250, maquina1.getPrecioCompraPanIntegral());\n\nassertEquals(0, maquina1.getIngresosPorVentas());\n",
+          "grade": 3,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testConstructor3",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\nMaquinaSandwich maquina1 = new MaquinaSandwich(40, 25, 35, 150, 250);\n\nassertEquals(40, maquina1.getPrecioCompraQueso());\nassertEquals(25, maquina1.getPrecioCompraMortadela());\nassertEquals(35, maquina1.getPrecioCompraJamon());\nassertEquals(150, maquina1.getPrecioCompraPanBlanco());\nassertEquals(250, maquina1.getPrecioCompraPanIntegral());\n\nassertEquals(3000, maquina1.getCantidadQueso());\nassertEquals(1000, maquina1.getCantidadMortadela());\nassertEquals(1000, maquina1.getCantidadJamon());\nassertEquals(100, maquina1.getCantidadPanBlanco());\nassertEquals(100, maquina1.getCantidadPanIntegral());\n\nassertEquals(0, maquina1.getIngresosPorVentas());\n",
+          "grade": 3,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testCalcularPrecioFabricacion1",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\nMaquinaSandwich maquina1 = new MaquinaSandwich(40, 25, 35, 150, 250);\nint costoFabricacion = 0;\n\nfor(int i=0; i<testPrecios1.length;i++){\n    costoFabricacion = maquina1.calcularCostoFabricacion(testPrecios1[i][0], testPrecios1[i][1]);\n    assertEquals(testPrecios1[i][2],costoFabricacion);\n}\n",
+          "grade": 3,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testCalcularPrecioFabricacion2",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\nMaquinaSandwich maquina1 = new MaquinaSandwich(17, 19, 21, 103, 203);\nint costoFabricacion = 0;\n\nfor(int i=0; i<testPrecios2.length;i++){\n    costoFabricacion = maquina1.calcularCostoFabricacion(testPrecios2[i][0], testPrecios2[i][1]);\n    assertEquals(testPrecios2[i][2],costoFabricacion);\n}\n",
+          "grade": 3,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testCalcularPrecioVenta1",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\nMaquinaSandwich maquina1 = new MaquinaSandwich(40, 25, 35, 150, 250);\nint precioVenta = 0;\n\nfor(int i=0; i<testPrecios1.length;i++){\n    precioVenta = maquina1.calcularPrecioVenta(testPrecios1[i][0], testPrecios1[i][1]);\n    assertEquals(testPrecios1[i][3],precioVenta);\n}\n",
+          "grade": 3,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testCalcularPrecioVenta2",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\nMaquinaSandwich maquina1 = new MaquinaSandwich(17, 19, 21, 103, 203);\nint precioVenta = 0;\n\nfor(int i=0; i<testPrecios2.length;i++){\n    precioVenta = maquina1.calcularPrecioVenta(testPrecios2[i][0], testPrecios2[i][1]);\n    assertEquals(testPrecios2[i][3],precioVenta);\n}\n",
+          "grade": 3,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testRegistrarVentaFull",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\nMaquinaSandwich maquina1 = new MaquinaSandwich(40, 25, 35, 150, 250);\nint ingresosAnterior;\n\nint anteriorQueso = 0;\nint anteriorMortadela = 0;\nint anteriorJamon = 0;\nint anteriorPanBlanco = 0;\nint anteriorPanIntegral = 0;\n\nfor(int i=0; i<testCantidades.length;i++){\n    ingresosAnterior = maquina1.getIngresosPorVentas();\n\n    anteriorQueso = maquina1.getCantidadQueso();\n    anteriorMortadela = maquina1.getCantidadMortadela();\n    anteriorJamon = maquina1.getCantidadJamon();\n    anteriorPanBlanco = maquina1.getCantidadPanBlanco();\n    anteriorPanIntegral = maquina1.getCantidadPanIntegral();\n\n    maquina1.registrarVenta(testCantidades[i][0], testCantidades[i][1]);\n\n    assertEquals(anteriorQueso-testCantidades[i][2], maquina1.getCantidadQueso());\n    assertEquals(anteriorMortadela-testCantidades[i][3], maquina1.getCantidadMortadela());\n    assertEquals(anteriorJamon-testCantidades[i][4], maquina1.getCantidadJamon());\n    assertEquals(anteriorPanBlanco-testCantidades[i][5], maquina1.getCantidadPanBlanco());\n    assertEquals(anteriorPanIntegral-testCantidades[i][6], maquina1.getCantidadPanIntegral());\n\n    assertEquals(ingresosAnterior+testPrecios1[i][3], maquina1.getIngresosPorVentas());\n}\n",
+          "grade": 10,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testRegistrarVentaQueso",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\nMaquinaSandwich maquina1 = new MaquinaSandwich(40, 25, 35, 150, 250);\nint precioVenta = 0;\nint anteriorQueso = 0;\n\nfor(int i=0; i<testCantidades.length;i++){\n    anteriorQueso = maquina1.getCantidadQueso();\n\n    maquina1.registrarVenta(testCantidades[i][0], testCantidades[i][1]);\n\n    assertEquals(anteriorQueso-testCantidades[i][2], maquina1.getCantidadQueso());\n}\n",
+          "grade": 3,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testRegistrarVentaMortadela",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\nMaquinaSandwich maquina1 = new MaquinaSandwich(40, 25, 35, 150, 250);\nint anteriorMortadela = 0;\n\nfor(int i=0; i<testCantidades.length;i++){\n    anteriorMortadela = maquina1.getCantidadMortadela();\n\n    maquina1.registrarVenta(testCantidades[i][0], testCantidades[i][1]);\n\n    assertEquals(anteriorMortadela-testCantidades[i][3], maquina1.getCantidadMortadela());\n}\n",
+          "grade": 3,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testRegistrarVentaJamon",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\nMaquinaSandwich maquina1 = new MaquinaSandwich(40, 25, 35, 150, 250);\nint anteriorJamon = 0;\n\nfor(int i=0; i<testCantidades.length;i++){\n    anteriorJamon = maquina1.getCantidadJamon();\n\n    maquina1.registrarVenta(testCantidades[i][0], testCantidades[i][1]);\n\n    assertEquals(anteriorJamon-testCantidades[i][4], maquina1.getCantidadJamon());\n}\n",
+          "grade": 3,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testRegistrarVentaPanBlanco",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\nMaquinaSandwich maquina1 = new MaquinaSandwich(40, 25, 35, 150, 250);\nint anteriorPanBlanco = 0;\n\nfor(int i=0; i<testCantidades.length;i++){\n    anteriorPanBlanco = maquina1.getCantidadPanBlanco();\n\n    maquina1.registrarVenta(testCantidades[i][0], testCantidades[i][1]);\n\n    assertEquals(anteriorPanBlanco-testCantidades[i][5], maquina1.getCantidadPanBlanco());\n}\n",
+          "grade": 3,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testRegistrarVentaPanIntegral",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\nMaquinaSandwich maquina1 = new MaquinaSandwich(40, 25, 35, 150, 250);\nint anteriorPanIntegral = 0;\n\nfor(int i=0; i<testCantidades.length;i++){\n    anteriorPanIntegral = maquina1.getCantidadPanIntegral();\n\n    maquina1.registrarVenta(testCantidades[i][0], testCantidades[i][1]);\n\n    assertEquals(anteriorPanIntegral-testCantidades[i][6], maquina1.getCantidadPanIntegral());\n}\n",
+          "grade": 3,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testRegistrarVentaIngresos1",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\nMaquinaSandwich maquina1 = new MaquinaSandwich(40, 25, 35, 150, 250);\nint ingresosAnterior = 0;\n\nfor(int i=0; i<testCantidades.length;i++){\n    ingresosAnterior = maquina1.getIngresosPorVentas();\n\n    maquina1.registrarVenta(testCantidades[i][0], testCantidades[i][1]);\n\n    assertEquals(ingresosAnterior+testPrecios1[i][3], maquina1.getIngresosPorVentas());\n}\n",
+          "grade": 3,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testRegistrarVentaIngresos2",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\nMaquinaSandwich maquina1 = new MaquinaSandwich(17, 19, 21, 103, 203);\nint ingresosAnterior = 0;\n\nfor(int i=0; i<testCantidades.length;i++){\n    ingresosAnterior = maquina1.getIngresosPorVentas();\n\n    maquina1.registrarVenta(testCantidades[i][0], testCantidades[i][1]);\n\n    assertEquals(ingresosAnterior+testPrecios2[i][3], maquina1.getIngresosPorVentas());\n}\n",
+          "grade": 3,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testPorcentajes1",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\nMaquinaSandwich maquina1 = new MaquinaSandwich(40, 25, 35, 150, 250);\nint ingresosPorVentas = 0;\n\nfor(int i=0; i<testCantidades.length;i++){\n    maquina1.registrarVenta(testCantidades[i][0], testCantidades[i][1]);\n    ingresosPorVentas = maquina1.getIngresosPorVentas();\n    assertEquals(ingresosPorVentas*19/100, maquina1.getIVA());\n    assertEquals(ingresosPorVentas*5/100, maquina1.getCostosFijos());\n    assertEquals(ingresosPorVentas*1/100, maquina1.getRiesgos());\n    assertEquals(ingresosPorVentas*10/100, maquina1.getGananciaNeta());\n}\n",
+          "grade": 3,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testPorcentajes2",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\nMaquinaSandwich maquina1 = new MaquinaSandwich(17, 19, 21, 103, 203);\nint ingresosPorVentas = 0;\n\nfor(int i=0; i<testCantidades.length;i++){\n    maquina1.registrarVenta(testCantidades[i][0], testCantidades[i][1]);\n    ingresosPorVentas = maquina1.getIngresosPorVentas();\n    assertEquals(ingresosPorVentas*19/100, maquina1.getIVA());\n    assertEquals(ingresosPorVentas*5/100, maquina1.getCostosFijos());\n    assertEquals(ingresosPorVentas*1/100, maquina1.getRiesgos());\n    assertEquals(ingresosPorVentas*10/100, maquina1.getGananciaNeta());\n}\n",
+          "grade": 3,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testIngredientesSuficientesSimpleBlanco",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\nMaquinaSandwich maquina1 = new MaquinaSandwich(40, 25, 35, 150, 250);\nint ingresosPorVentas = 0;\n\nfor(int i=1; i<=50;i++){\n    maquina1.registrarVenta(3, 1);\n}\n\nassertEquals(50*2*15, maquina1.getCantidadQueso());\nassertEquals(0, maquina1.getCantidadMortadela());\nassertEquals(50*2*10, maquina1.getCantidadJamon());\nassertEquals(0, maquina1.getCantidadPanBlanco());\nassertEquals(50*2, maquina1.getCantidadPanIntegral());\n",
+          "grade": 3,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testIngredientesSuficientesSimpleIntegral",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\nMaquinaSandwich maquina1 = new MaquinaSandwich(40, 25, 35, 150, 250);\nint ingresosPorVentas = 0;\n\nfor(int i=1; i<=50;i++){\n    maquina1.registrarVenta(3, 2);\n}\n\nassertEquals(50*2*15, maquina1.getCantidadQueso());\nassertEquals(0, maquina1.getCantidadMortadela());\nassertEquals(50*2*10, maquina1.getCantidadJamon());\nassertEquals(50*2, maquina1.getCantidadPanBlanco());\nassertEquals(0, maquina1.getCantidadPanIntegral());\n",
+          "grade": 3,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testIngredientesSuficientesExquisitoBlanco",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\nMaquinaSandwich maquina1 = new MaquinaSandwich(40, 25, 35, 150, 250);\nint ingresosPorVentas = 0;\n\nfor(int i=1; i<=50;i++){\n    maquina1.registrarVenta(4, 1);\n}\n\nassertEquals(50*2*15, maquina1.getCantidadQueso());\nassertEquals(50*2*10, maquina1.getCantidadMortadela());\nassertEquals(0, maquina1.getCantidadJamon());\nassertEquals(0, maquina1.getCantidadPanBlanco());\nassertEquals(50*2, maquina1.getCantidadPanIntegral());\n",
+          "grade": 3,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testIngredientesSuficientesExquisitoIntegral",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\nMaquinaSandwich maquina1 = new MaquinaSandwich(40, 25, 35, 150, 250);\nint ingresosPorVentas = 0;\n\nfor(int i=1; i<=50;i++){\n    maquina1.registrarVenta(4, 2);\n}\n\nassertEquals(50*2*15, maquina1.getCantidadQueso());\nassertEquals(50*2*10, maquina1.getCantidadMortadela());\nassertEquals(0, maquina1.getCantidadJamon());\nassertEquals(50*2, maquina1.getCantidadPanBlanco());\nassertEquals(0, maquina1.getCantidadPanIntegral());\n",
+          "grade": 3,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testIngredientesInsuficientesSimpleBlanco",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\nMaquinaSandwich maquina1 = new MaquinaSandwich(40, 25, 35, 150, 250);\nException ex = null;\n\nfor(int i=1; i<=50;i++){\n    maquina1.registrarVenta(3, 1);\n}\n\ntry{\n    maquina1.registrarVenta(3, 1);\n}\ncatch(Exception e){ex = e;}\n\nassertNotNull(ex);\n",
+          "grade": 3,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testIngredientesInsuficientesSimpleIntegral",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\nMaquinaSandwich maquina1 = new MaquinaSandwich(40, 25, 35, 150, 250);\nException ex = null;\n\nfor(int i=1; i<=50;i++){\n    maquina1.registrarVenta(3, 2);\n}\n\ntry{\n    maquina1.registrarVenta(3, 2);\n}\ncatch(Exception e){ex = e;}\n\nassertNotNull(ex);\n",
+          "grade": 3,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testIngredientesInsuficientesExquisitoBlanco",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\nMaquinaSandwich maquina1 = new MaquinaSandwich(40, 25, 35, 150, 250);\nException ex = null;\n\nfor(int i=1; i<=50;i++){\n    maquina1.registrarVenta(4, 1);\n}\n\ntry{\n    maquina1.registrarVenta(4, 1);\n}\ncatch(Exception e){ex = e;}\n\nassertNotNull(ex);\n",
+          "grade": 3,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testIngredientesInsuficientesExquisitoIntegral",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\nMaquinaSandwich maquina1 = new MaquinaSandwich(40, 25, 35, 150, 250);\nException ex = null;\n\nfor(int i=1; i<=50;i++){\n    maquina1.registrarVenta(4, 2);\n}\n\ntry{\n    maquina1.registrarVenta(4, 2);\n}\ncatch(Exception e){ex = e;}\n\nassertNotNull(ex);\n",
+          "grade": 3,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testEspecial1",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\nMaquinaSandwich maquina1 = new MaquinaSandwich(40, 25, 35, 150, 250);\n\nfor(int j=1; j<=8; j++){\n    for(int i=0; i<testPrecios1.length;i++){\n        maquina1.registrarVenta(testPrecios1[i][0], testPrecios1[i][1]);\n    }\n}\nassertEquals(120, maquina1.getCantidadQueso());\nassertEquals(40, maquina1.getCantidadMortadela());\nassertEquals(40, maquina1.getCantidadJamon());\nassertEquals(4, maquina1.getCantidadPanBlanco());\nassertEquals(4, maquina1.getCantidadPanIntegral());\n",
+          "grade": 10,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testEspecial2",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\nMaquinaSandwich maquina1 = new MaquinaSandwich(40, 25, 35, 150, 250);\nint ventas = 0;\n\nfor(int j=1; j<=8; j++){\n    for(int i=0; i<testPrecios1.length;i++){\n        ventas += maquina1.calcularPrecioVenta(testPrecios1[i][0], testPrecios1[i][1]);\n        maquina1.registrarVenta(testPrecios1[i][0], testPrecios1[i][1]);\n    }\n}\n\nassertEquals(285120, ventas);\nassertEquals(285120, maquina1.getIngresosPorVentas());\n",
+          "grade": 10,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        }
+      ]
+    }
+  ]
+}

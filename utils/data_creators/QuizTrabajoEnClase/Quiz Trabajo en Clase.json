@@ -10,7 +10,7 @@
       ],
       "description": "Describe tu test",
       "objective": "Coloca el objetivo de tu test",
-      "code": "\npublic FraccionarioTest(){}\n\n@Before\npublic void setUp(){}\n\n@After\npublic void tearDown(){}\n",
+      "code": "\npublic AlumnoTest(){}\n\n@Before\npublic void setUp(){}\n\n@After\npublic void tearDown(){}\n",
       "test_cases": [
         {
           "topic": [
@@ -47,7 +47,7 @@
       ],
       "description": "Describe tu test",
       "objective": "Coloca el objetivo de tu test",
-      "code": "\npublic FraccionarioTest(){}\n\n@Before\npublic void setUp(){}\n\n@After\npublic void tearDown(){}\n",
+      "code": "\npublic GrupoTest(){}\n\n@Before\npublic void setUp(){}\n\n@After\npublic void tearDown(){}\n",
       "test_cases": [
         {
           "topic": [
@@ -159,7 +159,7 @@
       ],
       "description": "Describe tu test",
       "objective": "Coloca el objetivo de tu test",
-      "code": "\npublic FraccionarioTest(){}\n\n@Before\npublic void setUp(){}\n\n@After\npublic void tearDown(){}\n",
+      "code": "\npublic InscripcionTest(){}\n\n@Before\npublic void setUp(){}\n\n@After\npublic void tearDown(){}\n",
       "test_cases": [
         {
           "topic": [
@@ -196,7 +196,7 @@
       ],
       "description": "Describe tu test",
       "objective": "Coloca el objetivo de tu test",
-      "code": "\npublic FraccionarioTest(){}\n\n@Before\npublic void setUp(){}\n\n@After\npublic void tearDown(){}\n",
+      "code": "\npublic MateriaTest(){}\n\n@Before\npublic void setUp(){}\n\n@After\npublic void tearDown(){}\n",
       "test_cases": [
         {
           "topic": [
@@ -333,7 +333,7 @@
       ],
       "description": "Describe tu test",
       "objective": "Coloca el objetivo de tu test",
-      "code": "\npublic FraccionarioTest(){}\n\n@Before\npublic void setUp(){}\n\n@After\npublic void tearDown(){}\n",
+      "code": "\npublic UniversidadTest(){}\n\n@Before\npublic void setUp(){}\n\n@After\npublic void tearDown(){}\n",
       "test_cases": [
         {
           "topic": [
