@@ -1,0 +1,292 @@
+{
+  "name": "Otro Reto para estudiar Segundo Previo",
+  "description": "Otro Reto para estudiar Segundo Previo",
+  "tests": [
+    {
+      "name": "CampeonatoTest",
+      "tags": [
+        "java",
+        "types"
+      ],
+      "description": "Describe tu test",
+      "objective": "Coloca el objetivo de tu test",
+      "code": "\n\nObject [] datos1;\nObject [][]datos2 = {\n        {\"Equipo 1\", \"Equipo 1\", 1, 6, false},\n        {\"Equipo 1\", \"Equipo 1\", 6, 2, false},\n        {\"Equipo 1\", \"Equipo 2\", 6, 3, true},\n        {\"Equipo 2\", \"Equipo 1\", 5, 3, true},\n        {\"Equipo 1\", \"Equipo 3\", 1, 0, true},\n        {\"Equipo 3\", \"Equipo 1\", 0, 6, true},\n        {\"Equipo 1\", \"Equipo 4\", 6, 5, true},\n        {\"Equipo 4\", \"Equipo 1\", 0, 5, true},\n        {\"Equipo 1\", \"Equipo 5\", 1, 6, true},\n        {\"Equipo 5\", \"Equipo 1\", 2, 3, true},\n        {\"Equipo 1\", \"Equipo 6\", 4, 2, true},\n        {\"Equipo 6\", \"Equipo 1\", 4, 2, true},\n        {\"Equipo 1\", \"Equipo 7\", 1, 5, true},\n        {\"Equipo 7\", \"Equipo 1\", 2, 3, true},\n        {\"Equipo 1\", \"Equipo 8\", 2, 3, true},\n        {\"Equipo 8\", \"Equipo 1\", 3, 4, true},\n        {\"Equipo 1\", \"Equipo 9\", 1, 2, true},\n        {\"Equipo 9\", \"Equipo 1\", 0, 0, true},\n        {\"Equipo 1\", \"Equipo 10\", 1, 3, true},\n        {\"Equipo 10\", \"Equipo 1\", 3, 6, true},\n        {\"Equipo 1\", \"Equipo 11\", 4, 5, true},\n        {\"Equipo 11\", \"Equipo 1\", 3, 4, true},\n        {\"Equipo 1\", \"Equipo 12\", 5, 1, true},\n        {\"Equipo 12\", \"Equipo 1\", 3, 4, true},\n        {\"Equipo 1\", \"Equipo 13\", 0, 1, true},\n        {\"Equipo 13\", \"Equipo 1\", 5, 4, true},\n        {\"Equipo 1\", \"Equipo 14\", 5, 2, true},\n        {\"Equipo 14\", \"Equipo 1\", 4, 3, true},\n        {\"Equipo 1\", \"Equipo 15\", 5, 5, true},\n        {\"Equipo 15\", \"Equipo 1\", 0, 5, true},\n        {\"Equipo 1\", \"Equipo 16\", 2, 4, true},\n        {\"Equipo 16\", \"Equipo 1\", 0, 1, true},\n        {\"Equipo 2\", \"Equipo 2\", 1, 1, false},\n        {\"Equipo 2\", \"Equipo 2\", 2, 2, false},\n        {\"Equipo 2\", \"Equipo 3\", 4, 5, true},\n        {\"Equipo 3\", \"Equipo 2\", 5, 5, true},\n        {\"Equipo 2\", \"Equipo 4\", 6, 4, true},\n        {\"Equipo 4\", \"Equipo 2\", 0, 4, true},\n        {\"Equipo 2\", \"Equipo 5\", 4, 5, true},\n        {\"Equipo 5\", \"Equipo 2\", 2, 5, true},\n        {\"Equipo 2\", \"Equipo 6\", 1, 6, true},\n        {\"Equipo 6\", \"Equipo 2\", 5, 5, true},\n        {\"Equipo 2\", \"Equipo 7\", 3, 3, true},\n        {\"Equipo 7\", \"Equipo 2\", 2, 5, true},\n        {\"Equipo 2\", \"Equipo 8\", 4, 1, true},\n        {\"Equipo 8\", \"Equipo 2\", 5, 2, true},\n        {\"Equipo 2\", \"Equipo 9\", 3, 5, true},\n        {\"Equipo 9\", \"Equipo 2\", 6, 1, true},\n        {\"Equipo 2\", \"Equipo 10\", 0, 6, true},\n        {\"Equipo 10\", \"Equipo 2\", 2, 0, true},\n        {\"Equipo 2\", \"Equipo 11\", 5, 3, true},\n        {\"Equipo 11\", \"Equipo 2\", 2, 6, true},\n        {\"Equipo 2\", \"Equipo 12\", 5, 5, true},\n        {\"Equipo 12\", \"Equipo 2\", 1, 0, true},\n        {\"Equipo 2\", \"Equipo 13\", 0, 1, true},\n        {\"Equipo 13\", \"Equipo 2\", 5, 4, true},\n        {\"Equipo 2\", \"Equipo 14\", 2, 1, true},\n        {\"Equipo 14\", \"Equipo 2\", 2, 1, true},\n        {\"Equipo 2\", \"Equipo 15\", 6, 0, true},\n        {\"Equipo 15\", \"Equipo 2\", 3, 5, true},\n        {\"Equipo 2\", \"Equipo 16\", 1, 6, true},\n        {\"Equipo 16\", \"Equipo 2\", 6, 2, true},\n        {\"Equipo 3\", \"Equipo 3\", 3, 5, false},\n        {\"Equipo 3\", \"Equipo 3\", 0, 4, false},\n        {\"Equipo 3\", \"Equipo 4\", 5, 5, true},\n        {\"Equipo 4\", \"Equipo 3\", 4, 2, true},\n        {\"Equipo 3\", \"Equipo 5\", 4, 6, true},\n        {\"Equipo 5\", \"Equipo 3\", 1, 3, true},\n        {\"Equipo 3\", \"Equipo 6\", 5, 2, true},\n        {\"Equipo 6\", \"Equipo 3\", 2, 1, true},\n        {\"Equipo 3\", \"Equipo 7\", 3, 6, true},\n        {\"Equipo 7\", \"Equipo 3\", 1, 1, true},\n        {\"Equipo 3\", \"Equipo 8\", 6, 0, true},\n        {\"Equipo 8\", \"Equipo 3\", 4, 3, true},\n        {\"Equipo 3\", \"Equipo 9\", 5, 4, true},\n        {\"Equipo 9\", \"Equipo 3\", 4, 5, true},\n        {\"Equipo 3\", \"Equipo 10\", 4, 2, true},\n        {\"Equipo 10\", \"Equipo 3\", 3, 5, true},\n        {\"Equipo 3\", \"Equipo 11\", 4, 6, true},\n        {\"Equipo 11\", \"Equipo 3\", 1, 6, true},\n        {\"Equipo 3\", \"Equipo 12\", 5, 2, true},\n        {\"Equipo 12\", \"Equipo 3\", 5, 5, true},\n        {\"Equipo 3\", \"Equipo 13\", 2, 0, true},\n        {\"Equipo 13\", \"Equipo 3\", 3, 3, true},\n        {\"Equipo 3\", \"Equipo 14\", 2, 3, true},\n        {\"Equipo 14\", \"Equipo 3\", 3, 4, true},\n        {\"Equipo 3\", \"Equipo 15\", 0, 1, true},\n        {\"Equipo 15\", \"Equipo 3\", 1, 1, true},\n        {\"Equipo 3\", \"Equipo 16\", 4, 3, true},\n        {\"Equipo 16\", \"Equipo 3\", 5, 1, true},\n        {\"Equipo 4\", \"Equipo 4\", 2, 5, false},\n        {\"Equipo 4\", \"Equipo 4\", 5, 5, false},\n        {\"Equipo 4\", \"Equipo 5\", 0, 6, true},\n        {\"Equipo 5\", \"Equipo 4\", 2, 3, true},\n        {\"Equipo 4\", \"Equipo 6\", 1, 6, true},\n        {\"Equipo 6\", \"Equipo 4\", 4, 3, true},\n        {\"Equipo 4\", \"Equipo 7\", 4, 1, true},\n        {\"Equipo 7\", \"Equipo 4\", 2, 5, true},\n        {\"Equipo 4\", \"Equipo 8\", 1, 2, true},\n        {\"Equipo 8\", \"Equipo 4\", 5, 6, true},\n        {\"Equipo 4\", \"Equipo 9\", 0, 5, true},\n        {\"Equipo 9\", \"Equipo 4\", 5, 6, true},\n        {\"Equipo 4\", \"Equipo 10\", 2, 2, true},\n        {\"Equipo 10\", \"Equipo 4\", 1, 6, true},\n        {\"Equipo 4\", \"Equipo 11\", 2, 1, true},\n        {\"Equipo 11\", \"Equipo 4\", 0, 6, true},\n        {\"Equipo 4\", \"Equipo 12\", 5, 2, true},\n        {\"Equipo 12\", \"Equipo 4\", 4, 3, true},\n        {\"Equipo 4\", \"Equipo 13\", 6, 3, true},\n        {\"Equipo 13\", \"Equipo 4\", 4, 6, true},\n        {\"Equipo 4\", \"Equipo 14\", 4, 0, true},\n        {\"Equipo 14\", \"Equipo 4\", 5, 2, true},\n        {\"Equipo 4\", \"Equipo 15\", 2, 6, true},\n        {\"Equipo 15\", \"Equipo 4\", 2, 1, true},\n        {\"Equipo 4\", \"Equipo 16\", 4, 0, true},\n        {\"Equipo 16\", \"Equipo 4\", 5, 0, true},\n        {\"Equipo 5\", \"Equipo 5\", 2, 2, false},\n        {\"Equipo 5\", \"Equipo 5\", 1, 3, false},\n        {\"Equipo 5\", \"Equipo 6\", 3, 0, true},\n        {\"Equipo 6\", \"Equipo 5\", 5, 0, true},\n        {\"Equipo 5\", \"Equipo 7\", 0, 1, true},\n        {\"Equipo 7\", \"Equipo 5\", 3, 0, true},\n        {\"Equipo 5\", \"Equipo 8\", 2, 5, true},\n        {\"Equipo 8\", \"Equipo 5\", 5, 3, true},\n        {\"Equipo 5\", \"Equipo 9\", 3, 6, true},\n        {\"Equipo 9\", \"Equipo 5\", 5, 5, true},\n        {\"Equipo 5\", \"Equipo 10\", 0, 4, true},\n        {\"Equipo 10\", \"Equipo 5\", 2, 3, true},\n        {\"Equipo 5\", \"Equipo 11\", 0, 6, true},\n        {\"Equipo 11\", \"Equipo 5\", 0, 2, true},\n        {\"Equipo 5\", \"Equipo 12\", 6, 3, true},\n        {\"Equipo 12\", \"Equipo 5\", 3, 2, true},\n        {\"Equipo 5\", \"Equipo 13\", 5, 2, true},\n        {\"Equipo 13\", \"Equipo 5\", 0, 0, true},\n        {\"Equipo 5\", \"Equipo 14\", 3, 6, true},\n        {\"Equipo 14\", \"Equipo 5\", 2, 0, true},\n        {\"Equipo 5\", \"Equipo 15\", 0, 4, true},\n        {\"Equipo 15\", \"Equipo 5\", 3, 3, true},\n        {\"Equipo 5\", \"Equipo 16\", 0, 1, true},\n        {\"Equipo 16\", \"Equipo 5\", 5, 3, true},\n        {\"Equipo 6\", \"Equipo 6\", 0, 3, false},\n        {\"Equipo 6\", \"Equipo 6\", 1, 3, false},\n        {\"Equipo 6\", \"Equipo 7\", 2, 1, true},\n        {\"Equipo 7\", \"Equipo 6\", 2, 5, true},\n        {\"Equipo 6\", \"Equipo 8\", 5, 3, true},\n        {\"Equipo 8\", \"Equipo 6\", 1, 0, true},\n        {\"Equipo 6\", \"Equipo 9\", 0, 6, true},\n        {\"Equipo 9\", \"Equipo 6\", 5, 3, true},\n        {\"Equipo 6\", \"Equipo 10\", 4, 1, true},\n        {\"Equipo 10\", \"Equipo 6\", 2, 1, true},\n        {\"Equipo 6\", \"Equipo 11\", 0, 4, true},\n        {\"Equipo 11\", \"Equipo 6\", 2, 4, true},\n        {\"Equipo 6\", \"Equipo 12\", 0, 3, true},\n        {\"Equipo 12\", \"Equipo 6\", 0, 1, true},\n        {\"Equipo 6\", \"Equipo 13\", 2, 5, true},\n        {\"Equipo 13\", \"Equipo 6\", 6, 4, true},\n        {\"Equipo 6\", \"Equipo 14\", 4, 4, true},\n        {\"Equipo 14\", \"Equipo 6\", 3, 4, true},\n        {\"Equipo 6\", \"Equipo 15\", 2, 5, true},\n        {\"Equipo 15\", \"Equipo 6\", 0, 5, true},\n        {\"Equipo 6\", \"Equipo 16\", 1, 6, true},\n        {\"Equipo 16\", \"Equipo 6\", 6, 2, true},\n        {\"Equipo 7\", \"Equipo 7\", 6, 5, false},\n        {\"Equipo 7\", \"Equipo 7\", 3, 0, false},\n        {\"Equipo 7\", \"Equipo 8\", 4, 0, true},\n        {\"Equipo 8\", \"Equipo 7\", 2, 4, true},\n        {\"Equipo 7\", \"Equipo 9\", 2, 4, true},\n        {\"Equipo 9\", \"Equipo 7\", 4, 4, true},\n        {\"Equipo 7\", \"Equipo 10\", 5, 5, true},\n        {\"Equipo 10\", \"Equipo 7\", 5, 5, true},\n        {\"Equipo 7\", \"Equipo 11\", 5, 2, true},\n        {\"Equipo 11\", \"Equipo 7\", 0, 5, true},\n        {\"Equipo 7\", \"Equipo 12\", 4, 1, true},\n        {\"Equipo 12\", \"Equipo 7\", 6, 1, true},\n        {\"Equipo 7\", \"Equipo 13\", 3, 0, true},\n        {\"Equipo 13\", \"Equipo 7\", 0, 4, true},\n        {\"Equipo 7\", \"Equipo 14\", 5, 0, true},\n        {\"Equipo 14\", \"Equipo 7\", 2, 3, true},\n        {\"Equipo 7\", \"Equipo 15\", 2, 5, true},\n        {\"Equipo 15\", \"Equipo 7\", 0, 0, true},\n        {\"Equipo 7\", \"Equipo 16\", 3, 5, true},\n        {\"Equipo 16\", \"Equipo 7\", 1, 6, true},\n        {\"Equipo 8\", \"Equipo 8\", 4, 5, false},\n        {\"Equipo 8\", \"Equipo 8\", 5, 3, false},\n        {\"Equipo 8\", \"Equipo 9\", 5, 5, true},\n        {\"Equipo 9\", \"Equipo 8\", 1, 1, true},\n        {\"Equipo 8\", \"Equipo 10\", 3, 5, true},\n        {\"Equipo 10\", \"Equipo 8\", 5, 6, true},\n        {\"Equipo 8\", \"Equipo 11\", 0, 5, true},\n        {\"Equipo 11\", \"Equipo 8\", 5, 5, true},\n        {\"Equipo 8\", \"Equipo 12\", 3, 0, true},\n        {\"Equipo 12\", \"Equipo 8\", 6, 6, true},\n        {\"Equipo 8\", \"Equipo 13\", 0, 5, true},\n        {\"Equipo 13\", \"Equipo 8\", 1, 1, true},\n        {\"Equipo 8\", \"Equipo 14\", 4, 4, true},\n        {\"Equipo 14\", \"Equipo 8\", 6, 0, true},\n        {\"Equipo 8\", \"Equipo 15\", 1, 2, true},\n        {\"Equipo 15\", \"Equipo 8\", 3, 5, true},\n        {\"Equipo 8\", \"Equipo 16\", 2, 6, true},\n        {\"Equipo 16\", \"Equipo 8\", 0, 5, true},\n        {\"Equipo 9\", \"Equipo 9\", 1, 1, false},\n        {\"Equipo 9\", \"Equipo 9\", 0, 5, false},\n        {\"Equipo 9\", \"Equipo 10\", 2, 1, true},\n        {\"Equipo 10\", \"Equipo 9\", 2, 2, true},\n        {\"Equipo 9\", \"Equipo 11\", 1, 0, true},\n        {\"Equipo 11\", \"Equipo 9\", 5, 3, true},\n        {\"Equipo 9\", \"Equipo 12\", 1, 0, true},\n        {\"Equipo 12\", \"Equipo 9\", 0, 6, true},\n        {\"Equipo 9\", \"Equipo 13\", 4, 6, true},\n        {\"Equipo 13\", \"Equipo 9\", 3, 5, true},\n        {\"Equipo 9\", \"Equipo 14\", 6, 5, true},\n        {\"Equipo 14\", \"Equipo 9\", 6, 5, true},\n        {\"Equipo 9\", \"Equipo 15\", 2, 2, true},\n        {\"Equipo 15\", \"Equipo 9\", 2, 5, true},\n        {\"Equipo 9\", \"Equipo 16\", 2, 1, true},\n        {\"Equipo 16\", \"Equipo 9\", 2, 6, true},\n        {\"Equipo 10\", \"Equipo 10\", 5, 2, false},\n        {\"Equipo 10\", \"Equipo 10\", 4, 3, false},\n        {\"Equipo 10\", \"Equipo 11\", 3, 6, true},\n        {\"Equipo 11\", \"Equipo 10\", 6, 1, true},\n        {\"Equipo 10\", \"Equipo 12\", 3, 3, true},\n        {\"Equipo 12\", \"Equipo 10\", 3, 3, true},\n        {\"Equipo 10\", \"Equipo 13\", 6, 6, true},\n        {\"Equipo 13\", \"Equipo 10\", 2, 4, true},\n        {\"Equipo 10\", \"Equipo 14\", 1, 0, true},\n        {\"Equipo 14\", \"Equipo 10\", 2, 4, true},\n        {\"Equipo 10\", \"Equipo 15\", 1, 4, true},\n        {\"Equipo 15\", \"Equipo 10\", 2, 5, true},\n        {\"Equipo 10\", \"Equipo 16\", 3, 2, true},\n        {\"Equipo 16\", \"Equipo 10\", 6, 0, true},\n        {\"Equipo 11\", \"Equipo 11\", 5, 5, false},\n        {\"Equipo 11\", \"Equipo 11\", 1, 5, false},\n        {\"Equipo 11\", \"Equipo 12\", 1, 6, true},\n        {\"Equipo 12\", \"Equipo 11\", 4, 3, true},\n        {\"Equipo 11\", \"Equipo 13\", 0, 4, true},\n        {\"Equipo 13\", \"Equipo 11\", 1, 3, true},\n        {\"Equipo 11\", \"Equipo 14\", 2, 6, true},\n        {\"Equipo 14\", \"Equipo 11\", 1, 0, true},\n        {\"Equipo 11\", \"Equipo 15\", 5, 1, true},\n        {\"Equipo 15\", \"Equipo 11\", 2, 4, true},\n        {\"Equipo 11\", \"Equipo 16\", 5, 6, true},\n        {\"Equipo 16\", \"Equipo 11\", 0, 5, true},\n        {\"Equipo 12\", \"Equipo 12\", 4, 2, false},\n        {\"Equipo 12\", \"Equipo 12\", 6, 6, false},\n        {\"Equipo 12\", \"Equipo 13\", 0, 2, true},\n        {\"Equipo 13\", \"Equipo 12\", 2, 3, true},\n        {\"Equipo 12\", \"Equipo 14\", 0, 1, true},\n        {\"Equipo 14\", \"Equipo 12\", 1, 3, true},\n        {\"Equipo 12\", \"Equipo 15\", 3, 3, true},\n        {\"Equipo 15\", \"Equipo 12\", 0, 1, true},\n        {\"Equipo 12\", \"Equipo 16\", 2, 1, true},\n        {\"Equipo 16\", \"Equipo 12\", 0, 6, true},\n        {\"Equipo 13\", \"Equipo 13\", 4, 2, false},\n        {\"Equipo 13\", \"Equipo 13\", 2, 4, false},\n        {\"Equipo 13\", \"Equipo 14\", 5, 4, true},\n        {\"Equipo 14\", \"Equipo 13\", 5, 2, true},\n        {\"Equipo 13\", \"Equipo 15\", 3, 2, true},\n        {\"Equipo 15\", \"Equipo 13\", 2, 5, true},\n        {\"Equipo 13\", \"Equipo 16\", 2, 6, true},\n        {\"Equipo 16\", \"Equipo 13\", 4, 5, true},\n        {\"Equipo 14\", \"Equipo 14\", 6, 3, false},\n        {\"Equipo 14\", \"Equipo 14\", 3, 6, false},\n        {\"Equipo 14\", \"Equipo 15\", 5, 3, true},\n        {\"Equipo 15\", \"Equipo 14\", 6, 3, true},\n        {\"Equipo 14\", \"Equipo 16\", 2, 0, true},\n        {\"Equipo 16\", \"Equipo 14\", 4, 0, true},\n        {\"Equipo 15\", \"Equipo 15\", 2, 2, false},\n        {\"Equipo 15\", \"Equipo 15\", 3, 4, false},\n        {\"Equipo 15\", \"Equipo 16\", 6, 2, true},\n        {\"Equipo 16\", \"Equipo 15\", 0, 1, true},\n        {\"Equipo 16\", \"Equipo 16\", 2, 2, false},\n        {\"Equipo 16\", \"Equipo 16\", 0, 1, false}\n    };\n\nObject [][] datos3 = {\n        { 30, 6, 1, 8, 10, 1, 4, 44, 47, 53, 34, 50},\n        { 30, 6, 2, 7, 5, 2, 8, 49, 54, 48, 52, 37},\n        { 30, 7, 2, 6, 6, 4, 5, 54, 51, 45, 42, 45},\n        { 30, 7, 1, 7, 7, 1, 7, 35, 45, 61, 56, 44},\n        { 30, 3, 0, 12, 6, 3, 6, 29, 52, 44, 42, 30},\n        { 30, 7, 2, 6, 7, 0, 8, 40, 49, 45, 41, 44},\n        { 30, 6, 2, 7, 8, 4, 3, 45, 41, 49, 33, 48},\n        { 30, 5, 2, 8, 6, 4, 5, 43, 54, 43, 51, 39},\n        { 30, 7, 5, 3, 10, 2, 3, 48, 40, 69, 39, 58},\n        { 30, 4, 4, 7, 7, 3, 5, 42, 55, 46, 42, 40},\n        { 30, 3, 1, 11, 9, 0, 6, 37, 65, 53, 32, 37},\n        { 30, 6, 4, 5, 6, 2, 7, 40, 41, 39, 41, 42},\n        { 30, 5, 3, 7, 9, 1, 5, 42, 53, 47, 39, 46},\n        { 30, 10, 0, 5, 4, 2, 9, 49, 34, 39, 53, 44},\n        { 30, 3, 3, 9, 8, 3, 4, 32, 50, 44, 37, 39},\n        { 30, 7, 0, 8, 8, 0, 7, 44, 43, 49, 39, 45}\n    };\n\n/**\n * Default constructor for test class CampeonatoTest\n */\npublic CampeonatoTest()\n{\n    int k = 0;\n    datos1 = new Object[16];\n    for(int i=0; i<16;i++){\n        datos1[i]=\"Equipo \" + (i+1);\n    }\n    /*for(int i=0; i<16;i++){\n        for(int j = i; j<16;j++){\n            datos2[k][0] = datos1[i];\n            datos2[k][1] = datos1[j];\n            datos2[k][2] = new Integer((int)(Math.random()*7));\n            datos2[k][3] = new Integer((int)(Math.random()*7));\n            datos2[k++][4] = new Boolean(i!=j);\n            System.out.println(\"{\"\"+datos2[k-1][0]+\"\", \"\"+datos2[k-1][1]+\"\", \"+\n                datos2[k-1][2]+\", \"+datos2[k-1][3]+\", \"+\n                datos2[k-1][4]+\"},\");\n\n            datos2[k][0] = datos1[j];\n            datos2[k][1] = datos1[i];\n            datos2[k][2] = new Integer((int)(Math.random()*7));\n            datos2[k][3] = new Integer((int)(Math.random()*7));\n            datos2[k++][4] = new Boolean(i!=j);\n            System.out.println(\"{\"\"+datos2[k-1][0]+\"\", \"\"+datos2[k-1][1]+\"\", \"+\n                datos2[k-1][2]+\", \"+datos2[k-1][3]+\", \"+\n                datos2[k-1][4]+\"},\");\n        }\n    }\n    System.out.println(\"****\");*/\n}\n",
+      "test_cases": [
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testCampeonatoInscribirEquipo",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\nCampeonato c = new Campeonato();\n\nfor(int i=0; i<datos1.length; i++){\n    assertEquals(true, c.inscribirEquipo((String)datos1[i]));\n    assertEquals(false, c.inscribirEquipo((String)datos1[i]));\n}\nfor(int i=0; i<datos1.length; i++){\n    assertEquals(false, c.inscribirEquipo((String)datos1[i]));\n}\n",
+          "grade": 10,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testCampeonatoRegistrarPartido",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\nCampeonato c = new Campeonato();\n\nfor(int i=0; i<datos1.length; i++){\n    c.inscribirEquipo((String)datos1[i]);\n}\nfor(int i=0; i<datos2.length;i++){\n    assertEquals(i+\"-->\"+(String)datos2[i][0]+\" vs \" +(String)datos2[i][1],(boolean)datos2[i][4], c.registrarPartido((String)datos2[i][0],(String)datos2[i][1], (int)datos2[i][2], (int)datos2[i][3]));\n    assertEquals(false, c.registrarPartido((String)datos2[i][0],(String)datos2[i][1], (int)datos2[i][2], (int)datos2[i][3]));           \n}\nfor(int i=0; i<datos2.length;i++){\n    assertEquals(false, c.registrarPartido((String)datos2[i][0],(String)datos2[i][1], (int)datos2[i][2], (int)datos2[i][3]));           \n}\n\n/*for(int i=0; i<datos1.length; i++){\n    Equipo e = c.buscarEquipo((String)datos1[i]);\n    System.out.print(\"{ \"+e.getPartidosJugados()+\", \");\n    System.out.print(e.getPartidosGanadosLocal()+\", \");\n    System.out.print(e.getPartidosEmpatadosLocal()+\", \");\n    System.out.print(e.getPartidosPerdidosLocal()+\", \");\n    System.out.print(e.getPartidosGanadosVisitante()+\", \");\n    System.out.print(e.getPartidosEmpatadosVisitante()+\", \");\n    System.out.print(e.getPartidosPerdidosVisitante()+\", \");\n    System.out.print(e.getGolesFavorLocal()+\", \");\n    System.out.print(e.getGolesContraLocal()+\", \");\n    System.out.print(e.getGolesFavorVisitante()+\", \");\n    System.out.print(e.getGolesContraVisitante()+\", \");\n    System.out.println(e.getPuntos()+\"},\");\n} */\n\nfor(int i=0; i<datos1.length; i++){\n    Equipo e = c.buscarEquipo((String)datos1[i]);\n    assertEquals(datos3[i][0],e.getPartidosJugados());\n    assertEquals(datos3[i][1],e.getPartidosGanadosLocal());\n    assertEquals(datos3[i][2],e.getPartidosEmpatadosLocal());\n    assertEquals(datos3[i][3],e.getPartidosPerdidosLocal());\n    assertEquals(datos3[i][4],e.getPartidosGanadosVisitante());\n    assertEquals(datos3[i][5],e.getPartidosEmpatadosVisitante());\n    assertEquals(datos3[i][6],e.getPartidosPerdidosVisitante());\n    assertEquals(datos3[i][7],e.getGolesFavorLocal());\n    assertEquals(datos3[i][8],e.getGolesContraLocal());\n    assertEquals(datos3[i][9],e.getGolesFavorVisitante());\n    assertEquals(datos3[i][10],e.getGolesContraVisitante());\n    assertEquals(datos3[i][11],e.getPuntos());\n}\n",
+          "grade": 10,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testCampeonatoBuscarEquipo",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\nCampeonato c = new Campeonato();\n\nfor(int i=0; i<datos1.length; i++){\n    c.inscribirEquipo((String)datos1[i]);\n}\n\nfor(int i=0; i<datos1.length; i++){\n    assertNotNull(c.buscarEquipo((String)datos1[i]));\n    assertNull(c.buscarEquipo(((String)datos1[i])+\"-1\"));\n}\n",
+          "grade": 10,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testCampeonatoConstructor",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\nCampeonato c = new Campeonato();\nArrayList<Equipo> ae = c.getEquipos();\nArrayList<Partido> ap = c.getPartidos();\nassertNotNull(ae);\nassertNotNull(ap);\nassertEquals(0, ae.size());\nassertEquals(0, ap.size());\n",
+          "grade": 10,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        }
+      ]
+    },
+    {
+      "name": "EquipoTest",
+      "tags": [
+        "java",
+        "types"
+      ],
+      "description": "Describe tu test",
+      "objective": "Coloca el objetivo de tu test",
+      "code": "\n\nObject [] datos1;\nObject [] datos2;\nObject [][] datos3 = {\n        {2,1,true,1,1,0,0,0,0,0,2,1,0,0,3},\n        {1,1,true,1,0,1,0,0,0,0,1,1,0,0,1},\n        {1,2,true,1,0,0,1,0,0,0,1,2,0,0,0},\n        {2,1,false,1,0,0,0,1,0,0,0,0,2,1,3},\n        {1,1,false,1,0,0,0,0,1,0,0,0,1,1,1},\n        {1,2,false,1,0,0,0,0,0,1,0,0,1,2,0}\n    };\nObject [][]  datos4 = {\n        {2,1,true,1,1,0,0,0,0,0,2,1,0,0,3},\n        {1,1,true,2,1,1,0,0,0,0,3,2,0,0,4},\n        {1,2,true,3,1,1,1,0,0,0,4,4,0,0,4},\n        {2,1,false,4,1,1,1,1,0,0,4,4,2,1,7},\n        {1,1,false,5,1,1,1,1,1,0,4,4,3,2,8},\n        {1,2,false,6,1,1,1,1,1,1,4,4,4,4,8}\n    };\n\n\n\npublic EquipoTest(){\n\n  boolean e = false;\n  datos1 = new Object[11];\n  datos2 = new Object[11];\n  for(int i=0; i<11;i++){\n      datos1[i]=\"Jugador \" + (i+1);\n  }\n  for(int i=0; i<11;i++){\n      do{\n          datos2[i]=new Integer((int)(1+Math.random()*20));\n          e = false;\n          for(int j = 0; j<i;j++){\n              if((int)datos2[i]==(int)datos2[j]) e = true;\n          }\n      }\n      while(e);\n  }\n\n}\n\n@Before\npublic void setUp(){}\n\n@After\npublic void tearDown(){}\n",
+      "test_cases": [
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testEquipoAgregarFutbolista",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\n    Equipo e = new Equipo(\"uno\");\n    for(int i=0; i<datos1.length; i++){\n        assertEquals(true, e.agregarFutbolista((String)datos1[i], (int)datos2[i], false));\n    }\n    assertEquals(false, e.agregarFutbolista(\"otro\", 5, false));\n    for(int i=0; i<datos1.length; i++){\n        assertEquals(false, e.agregarFutbolista((String)datos1[i], (int)datos2[i], false));\n    }\n",
+          "grade": 10,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testEquipoAgregarPortero",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\n{\n    Equipo e = new Equipo(\"uno\");\n    Futbolista f = null;\n    boolean esPortero=false;\n    for(int i=0; i<datos1.length; i++){\n        assertEquals(true, e.agregarFutbolista((String)datos1[i], (int)datos2[i], true));\n        f = e.buscarFutbolista((int)datos2[i]);\n        esPortero = f != null && f instanceof Portero;\n        assertEquals(true, esPortero);\n    }\n",
+          "grade": 10,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testEquipoBuscarFutbolista",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\n    Equipo e = new Equipo(\"uno\");\n    for(int i=0; i<datos1.length; i++){\n        e.agregarFutbolista((String)datos1[i], (int)datos2[i], false);\n    }\n    for(int i=0; i<datos1.length; i++){\n        assertNotNull(e.buscarFutbolista((int)datos2[i]));\n    }\n    for(int i=0; i<datos1.length; i++){\n        assertNull(e.buscarFutbolista(77*((int)datos2[i])));\n    }\n",
+          "grade": 10,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testEquipoRegistrarPartido",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\n    Equipo e1 = new Equipo(\"uno\"), e2 = null;\n    for(int i=0; i<datos3.length;i++){\n        e2 = new Equipo(\"uno\");\n        e1.registrarPartido((int)datos3[i][0], (int)datos3[i][1], (boolean)datos3[i][2]);\n        e2.registrarPartido((int)datos3[i][0], (int)datos3[i][1], (boolean)datos3[i][2]);\n        assertEquals((int)datos3[i][3],e2.getPartidosJugados());\n        assertEquals((int)datos3[i][4],e2.getPartidosGanadosLocal());\n        assertEquals((int)datos3[i][5],e2.getPartidosEmpatadosLocal());\n        assertEquals((int)datos3[i][6],e2.getPartidosPerdidosLocal());\n        assertEquals((int)datos3[i][7],e2.getPartidosGanadosVisitante());\n        assertEquals((int)datos3[i][8],e2.getPartidosEmpatadosVisitante());\n        assertEquals((int)datos3[i][9],e2.getPartidosPerdidosVisitante());\n        assertEquals((int)datos3[i][10],e2.getGolesFavorLocal());\n        assertEquals((int)datos3[i][11],e2.getGolesContraLocal());\n        assertEquals((int)datos3[i][12],e2.getGolesFavorVisitante());\n        assertEquals((int)datos3[i][13],e2.getGolesContraVisitante());\n        assertEquals((int)datos3[i][14],e2.getPuntos());\n        assertEquals((int)datos4[i][3],e1.getPartidosJugados());\n        assertEquals((int)datos4[i][4],e1.getPartidosGanadosLocal());\n        assertEquals((int)datos4[i][5],e1.getPartidosEmpatadosLocal());\n        assertEquals((int)datos4[i][6],e1.getPartidosPerdidosLocal());\n        assertEquals((int)datos4[i][7],e1.getPartidosGanadosVisitante());\n        assertEquals((int)datos4[i][8],e1.getPartidosEmpatadosVisitante());\n        assertEquals((int)datos4[i][9],e1.getPartidosPerdidosVisitante());\n        assertEquals((int)datos4[i][10],e1.getGolesFavorLocal());\n        assertEquals((int)datos4[i][11],e1.getGolesContraLocal());\n        assertEquals((int)datos4[i][12],e1.getGolesFavorVisitante());\n        assertEquals((int)datos4[i][13],e1.getGolesContraVisitante());\n        assertEquals((int)datos4[i][14],e1.getPuntos());\n    }\n",
+          "grade": 10,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        }
+      ]
+    },
+    {
+      "name": "PartidoTest",
+      "tags": [
+        "java",
+        "types"
+      ],
+      "description": "Describe tu test",
+      "objective": "Coloca el objetivo de tu test",
+      "code": "\n\nObject [][] datos3 = {\n  {2,1,true,1,1,0,0,0,0,0,2,1,0,0,3},\n  {1,1,true,1,0,1,0,0,0,0,1,1,0,0,1},\n  {1,2,true,1,0,0,1,0,0,0,1,2,0,0,0},\n  {2,1,false,1,0,0,0,1,0,0,0,0,2,1,3},\n  {1,1,false,1,0,0,0,0,1,0,0,0,1,1,1},\n  {1,2,false,1,0,0,0,0,0,1,0,0,1,2,0}\n};\nObject [][]  datos4 = {\n  {2,1,true,1,1,0,0,0,0,0,2,1,0,0,3},\n  {1,1,true,2,1,1,0,0,0,0,3,2,0,0,4},\n  {1,2,true,3,1,1,1,0,0,0,4,4,0,0,4},\n  {2,1,false,4,1,1,1,1,0,0,4,4,2,1,7},\n  {1,1,false,5,1,1,1,1,1,0,4,4,3,2,8},\n  {1,2,false,6,1,1,1,1,1,1,4,4,4,4,8}\n};\n\nObject [][] datos5 = {\n  {2,1,true,1,0,0,0,0,0,1,0,0,1,2,0},\n  {1,1,true,1,0,0,0,0,1,0,0,0,1,1,1},\n  {1,2,true,1,0,0,0,1,0,0,0,0,2,1,3},\n  {2,1,false,1,0,0,1,0,0,0,1,2,0,0,0},\n  {1,1,false,1,0,1,0,0,0,0,1,1,0,0,1},\n  {1,2,false,1,1,0,0,0,0,0,2,1,0,0,3}\n};\n\nObject [][] datos6 = {\n  {2,1,true,1,0,0,0,0,0,1,0,0,1,2,0},\n  {1,1,true,2,0,0,0,0,1,1,0,0,2,3,1},\n  {1,2,true,3,0,0,0,1,1,1,0,0,4,4,4},\n  {2,1,false,4,0,0,1,1,1,1,1,2,4,4,4},\n  {1,1,false,5,0,1,1,1,1,1,2,3,4,4,5},\n  {1,2,false,6,1,1,1,1,1,1,4,4,4,4,8}\n};\n\npublic PartidoTest(){}\n\n@Before\npublic void setUp(){}\n\n@After\npublic void tearDown(){}\n",
+      "test_cases": [
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testPartidoConstructor",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\nEquipo e1 = new Equipo(\"uno\");\nEquipo e2 = new Equipo(\"dos\");\nPartido p1 = new Partido(e1,  e2, 2, 1);\nassertEquals(2, p1.getGolesEquipoLocal());\nassertEquals(1, p1.getGolesEquipoVisitante());\np1 = new Partido(e1,  e2, 1, 1);\nassertEquals(1, p1.getGolesEquipoLocal());\nassertEquals(1, p1.getGolesEquipoVisitante());\np1 = new Partido(e1,  e2, 1, 2);\nassertEquals(1, p1.getGolesEquipoLocal());\nassertEquals(2, p1.getGolesEquipoVisitante());\n",
+          "grade": 10,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        },
+        {
+          "topic": [
+            {
+              "visible": true,
+              "_id": "5e24dd6a6170a20029b7397d",
+              "owner": "5e24dc466170a20029b73977",
+              "name": "t0019",
+              "description": "Uso de Arboles",
+              "updatedAt": "2020-01-19T22:51:22.403Z",
+              "createdAt": "2020-01-19T22:51:22.403Z",
+              "cursor": 3,
+              "__v": 0,
+              "id": "5e24dd6a6170a20029b7397d"
+            }
+          ],
+          "name": "testPartidoRegistrarPartido",
+          "objective": "Description not provided",
+          "successMessage": "Successfull message not provided",
+          "successMessageLink": "Successfull link not provided",
+          "failureMessage": "Failure link not provided",
+          "failureMessageLink": "Failure link not provided",
+          "code": "\n  Equipo e1 = new Equipo(\"uno\");\n  Equipo e2 = new Equipo(\"dos\");\n  Equipo e11 = null, e21 = null;\n  Partido p1 = null, p2 = null;\n\n  for(int i=0; i<datos3.length;i++){\n      e11 = new Equipo(\"uno1\");\n      e21 = new Equipo(\"dos1\");\n      if((boolean)datos3[i][2]){\n          p1 = new Partido(e1, e2, (int)datos3[i][0], (int)datos3[i][1]);\n          p2 = new Partido(e11, e21, (int)datos3[i][0], (int)datos3[i][1]);\n      }\n      else{\n          p1 = new Partido(e2, e1, (int)datos3[i][1], (int)datos3[i][0]);\n          p2 = new Partido(e21, e11, (int)datos3[i][1], (int)datos3[i][0]);\n      }\n      p1.registrarPartido();\n      p2.registrarPartido();\n\n      assertEquals((int)datos3[i][3],e11.getPartidosJugados());\n      assertEquals((int)datos3[i][4],e11.getPartidosGanadosLocal());\n      assertEquals((int)datos3[i][5],e11.getPartidosEmpatadosLocal());\n      assertEquals((int)datos3[i][6],e11.getPartidosPerdidosLocal());\n      assertEquals((int)datos3[i][7],e11.getPartidosGanadosVisitante());\n      assertEquals((int)datos3[i][8],e11.getPartidosEmpatadosVisitante());\n      assertEquals((int)datos3[i][9],e11.getPartidosPerdidosVisitante());\n      assertEquals((int)datos3[i][10],e11.getGolesFavorLocal());\n      assertEquals((int)datos3[i][11],e11.getGolesContraLocal());\n      assertEquals((int)datos3[i][12],e11.getGolesFavorVisitante());\n      assertEquals((int)datos3[i][13],e11.getGolesContraVisitante());\n      assertEquals((int)datos3[i][14],e11.getPuntos());\n\n      assertEquals((int)datos5[i][3],e21.getPartidosJugados());\n      assertEquals((int)datos5[i][4],e21.getPartidosGanadosLocal());\n      assertEquals((int)datos5[i][5],e21.getPartidosEmpatadosLocal());\n      assertEquals((int)datos5[i][6],e21.getPartidosPerdidosLocal());\n      assertEquals((int)datos5[i][7],e21.getPartidosGanadosVisitante());\n      assertEquals((int)datos5[i][8],e21.getPartidosEmpatadosVisitante());\n      assertEquals((int)datos5[i][9],e21.getPartidosPerdidosVisitante());\n      assertEquals((int)datos5[i][10],e21.getGolesFavorLocal());\n      assertEquals((int)datos5[i][11],e21.getGolesContraLocal());\n      assertEquals((int)datos5[i][12],e21.getGolesFavorVisitante());\n      assertEquals((int)datos5[i][13],e21.getGolesContraVisitante());\n      assertEquals((int)datos5[i][14],e21.getPuntos());\n\n      assertEquals((int)datos4[i][3],e1.getPartidosJugados());\n      assertEquals((int)datos4[i][4],e1.getPartidosGanadosLocal());\n      assertEquals((int)datos4[i][5],e1.getPartidosEmpatadosLocal());\n      assertEquals((int)datos4[i][6],e1.getPartidosPerdidosLocal());\n      assertEquals((int)datos4[i][7],e1.getPartidosGanadosVisitante());\n      assertEquals((int)datos4[i][8],e1.getPartidosEmpatadosVisitante());\n      assertEquals((int)datos4[i][9],e1.getPartidosPerdidosVisitante());\n      assertEquals((int)datos4[i][10],e1.getGolesFavorLocal());\n      assertEquals((int)datos4[i][11],e1.getGolesContraLocal());\n      assertEquals((int)datos4[i][12],e1.getGolesFavorVisitante());\n      assertEquals((int)datos4[i][13],e1.getGolesContraVisitante());\n      assertEquals((int)datos4[i][14],e1.getPuntos());\n\n      assertEquals((int)datos6[i][3],e2.getPartidosJugados());\n      assertEquals((int)datos6[i][4],e2.getPartidosGanadosLocal());\n      assertEquals((int)datos6[i][5],e2.getPartidosEmpatadosLocal());\n      assertEquals((int)datos6[i][6],e2.getPartidosPerdidosLocal());\n      assertEquals((int)datos6[i][7],e2.getPartidosGanadosVisitante());\n      assertEquals((int)datos6[i][8],e2.getPartidosEmpatadosVisitante());\n      assertEquals((int)datos6[i][9],e2.getPartidosPerdidosVisitante());\n      assertEquals((int)datos6[i][10],e2.getGolesFavorLocal());\n      assertEquals((int)datos6[i][11],e2.getGolesContraLocal());\n      assertEquals((int)datos6[i][12],e2.getGolesFavorVisitante());\n      assertEquals((int)datos6[i][13],e2.getGolesContraVisitante());\n      assertEquals((int)datos6[i][14],e2.getPuntos());\n  } \n",
+          "grade": 10,
+          "timeout": "Configurator.TIMEOUT_VERY_LONG"
+        }
+      ]
+    }
+  ]
+}
