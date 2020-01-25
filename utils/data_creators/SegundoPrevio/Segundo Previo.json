@@ -1,6 +1,6 @@
 {
-  "name": "Reto Ejemplo Segundo Previo",
-  "description": "Reto Ejemplo Segundo Previo",
+  "name": "Segundo Previo",
+  "description": "Segundo Previo",
   "tests": [
     {
       "name": "TestLaunchMachine",

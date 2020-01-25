@@ -1,7 +1,7 @@
 
 const createProject = require('../../common/create-project-schema')
 const exportJson = require('../../common/create-schema')
-const project = createProject('Reto Ejemplo Segundo Previo')
+const project = createProject('Segundo Previo')
 
 const TestLaunchMachine = require('./TestLaunchMachine')
 project.tests.push(TestLaunchMachine)
