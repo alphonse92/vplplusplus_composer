@@ -1,135 +1,1303 @@
 const createTest = require('../../common/create-test-schema')
 const getDataFromFunction = require('../../common/get-data-from-fn')
-const TEST_NAME = "Test1"
+const TEST_NAME = "TestLaunchMachine"
 
 const Test = createTest(TEST_NAME, `
 
-public ${TEST_NAME}(){
 
+    Ingrediente [] ingredientes = null; 
+
+    Ingrediente [] ingredientes2 = null;     
+
+    int [] precios = {
+            4603,
+            4671,
+            4603,
+            4603,
+            4738,
+            4806,
+            4738,
+            4738,
+            4603,
+            4671,
+            4603,
+            4603,
+            4603,
+            4671,
+            4603,
+            4603,
+            4603,
+            4671,
+            4603,
+            4603,
+            2173,
+            2241,
+            2173,
+            2173,
+            2308,
+            2376,
+            2308,
+            2308,
+            2173,
+            2241,
+            2173,
+            2173,
+            2173,
+            2241,
+            2173,
+            2173,
+            2173,
+            2241,
+            2173,
+            2173,
+            2443,
+            2511,
+            2443,
+            2443,
+            2578,
+            2646,
+            2578,
+            2578,
+            2443,
+            2511,
+            2443,
+            2443,
+            2443,
+            2511,
+            2443,
+            2443,
+            2443,
+            2511,
+            2443,
+            2443,
+            5143,
+            5211,
+            5143,
+            5143,
+            5278,
+            5346,
+            5278,
+            5278,
+            5143,
+            5211,
+            5143,
+            5143,
+            5143,
+            5211,
+            5143,
+            5143,
+            5143,
+            5211,
+            5143,
+            5143,
+            5683,
+            5751,
+            5683,
+            5683,
+            5818,
+            5886,
+            5818,
+            5818,
+            5683,
+            5751,
+            5683,
+            5683,
+            5683,
+            5751,
+            5683,
+            5683,
+            5683,
+            5751,
+            5683,
+            5683,
+            4684,
+            4752,
+            4684,
+            4684,
+            4819,
+            4887,
+            4819,
+            4819,
+            4684,
+            4752,
+            4684,
+            4684,
+            4684,
+            4752,
+            4684,
+            4684,
+            4684,
+            4752,
+            4684,
+            4684,
+            2254,
+            2322,
+            2254,
+            2254,
+            2389,
+            2457,
+            2389,
+            2389,
+            2254,
+            2322,
+            2254,
+            2254,
+            2254,
+            2322,
+            2254,
+            2254,
+            2254,
+            2322,
+            2254,
+            2254,
+            2524,
+            2592,
+            2524,
+            2524,
+            2659,
+            2727,
+            2659,
+            2659,
+            2524,
+            2592,
+            2524,
+            2524,
+            2524,
+            2592,
+            2524,
+            2524,
+            2524,
+            2592,
+            2524,
+            2524,
+            5224,
+            5292,
+            5224,
+            5224,
+            5359,
+            5427,
+            5359,
+            5359,
+            5224,
+            5292,
+            5224,
+            5224,
+            5224,
+            5292,
+            5224,
+            5224,
+            5224,
+            5292,
+            5224,
+            5224,
+            5764,
+            5832,
+            5764,
+            5764,
+            5899,
+            5967,
+            5899,
+            5899,
+            5764,
+            5832,
+            5764,
+            5764,
+            5764,
+            5832,
+            5764,
+            5764,
+            5764,
+            5832,
+            5764,
+            5764,
+            4644,
+            4711,
+            4644,
+            4644,
+            4779,
+            4846,
+            4779,
+            4779,
+            4644,
+            4711,
+            4644,
+            4644,
+            4644,
+            4711,
+            4644,
+            4644,
+            4644,
+            4711,
+            4644,
+            4644,
+            2214,
+            2281,
+            2214,
+            2214,
+            2349,
+            2416,
+            2349,
+            2349,
+            2214,
+            2281,
+            2214,
+            2214,
+            2214,
+            2281,
+            2214,
+            2214,
+            2214,
+            2281,
+            2214,
+            2214,
+            2484,
+            2551,
+            2484,
+            2484,
+            2619,
+            2686,
+            2619,
+            2619,
+            2484,
+            2551,
+            2484,
+            2484,
+            2484,
+            2551,
+            2484,
+            2484,
+            2484,
+            2551,
+            2484,
+            2484,
+            5184,
+            5251,
+            5184,
+            5184,
+            5319,
+            5386,
+            5319,
+            5319,
+            5184,
+            5251,
+            5184,
+            5184,
+            5184,
+            5251,
+            5184,
+            5184,
+            5184,
+            5251,
+            5184,
+            5184,
+            5724,
+            5791,
+            5724,
+            5724,
+            5859,
+            5926,
+            5859,
+            5859,
+            5724,
+            5791,
+            5724,
+            5724,
+            5724,
+            5791,
+            5724,
+            5724,
+            5724,
+            5791,
+            5724,
+            5724,
+            4563,
+            4630,
+            4563,
+            4563,
+            4698,
+            4765,
+            4698,
+            4698,
+            4563,
+            4630,
+            4563,
+            4563,
+            4563,
+            4630,
+            4563,
+            4563,
+            4563,
+            4630,
+            4563,
+            4563,
+            2133,
+            2200,
+            2133,
+            2133,
+            2268,
+            2335,
+            2268,
+            2268,
+            2133,
+            2200,
+            2133,
+            2133,
+            2133,
+            2200,
+            2133,
+            2133,
+            2133,
+            2200,
+            2133,
+            2133,
+            2403,
+            2470,
+            2403,
+            2403,
+            2538,
+            2605,
+            2538,
+            2538,
+            2403,
+            2470,
+            2403,
+            2403,
+            2403,
+            2470,
+            2403,
+            2403,
+            2403,
+            2470,
+            2403,
+            2403,
+            5103,
+            5170,
+            5103,
+            5103,
+            5238,
+            5305,
+            5238,
+            5238,
+            5103,
+            5170,
+            5103,
+            5103,
+            5103,
+            5170,
+            5103,
+            5103,
+            5103,
+            5170,
+            5103,
+            5103,
+            5643,
+            5710,
+            5643,
+            5643,
+            5778,
+            5845,
+            5778,
+            5778,
+            5643,
+            5710,
+            5643,
+            5643,
+            5643,
+            5710,
+            5643,
+            5643,
+            5643,
+            5710,
+            5643,
+            5643,
+            4644,
+            4711,
+            4644,
+            4644,
+            4779,
+            4846,
+            4779,
+            4779,
+            4644,
+            4711,
+            4644,
+            4644,
+            4644,
+            4711,
+            4644,
+            4644,
+            4644,
+            4711,
+            4644,
+            4644,
+            2214,
+            2281,
+            2214,
+            2214,
+            2349,
+            2416,
+            2349,
+            2349,
+            2214,
+            2281,
+            2214,
+            2214,
+            2214,
+            2281,
+            2214,
+            2214,
+            2214,
+            2281,
+            2214,
+            2214,
+            2484,
+            2551,
+            2484,
+            2484,
+            2619,
+            2686,
+            2619,
+            2619,
+            2484,
+            2551,
+            2484,
+            2484,
+            2484,
+            2551,
+            2484,
+            2484,
+            2484,
+            2551,
+            2484,
+            2484,
+            5184,
+            5251,
+            5184,
+            5184,
+            5319,
+            5386,
+            5319,
+            5319,
+            5184,
+            5251,
+            5184,
+            5184,
+            5184,
+            5251,
+            5184,
+            5184,
+            5184,
+            5251,
+            5184,
+            5184,
+            5724,
+            5791,
+            5724,
+            5724,
+            5859,
+            5926,
+            5859,
+            5859,
+            5724,
+            5791,
+            5724,
+            5724,
+            5724,
+            5791,
+            5724,
+            5724,
+            5724,
+            5791,
+            5724,
+            5724
+        };
+    boolean [] puede = {
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            true,
+            true,
+            true,
+            true,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            true,
+            true,
+            true,
+            true,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            true,
+            true,
+            true,
+            true,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            true,
+            true,
+            true,
+            true,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+        };
+
+public ${TEST_NAME}(){
 }
 
 @Before
-public void setUp(){}
+public void setUp(){
+    ingredientes = new Ingrediente [] {new Fruta("Papaya",5000,2),
+        new Fruta("Mora",5000,4),new Fruta("Lulo",5000,3),
+        new Fruta("Naranja",5000, 1),new Fruta("Banano",5000,3),
+        new Proteina("Carne de Res",5000,16),new Proteina("Cerdo",5000,7),
+        new Proteina("Pollo",5000,8),new Proteina("Bagre",5000,18),
+        new Proteina("Mojarra",5000,20),new Grano("Lenteja",5000,1),
+        new Grano("Garbanzo",5000,2),new Grano("Fijol",5000,1),
+        new Grano("Alverja",5000,1),new Grano("Caraota",5000,1),
+        new Almidon("Papa Negra",5000,1),new Almidon("Papa Amarilla",5000,2),
+        new Almidon("Platano Verde",5000,1),new Almidon("Yuca",5000,1),
+        new Almidon("Apio",5000,1)};
+}
 
 @After
 public void tearDown(){}
+
+
 `)
 
-    
-const  testHoraConstructor= () => `
-Hora hora = null;
-Exception e = null;
-try{
-    hora = new Hora(24, 11, 12);
-}
-catch(Exception ex){
-    e = ex;
-}
-assertEquals(false, hora.esHoraValida());
-//assertNotNull("El constructor de Hora debe validar y lanzar una excepcion si hay error.", e);
-e = null;
-try{
-    hora = new Hora(23, 60, 12);
-}
-catch(Exception ex){
-    e = ex;
-}
-//assertNotNull("El constructor de Hora debe validar y lanzar una excepcion si hay error.", e);
-assertEquals(false, hora.esHoraValida());
-e = null;
-try{
-    hora = new Hora(23, 11, 60);
-}
-catch(Exception ex){
-    e = ex;
-}
-//assertNotNull("El constructor de Hora debe validar y lanzar una excepcion si hay error.", e);
-assertEquals(false, hora.esHoraValida());
-`    
 
 
-const  testHoraEsMenorMayor= () => `
-int s1 = ((int)(Math.random()*1000))%60, s2=0;
-int m1 = ((int)(Math.random()*1000))%60, m2=0;
-int h1 = ((int)(Math.random()*1000))%23, h2=0;
 
-do{s2 = ((int)(s1 + Math.random()*1000))%60;}while(s2==s1);
-Hora hora1 = new Hora(h1, m1, s1);
-Hora hora2 = new Hora(h1, m1, s2);
-assertEquals(s1<s2, hora1.esMenor(hora2));
-assertEquals(s1>s2, hora1.esMayor(hora2));
-assertEquals(!(s1<s2), hora2.esMenor(hora1));
-assertEquals(!(s1>s2), hora2.esMayor(hora1));
+const testIngredienteRegistrarVenta1 = () => `
+int a = ((int)(Math.random()*1000))%1000;
+int b =  ((int)(Math.random()*1000))%100;
+Fruta fruta1 = new Fruta("Mora", a, 1);
+Proteina proteina1 = new Proteina("Carne", a, 1);
+Grano grano1 = new Grano("Frijol", a, 1);
+Almidon almidon1 = new Almidon("Yuca", a, 1);
 
+fruta1.registrarVenta(b);
+proteina1.registrarVenta(b);
+grano1.registrarVenta(b);
+almidon1.registrarVenta(b);
 
-do{s2 = ((int)(s1 + Math.random()*1000))%60;}while(s2==s1);
-do{m2 = ((int)(m1 + Math.random()*1000))%60;}while(m2==m1);        
-hora1 = new Hora(h1, m1, s1);
-hora2 = new Hora(h1, m2, s2);
-assertEquals(m1<m2, hora1.esMenor(hora2));
-assertEquals(m1>m2, hora1.esMayor(hora2));
-assertEquals(!(m1<m2), hora2.esMenor(hora1));
-assertEquals(!(m1>m2), hora2.esMayor(hora1));
-
-do{s2 = ((int)(s1 + Math.random()*1000))%60;}while(s2==s1);
-do{m2 = ((int)(m1 + Math.random()*1000))%60;}while(m2==m1);
-do{h2 = ((int)(h1 + Math.random()*1000))%23;}while(h2==h1);
-hora1 = new Hora(h1, m1, s1);
-hora2 = new Hora(h2, m2, s2);
-assertEquals(h1<h2, hora1.esMenor(hora2));
-assertEquals(h1>h2, hora1.esMayor(hora2));
-assertEquals(!(h1<h2), hora2.esMenor(hora1));
-assertEquals(!(h1>h2), hora2.esMayor(hora1));
+assertEquals(a-b, fruta1.getCantidadDisponible());
+assertEquals(a-b, proteina1.getCantidadDisponible());
+assertEquals(a-b, grano1.getCantidadDisponible());
+assertEquals(a-b, almidon1.getCantidadDisponible());
 `
 
 
-const  testHoraRestarEnSegundos= () => `
-String [] horas = {
-        "5:3:19","21:05:8","12:57:15","7:20:37","2:26:35","10:22:4","16:21:19","12:6:46",
-        "9:7:35","13:38:39","12:22:15","11:30:8","10:23:33","6:44:29","7:59:16",
-        "2:53:56","2:31:52","22:33:45","9:43:58"};
-long [][] restas = {
-        {0,	-57709,	-28436,	-8238,	9404,	-19125,	-40680,	-25407,	-14656,	-30920,	-26336,	-23209,	-19214,	-6070,	-10557,	7763,	9087,	-63026,	-16839},
-        {57709,	0,	29273,	49471,	67113,	38584,	17029,	32302,	43053,	26789,	31373,	34500,	38495,	51639,	47152,	65472,	66796,	-5317,	40870},
-        {28436,	-29273,	0,	20198,	37840,	9311,	-12244,	3029,	13780,	-2484,	2100,	5227,	9222,	22366,	17879,	36199,	37523,	-34590,	11597},
-        {8238,	-49471,	-20198,	0,	17642,	-10887,	-32442,	-17169,	-6418,	-22682,	-18098,	-14971,	-10976,	2168,	-2319,	16001,	17325,	-54788,	-8601},
-        {-9404,	-67113,	-37840,	-17642,	0,	-28529,	-50084,	-34811,	-24060,	-40324,	-35740,	-32613,	-28618,	-15474,	-19961,	-1641,	-317,	-72430,	-26243},
-        {19125,	-38584,	-9311,	10887,	28529,	0,	-21555,	-6282,	4469,	-11795,	-7211,	-4084,	-89,	13055,	8568,	26888,	28212,	-43901,	2286},
-        {40680,	-17029,	12244,	32442,	50084,	21555,	0,	15273,	26024,	9760,	14344,	17471,	21466,	34610,	30123,	48443,	49767,	-22346,	23841},
-        {25407,	-32302,	-3029,	17169,	34811,	6282,	-15273,	0,	10751,	-5513,	-929,	2198,	6193,	19337,	14850,	33170,	34494,	-37619,	8568},
-        {14656,	-43053,	-13780,	6418,	24060,	-4469,	-26024,	-10751,	0,	-16264,	-11680,	-8553,	-4558,	8586,	4099,	22419,	23743,	-48370,	-2183},
-        {30920,	-26789,	2484,	22682,	40324,	11795,	-9760,	5513,	16264,	0,	4584,	7711,	11706,	24850,	20363,	38683,	40007,	-32106,	14081},
-        {26336,	-31373,	-2100,	18098,	35740,	7211,	-14344,	929,	11680,	-4584,	0,	3127,	7122,	20266,	15779,	34099,	35423,	-36690,	9497},
-        {23209,	-34500,	-5227,	14971,	32613,	4084,	-17471,	-2198,	8553,	-7711,	-3127,	0,	3995,	17139,	12652,	30972,	32296,	-39817,	6370},
-        {19214,	-38495,	-9222,	10976,	28618,	89,	-21466,	-6193,	4558,	-11706,	-7122,	-3995,	0,	13144,	8657,	26977,	28301,	-43812,	2375},
-        {6070,	-51639,	-22366,	-2168,	15474,	-13055,	-34610,	-19337,	-8586,	-24850,	-20266,	-17139,	-13144,	0,	-4487,	13833,	15157,	-56956,	-10769},
-        {10557,	-47152,	-17879,	2319,	19961,	-8568,	-30123,	-14850,	-4099,	-20363,	-15779,	-12652,	-8657,	4487,	0,	18320,	19644,	-52469,	-6282},
-        {-7763,	-65472,	-36199,	-16001,	1641,	-26888,	-48443,	-33170,	-22419,	-38683,	-34099,	-30972,	-26977,	-13833,	-18320,	0,	1324,	-70789,	-24602},
-        {-9087,	-66796,	-37523,	-17325,	317,	-28212,	-49767,	-34494,	-23743,	-40007,	-35423,	-32296,	-28301,	-15157,	-19644,	-1324,	0,	-72113,	-25926},
-        {63026,	5317,	34590,	54788,	72430,	43901,	22346,	37619,	48370,	32106,	36690,	39817,	43812,	56956,	52469,	70789,	72113,	0,	46187},
-        {16839,	-40870,	-11597,	8601,	26243,	-2286,	-23841,	-8568,	2183,	-14081,	-9497,	-6370,	-2375,	10769,	6282,	24602,	25926,	-46187,	0}
-    };
-Hora [] misHoras = new Hora[horas.length];
-for(int i=0; i< horas.length;i++){
-    String [] d = horas[i].split(":");
-    int h = Integer.parseInt(d[0]);
-    misHoras[i] = new Hora(h, Integer.parseInt(d[1]), Integer.parseInt(d[2]));
+const testIngredienteRegistrarCompra1 = () => `
+int a = ((int)(Math.random()*1000))%1000 + 1;
+int b =  ((int)(Math.random()*1000))%100 + 1;
+Fruta fruta1 = new Fruta("Mora", a, b);
+Proteina proteina1 = new Proteina("Carne", a, b);
+Grano grano1 = new Grano("Frijol", a, b);
+Almidon almidon1 = new Almidon("Yuca", a, b);
+
+fruta1.registrarCompra(a, b + a/b);
+proteina1.registrarCompra(a, b + a/b);
+grano1.registrarCompra(a, b + a/b);
+almidon1.registrarCompra(a, b + a/b);
+
+assertEquals(b + a/b, fruta1.getPrecioCompra());
+assertEquals(b + a/b, proteina1.getPrecioCompra());
+assertEquals(b + a/b, grano1.getPrecioCompra());
+assertEquals(b + a/b, almidon1.getPrecioCompra());
+
+fruta1.registrarCompra(a, b + a/b);
+proteina1.registrarCompra(a, b + a/b);
+grano1.registrarCompra(a, b + a/b);
+almidon1.registrarCompra(a, b + a/b);        
+
+assertEquals(b + a/b, fruta1.getPrecioCompra());
+assertEquals(b + a/b, proteina1.getPrecioCompra());
+assertEquals(b + a/b, grano1.getPrecioCompra());
+assertEquals(b + a/b, almidon1.getPrecioCompra());        
+
+fruta1.registrarCompra(a, b - a/b);
+proteina1.registrarCompra(a, b - a/b);
+grano1.registrarCompra(a, b - a/b);
+almidon1.registrarCompra(a, b - a/b);
+
+assertEquals(b + a/b, fruta1.getPrecioCompra());
+assertEquals(b + a/b, proteina1.getPrecioCompra());
+assertEquals(b + a/b, grano1.getPrecioCompra());
+assertEquals(b + a/b, almidon1.getPrecioCompra());
+
+assertEquals(4*a, fruta1.getCantidadDisponible());
+assertEquals(4*a, proteina1.getCantidadDisponible());
+assertEquals(4*a, grano1.getCantidadDisponible());
+assertEquals(4*a, almidon1.getCantidadDisponible());        
+`
+
+
+const testIngredienteRegistrarVenta2 = () => `
+int b = ((int)(Math.random()*1000))%1000;
+int a = 0;
+Ingrediente ingrediente = null;
+
+for(int i=0; i< ingredientes.length; i++){
+    ingrediente = ingredientes[i];
+    a = ingrediente.getCantidadDisponible();
+    ingrediente.registrarVenta(b);
+    assertEquals(a-b, ingrediente.getCantidadDisponible());
 }
 
-for(int i=0; i<misHoras.length;i++){
-    for(int j = 0; j<misHoras.length;j++){
-        long r = misHoras[i].restarEnSegundos(misHoras[j]);
-        assertEquals(restas[i][j], r);
+`
+
+const testIngredienteRegistrarCompra2 = () => `
+int a = ((int)(Math.random()*1000))%1000 + 1;
+int b =  ((int)(Math.random()*1000))%100 + 1;
+int x = 0, y = 0;
+Ingrediente ingrediente = null;
+
+for(int i=0; i< ingredientes.length; i++){
+    ingrediente = ingredientes[i];
+    x = ingrediente.getPrecioCompra();
+    y = ingrediente.getCantidadDisponible();
+
+    ingrediente.registrarCompra(a, x + a/b);
+    assertEquals(x + a/b, ingrediente.getPrecioCompra());
+
+    ingrediente.registrarCompra(a, x + a/b);
+    assertEquals(x + a/b, ingrediente.getPrecioCompra());
+
+    ingrediente.registrarCompra(a, x - a/b);
+    assertEquals(x + a/b, ingrediente.getPrecioCompra());
+
+    assertEquals(y + 3*a, ingrediente.getCantidadDisponible());                 
+}
+
+`
+
+
+const testIngredienteEquals = () => `
+Fruta fruta1 = new Fruta("mora", 1, 1);
+Fruta fruta2 = new Fruta("mora", 1, 1);
+assertEquals(true, fruta1.equals(fruta2));
+Proteina proteina1 = new Proteina("mora", 1, 1);
+assertEquals(false, fruta1.equals(proteina1));
+Grano grano1 = new Grano("mora", 1, 1);
+assertEquals(false, fruta1.equals(grano1));
+Almidon almidon1 = new Almidon("mora", 1, 1);
+assertEquals(false, fruta1.equals(almidon1));
+`
+
+const testAlmuerzoConstructor = () => `
+Restaurante r = new Restaurante();
+ArrayList <Ingrediente> ing = new ArrayList<Ingrediente>();
+for(int i=0;i<ingredientes.length;i++) ing.add(ingredientes[i]);
+r.setIngredientes(ing);
+Almuerzo a = new Almuerzo(r, "Papaya", "Carne de Res", "Lenteja", "Papa Negra");
+assertEquals(precios[0], a.getPrecioVenta());
+`
+
+
+const testAlmuerzoPrecioVenta = () => `
+Restaurante r = new Restaurante();
+ArrayList <Ingrediente> ing = new ArrayList<Ingrediente>();
+for(int i=0;i<ingredientes.length;i++) ing.add(ingredientes[i]);
+r.setIngredientes(ing);
+
+Almuerzo a = null;
+int m = 0;
+for(int i=0; i<=4; i++){
+    for(int j=5; j<=9; j++){
+        for(int k=10; k<=14; k++){
+            for(int l=15;l<19;l++){
+                a = new Almuerzo(r, ingredientes[i].getNombre(), 
+                    ingredientes[j].getNombre(), 
+                    ingredientes[k].getNombre(),
+                    ingredientes[l].getNombre());
+                assertEquals(precios[m++], a.getPrecioVenta());
+            }
+        }
     }
+}
+`
+
+
+const testAlmuerzoSePuedePrepararYRegistrarVenta = () => `
+Restaurante r = new Restaurante();
+ArrayList <Ingrediente> ing = new ArrayList<Ingrediente>();
+for(int i=0;i<ingredientes.length;i++) ing.add(ingredientes[i]);
+r.setIngredientes(ing);
+
+Almuerzo a = null;
+int m = 0;
+for(int i=0; i<=4; i++){
+    for(int j=5; j<=9; j++){
+        for(int k=10; k<=14; k++){
+            for(int l=15;l<19;l++){
+                a = new Almuerzo(r, ingredientes[i].getNombre(), 
+                    ingredientes[j].getNombre(), 
+                    ingredientes[k].getNombre(),
+                    ingredientes[l].getNombre());
+                assertEquals(puede[m++], a.sePuedePreparar());
+                a.registrarVenta();
+            }
+        }
+    }
+}
+`
+
+
+const testRestauranteGetNombres = () => `
+Restaurante r = new Restaurante();
+String [] s = null;
+ArrayList <Ingrediente> ing = new ArrayList<Ingrediente>();
+for(int i=0;i<ingredientes.length;i++) ing.add(ingredientes[i]);
+r.setIngredientes(ing);
+
+s = r.getNombresFrutas();
+assertNotNull(s);
+for(int i=0; i<=4; i++){
+  assertEquals(ingredientes[i].getNombre(), s[i]);
+}
+s = null;
+
+s = r.getNombresProteinas();
+assertNotNull(s);        
+for(int j=5, i=0; j<=9; j++, i++){
+   assertEquals(ingredientes[j].getNombre(), s[i]);
+}
+s = null;
+
+s = r.getNombresGranos();
+assertNotNull(s);        
+for(int k=10, i=0; k<=14; k++,i++){
+    assertEquals(ingredientes[k].getNombre(), s[i]);            
+}
+s = null;
+
+s = r.getNombresAlmidones();
+assertNotNull(s);                
+for(int l=15, i=0;l<19;l++, i++){
+    assertEquals(ingredientes[l].getNombre(), s[i]);
+}
+s = null;
+`
+
+
+const testRestauranteBuscar = () => `
+Restaurante r = new Restaurante();
+String [] s = null;
+ArrayList <Ingrediente> ing = new ArrayList<Ingrediente>();
+for(int i=0;i<ingredientes.length;i++) ing.add(ingredientes[i]);
+r.setIngredientes(ing);
+
+Ingrediente ingrediente = null;
+
+for(int i=0; i<=4; i++){
+  ingrediente = r.buscarIngrediente(ingredientes[i].getNombre());
+  assertNotNull(ingrediente);
+}
+
+
+for(int j=5, i=0; j<=9; j++, i++){
+  ingrediente = r.buscarIngrediente(ingredientes[j].getNombre());
+  assertNotNull(ingrediente);
+}
+
+for(int k=10, i=0; k<=14; k++,i++){
+  ingrediente = r.buscarIngrediente(ingredientes[k].getNombre());
+  assertNotNull(ingrediente);
+}
+
+for(int l=15, i=0;l<19;l++, i++){
+  ingrediente = r.buscarIngrediente(ingredientes[l].getNombre());
+  assertNotNull(ingrediente);
 }
 
 `
 
 
 Test.test_cases = [
-  getDataFromFunction(testHoraConstructor, 8),
-  getDataFromFunction(testHoraEsMenorMayor, 8),
-  getDataFromFunction(testHoraRestarEnSegundos, 8),
+    getDataFromFunction(testIngredienteRegistrarVenta1,     10),
+    getDataFromFunction(testIngredienteRegistrarCompra1,    10),
+    getDataFromFunction(testIngredienteRegistrarVenta2,     10),
+    getDataFromFunction(testIngredienteRegistrarCompra2,    10),
+    getDataFromFunction(testIngredienteEquals,              10),
+    getDataFromFunction(testAlmuerzoConstructor,            10),
+    getDataFromFunction(testAlmuerzoPrecioVenta,            10),
+    getDataFromFunction(testAlmuerzoSePuedePrepararYRegistrarVenta, 10),
+    getDataFromFunction(testRestauranteGetNombres, 10),
+    getDataFromFunction(testRestauranteBuscar, 10),
 ]
 
 module.exports = Test
