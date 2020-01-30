@@ -174,7 +174,7 @@ This steps changed a little. Because we need deploy the `service object` at firs
 4. Update the configuration file, change the value of `SERVER_NAME` with the external IP
 5. Update the service following the instructions in the `reload a service` title. Run: `./reload.sh gateway $NAMESPACE`
 
-### 7. Update the services variables that uses urls
+### 8. Update the services variables that uses urls
 
 For now, we deployed the cluster successfully. However is not at all, some services needs resolve external urls or microservices urls. For example: the client will need to resolve the API url. Also moodle need resolve it own url. Also, the Jail need to resolve the API internally
 
