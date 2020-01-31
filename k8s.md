@@ -12,7 +12,7 @@ This is a guide to delploy the cluster easily, if you are a expermiented develop
 At first, go to k8s folder. There is 6 services: mysql, mongo, client, api, jail and gateway. All of those are the microservices of this project. The subfolders of `environments` and `services` should be match each other.
 
 
-![environment and service relationship](/docs/images/diagrams/k8sfilesrelationship.png?raw=true "environment and service relationship")
+![environment and service relationship](/docs/images/diagrams/k8sfilesrelationship.jpeg?raw=true "environment and service relationship")
 
 Before start, you need to know how to configure each microservice. If you dont know how do it, visit the microservices pages documentation.
 
