@@ -12,18 +12,19 @@ This repository contains all the stuff to install the microservices
 
 ### Not required but usefull tools:
 
-1. Mongo client: if you want to change or read the api data from scratch **(It may be dangerous). 
-2. Mysql client: if you want to change pr read the moodle data from scratch **(It may be dangerous). 
+1. Mongo client: if you want to change or read the api data from scratch **(It may be dangerous)**. 
+2. Mysql client: if you want to change pr read the moodle data from scratch **(It may be dangerous)**. 
 
 ## Install 
 
-`git clone git@github.com:alphonse92/vplplusplus_composer.git`
-
-`./intall.sh`
+```sh 
+git clone git@github.com:alphonse92/vplplusplus_composer.git
+./intall.sh
+```
 
 ## Configuration 
 
-1. Open the  docker-compose.deployment.example.yaml 
+1. Open the  docker-compose.deployment.yaml 
 2. change the environment variables as you need
 
 To know how to configure the other microservices please visit each microservice repository:
@@ -58,7 +59,7 @@ Run `docker-compose up`
 
 Run `docker-compose up`
 
-There a issue regarding to how moodle and vpl works. When the student or the teacher tries to execute a VPL activity it happen in two phases:
+There a issue regarding to how moodle and vpl works. When the student or the teacher tries to execute a VPL activity it happen in two phases
 
 1. Send the activity to moodle. Return a websocket with the url to the jail to track the process of the execution
 2. The browser tries to connect to the jail.
