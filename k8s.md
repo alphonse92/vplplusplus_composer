@@ -11,6 +11,9 @@ This is a guide to delploy the cluster easily, if you are a expermiented develop
 
 At first, go to k8s folder. There is 6 services: mysql, mongo, client, api, jail and gateway. All of those are the microservices of this project. The subfolders of `environments` and `services` should be match each other.
 
+
+![environment and service relationship](/docs/images/diagrams/k8sfilesrelationship.png?raw=true "environment and service relationship")
+
 Before start, you need to know how to configure each microservice. If you dont know how do it, visit the microservices pages documentation.
 
 Available microservices 
@@ -110,7 +113,7 @@ You can create the configuration files using the `.example` file.
 
 For example, you dont need to change the variable `DB_HOST` because kubernetes resolve the mysql database internally to the service `mysql-service-development`. Of course, you **CAN** change those variables in several situations, for example if you have a service outside the cluster.
 
-1. Copy the file `.example` and change it name with the namespace related to this configuration (included the namespaces that you create by you own). For example, if you have a namespace called `staging`, you need copy the `.example` file and change it name to `staging`
+1. Copy the file `.example` and change it name with the namespace related to this configuration (included the namespaces that you create by you own). For example, if you have a namespace called `staging`, you need to copy the `.example` file and change it name to `staging`
 2. Open and change the values of each namespace configuration file for the service.
 
 ### 2. Deploy the databases
@@ -163,10 +166,10 @@ As you noticed, the `ENV` value of jail configuration variable is setted to prod
 
 ### 7. Deploy the gateway
 
-To use ssl, you need set the value of `SERVER_PORT` to 443.
+To use ssl, you need to set the value of `SERVER_PORT` to 443.
 Follow the instruction of the title `create certificates`.
 
-This steps changed a little. Because we need deploy the `service object` at first, in order to get the external IP from it.
+This steps changed a little. Because we need to deploy the `service object` at first, in order to get the external IP from it.
 
 1. Compile the configuration file of gateway with the namespace that you want to deploy for
 2. Deploy the service running: `./create_service gateway $NAMESPACE`
@@ -176,7 +179,7 @@ This steps changed a little. Because we need deploy the `service object` at firs
 
 ### 8. Update the services variables that uses urls
 
-For now, we deployed the cluster successfully. However is not at all, some services needs resolve external urls or microservices urls. For example: the client will need to resolve the API url. Also moodle need resolve it own url. Also, the Jail need to resolve the API internally
+For now, we deployed the cluster successfully. However is not at all, some services need to resolve external urls or microservices urls. For example: the client will need to resolve the API url. Also moodle need to resolve it own url. Also, the Jail need to resolve the API internally
 
 To do it we need to modify the configuration files with the appropriate configuration.
 
@@ -217,5 +220,5 @@ The service url are formed by: `$PROTOCOL://$IP_OR_DOMAIN_NAME:$PORT/$SERVICE_PA
 **You need to create an api token for the jail, in order to allow to request to the appropiate endpoints**
 
 1. Open your configuration file of the client (remember, the **namespace** matters)
-2. In this case you need to set the appropiate value of `API_URL` variable. Also, you need set the value of `API_TOKEN`. You can update one of this at different times.
+2. In this case you need to set the appropiate value of `API_URL` variable. Also, you need to set the value of `API_TOKEN`. You can update one of this at different times.
 3. Reload the service. Run: `./reload.sh jail $NAMESPACE`
