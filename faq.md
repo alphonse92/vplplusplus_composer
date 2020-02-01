@@ -2,7 +2,7 @@
 
 ## 1. I have regular JUnit test, how could i parse to a VPL ++ Test?
 
-Please read (Guide to parse vpl to vpl ++)[/vpl-to-vpl++.md] [or take a look this video](https://www.youtube.com/watch?v=0Oa3lQuSGhI)
+[take a look this video](https://www.youtube.com/watch?v=0Oa3lQuSGhI)
 
 
 ## 2. The Jail execution microservice throws "api is unreacheable"
