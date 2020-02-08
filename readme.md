@@ -36,6 +36,8 @@ To know how to configure the other microservices please visit each microservice 
 
 ### Repositories
 
+All microservices has it own image on docker hub following the next link: https://hub.docker.com/u/alphonse92
+
 ##### Microservice repositories
 
 1. [VPL++ API microservice](https://github.com/alphonse92/vplplusplus_api)
