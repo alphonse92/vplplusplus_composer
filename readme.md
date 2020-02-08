@@ -2,6 +2,11 @@
 
 This repository contains all the stuff to install the microservices
 
+| nombre           | url                        |
+|------------------|----------------------------|
+| VPL ++ front end | https://35.198.14.0/       |
+| Moodle con VPL   | https://35.198.14.0/client |
+
 ## Requeriments
 
 1. Docker
