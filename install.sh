@@ -9,6 +9,7 @@ git submodule init
 cd vplplusplus_api && npm install
 cd ../vplplusplus_client && npm install
 
-pip install "j2cli" "j2cli[yaml]"
+pip install "j2cli" 
+pip install "j2cli[yaml]"
 
 git submodule update --recursive
