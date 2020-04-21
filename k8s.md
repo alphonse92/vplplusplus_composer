@@ -163,6 +163,7 @@ As you noticed, the `ENV` value of jail configuration variable is setted to prod
 1. Compile the configuration file of client with the namespace that you want to deploy for
 2. Deploy the service as `Upload a service` title said, running for example `./create_service.sh client $NAMESPACE`
 3. Check your cluster status
+4. Right now the service client is miss-configured, because we need to update several environment variables regarding to another services.
 
 ### 7. Deploy the gateway
 
