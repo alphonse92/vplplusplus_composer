@@ -38,14 +38,26 @@ Run `./compile.sh $SERVICE_NAME $NAMESPACE` , which $SERVICE_NAME should be the 
 
 After run, this command should create a `build` folder in `k8s` folder.
 
-### Create certificates for the gateway
+### Create Secrets
 
-Runing the command `./create_cert.sh` will create the ssl certificates for you and deploy it as a [kubernetes secret](https://kubernetes.io/docs/concepts/configuration/secret/).
-If you have your own certificates, you should create the secret by your own and mount following the next format.
+Some microservices such gateway, moodle or jail needs a certificate or certificate authority if the clusters is behind of SSL of it tries to reach a microservice behind a SSL. 
 
-1. All the secrets should be mounted at: `/etc/secrets/gateway/$NAMESPACE/`
-2. The secrets name should be called following the next nomenclature `gateway-$NAMESPACE-certificates`
-3. The created secrets will be stored at `./k8s/certs/$NAMESPACE`
+You need to setup the next secrets on follow microservices:
+
+1. Gateway: needs `gateway-development-certificates` with the crt and the key.
+2. Moodle: needs `moodle-development-certificates` with certificate authority 
+3. Jail: needs `jail-development-certificates` with certificate authority 
+
+The certificate authority (cacert) is provided by the company that provide your certificates.
+
+For example
+
+`kubectl create secret generic gateway-development-certificates --namespace=development --from-file "./cert.crt" --from-file "./cert.key"`
+
+If you need to delete one of them, run:
+
+`kubectl delete secret gateway-development-certificates`
+
 
 ### Deploy a single kubernetes object
 
@@ -93,9 +105,11 @@ If you want to change environments variables of a service and deploy the service
 
 `./reload.sh $SERVICE $NAMESPACE` it just delete the configmap and deployment objects, after it upload the new configmap and deployment objects.
 
-## Steps to deploy the cluster
+# Steps to deploy the cluster
 
-### 1. Create Namespaces
+Before start, **Read the documentation of each Microservice and make sure you know how to configure each of them!** if you are behind SSL, remember to create the respective secrets for each microservice.
+
+## 1. Create Namespaces
 
 By default exists only two namespaces: `developent` and `production`. From now, i will explain the process to deploy `development`, however is the same to production. 
 
@@ -103,7 +117,7 @@ Of course, you can create another namespaces, just add a new regular namespace k
 
 Run `kubectl create -f namespaces` to create the namespaces in your cluster
 
-#### Set your configuration files of a service
+### Set your configuration files of a service
 
 The `environments` folder has the configuration of each service of each namespace. For example, the configuration files of mysql are in `environments/mysql` folder. Each file of each service folder should match with a namespace. For example, for the environment `staging` should have a configuration file called `environments/mysql/staging.yaml`
 
@@ -166,9 +180,6 @@ As you noticed, the `ENV` value of jail configuration variable is setted to prod
 4. Right now the service client is miss-configured, because we need to update several environment variables regarding to another services.
 
 ### 7. Deploy the gateway
-
-To use ssl, you need to set the value of `SERVER_PORT` to 443.
-Follow the instruction of the title `create certificates`.
 
 This steps changed a little. Because we need to deploy the `service object` at first, in order to get the external IP from it.
 
