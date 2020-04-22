@@ -9,3 +9,9 @@ data:
   API_TOKEN: {{API_TOKEN}}
   JAIL_PORT: "{{JAIL_PORT}}"
   JAIL_SECURE_PORT: "{{JAIL_SECURE_PORT}}"
+  {% if HOST_FILE is defined %}
+  HOST_FILE: "{{HOST_FILE}}"
+  {% endif %}
+  {% if CACERT is defined %}
+  CACERT: "{{CACERT}}"
+  {% endif %}

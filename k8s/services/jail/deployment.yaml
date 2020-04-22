@@ -20,6 +20,13 @@ spec:
           envFrom:
             - configMapRef:
                 name: jail-config-{{ENVIRONMENT}}
+          volumeMounts:
+            - name: secrets-certificates
+              mountPath: /etc/secrets/jail/{{ENVIRONMENT}}/certificates
+              readOnly: true
+            - name: secrets-configuration
+              mountPath: /etc/secrets/jail/{{ENVIRONMENT}}/configuration
+              readOnly: true
           ports:
             - containerPort: 80
               name: jail
@@ -28,3 +35,10 @@ spec:
             capabilities:
               add: 
                 - "*"
+      volumes:
+        - name: secrets-certificates
+          secret:
+            secretName: jail-{{ENVIRONMENT}}-certificates
+        - name: secrets-configuration
+          secret:
+            secretName: jail-{{ENVIRONMENT}}-configuration
