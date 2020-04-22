@@ -72,6 +72,7 @@ services:
       DB_PREFIX: mdl_
       MOODLE_DATA: /home/moodle_data
       MOODLE_URL: http://localhost
+      CACERT: /usr/local/etc/php/php.ini
     ports:
       - "80:80"
     volumes:
