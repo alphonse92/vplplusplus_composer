@@ -10,6 +10,6 @@ CLIENT_URL: http://client-service-development:3000
 CLIENT_PATH: /client
 CLIENT_STATIC_PATH: /vplclient_static
 API_URL: http://api-service-development:1337
-API_PATH: /apis
+API_PATH: /api
 MOODLE_URL: http://moodle-service-development:8080
 MOODLE_PATH: /
