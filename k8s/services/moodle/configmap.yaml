@@ -15,3 +15,6 @@ data:
   MOODLE_DATA: {{MOODLE_DATA}}
   REVERSE_PROXY: "{{REVERSE_PROXY}}"
   SSL_PROXY: "{{SSL_PROXY}}"
+  {% if CACERT is defined %}
+  CACERT: "{{CACERT}}"
+  {% endif %}

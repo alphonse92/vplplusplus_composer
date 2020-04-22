@@ -10,3 +10,5 @@ MOODLE_URL: http://localhost:8080
 MOODLE_DATA: /home/moodle_data
 REVERSE_PROXY: true
 SSL_PROXY: true
+# define the next variable if moodle is behind a trusted domain
+CACERT: /etc/secrets/moodle/development/cacert.crt

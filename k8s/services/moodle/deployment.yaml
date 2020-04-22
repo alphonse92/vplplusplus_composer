@@ -27,6 +27,9 @@ spec:
               mountPath: /var/www/html
             - name: moodle-data
               mountPath: /var/moodle_data
+            - name: secrets
+              mountPath: /etc/secrets/moodle/{{ENVIRONMENT}}/
+              readOnly: true
       volumes:
         - name: moodle
           persistentVolumeClaim:
@@ -34,3 +37,6 @@ spec:
         - name: moodle-data
           persistentVolumeClaim:
             claimName: moodle-pv-claim-{{ENVIRONMENT}}-moodle-data
+        - name: secrets
+          secret:
+            secretName: moodle-{{ENVIRONMENT}}-certificates
