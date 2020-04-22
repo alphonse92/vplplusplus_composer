@@ -2,3 +2,4 @@ data/
 .DS_Store
 k8s/build
 k8s/certs
+private
