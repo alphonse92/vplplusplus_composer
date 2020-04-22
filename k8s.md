@@ -42,11 +42,12 @@ After run, this command should create a `build` folder in `k8s` folder.
 
 Some microservices such gateway, moodle or jail needs a certificate or certificate authority if the clusters is behind of SSL of it tries to reach a microservice behind a SSL. 
 
-You need to setup the next secrets on follow microservices:
+Maybe you will need to setup the next secrets on follow microservices acording to your configurations requirements:
 
-1. Gateway: needs `gateway-development-certificates` with the crt and the key.
-2. Moodle: needs `moodle-development-certificates` with certificate authority 
-3. Jail: needs `jail-development-certificates` with certificate authority 
+1. Gateway CERTIFICATES: needs `gateway-development-certificates` with the crt and the key.
+2. Moodle CACERT: needs `moodle-development-certificates` with certificate authority 
+3. Jail CACERT: needs `jail-development-certificates` with certificate authority 
+4. Jail HOST FILE: needs `jail-development-configuration` with a host file.
 
 The certificate authority (cacert) is provided by the company that provide your certificates.
 
